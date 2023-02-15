@@ -8,7 +8,12 @@ hide_title: true
 
 ## BjjProvider.keyType property
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+key type that is handled by BJJ Provider  {KmsKeyType}
+
+**Signature:**
 
 ```typescript
 keyType: KmsKeyType;

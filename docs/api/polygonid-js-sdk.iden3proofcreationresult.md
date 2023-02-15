@@ -8,7 +8,15 @@ hide_title: true
 
 ## Iden3ProofCreationResult interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Proof creation result
+
+
+ Iden3ProofCreationResult
+
+**Signature:**
 
 ```typescript
 export interface Iden3ProofCreationResult 
@@ -18,6 +26,6 @@ export interface Iden3ProofCreationResult
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [credentials](./polygonid-js-sdk.iden3proofcreationresult.credentials.md) |  | W3CCredential\[\] |  |
-|  [newTreeState](./polygonid-js-sdk.iden3proofcreationresult.newtreestate.md) |  | TreeState |  |
-|  [oldTreeState](./polygonid-js-sdk.iden3proofcreationresult.oldtreestate.md) |  | TreeState |  |
+|  [credentials](./polygonid-js-sdk.iden3proofcreationresult.credentials.md) |  | W3CCredential\[\] | **_(BETA)_** |
+|  [newTreeState](./polygonid-js-sdk.iden3proofcreationresult.newtreestate.md) |  | TreeState | **_(BETA)_** |
+|  [oldTreeState](./polygonid-js-sdk.iden3proofcreationresult.oldtreestate.md) |  | TreeState | **_(BETA)_** |

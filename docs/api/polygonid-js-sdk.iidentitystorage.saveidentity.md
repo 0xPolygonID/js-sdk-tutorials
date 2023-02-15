@@ -8,7 +8,12 @@ hide_title: true
 
 ## IIdentityStorage.saveIdentity() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+saves identity to the data source
+
+**Signature:**
 
 ```typescript
 saveIdentity(identity: Identity): Promise<void>;
@@ -20,6 +25,8 @@ saveIdentity(identity: Identity): Promise<void>;
 |  --- | --- | --- |
 |  identity | [Identity](./polygonid-js-sdk.identity.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
+
+`{Promise<void>}`

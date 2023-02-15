@@ -8,7 +8,15 @@ hide_title: true
 
 ## ClaimRequest interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Request to core library to create Core Claim from W3C Verifiable Credential
+
+
+ ClaimRequest
+
+**Signature:**
 
 ```typescript
 export interface ClaimRequest 
@@ -18,11 +26,11 @@ export interface ClaimRequest
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [credentialSchema](./polygonid-js-sdk.claimrequest.credentialschema.md) |  | string |  |
-|  [credentialSubject](./polygonid-js-sdk.claimrequest.credentialsubject.md) |  | { \[key: string\]: string &#124; object &#124; number; } |  |
-|  [expiration?](./polygonid-js-sdk.claimrequest.expiration.md) |  | number | <i>(Optional)</i> |
-|  [merklizedRootPosition?](./polygonid-js-sdk.claimrequest.merklizedrootposition.md) |  | MerklizedRootPosition | <i>(Optional)</i> |
-|  [revNonce?](./polygonid-js-sdk.claimrequest.revnonce.md) |  | number | <i>(Optional)</i> |
-|  [subjectPosition?](./polygonid-js-sdk.claimrequest.subjectposition.md) |  | SubjectPosition | <i>(Optional)</i> |
-|  [type](./polygonid-js-sdk.claimrequest.type.md) |  | string |  |
-|  [version?](./polygonid-js-sdk.claimrequest.version.md) |  | number | <i>(Optional)</i> |
+|  [credentialSchema](./polygonid-js-sdk.claimrequest.credentialschema.md) |  | string | **_(BETA)_** JSON credential schema |
+|  [credentialSubject](./polygonid-js-sdk.claimrequest.credentialsubject.md) |  | { \[key: string\]: string &#124; object &#124; number; } | **_(BETA)_** Credential subject, usually contains claims and identifier |
+|  [expiration?](./polygonid-js-sdk.claimrequest.expiration.md) |  | number | **_(BETA)_** _(Optional)_ expiration time |
+|  [merklizedRootPosition?](./polygonid-js-sdk.claimrequest.merklizedrootposition.md) |  | MerklizedRootPosition | **_(BETA)_** _(Optional)_ merklizedRootPosition (index / value / none) |
+|  [revNonce?](./polygonid-js-sdk.claimrequest.revnonce.md) |  | number | **_(BETA)_** _(Optional)_ revocation nonce |
+|  [subjectPosition?](./polygonid-js-sdk.claimrequest.subjectposition.md) |  | SubjectPosition | **_(BETA)_** _(Optional)_ subject position (index / value / none) |
+|  [type](./polygonid-js-sdk.claimrequest.type.md) |  | string | **_(BETA)_** Credential type |
+|  [version?](./polygonid-js-sdk.claimrequest.version.md) |  | number | **_(BETA)_** _(Optional)_ claim version |

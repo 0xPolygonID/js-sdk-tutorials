@@ -8,7 +8,12 @@ hide_title: true
 
 ## BrowserDataSource.patchData() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+updates data with a total reset
+
+**Signature:**
 
 ```typescript
 patchData(value: Type[]): void;
@@ -18,8 +23,8 @@ patchData(value: Type[]): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | Type\[\] |  |
+|  value | Type\[\] | value array to update |
 
-<b>Returns:</b>
+**Returns:**
 
 void

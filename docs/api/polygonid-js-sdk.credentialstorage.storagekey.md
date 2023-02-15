@@ -8,7 +8,10 @@ hide_title: true
 
 ## CredentialStorage.storageKey property
 
-<b>Signature:</b>
+key for storage
+
+
+**Signature:**
 
 ```typescript
 static readonly storageKey = "credentials";

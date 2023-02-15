@@ -8,7 +8,12 @@ hide_title: true
 
 ## KMS.createKeyFromSeed() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+generates a new key and returns it kms key id
+
+**Signature:**
 
 ```typescript
 createKeyFromSeed(keyType: KmsKeyType, bytes: Uint8Array): Promise<KmsKeyId>;
@@ -21,6 +26,8 @@ createKeyFromSeed(keyType: KmsKeyType, bytes: Uint8Array): Promise<KmsKeyId>;
 |  keyType | [KmsKeyType](./polygonid-js-sdk.kmskeytype.md) |  |
 |  bytes | Uint8Array |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[KmsKeyId](./polygonid-js-sdk.kmskeyid.md)&gt;
+
+kms key id

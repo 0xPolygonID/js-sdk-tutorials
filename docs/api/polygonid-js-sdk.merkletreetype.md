@@ -8,7 +8,11 @@ hide_title: true
 
 ## MerkleTreeType enum
 
-<b>Signature:</b>
+Type of MerkleTree
+
+  {number}
+
+**Signature:**
 
 ```typescript
 export declare enum MerkleTreeType 

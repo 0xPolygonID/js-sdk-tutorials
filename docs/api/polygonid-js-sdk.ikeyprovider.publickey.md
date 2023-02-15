@@ -8,7 +8,12 @@ hide_title: true
 
 ## IKeyProvider.publicKey() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+gets public key by key id
+
+**Signature:**
 
 ```typescript
 publicKey(keyID: KmsKeyId): Promise<PublicKey>;
@@ -18,8 +23,10 @@ publicKey(keyID: KmsKeyId): Promise<PublicKey>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  keyID | [KmsKeyId](./polygonid-js-sdk.kmskeyid.md) |  |
+|  keyID | [KmsKeyId](./polygonid-js-sdk.kmskeyid.md) | kms key identifier |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;PublicKey&gt;
+
+`Promise<PublicKey>`

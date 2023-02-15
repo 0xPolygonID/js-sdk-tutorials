@@ -8,7 +8,12 @@ hide_title: true
 
 ## BrowserDataSource.save() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+saves value to the local storage
+
+**Signature:**
 
 ```typescript
 save(key: string, value: Type, keyName?: string): void;
@@ -18,10 +23,10 @@ save(key: string, value: Type, keyName?: string): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | string |  |
-|  value | Type |  |
-|  keyName | string | <i>(Optional)</i> |
+|  key | string | key value |
+|  value | Type | value to store |
+|  keyName | string | _(Optional)_ key name |
 
-<b>Returns:</b>
+**Returns:**
 
 void

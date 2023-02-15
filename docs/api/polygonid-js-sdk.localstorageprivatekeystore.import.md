@@ -8,7 +8,12 @@ hide_title: true
 
 ## LocalStoragePrivateKeyStore.import() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Import key to the local storage
+
+**Signature:**
 
 ```typescript
 import(args: {
@@ -21,8 +26,10 @@ import(args: {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  args | { alias: string; key: string; } |  |
+|  args | { alias: string; key: string; } | alias and private key in the hex |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
+
+void

@@ -8,7 +8,12 @@ hide_title: true
 
 ## ICredentialWallet.save() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+saves W3C credential (upsert)
+
+**Signature:**
 
 ```typescript
 save(credential: W3CCredential): Promise<void>;
@@ -18,8 +23,10 @@ save(credential: W3CCredential): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  credential | W3CCredential |  |
+|  credential | W3CCredential | credential to save |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
+
+`Promise<void>`

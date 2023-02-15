@@ -8,7 +8,15 @@ hide_title: true
 
 ## IAuthHandler interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Interface that allows the processing of the authorization request in the raw format for given identifier
+
+
+ IAuthHandler
+
+**Signature:**
 
 ```typescript
 export interface IAuthHandler 
@@ -18,4 +26,4 @@ export interface IAuthHandler
 
 |  Method | Description |
 |  --- | --- |
-|  [handleAuthorizationRequest(id, request)](./polygonid-js-sdk.iauthhandler.handleauthorizationrequest.md) |  |
+|  [handleAuthorizationRequest(id, request)](./polygonid-js-sdk.iauthhandler.handleauthorizationrequest.md) | **_(BETA)_** |

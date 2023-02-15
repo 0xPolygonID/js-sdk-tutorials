@@ -8,11 +8,15 @@ hide_title: true
 
 ## CredentialStorage.listCredentials() method
 
-<b>Signature:</b>
+returns all credentials in the storage
+
+**Signature:**
 
 ```typescript
 listCredentials(): Promise<W3CCredential[]>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;W3CCredential\[\]&gt;
+
+`Promise<W3CCredential[]>`

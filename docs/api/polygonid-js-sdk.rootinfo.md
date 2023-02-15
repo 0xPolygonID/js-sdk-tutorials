@@ -8,7 +8,15 @@ hide_title: true
 
 ## RootInfo interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+global identity state root info from chain
+
+
+ RootInfo
+
+**Signature:**
 
 ```typescript
 export interface RootInfo 
@@ -18,9 +26,9 @@ export interface RootInfo
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [createdAtBlock](./polygonid-js-sdk.rootinfo.createdatblock.md) |  | bigint |  |
-|  [createdAtTimestamp](./polygonid-js-sdk.rootinfo.createdattimestamp.md) |  | bigint |  |
-|  [replacedAtBlock](./polygonid-js-sdk.rootinfo.replacedatblock.md) |  | bigint |  |
-|  [replacedAtTimestamp](./polygonid-js-sdk.rootinfo.replacedattimestamp.md) |  | bigint |  |
-|  [replacedByRoot](./polygonid-js-sdk.rootinfo.replacedbyroot.md) |  | bigint |  |
-|  [root](./polygonid-js-sdk.rootinfo.root.md) |  | bigint |  |
+|  [createdAtBlock](./polygonid-js-sdk.rootinfo.createdatblock.md) |  | bigint | **_(BETA)_** |
+|  [createdAtTimestamp](./polygonid-js-sdk.rootinfo.createdattimestamp.md) |  | bigint | **_(BETA)_** |
+|  [replacedAtBlock](./polygonid-js-sdk.rootinfo.replacedatblock.md) |  | bigint | **_(BETA)_** |
+|  [replacedAtTimestamp](./polygonid-js-sdk.rootinfo.replacedattimestamp.md) |  | bigint | **_(BETA)_** |
+|  [replacedByRoot](./polygonid-js-sdk.rootinfo.replacedbyroot.md) |  | bigint | **_(BETA)_** |
+|  [root](./polygonid-js-sdk.rootinfo.root.md) |  | bigint | **_(BETA)_** |

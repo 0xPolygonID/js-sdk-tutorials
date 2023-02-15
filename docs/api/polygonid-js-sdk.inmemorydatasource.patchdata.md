@@ -8,7 +8,12 @@ hide_title: true
 
 ## InMemoryDataSource.patchData() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+updates in the memory
+
+**Signature:**
 
 ```typescript
 patchData(value: Type[]): void;
@@ -20,6 +25,6 @@ patchData(value: Type[]): void;
 |  --- | --- | --- |
 |  value | Type\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void

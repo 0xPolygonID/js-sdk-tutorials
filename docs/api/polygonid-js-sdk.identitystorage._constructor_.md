@@ -8,9 +8,12 @@ hide_title: true
 
 ## IdentityStorage.(constructor)
 
-Constructs a new instance of the `IdentityStorage` class
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
 
-<b>Signature:</b>
+Creates an instance of IdentityStorage.
+
+**Signature:**
 
 ```typescript
 constructor(_identityDataSource: IDataSource<Identity>, _profileDataSource: IDataSource<Profile>);
@@ -20,5 +23,5 @@ constructor(_identityDataSource: IDataSource<Identity>, _profileDataSource: IDat
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_identityDataSource | IDataSource&lt;[Identity](./polygonid-js-sdk.identity.md)&gt; |  |
-|  \_profileDataSource | IDataSource&lt;[Profile](./polygonid-js-sdk.profile.md)&gt; |  |
+|  \_identityDataSource | IDataSource&lt;[Identity](./polygonid-js-sdk.identity.md)&gt; | data source for identities |
+|  \_profileDataSource | IDataSource&lt;[Profile](./polygonid-js-sdk.profile.md)&gt; | data source for profiles |

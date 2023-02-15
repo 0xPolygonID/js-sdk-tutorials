@@ -8,18 +8,25 @@ hide_title: true
 
 ## IIdentityStorage.saveProfile() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+saves profile identity to data
+
+**Signature:**
 
 ```typescript
-saveProfile(identity: Profile): Promise<void>;
+saveProfile(profile: Profile): Promise<void>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  identity | [Profile](./polygonid-js-sdk.profile.md) |  |
+|  profile | [Profile](./polygonid-js-sdk.profile.md) | identity profile |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
+
+`{Promise<void>}`

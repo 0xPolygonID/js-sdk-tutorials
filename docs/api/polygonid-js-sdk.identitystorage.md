@@ -8,34 +8,42 @@ hide_title: true
 
 ## IdentityStorage class
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Implementation of the IIdentityStorage with KV data source
+
+
+ IdentityStorage  implements IIdentityStorage interface
+
+**Signature:**
 
 ```typescript
 export declare class IdentityStorage implements IIdentityStorage 
 ```
-<b>Implements:</b> [IIdentityStorage](./polygonid-js-sdk.iidentitystorage.md)
+**Implements:** [IIdentityStorage](./polygonid-js-sdk.iidentitystorage.md)
 
 ## Constructors
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_identityDataSource, \_profileDataSource)](./polygonid-js-sdk.identitystorage._constructor_.md) |  | Constructs a new instance of the <code>IdentityStorage</code> class |
+|  [(constructor)(\_identityDataSource, \_profileDataSource)](./polygonid-js-sdk.identitystorage._constructor_.md) |  | **_(BETA)_** Creates an instance of IdentityStorage. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [identitiesStorageKey](./polygonid-js-sdk.identitystorage.identitiesstoragekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
-|  [profilesStorageKey](./polygonid-js-sdk.identitystorage.profilesstoragekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
+|  [identitiesStorageKey](./polygonid-js-sdk.identitystorage.identitiesstoragekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p>**_(BETA)_** storage key for identities</p> |
+|  [profilesStorageKey](./polygonid-js-sdk.identitystorage.profilesstoragekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p>**_(BETA)_** storage key for profiles</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [getAllIdentities()](./polygonid-js-sdk.identitystorage.getallidentities.md) |  |  |
-|  [getIdentity(identifier)](./polygonid-js-sdk.identitystorage.getidentity.md) |  |  |
-|  [getProfileById(profileId)](./polygonid-js-sdk.identitystorage.getprofilebyid.md) |  |  |
-|  [getProfileByVerifier(verifier)](./polygonid-js-sdk.identitystorage.getprofilebyverifier.md) |  |  |
-|  [getProfilesByGenesisIdentifier(genesisIdentifier)](./polygonid-js-sdk.identitystorage.getprofilesbygenesisidentifier.md) |  |  |
-|  [saveIdentity(identity)](./polygonid-js-sdk.identitystorage.saveidentity.md) |  |  |
-|  [saveProfile(profile)](./polygonid-js-sdk.identitystorage.saveprofile.md) |  |  |
+|  [getAllIdentities()](./polygonid-js-sdk.identitystorage.getallidentities.md) |  | **_(BETA)_** |
+|  [getIdentity(identifier)](./polygonid-js-sdk.identitystorage.getidentity.md) |  | **_(BETA)_** |
+|  [getProfileById(profileId)](./polygonid-js-sdk.identitystorage.getprofilebyid.md) |  | **_(BETA)_** |
+|  [getProfileByVerifier(verifier)](./polygonid-js-sdk.identitystorage.getprofilebyverifier.md) |  | **_(BETA)_** |
+|  [getProfilesByGenesisIdentifier(genesisIdentifier)](./polygonid-js-sdk.identitystorage.getprofilesbygenesisidentifier.md) |  | **_(BETA)_** |
+|  [saveIdentity(identity)](./polygonid-js-sdk.identitystorage.saveidentity.md) |  | **_(BETA)_** |
+|  [saveProfile(profile)](./polygonid-js-sdk.identitystorage.saveprofile.md) |  | **_(BETA)_** |

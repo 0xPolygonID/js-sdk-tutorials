@@ -8,18 +8,25 @@ hide_title: true
 
 ## IStateStorage.getLatestStateById() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+gets latest state of identity
+
+**Signature:**
 
 ```typescript
-getLatestStateById(issuerId: bigint): Promise<StateInfo>;
+getLatestStateById(id: bigint): Promise<StateInfo>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  issuerId | bigint |  |
+|  id | bigint | id to check |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[StateInfo](./polygonid-js-sdk.stateinfo.md)&gt;
+
+`Promise<StateInfo>`

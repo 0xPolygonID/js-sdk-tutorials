@@ -8,7 +8,9 @@ hide_title: true
 
 ## IdentityWallet.sign() method
 
-<b>Signature:</b>
+Signs a payload of arbitrary size with an Auth BJJ Credential that identifies a key for signing.
+
+**Signature:**
 
 ```typescript
 sign(message: Uint8Array, credential: W3CCredential): Promise<Signature>;
@@ -19,8 +21,10 @@ sign(message: Uint8Array, credential: W3CCredential): Promise<Signature>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  message | Uint8Array |  |
-|  credential | W3CCredential |  |
+|  credential | W3CCredential | Auth BJJ Credential |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Signature&gt;
+
+`Promise<Signature>`- the signature object with R8 and S params

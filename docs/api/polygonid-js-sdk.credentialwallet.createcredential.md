@@ -8,7 +8,12 @@ hide_title: true
 
 ## CredentialWallet.createCredential property
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Creates a W3C verifiable Credential object
+
+**Signature:**
 
 ```typescript
 createCredential: (hostUrl: string, issuer: DID, request: ClaimRequest, schema: Schema, rhsUrl?: string) => W3CCredential;

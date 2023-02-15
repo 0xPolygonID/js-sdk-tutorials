@@ -8,7 +8,12 @@ hide_title: true
 
 ## CredentialWallet.findByContextType() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Finds credentials by JSON-LD schema and type
+
+**Signature:**
 
 ```typescript
 findByContextType(context: string, type: string): Promise<W3CCredential[]>;
@@ -18,9 +23,11 @@ findByContextType(context: string, type: string): Promise<W3CCredential[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  context | string |  |
+|  context | string | the URL of JSON-LD schema where type is defined |
 |  type | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;W3CCredential\[\]&gt;
+
+`Promise<W3CCredential[]>`

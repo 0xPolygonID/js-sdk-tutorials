@@ -8,13 +8,19 @@ hide_title: true
 
 ## IdentityWallet class
 
+Wallet instance to manage the digital identity based on iden3 protocol allows to: create identity/profile, sign payloads (bigint / bytes), generate keys, generate Merkle tree proofs of inclusion / non-inclusion to Merkle trees, issue credentials with a BJJSignature and Iden3SparseMerkleTree Proofs, revoke credentials, add credentials to Merkle trees, push states to reverse hash service
 
-<b>Signature:</b>
+
+ IdentityWallet - class
+
+ implements IIdentityWallet interface
+
+**Signature:**
 
 ```typescript
 export declare class IdentityWallet implements IIdentityWallet 
 ```
-<b>Implements:</b> [IIdentityWallet](./polygonid-js-sdk.iidentitywallet.md)
+**Implements:** [IIdentityWallet](./polygonid-js-sdk.iidentitywallet.md)
 
 ## Constructors
 
@@ -22,26 +28,20 @@ export declare class IdentityWallet implements IIdentityWallet
 |  --- | --- | --- |
 |  [(constructor)(\_kms, \_storage, \_credentialWallet)](./polygonid-js-sdk.identitywallet._constructor_.md) |  | Constructs a new instance of the <code>IdentityWallet</code> class |
 
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [s](./polygonid-js-sdk.identitywallet.s.md) |  | any |  |
-
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [addCredentialsToMerkleTree(credentials, issuerDID)](./polygonid-js-sdk.identitywallet.addcredentialstomerkletree.md) |  |  |
-|  [createIdentity(hostUrl, rhsUrl, seed)](./polygonid-js-sdk.identitywallet.createidentity.md) |  | Create new Identity |
-|  [createProfile(did, nonce, verifier)](./polygonid-js-sdk.identitywallet.createprofile.md) |  |  |
-|  [generateClaimMtp(did, credential, treeState)](./polygonid-js-sdk.identitywallet.generateclaimmtp.md) |  |  |
-|  [generateIden3SparseMerkleTreeProof(issuerDID, credentials, txId, blockNumber, blockTimestamp)](./polygonid-js-sdk.identitywallet.generateiden3sparsemerkletreeproof.md) |  |  |
-|  [generateKey(keyType)](./polygonid-js-sdk.identitywallet.generatekey.md) |  |  |
-|  [generateNonRevocationMtp(did, credential, treeState)](./polygonid-js-sdk.identitywallet.generatenonrevocationmtp.md) |  |  |
-|  [getDIDTreeState(did)](./polygonid-js-sdk.identitywallet.getdidtreestate.md) |  |  |
-|  [issueCredential(issuerDID, req, hostUrl, opts)](./polygonid-js-sdk.identitywallet.issuecredential.md) |  |  |
+|  [addCredentialsToMerkleTree(credentials, issuerDID)](./polygonid-js-sdk.identitywallet.addcredentialstomerkletree.md) |  | Adds verifiable credentials to issuer Claims Merkle tree |
+|  [createIdentity(hostUrl, rhsUrl, seed)](./polygonid-js-sdk.identitywallet.createidentity.md) |  | Create Identity creates Auth BJJ credential, Merkle trees for claims, revocations and root of roots, adds auth BJJ credential to claims tree and generates mtp of inclusion based on the resulting state it provides an identifier in DID form. |
+|  [createProfile(did, nonce, verifier)](./polygonid-js-sdk.identitywallet.createprofile.md) |  | Creates profile based on genesis identifier |
+|  [generateCredentialMtp(did, credential, treeState)](./polygonid-js-sdk.identitywallet.generatecredentialmtp.md) |  |  |
+|  [generateIden3SparseMerkleTreeProof(issuerDID, credentials, txId, blockNumber, blockTimestamp)](./polygonid-js-sdk.identitywallet.generateiden3sparsemerkletreeproof.md) |  | Generate Iden3SparseMerkleTree proof of inclusion to issuer state of specific credentials |
+|  [generateKey(keyType)](./polygonid-js-sdk.identitywallet.generatekey.md) |  | Generates a new key |
+|  [generateNonRevocationMtp(did, credential, treeState)](./polygonid-js-sdk.identitywallet.generatenonrevocationmtp.md) |  | Generates proof of credential revocation nonce inclusion / non-inclusion to the given revocation tree and its root or to the current root of the Revocation tree in the given Merkle tree storage. |
+|  [getDIDTreeState(did)](./polygonid-js-sdk.identitywallet.getdidtreestate.md) |  | Gets a tree model for given did that includes claims tree, revocation tree, the root of roots tree and calculated state hash |
+|  [issueCredential(issuerDID, req, hostUrl, opts)](./polygonid-js-sdk.identitywallet.issuecredential.md) |  | Issues new credential from issuer according to the claim request |
 |  [publishStateToRHS(issuerDID, rhsURL, revokedNonces)](./polygonid-js-sdk.identitywallet.publishstatetorhs.md) |  |  |
 |  [revokeCredential(issuerDID, credential)](./polygonid-js-sdk.identitywallet.revokecredential.md) |  |  |
-|  [sign(message, credential)](./polygonid-js-sdk.identitywallet.sign.md) |  |  |
-|  [signChallenge(challenge, credential)](./polygonid-js-sdk.identitywallet.signchallenge.md) |  |  |
+|  [sign(message, credential)](./polygonid-js-sdk.identitywallet.sign.md) |  | Signs a payload of arbitrary size with an Auth BJJ Credential that identifies a key for signing. |
+|  [signChallenge(challenge, credential)](./polygonid-js-sdk.identitywallet.signchallenge.md) |  | Signs a big integer with an Auth BJJ Credential that identifies a key for signing. |

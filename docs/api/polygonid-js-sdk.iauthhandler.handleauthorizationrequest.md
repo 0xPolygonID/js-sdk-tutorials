@@ -8,7 +8,10 @@ hide_title: true
 
 ## IAuthHandler.handleAuthorizationRequest() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+**Signature:**
 
 ```typescript
 handleAuthorizationRequest(id: DID, request: Uint8Array): Promise<{
@@ -25,6 +28,6 @@ handleAuthorizationRequest(id: DID, request: Uint8Array): Promise<{
 |  id | DID |  |
 |  request | Uint8Array |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;{ token: string; authRequest: AuthorizationRequestMessage; authResponse: AuthorizationResponseMessage; }&gt;

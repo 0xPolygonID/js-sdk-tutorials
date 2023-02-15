@@ -8,7 +8,10 @@ hide_title: true
 
 ## isGenesisStateId() function
 
-<b>Signature:</b>
+Checks if id is created from given state and type is genesis
+
+
+**Signature:**
 
 ```typescript
 export declare function isGenesisStateId(id: bigint, state: bigint, type: Uint8Array): boolean;
@@ -22,6 +25,8 @@ export declare function isGenesisStateId(id: bigint, state: bigint, type: Uint8A
 |  state | bigint |  |
 |  type | Uint8Array |  |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
+
+boolean - returns if id is genesis

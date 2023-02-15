@@ -10,7 +10,7 @@ hide_title: true
 
 Constructs a new instance of the `IdentityWallet` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(_kms: KMS, _storage: IDataStorage, _credentialWallet: ICredentialWallet);
@@ -20,6 +20,6 @@ constructor(_kms: KMS, _storage: IDataStorage, _credentialWallet: ICredentialWal
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_kms | [KMS](./polygonid-js-sdk.kms.md) | KSM |
-|  \_storage | [IDataStorage](./polygonid-js-sdk.idatastorage.md) | IDataStorage |
-|  \_credentialWallet | [ICredentialWallet](./polygonid-js-sdk.icredentialwallet.md) | ICredentialWallet |
+|  \_kms | [KMS](./polygonid-js-sdk.kms.md) | Key Management System that allows signing data with BJJ key |
+|  \_storage | [IDataStorage](./polygonid-js-sdk.idatastorage.md) | data storage to access credential / identity / Merkle tree data |
+|  \_credentialWallet | [ICredentialWallet](./polygonid-js-sdk.icredentialwallet.md) | credential wallet instance to quickly access credential CRUD functionality |

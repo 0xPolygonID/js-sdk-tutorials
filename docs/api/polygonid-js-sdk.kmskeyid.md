@@ -8,7 +8,15 @@ hide_title: true
 
 ## KmsKeyId interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+ID of the key that describe contain key type
+
+
+ KmsKeyId
+
+**Signature:**
 
 ```typescript
 export interface KmsKeyId 
@@ -18,5 +26,5 @@ export interface KmsKeyId
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [id](./polygonid-js-sdk.kmskeyid.id.md) |  | string |  |
-|  [type](./polygonid-js-sdk.kmskeyid.type.md) |  | [KmsKeyType](./polygonid-js-sdk.kmskeytype.md) |  |
+|  [id](./polygonid-js-sdk.kmskeyid.id.md) |  | string | **_(BETA)_** |
+|  [type](./polygonid-js-sdk.kmskeyid.type.md) |  | [KmsKeyType](./polygonid-js-sdk.kmskeytype.md) | **_(BETA)_** |

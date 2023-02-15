@@ -8,7 +8,9 @@ hide_title: true
 
 ## IIdentityWallet.generateNonRevocationMtp() method
 
-<b>Signature:</b>
+Generates proof of credential revocation nonce inclusion / non-inclusion to the given revocation tree and its root or to the current root of the Revocation tree in the given Merkle tree storage.
+
+**Signature:**
 
 ```typescript
 generateNonRevocationMtp(did: DID, credential: W3CCredential, treeState?: TreeState): Promise<MerkleTreeProofWithTreeState>;
@@ -20,8 +22,10 @@ generateNonRevocationMtp(did: DID, credential: W3CCredential, treeState?: TreeSt
 |  --- | --- | --- |
 |  did | DID |  |
 |  credential | W3CCredential |  |
-|  treeState | TreeState | <i>(Optional)</i> |
+|  treeState | TreeState | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;MerkleTreeProofWithTreeState&gt;
+
+`Promise<MerkleTreeProofWithTreeState>` - MerkleTreeProof and TreeState on which proof has been generated

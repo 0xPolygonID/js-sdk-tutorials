@@ -8,7 +8,12 @@ hide_title: true
 
 ## LocalStoragePrivateKeyStore.get() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Gets key from the local storage
+
+**Signature:**
 
 ```typescript
 get(args: {
@@ -22,6 +27,8 @@ get(args: {
 |  --- | --- | --- |
 |  args | { alias: string; } |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;
+
+hex string

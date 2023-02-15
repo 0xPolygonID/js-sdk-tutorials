@@ -8,7 +8,10 @@ hide_title: true
 
 ## InMemoryPrivateKeyStore.import() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+**Signature:**
 
 ```typescript
 import(args: {
@@ -23,6 +26,6 @@ import(args: {
 |  --- | --- | --- |
 |  args | { alias: string; key: string; } |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

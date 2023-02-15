@@ -8,7 +8,14 @@ hide_title: true
 
 ## KMS class
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Key management system class contains different key providers. allows to register custom provider, create key, get public key and sign
+
+  KMS - class
+
+**Signature:**
 
 ```typescript
 export declare class KMS 
@@ -18,7 +25,7 @@ export declare class KMS
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [createKeyFromSeed(keyType, bytes)](./polygonid-js-sdk.kms.createkeyfromseed.md) |  |  |
-|  [publicKey(keyId)](./polygonid-js-sdk.kms.publickey.md) |  |  |
-|  [registerKeyProvider(keyType, keyProvider)](./polygonid-js-sdk.kms.registerkeyprovider.md) |  |  |
-|  [sign(keyId, data)](./polygonid-js-sdk.kms.sign.md) |  |  |
+|  [createKeyFromSeed(keyType, bytes)](./polygonid-js-sdk.kms.createkeyfromseed.md) |  | **_(BETA)_** generates a new key and returns it kms key id |
+|  [publicKey(keyId)](./polygonid-js-sdk.kms.publickey.md) |  | **_(BETA)_** gets public key for key id |
+|  [registerKeyProvider(keyType, keyProvider)](./polygonid-js-sdk.kms.registerkeyprovider.md) |  | **_(BETA)_** register key provider in the KMS |
+|  [sign(keyId, data)](./polygonid-js-sdk.kms.sign.md) |  | **_(BETA)_** sign Uint8Array with giv KmsKeyIden |

@@ -8,29 +8,37 @@ hide_title: true
 
 ## BjjProvider class
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Provider for Baby Jub Jub keys
+
+
+ BjjProvider  implements IKeyProvider interface
+
+**Signature:**
 
 ```typescript
 export declare class BjjProvider implements IKeyProvider 
 ```
-<b>Implements:</b> [IKeyProvider](./polygonid-js-sdk.ikeyprovider.md)
+**Implements:** [IKeyProvider](./polygonid-js-sdk.ikeyprovider.md)
 
 ## Constructors
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(keyType, keyStore)](./polygonid-js-sdk.bjjprovider._constructor_.md) |  | Constructs a new instance of the <code>BjjProvider</code> class |
+|  [(constructor)(keyType, keyStore)](./polygonid-js-sdk.bjjprovider._constructor_.md) |  | **_(BETA)_** Creates an instance of BjjProvider. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [keyType](./polygonid-js-sdk.bjjprovider.keytype.md) |  | [KmsKeyType](./polygonid-js-sdk.kmskeytype.md) |  |
+|  [keyType](./polygonid-js-sdk.bjjprovider.keytype.md) |  | [KmsKeyType](./polygonid-js-sdk.kmskeytype.md) | **_(BETA)_** key type that is handled by BJJ Provider  {KmsKeyType} |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [newPrivateKeyFromSeed(key)](./polygonid-js-sdk.bjjprovider.newprivatekeyfromseed.md) |  |  |
-|  [publicKey(keyId)](./polygonid-js-sdk.bjjprovider.publickey.md) |  |  |
-|  [sign(keyId, data)](./polygonid-js-sdk.bjjprovider.sign.md) |  |  |
+|  [newPrivateKeyFromSeed(seed)](./polygonid-js-sdk.bjjprovider.newprivatekeyfromseed.md) |  | **_(BETA)_** generates a baby jub jub key from a seed phrase |
+|  [publicKey(keyId)](./polygonid-js-sdk.bjjprovider.publickey.md) |  | **_(BETA)_** Gets public key by kmsKeyId |
+|  [sign(keyId, data)](./polygonid-js-sdk.bjjprovider.sign.md) |  | **_(BETA)_** signs prepared payload of size, with a key id |

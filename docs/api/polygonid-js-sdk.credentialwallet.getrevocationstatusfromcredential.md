@@ -8,7 +8,12 @@ hide_title: true
 
 ## CredentialWallet.getRevocationStatusFromCredential() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Fetches or Builds a revocation status for a given credential Supported types for credentialStatus field: SparseMerkleTreeProof, Iden3ReverseSparseMerkleTreeProof
+
+**Signature:**
 
 ```typescript
 getRevocationStatusFromCredential(cred: W3CCredential): Promise<RevocationStatus>;
@@ -18,8 +23,10 @@ getRevocationStatusFromCredential(cred: W3CCredential): Promise<RevocationStatus
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  cred | W3CCredential |  |
+|  cred | W3CCredential | credential for which lib should build revocation status |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;RevocationStatus&gt;
+
+`Promise<RevocationStatus>`

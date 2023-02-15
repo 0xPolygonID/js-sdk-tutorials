@@ -8,21 +8,29 @@ hide_title: true
 
 ## AuthHandler class
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Allows to process AuthorizationRequest protocol message and produce JWZ response.
+
+
+ AuthHandler  implements IAuthHandler interface
+
+**Signature:**
 
 ```typescript
 export declare class AuthHandler implements IAuthHandler 
 ```
-<b>Implements:</b> [IAuthHandler](./polygonid-js-sdk.iauthhandler.md)
+**Implements:** [IAuthHandler](./polygonid-js-sdk.iauthhandler.md)
 
 ## Constructors
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_packerMgr, \_proofService)](./polygonid-js-sdk.authhandler._constructor_.md) |  | Constructs a new instance of the <code>AuthHandler</code> class |
+|  [(constructor)(\_packerMgr, \_proofService)](./polygonid-js-sdk.authhandler._constructor_.md) |  | **_(BETA)_** Creates an instance of AuthHandler. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [handleAuthorizationRequest(did, request)](./polygonid-js-sdk.authhandler.handleauthorizationrequest.md) |  |  |
+|  [handleAuthorizationRequest(did, request)](./polygonid-js-sdk.authhandler.handleauthorizationrequest.md) |  | **_(BETA)_** Handles only messages with authorization/v1.0/request type Generates all requested proofs and wraps authorization response message to JWZ token |

@@ -8,7 +8,12 @@ hide_title: true
 
 ## MerkleTreeLocalStorage.getMerkleTreeByIdentifierAndType() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+get merkle tree from the local storage
+
+**Signature:**
 
 ```typescript
 getMerkleTreeByIdentifierAndType(identifier: string, mtType: MerkleTreeType): Promise<Merkletree>;
@@ -21,6 +26,6 @@ getMerkleTreeByIdentifierAndType(identifier: string, mtType: MerkleTreeType): Pr
 |  identifier | string |  |
 |  mtType | [MerkleTreeType](./polygonid-js-sdk.merkletreetype.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Merkletree&gt;

@@ -8,7 +8,9 @@ hide_title: true
 
 ## CredentialStorage.findCredentialById() method
 
-<b>Signature:</b>
+returns all credentials in the storage
+
+**Signature:**
 
 ```typescript
 findCredentialById(id: string): Promise<W3CCredential | undefined>;
@@ -20,6 +22,8 @@ findCredentialById(id: string): Promise<W3CCredential | undefined>;
 |  --- | --- | --- |
 |  id | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;W3CCredential \| undefined&gt;
+
+`Promise<W3CCredential[]>`

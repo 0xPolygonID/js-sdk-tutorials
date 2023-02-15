@@ -8,11 +8,18 @@ hide_title: true
 
 ## ICredentialStorage.listCredentials() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+returns all credentials in the storage
+
+**Signature:**
 
 ```typescript
 listCredentials(): Promise<W3CCredential[]>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;W3CCredential\[\]&gt;
+
+`Promise<W3CCredential[]>`

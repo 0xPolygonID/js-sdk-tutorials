@@ -8,7 +8,15 @@ hide_title: true
 
 ## IIdentityStorage interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+storage for identities and profiles
+
+
+ IIdentityStorage
+
+**Signature:**
 
 ```typescript
 export interface IIdentityStorage 
@@ -18,10 +26,10 @@ export interface IIdentityStorage
 
 |  Method | Description |
 |  --- | --- |
-|  [getAllIdentities()](./polygonid-js-sdk.iidentitystorage.getallidentities.md) |  |
-|  [getIdentity(identifier)](./polygonid-js-sdk.iidentitystorage.getidentity.md) |  |
-|  [getProfileById(identifier)](./polygonid-js-sdk.iidentitystorage.getprofilebyid.md) |  |
-|  [getProfileByVerifier(verifier)](./polygonid-js-sdk.iidentitystorage.getprofilebyverifier.md) |  |
-|  [getProfilesByGenesisIdentifier(genesisIdentifier)](./polygonid-js-sdk.iidentitystorage.getprofilesbygenesisidentifier.md) |  |
-|  [saveIdentity(identity)](./polygonid-js-sdk.iidentitystorage.saveidentity.md) |  |
-|  [saveProfile(identity)](./polygonid-js-sdk.iidentitystorage.saveprofile.md) |  |
+|  [getAllIdentities()](./polygonid-js-sdk.iidentitystorage.getallidentities.md) | **_(BETA)_** gets all identity from the data source |
+|  [getIdentity(identifier)](./polygonid-js-sdk.iidentitystorage.getidentity.md) | **_(BETA)_** gets identity from the the data source |
+|  [getProfileById(identifier)](./polygonid-js-sdk.iidentitystorage.getprofilebyid.md) | **_(BETA)_** gets profile by identifier |
+|  [getProfileByVerifier(verifier)](./polygonid-js-sdk.iidentitystorage.getprofilebyverifier.md) | **_(BETA)_** gets profile by verifier |
+|  [getProfilesByGenesisIdentifier(genesisIdentifier)](./polygonid-js-sdk.iidentitystorage.getprofilesbygenesisidentifier.md) | **_(BETA)_** gets profile identity by genesis identifiers |
+|  [saveIdentity(identity)](./polygonid-js-sdk.iidentitystorage.saveidentity.md) | **_(BETA)_** saves identity to the data source |
+|  [saveProfile(profile)](./polygonid-js-sdk.iidentitystorage.saveprofile.md) | **_(BETA)_** saves profile identity to data |

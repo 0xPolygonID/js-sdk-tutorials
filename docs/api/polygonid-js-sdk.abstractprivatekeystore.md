@@ -8,7 +8,16 @@ hide_title: true
 
 ## AbstractPrivateKeyStore class
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+KeyStore that allows to import and get keys by alias.
+
+ 
+
+ AbstractPrivateKeyStore
+
+**Signature:**
 
 ```typescript
 export declare abstract class AbstractPrivateKeyStore 
@@ -18,5 +27,5 @@ export declare abstract class AbstractPrivateKeyStore
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [get(args)](./polygonid-js-sdk.abstractprivatekeystore.get.md) | <code>abstract</code> |  |
-|  [import(args)](./polygonid-js-sdk.abstractprivatekeystore.import.md) | <code>abstract</code> |  |
+|  [get(args)](./polygonid-js-sdk.abstractprivatekeystore.get.md) | <code>abstract</code> | <p>**_(BETA)_** get key by alias</p> |
+|  [import(args)](./polygonid-js-sdk.abstractprivatekeystore.import.md) | <code>abstract</code> | <p>**_(BETA)_** imports key by alias</p> |

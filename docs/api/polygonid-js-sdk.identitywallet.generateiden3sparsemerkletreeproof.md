@@ -8,7 +8,9 @@ hide_title: true
 
 ## IdentityWallet.generateIden3SparseMerkleTreeProof() method
 
-<b>Signature:</b>
+Generate Iden3SparseMerkleTree proof of inclusion to issuer state of specific credentials
+
+**Signature:**
 
 ```typescript
 generateIden3SparseMerkleTreeProof(issuerDID: DID, credentials: W3CCredential[], txId: string, blockNumber?: number, blockTimestamp?: number): Promise<W3CCredential[]>;
@@ -18,12 +20,14 @@ generateIden3SparseMerkleTreeProof(issuerDID: DID, credentials: W3CCredential[],
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  issuerDID | DID |  |
-|  credentials | W3CCredential\[\] |  |
-|  txId | string |  |
-|  blockNumber | number | <i>(Optional)</i> |
-|  blockTimestamp | number | <i>(Optional)</i> |
+|  issuerDID | DID | issuer did |
+|  credentials | W3CCredential\[\] | list of verifiable credentials to generate a proof |
+|  txId | string | transaction hash in which state transition has been done |
+|  blockNumber | number | _(Optional)_ block number in which state transition has been done |
+|  blockTimestamp | number | _(Optional)_ block timestamp in which state transition has been done |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;W3CCredential\[\]&gt;
+
+`Promise<W3CCredential[]>` credentials with an Iden3SparseMerkleTreeProof

@@ -8,7 +8,9 @@ hide_title: true
 
 ## CredentialStorage.saveAllCredentials() method
 
-<b>Signature:</b>
+returns all credentials in the storage
+
+**Signature:**
 
 ```typescript
 saveAllCredentials(credentials: W3CCredential[]): Promise<void>;
@@ -20,6 +22,8 @@ saveAllCredentials(credentials: W3CCredential[]): Promise<void>;
 |  --- | --- | --- |
 |  credentials | W3CCredential\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
+
+`Promise<W3CCredential[]>`

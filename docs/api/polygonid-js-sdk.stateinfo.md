@@ -8,7 +8,15 @@ hide_title: true
 
 ## StateInfo interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+state information of identity from chain.
+
+
+ StateInfo
+
+**Signature:**
 
 ```typescript
 export interface StateInfo 
@@ -18,10 +26,10 @@ export interface StateInfo
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [createdAtBlock?](./polygonid-js-sdk.stateinfo.createdatblock.md) |  | bigint | <i>(Optional)</i> |
-|  [createdAtTimestamp?](./polygonid-js-sdk.stateinfo.createdattimestamp.md) |  | bigint | <i>(Optional)</i> |
-|  [id?](./polygonid-js-sdk.stateinfo.id.md) |  | bigint | <i>(Optional)</i> |
-|  [replacedAtBlock?](./polygonid-js-sdk.stateinfo.replacedatblock.md) |  | bigint | <i>(Optional)</i> |
-|  [replacedAtTimestamp?](./polygonid-js-sdk.stateinfo.replacedattimestamp.md) |  | bigint | <i>(Optional)</i> |
-|  [replacedByState?](./polygonid-js-sdk.stateinfo.replacedbystate.md) |  | bigint | <i>(Optional)</i> |
-|  [state?](./polygonid-js-sdk.stateinfo.state.md) |  | bigint | <i>(Optional)</i> |
+|  [createdAtBlock?](./polygonid-js-sdk.stateinfo.createdatblock.md) |  | bigint | **_(BETA)_** _(Optional)_ |
+|  [createdAtTimestamp?](./polygonid-js-sdk.stateinfo.createdattimestamp.md) |  | bigint | **_(BETA)_** _(Optional)_ |
+|  [id?](./polygonid-js-sdk.stateinfo.id.md) |  | bigint | **_(BETA)_** _(Optional)_ |
+|  [replacedAtBlock?](./polygonid-js-sdk.stateinfo.replacedatblock.md) |  | bigint | **_(BETA)_** _(Optional)_ |
+|  [replacedAtTimestamp?](./polygonid-js-sdk.stateinfo.replacedattimestamp.md) |  | bigint | **_(BETA)_** _(Optional)_ |
+|  [replacedByState?](./polygonid-js-sdk.stateinfo.replacedbystate.md) |  | bigint | **_(BETA)_** _(Optional)_ |
+|  [state?](./polygonid-js-sdk.stateinfo.state.md) |  | bigint | **_(BETA)_** _(Optional)_ |

@@ -8,7 +8,12 @@ hide_title: true
 
 ## InMemoryDataSource.save() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+saves in the memory
+
+**Signature:**
 
 ```typescript
 save(key: string, value: Type, keyName?: string): void;
@@ -20,8 +25,8 @@ save(key: string, value: Type, keyName?: string): void;
 |  --- | --- | --- |
 |  key | string |  |
 |  value | Type |  |
-|  keyName | string | <i>(Optional)</i> |
+|  keyName | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 void

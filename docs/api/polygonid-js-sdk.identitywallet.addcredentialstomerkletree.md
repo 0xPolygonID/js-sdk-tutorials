@@ -8,7 +8,9 @@ hide_title: true
 
 ## IdentityWallet.addCredentialsToMerkleTree() method
 
-<b>Signature:</b>
+Adds verifiable credentials to issuer Claims Merkle tree
+
+**Signature:**
 
 ```typescript
 addCredentialsToMerkleTree(credentials: W3CCredential[], issuerDID: DID): Promise<Iden3ProofCreationResult>;
@@ -18,9 +20,11 @@ addCredentialsToMerkleTree(credentials: W3CCredential[], issuerDID: DID): Promis
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  credentials | W3CCredential\[\] |  |
-|  issuerDID | DID |  |
+|  credentials | W3CCredential\[\] | credentials to include in the claims tree |
+|  issuerDID | DID | issuer did |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Iden3ProofCreationResult](./polygonid-js-sdk.iden3proofcreationresult.md)&gt;
+
+`Promise<Iden3ProofCreationResult>`- old tree state and tree state with included credentials

@@ -8,7 +8,7 @@ hide_title: true
 
 ## IdentityWallet.publishStateToRHS() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 publishStateToRHS(issuerDID: DID, rhsURL: string, revokedNonces?: number[]): Promise<void>;
@@ -18,10 +18,12 @@ publishStateToRHS(issuerDID: DID, rhsURL: string, revokedNonces?: number[]): Pro
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  issuerDID | DID |  |
-|  rhsURL | string |  |
-|  revokedNonces | number\[\] | <i>(Optional)</i> |
+|  issuerDID | DID | issuer did |
+|  rhsURL | string | reverse hash service URL |
+|  revokedNonces | number\[\] | _(Optional)_ revoked nonces for the period from the last published |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
+
+`Promise<void>`

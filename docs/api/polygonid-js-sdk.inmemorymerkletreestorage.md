@@ -8,32 +8,38 @@ hide_title: true
 
 ## InMemoryMerkleTreeStorage class
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+
+ InMemoryMerkleTreeStorage  implements IMerkleTreeStorage interface
+
+**Signature:**
 
 ```typescript
 export declare class InMemoryMerkleTreeStorage implements IMerkleTreeStorage 
 ```
-<b>Implements:</b> [IMerkleTreeStorage](./polygonid-js-sdk.imerkletreestorage.md)
+**Implements:** [IMerkleTreeStorage](./polygonid-js-sdk.imerkletreestorage.md)
 
 ## Constructors
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_mtDepth)](./polygonid-js-sdk.inmemorymerkletreestorage._constructor_.md) |  | Constructs a new instance of the <code>InMemoryMerkleTreeStorage</code> class |
+|  [(constructor)(\_mtDepth)](./polygonid-js-sdk.inmemorymerkletreestorage._constructor_.md) |  | **_(BETA)_** Creates an instance of InMemoryMerkleTreeStorage. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_data](./polygonid-js-sdk.inmemorymerkletreestorage._data.md) |  | { \[v in string\]: TreeWithMetaInfo\[\]; } |  |
-|  [mtDepth](./polygonid-js-sdk.inmemorymerkletreestorage.mtdepth.md) |  | number |  |
+|  [\_data](./polygonid-js-sdk.inmemorymerkletreestorage._data.md) |  | { \[v in string\]: TreeWithMetaInfo\[\]; } | <p>**_(BETA)_** key value storage for trees where key is identifier</p><p> {{ \[v in string\]: TreeWithMetaInfo\[\]; }}</p> |
+|  [mtDepth](./polygonid-js-sdk.inmemorymerkletreestorage.mtdepth.md) |  | number | <p>**_(BETA)_** tree depth</p><p> {number}</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [addToMerkleTree(identifier, mtType, hindex, hvalue)](./polygonid-js-sdk.inmemorymerkletreestorage.addtomerkletree.md) |  |  |
-|  [bindMerkleTreeToNewIdentifier(oldIdentifier, newIdentifier)](./polygonid-js-sdk.inmemorymerkletreestorage.bindmerkletreetonewidentifier.md) |  |  |
-|  [createIdentityMerkleTrees(identifier)](./polygonid-js-sdk.inmemorymerkletreestorage.createidentitymerkletrees.md) |  |  |
-|  [getIdentityMerkleTreesInfo(identifier)](./polygonid-js-sdk.inmemorymerkletreestorage.getidentitymerkletreesinfo.md) |  |  |
-|  [getMerkleTreeByIdentifierAndType(identifier, mtType)](./polygonid-js-sdk.inmemorymerkletreestorage.getmerkletreebyidentifierandtype.md) |  |  |
+|  [addToMerkleTree(identifier, mtType, hindex, hvalue)](./polygonid-js-sdk.inmemorymerkletreestorage.addtomerkletree.md) |  | **_(BETA)_** adds entry to merkle tree in the memory |
+|  [bindMerkleTreeToNewIdentifier(oldIdentifier, newIdentifier)](./polygonid-js-sdk.inmemorymerkletreestorage.bindmerkletreetonewidentifier.md) |  | **_(BETA)_** bind merkle tree identifier in memory |
+|  [createIdentityMerkleTrees(identifier)](./polygonid-js-sdk.inmemorymerkletreestorage.createidentitymerkletrees.md) |  | **_(BETA)_** create trees in the memory |
+|  [getIdentityMerkleTreesInfo(identifier)](./polygonid-js-sdk.inmemorymerkletreestorage.getidentitymerkletreesinfo.md) |  | **_(BETA)_** get trees meta info from the memory |
+|  [getMerkleTreeByIdentifierAndType(identifier, mtType)](./polygonid-js-sdk.inmemorymerkletreestorage.getmerkletreebyidentifierandtype.md) |  | **_(BETA)_** get merkle tree by identifier and type from memory |

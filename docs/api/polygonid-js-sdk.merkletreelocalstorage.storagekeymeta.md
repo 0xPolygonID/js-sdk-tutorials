@@ -8,7 +8,13 @@ hide_title: true
 
 ## MerkleTreeLocalStorage.storageKeyMeta property
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+key for the storage key metadata
+
+
+**Signature:**
 
 ```typescript
 static readonly storageKeyMeta = "merkle-tree-meta";

@@ -8,7 +8,9 @@ hide_title: true
 
 ## IIdentityWallet.getDIDTreeState() method
 
-<b>Signature:</b>
+Gets a tree model for given did that includes claims tree, revocation tree, the root of roots tree and calculated state hash
+
+**Signature:**
 
 ```typescript
 getDIDTreeState(did: DID): Promise<TreesModel>;
@@ -18,8 +20,10 @@ getDIDTreeState(did: DID): Promise<TreesModel>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  did | DID |  |
+|  did | DID | did which trees info we need to receive |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;TreesModel&gt;
+
+`Promise<TreesModel>`

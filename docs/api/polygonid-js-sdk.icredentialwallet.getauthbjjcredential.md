@@ -8,7 +8,12 @@ hide_title: true
 
 ## ICredentialWallet.getAuthBJJCredential() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Finds Auth BJJ credential for given user
+
+**Signature:**
 
 ```typescript
 getAuthBJJCredential(did: DID): Promise<W3CCredential>;
@@ -18,8 +23,10 @@ getAuthBJJCredential(did: DID): Promise<W3CCredential>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  did | DID |  |
+|  did | DID | the issuer of Auth BJJ credential |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;W3CCredential&gt;
+
+`Promise<W3CCredential>` W3CCredential with AuthBJJCredential type

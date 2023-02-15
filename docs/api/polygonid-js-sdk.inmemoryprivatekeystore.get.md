@@ -8,7 +8,10 @@ hide_title: true
 
 ## InMemoryPrivateKeyStore.get() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+**Signature:**
 
 ```typescript
 get(args: {
@@ -22,6 +25,6 @@ get(args: {
 |  --- | --- | --- |
 |  args | { alias: string; } |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;

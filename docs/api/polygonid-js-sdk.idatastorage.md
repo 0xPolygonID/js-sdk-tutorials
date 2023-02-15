@@ -8,7 +8,15 @@ hide_title: true
 
 ## IDataStorage interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+General Data storage interface that union identity, credential, merkletree and states storage.
+
+
+ IDataStorage
+
+**Signature:**
 
 ```typescript
 export interface IDataStorage 
@@ -18,7 +26,7 @@ export interface IDataStorage
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [credential](./polygonid-js-sdk.idatastorage.credential.md) |  | [ICredentialStorage](./polygonid-js-sdk.icredentialstorage.md) |  |
-|  [identity](./polygonid-js-sdk.idatastorage.identity.md) |  | [IIdentityStorage](./polygonid-js-sdk.iidentitystorage.md) |  |
-|  [mt](./polygonid-js-sdk.idatastorage.mt.md) |  | [IMerkleTreeStorage](./polygonid-js-sdk.imerkletreestorage.md) |  |
-|  [states](./polygonid-js-sdk.idatastorage.states.md) |  | [IStateStorage](./polygonid-js-sdk.istatestorage.md) |  |
+|  [credential](./polygonid-js-sdk.idatastorage.credential.md) |  | [ICredentialStorage](./polygonid-js-sdk.icredentialstorage.md) | **_(BETA)_** |
+|  [identity](./polygonid-js-sdk.idatastorage.identity.md) |  | [IIdentityStorage](./polygonid-js-sdk.iidentitystorage.md) | **_(BETA)_** |
+|  [mt](./polygonid-js-sdk.idatastorage.mt.md) |  | [IMerkleTreeStorage](./polygonid-js-sdk.imerkletreestorage.md) | **_(BETA)_** |
+|  [states](./polygonid-js-sdk.idatastorage.states.md) |  | [IStateStorage](./polygonid-js-sdk.istatestorage.md) | **_(BETA)_** |

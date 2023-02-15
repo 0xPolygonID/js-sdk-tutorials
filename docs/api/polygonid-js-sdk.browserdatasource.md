@@ -8,25 +8,33 @@ hide_title: true
 
 ## BrowserDataSource class
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Storage in the browser, uses local storage
+
+
+ BrowserDataSource  Type
+
+**Signature:**
 
 ```typescript
 export declare class BrowserDataSource<Type> implements IDataSource<Type> 
 ```
-<b>Implements:</b> IDataSource&lt;Type&gt;
+**Implements:** IDataSource&lt;Type&gt;
 
 ## Constructors
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_localStorageKey)](./polygonid-js-sdk.browserdatasource._constructor_.md) |  | Constructs a new instance of the <code>BrowserDataSource</code> class |
+|  [(constructor)(\_localStorageKey)](./polygonid-js-sdk.browserdatasource._constructor_.md) |  | **_(BETA)_** Creates an instance of BrowserDataSource. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [delete(key, keyName)](./polygonid-js-sdk.browserdatasource.delete.md) |  |  |
-|  [get(key, keyName)](./polygonid-js-sdk.browserdatasource.get.md) |  |  |
-|  [load()](./polygonid-js-sdk.browserdatasource.load.md) |  |  |
-|  [patchData(value)](./polygonid-js-sdk.browserdatasource.patchdata.md) |  |  |
-|  [save(key, value, keyName)](./polygonid-js-sdk.browserdatasource.save.md) |  |  |
+|  [delete(key, keyName)](./polygonid-js-sdk.browserdatasource.delete.md) |  | **_(BETA)_** deletes item from the local storage |
+|  [get(key, keyName)](./polygonid-js-sdk.browserdatasource.get.md) |  | **_(BETA)_** gets value from the local storage by given key |
+|  [load()](./polygonid-js-sdk.browserdatasource.load.md) |  | **_(BETA)_** loads all from the local storage |
+|  [patchData(value)](./polygonid-js-sdk.browserdatasource.patchdata.md) |  | **_(BETA)_** updates data with a total reset |
+|  [save(key, value, keyName)](./polygonid-js-sdk.browserdatasource.save.md) |  | **_(BETA)_** saves value to the local storage |

@@ -8,7 +8,12 @@ hide_title: true
 
 ## IIdentityStorage.getProfilesByGenesisIdentifier() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+gets profile identity by genesis identifiers
+
+**Signature:**
 
 ```typescript
 getProfilesByGenesisIdentifier(genesisIdentifier: string): Promise<Profile[]>;
@@ -18,8 +23,10 @@ getProfilesByGenesisIdentifier(genesisIdentifier: string): Promise<Profile[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  genesisIdentifier | string |  |
+|  genesisIdentifier | string | genesis identifier from which profile has been derived |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Profile](./polygonid-js-sdk.profile.md)\[\]&gt;
+
+`{Promise<Profile[]>}`

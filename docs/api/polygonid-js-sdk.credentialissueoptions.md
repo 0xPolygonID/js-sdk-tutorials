@@ -8,7 +8,15 @@ hide_title: true
 
 ## CredentialIssueOptions interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Credential issue options with publishing to chain and to reverse hash service
+
+
+ CredentialIssueOptions
+
+**Signature:**
 
 ```typescript
 export interface CredentialIssueOptions 
@@ -18,5 +26,4 @@ export interface CredentialIssueOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [withPublish](./polygonid-js-sdk.credentialissueoptions.withpublish.md) |  | boolean |  |
-|  [withRHS](./polygonid-js-sdk.credentialissueoptions.withrhs.md) |  | string |  |
+|  [withRHS](./polygonid-js-sdk.credentialissueoptions.withrhs.md) |  | string | **_(BETA)_** option to show if reverse hash service is used to check the Credential Status |

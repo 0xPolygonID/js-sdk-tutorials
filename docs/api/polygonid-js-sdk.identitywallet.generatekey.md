@@ -8,7 +8,9 @@ hide_title: true
 
 ## IdentityWallet.generateKey() method
 
-<b>Signature:</b>
+Generates a new key
+
+**Signature:**
 
 ```typescript
 generateKey(keyType: KmsKeyType): Promise<KmsKeyId>;
@@ -18,8 +20,10 @@ generateKey(keyType: KmsKeyType): Promise<KmsKeyId>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  keyType | [KmsKeyType](./polygonid-js-sdk.kmskeytype.md) |  |
+|  keyType | [KmsKeyType](./polygonid-js-sdk.kmskeytype.md) | supported key type by KMS |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[KmsKeyId](./polygonid-js-sdk.kmskeyid.md)&gt;
+
+`Promise<KmsKeyId>` - creates a new key BJJ or ECDSA

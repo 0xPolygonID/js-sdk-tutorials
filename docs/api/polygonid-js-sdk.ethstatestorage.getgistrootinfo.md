@@ -8,7 +8,10 @@ hide_title: true
 
 ## EthStateStorage.getGISTRootInfo() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+**Signature:**
 
 ```typescript
 getGISTRootInfo(id: bigint): Promise<RootInfo>;
@@ -20,6 +23,8 @@ getGISTRootInfo(id: bigint): Promise<RootInfo>;
 |  --- | --- | --- |
 |  id | bigint |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[RootInfo](./polygonid-js-sdk.rootinfo.md)&gt;
+
+`{Promise<RootInfo>}`

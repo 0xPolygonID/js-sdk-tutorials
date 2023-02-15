@@ -8,7 +8,12 @@ hide_title: true
 
 ## KMS.registerKeyProvider() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+register key provider in the KMS
+
+**Signature:**
 
 ```typescript
 registerKeyProvider(keyType: KmsKeyType, keyProvider: IKeyProvider): void;
@@ -18,9 +23,9 @@ registerKeyProvider(keyType: KmsKeyType, keyProvider: IKeyProvider): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  keyType | [KmsKeyType](./polygonid-js-sdk.kmskeytype.md) |  |
-|  keyProvider | [IKeyProvider](./polygonid-js-sdk.ikeyprovider.md) |  |
+|  keyType | [KmsKeyType](./polygonid-js-sdk.kmskeytype.md) | kms key type |
+|  keyProvider | [IKeyProvider](./polygonid-js-sdk.ikeyprovider.md) | key provider implementation |
 
-<b>Returns:</b>
+**Returns:**
 
 void

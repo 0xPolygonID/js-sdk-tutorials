@@ -8,7 +8,9 @@ hide_title: true
 
 ## CredentialStorage.removeCredential() method
 
-<b>Signature:</b>
+returns all credentials in the storage
+
+**Signature:**
 
 ```typescript
 removeCredential(id: string): Promise<void>;
@@ -20,6 +22,8 @@ removeCredential(id: string): Promise<void>;
 |  --- | --- | --- |
 |  id | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
+
+`Promise<W3CCredential[]>`

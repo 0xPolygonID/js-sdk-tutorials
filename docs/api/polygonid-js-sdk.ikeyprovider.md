@@ -8,7 +8,15 @@ hide_title: true
 
 ## IKeyProvider interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+KeyProvider is responsible for signing and creation of the keys
+
+
+ IKeyProvider
+
+**Signature:**
 
 ```typescript
 export interface IKeyProvider 
@@ -18,12 +26,12 @@ export interface IKeyProvider
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [keyType](./polygonid-js-sdk.ikeyprovider.keytype.md) |  | [KmsKeyType](./polygonid-js-sdk.kmskeytype.md) |  |
+|  [keyType](./polygonid-js-sdk.ikeyprovider.keytype.md) |  | [KmsKeyType](./polygonid-js-sdk.kmskeytype.md) | <p>**_(BETA)_** property to store key type</p><p> {KmsKeyType}</p> |
 
 ## Methods
 
 |  Method | Description |
 |  --- | --- |
-|  [newPrivateKeyFromSeed(key)](./polygonid-js-sdk.ikeyprovider.newprivatekeyfromseed.md) |  |
-|  [publicKey(keyID)](./polygonid-js-sdk.ikeyprovider.publickey.md) |  |
-|  [sign(keyId, data)](./polygonid-js-sdk.ikeyprovider.sign.md) |  |
+|  [newPrivateKeyFromSeed(seed)](./polygonid-js-sdk.ikeyprovider.newprivatekeyfromseed.md) | **_(BETA)_** creates new key pair from given seed |
+|  [publicKey(keyID)](./polygonid-js-sdk.ikeyprovider.publickey.md) | **_(BETA)_** gets public key by key id |
+|  [sign(keyId, data)](./polygonid-js-sdk.ikeyprovider.sign.md) | **_(BETA)_** sign data with kms key |

@@ -8,18 +8,25 @@ hide_title: true
 
 ## IKeyProvider.newPrivateKeyFromSeed() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+creates new key pair from given seed
+
+**Signature:**
 
 ```typescript
-newPrivateKeyFromSeed(key: Uint8Array): Promise<KmsKeyId>;
+newPrivateKeyFromSeed(seed: Uint8Array): Promise<KmsKeyId>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | Uint8Array |  |
+|  seed | Uint8Array | seed |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[KmsKeyId](./polygonid-js-sdk.kmskeyid.md)&gt;
+
+`Promise<KmsKeyId>`

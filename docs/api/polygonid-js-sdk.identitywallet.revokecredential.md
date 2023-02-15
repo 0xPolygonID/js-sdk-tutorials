@@ -8,7 +8,7 @@ hide_title: true
 
 ## IdentityWallet.revokeCredential() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 revokeCredential(issuerDID: DID, credential: W3CCredential): Promise<number>;
@@ -18,9 +18,11 @@ revokeCredential(issuerDID: DID, credential: W3CCredential): Promise<number>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  issuerDID | DID |  |
-|  credential | W3CCredential |  |
+|  issuerDID | DID | identifier of the issuer |
+|  credential | W3CCredential | credential to revoke |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;number&gt;
+
+`Promise<number>` a revocation nonce of credential

@@ -8,7 +8,9 @@ hide_title: true
 
 ## IIdentityWallet.createProfile() method
 
-<b>Signature:</b>
+Creates profile based on genesis identifier
+
+**Signature:**
 
 ```typescript
 createProfile(did: DID, nonce: number, verifier: string): Promise<DID>;
@@ -18,10 +20,12 @@ createProfile(did: DID, nonce: number, verifier: string): Promise<DID>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  did | DID |  |
-|  nonce | number |  |
-|  verifier | string |  |
+|  did | DID | identity to derive profile from |
+|  nonce | number | unique integer number to generate a profile |
+|  verifier | string | verifier identity/alias in a string from |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;DID&gt;
+
+`Promise<DID>` - profile did

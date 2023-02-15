@@ -8,7 +8,12 @@ hide_title: true
 
 ## IMerkleTreeStorage.addToMerkleTree() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+adds entry to merkle tree
+
+**Signature:**
 
 ```typescript
 addToMerkleTree(identifier: string, mtType: MerkleTreeType, hindex: bigint, hvalue: bigint): Promise<void>;
@@ -18,11 +23,13 @@ addToMerkleTree(identifier: string, mtType: MerkleTreeType, hindex: bigint, hval
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  identifier | string |  |
-|  mtType | [MerkleTreeType](./polygonid-js-sdk.merkletreetype.md) |  |
-|  hindex | bigint |  |
-|  hvalue | bigint |  |
+|  identifier | string | identifier to which tree belongs |
+|  mtType | [MerkleTreeType](./polygonid-js-sdk.merkletreetype.md) | merkle tree type |
+|  hindex | bigint | hash index |
+|  hvalue | bigint | hash value |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
+
+`Promise<void>`

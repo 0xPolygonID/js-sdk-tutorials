@@ -8,7 +8,12 @@ hide_title: true
 
 ## InMemoryMerkleTreeStorage.addToMerkleTree() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+adds entry to merkle tree in the memory
+
+**Signature:**
 
 ```typescript
 addToMerkleTree(identifier: string, mtType: MerkleTreeType, hindex: bigint, hvalue: bigint): Promise<void>;
@@ -23,6 +28,6 @@ addToMerkleTree(identifier: string, mtType: MerkleTreeType, hindex: bigint, hval
 |  hindex | bigint |  |
 |  hvalue | bigint |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

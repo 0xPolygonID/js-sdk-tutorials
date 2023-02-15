@@ -8,7 +8,12 @@ hide_title: true
 
 ## ICredentialWallet.findByQuery() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Find credential using iden3 query language
+
+**Signature:**
 
 ```typescript
 findByQuery(query: ProofQuery): Promise<W3CCredential[]>;
@@ -18,8 +23,10 @@ findByQuery(query: ProofQuery): Promise<W3CCredential[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  query | ProofQuery |  |
+|  query | ProofQuery | protocol query to find credential |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;W3CCredential\[\]&gt;
+
+`Promise<W3CCredential[]>`

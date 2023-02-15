@@ -8,22 +8,30 @@ hide_title: true
 
 ## CircuitStorage class
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Implementation of ICircuitStorage to store keys data
+
+
+ CircuitStorage  implements ICircuitStorage interface
+
+**Signature:**
 
 ```typescript
 export declare class CircuitStorage implements ICircuitStorage 
 ```
-<b>Implements:</b> ICircuitStorage
+**Implements:** ICircuitStorage
 
 ## Constructors
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_dataSource)](./polygonid-js-sdk.circuitstorage._constructor_.md) |  | Constructs a new instance of the <code>CircuitStorage</code> class |
+|  [(constructor)(\_dataSource)](./polygonid-js-sdk.circuitstorage._constructor_.md) |  | **_(BETA)_** Creates an instance of CircuitStorage. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [loadCircuitData(circuitId)](./polygonid-js-sdk.circuitstorage.loadcircuitdata.md) |  |  |
-|  [saveCircuitData(circuitId, circuitData)](./polygonid-js-sdk.circuitstorage.savecircuitdata.md) |  |  |
+|  [loadCircuitData(circuitId)](./polygonid-js-sdk.circuitstorage.loadcircuitdata.md) |  | **_(BETA)_** loads circuit data by id |
+|  [saveCircuitData(circuitId, circuitData)](./polygonid-js-sdk.circuitstorage.savecircuitdata.md) |  | **_(BETA)_** saves circuit data for circuit id |

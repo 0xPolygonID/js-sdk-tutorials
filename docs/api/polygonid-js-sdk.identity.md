@@ -8,7 +8,9 @@ hide_title: true
 
 ## Identity type
 
-<b>Signature:</b>
+Identity structure that can be used for identity storage
+
+**Signature:**
 
 ```typescript
 export type Identity = {

@@ -8,7 +8,12 @@ hide_title: true
 
 ## IIdentityStorage.getProfileById() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+gets profile by identifier
+
+**Signature:**
 
 ```typescript
 getProfileById(identifier: string): Promise<Profile>;
@@ -18,8 +23,10 @@ getProfileById(identifier: string): Promise<Profile>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  identifier | string |  |
+|  identifier | string | profile id |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Profile](./polygonid-js-sdk.profile.md)&gt;
+
+`{Promise<Profile>}`

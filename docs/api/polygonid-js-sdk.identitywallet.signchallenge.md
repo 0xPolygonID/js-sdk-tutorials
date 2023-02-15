@@ -8,7 +8,9 @@ hide_title: true
 
 ## IdentityWallet.signChallenge() method
 
-<b>Signature:</b>
+Signs a big integer with an Auth BJJ Credential that identifies a key for signing.
+
+**Signature:**
 
 ```typescript
 signChallenge(challenge: bigint, credential: W3CCredential): Promise<Signature>;
@@ -19,8 +21,10 @@ signChallenge(challenge: bigint, credential: W3CCredential): Promise<Signature>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  challenge | bigint |  |
-|  credential | W3CCredential |  |
+|  credential | W3CCredential | Auth BJJ credential |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Signature&gt;
+
+`Promise<Signature>` - the signature object with R8 and S params

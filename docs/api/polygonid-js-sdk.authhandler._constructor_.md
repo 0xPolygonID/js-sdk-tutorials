@@ -8,17 +8,20 @@ hide_title: true
 
 ## AuthHandler.(constructor)
 
-Constructs a new instance of the `AuthHandler` class
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
 
-<b>Signature:</b>
+Creates an instance of AuthHandler.
+
+**Signature:**
 
 ```typescript
-constructor(_packerMgr: IPackageManger, _proofService: IProofService);
+constructor(_packerMgr: IPackageManager, _proofService: IProofService);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_packerMgr | IPackageManger |  |
-|  \_proofService | IProofService |  |
+|  \_packerMgr | IPackageManager | package manager to unpack message envelope |
+|  \_proofService | IProofService | proof service to verify zk proofs |

@@ -8,7 +8,12 @@ hide_title: true
 
 ## ICredentialWallet.remove() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+removes W3C credentials from data storage
+
+**Signature:**
 
 ```typescript
 remove(id: string): Promise<void>;
@@ -20,6 +25,8 @@ remove(id: string): Promise<void>;
 |  --- | --- | --- |
 |  id | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
+
+`Promise<void>`

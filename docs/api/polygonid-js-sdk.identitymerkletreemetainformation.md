@@ -8,7 +8,15 @@ hide_title: true
 
 ## IdentityMerkleTreeMetaInformation interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Interface to store metadata about merkle tree
+
+
+ IdentityMerkleTreeMetaInformation
+
+**Signature:**
 
 ```typescript
 export interface IdentityMerkleTreeMetaInformation 
@@ -18,6 +26,6 @@ export interface IdentityMerkleTreeMetaInformation
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [identifier](./polygonid-js-sdk.identitymerkletreemetainformation.identifier.md) |  | string |  |
-|  [treeId](./polygonid-js-sdk.identitymerkletreemetainformation.treeid.md) |  | string |  |
-|  [type](./polygonid-js-sdk.identitymerkletreemetainformation.type.md) |  | [MerkleTreeType](./polygonid-js-sdk.merkletreetype.md) |  |
+|  [identifier](./polygonid-js-sdk.identitymerkletreemetainformation.identifier.md) |  | string | **_(BETA)_** |
+|  [treeId](./polygonid-js-sdk.identitymerkletreemetainformation.treeid.md) |  | string | **_(BETA)_** |
+|  [type](./polygonid-js-sdk.identitymerkletreemetainformation.type.md) |  | [MerkleTreeType](./polygonid-js-sdk.merkletreetype.md) | **_(BETA)_** |

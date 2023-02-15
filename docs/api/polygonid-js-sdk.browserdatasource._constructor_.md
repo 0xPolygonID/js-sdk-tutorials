@@ -8,9 +8,12 @@ hide_title: true
 
 ## BrowserDataSource.(constructor)
 
-Constructs a new instance of the `BrowserDataSource` class
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
 
-<b>Signature:</b>
+Creates an instance of BrowserDataSource.
+
+**Signature:**
 
 ```typescript
 constructor(_localStorageKey: string);
@@ -20,4 +23,4 @@ constructor(_localStorageKey: string);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_localStorageKey | string |  |
+|  \_localStorageKey | string | key string to put storage name in the local storage |

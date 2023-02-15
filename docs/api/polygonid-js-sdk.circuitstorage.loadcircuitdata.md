@@ -8,7 +8,12 @@ hide_title: true
 
 ## CircuitStorage.loadCircuitData() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+loads circuit data by id
+
+**Signature:**
 
 ```typescript
 loadCircuitData(circuitId: CircuitId): Promise<CircuitData>;
@@ -18,8 +23,10 @@ loadCircuitData(circuitId: CircuitId): Promise<CircuitData>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  circuitId | CircuitId |  |
+|  circuitId | CircuitId | id of the circuit |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;CircuitData&gt;
+
+`Promise<CircuitData>`

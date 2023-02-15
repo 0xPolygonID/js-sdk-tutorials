@@ -8,9 +8,12 @@ hide_title: true
 
 ## EthStateStorage.(constructor)
 
-Constructs a new instance of the `EthStateStorage` class
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
 
-<b>Signature:</b>
+Creates an instance of EthStateStorage.
+
+**Signature:**
 
 ```typescript
 constructor(ethConfig?: EthConnectionConfig);
@@ -20,4 +23,4 @@ constructor(ethConfig?: EthConnectionConfig);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ethConfig | [EthConnectionConfig](./polygonid-js-sdk.ethconnectionconfig.md) | <i>(Optional)</i> |
+|  ethConfig | [EthConnectionConfig](./polygonid-js-sdk.ethconnectionconfig.md) | _(Optional)_ |

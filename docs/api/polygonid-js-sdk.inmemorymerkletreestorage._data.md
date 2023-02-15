@@ -8,7 +8,14 @@ hide_title: true
 
 ## InMemoryMerkleTreeStorage.\_data property
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+key value storage for trees where key is identifier
+
+ {{ \[v in string\]: TreeWithMetaInfo\[\]; }}
+
+**Signature:**
 
 ```typescript
 _data: {

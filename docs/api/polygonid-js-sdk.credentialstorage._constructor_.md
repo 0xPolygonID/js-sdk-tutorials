@@ -8,9 +8,9 @@ hide_title: true
 
 ## CredentialStorage.(constructor)
 
-Constructs a new instance of the `CredentialStorage` class
+Creates an instance of CredentialStorage.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(_dataSource: IDataSource<W3CCredential>);
@@ -20,4 +20,4 @@ constructor(_dataSource: IDataSource<W3CCredential>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_dataSource | IDataSource&lt;W3CCredential&gt; |  |
+|  \_dataSource | IDataSource&lt;W3CCredential&gt; | W3CCredential credential KV data source |

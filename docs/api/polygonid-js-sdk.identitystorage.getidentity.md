@@ -8,7 +8,10 @@ hide_title: true
 
 ## IdentityStorage.getIdentity() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+**Signature:**
 
 ```typescript
 getIdentity(identifier: string): Promise<Identity>;
@@ -20,6 +23,6 @@ getIdentity(identifier: string): Promise<Identity>;
 |  --- | --- | --- |
 |  identifier | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Identity](./polygonid-js-sdk.identity.md)&gt;

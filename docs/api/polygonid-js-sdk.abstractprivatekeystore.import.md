@@ -8,7 +8,13 @@ hide_title: true
 
 ## AbstractPrivateKeyStore.import() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+imports key by alias
+
+
+**Signature:**
 
 ```typescript
 abstract import(args: {
@@ -21,8 +27,10 @@ abstract import(args: {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  args | { alias: string; key: string; } |  |
+|  args | { alias: string; key: string; } | key alias and hex representation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
+
+`Promise<void>`

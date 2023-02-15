@@ -8,7 +8,12 @@ hide_title: true
 
 ## InMemoryDataSource.delete() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+deletes from value from the memory
+
+**Signature:**
 
 ```typescript
 delete(key: string, keyName?: string): void;
@@ -19,8 +24,8 @@ delete(key: string, keyName?: string): void;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | string |  |
-|  keyName | string | <i>(Optional)</i> |
+|  keyName | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 void

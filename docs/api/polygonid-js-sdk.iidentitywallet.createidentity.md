@@ -8,9 +8,12 @@ hide_title: true
 
 ## IIdentityWallet.createIdentity() method
 
-Create new Identity
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
 
-<b>Signature:</b>
+Create Identity creates Auth BJJ credential, Merkle trees for claims, revocations and root of roots, adds auth BJJ credential to claims tree and generates mtp of inclusion based on the resulting state it provides an identifier in DID form.
+
+**Signature:**
 
 ```typescript
 createIdentity(hostUrl: string, rhsUrl: string, seed?: Uint8Array): Promise<{
@@ -23,12 +26,12 @@ createIdentity(hostUrl: string, rhsUrl: string, seed?: Uint8Array): Promise<{
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  hostUrl | string | hostUrl |
-|  rhsUrl | string | rhsUrl |
-|  seed | Uint8Array | <i>(Optional)</i> seed Uint8Array |
+|  hostUrl | string | hostUrl is used as a part of the identifier of Auth BJJ credential |
+|  rhsUrl | string | rhsUrl is url to reverse hash service, so revocation status can be fetched for Auth BJJ credential |
+|  seed | Uint8Array | _(Optional)_ if present the BJJ private key will be created from the given seed |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;{ did: DID; credential: W3CCredential; }&gt;
 
-{ DID, W3CCredential }
+`Promise<{ did: DID; credential: W3CCredential }>` - returns did and Auth BJJ credential

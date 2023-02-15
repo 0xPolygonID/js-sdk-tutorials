@@ -8,7 +8,8 @@ hide_title: true
 
 ## CredentialStorage.saveCredential() method
 
-<b>Signature:</b>
+
+**Signature:**
 
 ```typescript
 saveCredential(credential: W3CCredential): Promise<void>;
@@ -20,6 +21,6 @@ saveCredential(credential: W3CCredential): Promise<void>;
 |  --- | --- | --- |
 |  credential | W3CCredential |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

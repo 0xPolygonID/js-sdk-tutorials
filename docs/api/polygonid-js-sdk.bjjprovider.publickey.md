@@ -8,7 +8,12 @@ hide_title: true
 
 ## BjjProvider.publicKey() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Gets public key by kmsKeyId
+
+**Signature:**
 
 ```typescript
 publicKey(keyId: KmsKeyId): Promise<PublicKey>;
@@ -18,8 +23,8 @@ publicKey(keyId: KmsKeyId): Promise<PublicKey>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  keyId | [KmsKeyId](./polygonid-js-sdk.kmskeyid.md) |  |
+|  keyId | [KmsKeyId](./polygonid-js-sdk.kmskeyid.md) | key identifier |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;PublicKey&gt;

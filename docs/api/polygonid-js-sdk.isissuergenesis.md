@@ -8,7 +8,10 @@ hide_title: true
 
 ## isIssuerGenesis() function
 
-<b>Signature:</b>
+Checks if issuer did is created from given state is genesis
+
+
+**Signature:**
 
 ```typescript
 export declare function isIssuerGenesis(issuer: string, state: string): boolean;
@@ -18,9 +21,11 @@ export declare function isIssuerGenesis(issuer: string, state: string): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  issuer | string |  |
-|  state | string |  |
+|  issuer | string | did (string) |
+|  state | string | hex state |
 
-<b>Returns:</b>
+**Returns:**
+
+boolean
 
 boolean

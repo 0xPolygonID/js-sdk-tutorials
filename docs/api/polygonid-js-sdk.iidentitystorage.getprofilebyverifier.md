@@ -8,7 +8,12 @@ hide_title: true
 
 ## IIdentityStorage.getProfileByVerifier() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+gets profile by verifier
+
+**Signature:**
 
 ```typescript
 getProfileByVerifier(verifier: string): Promise<Profile>;
@@ -18,8 +23,10 @@ getProfileByVerifier(verifier: string): Promise<Profile>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  verifier | string |  |
+|  verifier | string | verifier to which profile has been shared |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Profile](./polygonid-js-sdk.profile.md)&gt;
+
+`{Promise<Profile>}`

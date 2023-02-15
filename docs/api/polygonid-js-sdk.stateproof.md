@@ -8,7 +8,15 @@ hide_title: true
 
 ## StateProof interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+state proof of identity from chain
+
+
+ StateProof
+
+**Signature:**
 
 ```typescript
 export interface StateProof 
@@ -18,11 +26,11 @@ export interface StateProof
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [auxExistence](./polygonid-js-sdk.stateproof.auxexistence.md) |  | boolean |  |
-|  [auxIndex](./polygonid-js-sdk.stateproof.auxindex.md) |  | bigint |  |
-|  [auxValue](./polygonid-js-sdk.stateproof.auxvalue.md) |  | bigint |  |
-|  [existence](./polygonid-js-sdk.stateproof.existence.md) |  | boolean |  |
-|  [index](./polygonid-js-sdk.stateproof.index.md) |  | bigint |  |
-|  [root](./polygonid-js-sdk.stateproof.root.md) |  | bigint |  |
-|  [siblings](./polygonid-js-sdk.stateproof.siblings.md) |  | bigint\[\] |  |
-|  [value](./polygonid-js-sdk.stateproof.value.md) |  | bigint |  |
+|  [auxExistence](./polygonid-js-sdk.stateproof.auxexistence.md) |  | boolean | **_(BETA)_** |
+|  [auxIndex](./polygonid-js-sdk.stateproof.auxindex.md) |  | bigint | **_(BETA)_** |
+|  [auxValue](./polygonid-js-sdk.stateproof.auxvalue.md) |  | bigint | **_(BETA)_** |
+|  [existence](./polygonid-js-sdk.stateproof.existence.md) |  | boolean | **_(BETA)_** |
+|  [index](./polygonid-js-sdk.stateproof.index.md) |  | bigint | **_(BETA)_** |
+|  [root](./polygonid-js-sdk.stateproof.root.md) |  | bigint | **_(BETA)_** |
+|  [siblings](./polygonid-js-sdk.stateproof.siblings.md) |  | bigint\[\] | **_(BETA)_** |
+|  [value](./polygonid-js-sdk.stateproof.value.md) |  | bigint | **_(BETA)_** |

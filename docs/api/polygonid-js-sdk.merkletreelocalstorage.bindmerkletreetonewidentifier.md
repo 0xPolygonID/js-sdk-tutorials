@@ -8,7 +8,12 @@ hide_title: true
 
 ## MerkleTreeLocalStorage.bindMerkleTreeToNewIdentifier() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+binds merkle tree in the local storage to the new identifiers
+
+**Signature:**
 
 ```typescript
 bindMerkleTreeToNewIdentifier(oldIdentifier: string, newIdentifier: string): Promise<void>;
@@ -21,6 +26,6 @@ bindMerkleTreeToNewIdentifier(oldIdentifier: string, newIdentifier: string): Pro
 |  oldIdentifier | string |  |
 |  newIdentifier | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

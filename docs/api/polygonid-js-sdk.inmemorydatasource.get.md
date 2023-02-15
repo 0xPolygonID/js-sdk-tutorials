@@ -8,7 +8,12 @@ hide_title: true
 
 ## InMemoryDataSource.get() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+gets value from from the memory
+
+**Signature:**
 
 ```typescript
 get(key: string, keyName?: string): Type | undefined;
@@ -19,8 +24,8 @@ get(key: string, keyName?: string): Type | undefined;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | string |  |
-|  keyName | string | <i>(Optional)</i> |
+|  keyName | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Type \| undefined

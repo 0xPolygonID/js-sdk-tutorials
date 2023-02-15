@@ -8,7 +8,12 @@ hide_title: true
 
 ## CircuitStorage.saveCircuitData() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+saves circuit data for circuit id
+
+**Signature:**
 
 ```typescript
 saveCircuitData(circuitId: CircuitId, circuitData: CircuitData): Promise<void>;
@@ -18,9 +23,11 @@ saveCircuitData(circuitId: CircuitId, circuitData: CircuitData): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  circuitId | CircuitId |  |
-|  circuitData | CircuitData |  |
+|  circuitId | CircuitId | id of the circuit |
+|  circuitData | CircuitData | circuit keys |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
+
+`Promise<void>`

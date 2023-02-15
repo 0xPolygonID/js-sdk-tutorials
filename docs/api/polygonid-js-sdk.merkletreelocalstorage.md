@@ -8,32 +8,40 @@ hide_title: true
 
 ## MerkleTreeLocalStorage class
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Merkle tree storage that uses browser local storage
+
+
+ MerkleTreeLocalStorage  implements IMerkleTreeStorage interface
+
+**Signature:**
 
 ```typescript
 export declare class MerkleTreeLocalStorage implements IMerkleTreeStorage 
 ```
-<b>Implements:</b> [IMerkleTreeStorage](./polygonid-js-sdk.imerkletreestorage.md)
+**Implements:** [IMerkleTreeStorage](./polygonid-js-sdk.imerkletreestorage.md)
 
 ## Constructors
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_mtDepth)](./polygonid-js-sdk.merkletreelocalstorage._constructor_.md) |  | Constructs a new instance of the <code>MerkleTreeLocalStorage</code> class |
+|  [(constructor)(\_mtDepth)](./polygonid-js-sdk.merkletreelocalstorage._constructor_.md) |  | **_(BETA)_** Creates an instance of MerkleTreeLocalStorage. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [storageKey](./polygonid-js-sdk.merkletreelocalstorage.storagekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
-|  [storageKeyMeta](./polygonid-js-sdk.merkletreelocalstorage.storagekeymeta.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
+|  [storageKey](./polygonid-js-sdk.merkletreelocalstorage.storagekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p>**_(BETA)_** key for the local storage</p> |
+|  [storageKeyMeta](./polygonid-js-sdk.merkletreelocalstorage.storagekeymeta.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p>**_(BETA)_** key for the storage key metadata</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [addToMerkleTree(identifier, mtType, hindex, hvalue)](./polygonid-js-sdk.merkletreelocalstorage.addtomerkletree.md) |  |  |
-|  [bindMerkleTreeToNewIdentifier(oldIdentifier, newIdentifier)](./polygonid-js-sdk.merkletreelocalstorage.bindmerkletreetonewidentifier.md) |  |  |
-|  [createIdentityMerkleTrees(identifier)](./polygonid-js-sdk.merkletreelocalstorage.createidentitymerkletrees.md) |  |  |
-|  [getIdentityMerkleTreesInfo(identifier)](./polygonid-js-sdk.merkletreelocalstorage.getidentitymerkletreesinfo.md) |  |  |
-|  [getMerkleTreeByIdentifierAndType(identifier, mtType)](./polygonid-js-sdk.merkletreelocalstorage.getmerkletreebyidentifierandtype.md) |  |  |
+|  [addToMerkleTree(identifier, mtType, hindex, hvalue)](./polygonid-js-sdk.merkletreelocalstorage.addtomerkletree.md) |  | **_(BETA)_** adds to merkle tree in the local storage |
+|  [bindMerkleTreeToNewIdentifier(oldIdentifier, newIdentifier)](./polygonid-js-sdk.merkletreelocalstorage.bindmerkletreetonewidentifier.md) |  | **_(BETA)_** binds merkle tree in the local storage to the new identifiers |
+|  [createIdentityMerkleTrees(identifier)](./polygonid-js-sdk.merkletreelocalstorage.createidentitymerkletrees.md) |  | **_(BETA)_** creates a tree in the local storage |
+|  [getIdentityMerkleTreesInfo(identifier)](./polygonid-js-sdk.merkletreelocalstorage.getidentitymerkletreesinfo.md) |  | **_(BETA)_** getIdentityMerkleTreesInfo from the local storage |
+|  [getMerkleTreeByIdentifierAndType(identifier, mtType)](./polygonid-js-sdk.merkletreelocalstorage.getmerkletreebyidentifierandtype.md) |  | **_(BETA)_** get merkle tree from the local storage |

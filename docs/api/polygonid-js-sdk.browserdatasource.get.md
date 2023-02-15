@@ -8,7 +8,12 @@ hide_title: true
 
 ## BrowserDataSource.get() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+gets value from the local storage by given key
+
+**Signature:**
 
 ```typescript
 get(key: string, keyName?: string): Type | undefined;
@@ -18,9 +23,9 @@ get(key: string, keyName?: string): Type | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | string |  |
-|  keyName | string | <i>(Optional)</i> |
+|  key | string | key value |
+|  keyName | string | _(Optional)_ key name |
 
-<b>Returns:</b>
+**Returns:**
 
 Type \| undefined

@@ -8,7 +8,12 @@ hide_title: true
 
 ## CredentialIssueOptions.withRHS property
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+option to show if reverse hash service is used to check the Credential Status
+
+**Signature:**
 
 ```typescript
 withRHS: string;

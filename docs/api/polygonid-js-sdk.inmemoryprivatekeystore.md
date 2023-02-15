@@ -8,22 +8,30 @@ hide_title: true
 
 ## InMemoryPrivateKeyStore class
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Key Store to use in memory
+
+
+ InMemoryPrivateKeyStore  implements AbstractPrivateKeyStore interface
+
+**Signature:**
 
 ```typescript
 export declare class InMemoryPrivateKeyStore implements AbstractPrivateKeyStore 
 ```
-<b>Implements:</b> [AbstractPrivateKeyStore](./polygonid-js-sdk.abstractprivatekeystore.md)
+**Implements:** [AbstractPrivateKeyStore](./polygonid-js-sdk.abstractprivatekeystore.md)
 
 ## Constructors
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)()](./polygonid-js-sdk.inmemoryprivatekeystore._constructor_.md) |  | Constructs a new instance of the <code>InMemoryPrivateKeyStore</code> class |
+|  [(constructor)()](./polygonid-js-sdk.inmemoryprivatekeystore._constructor_.md) |  | **_(BETA)_** Constructs a new instance of the <code>InMemoryPrivateKeyStore</code> class |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [get(args)](./polygonid-js-sdk.inmemoryprivatekeystore.get.md) |  |  |
-|  [import(args)](./polygonid-js-sdk.inmemoryprivatekeystore.import.md) |  |  |
+|  [get(args)](./polygonid-js-sdk.inmemoryprivatekeystore.get.md) |  | **_(BETA)_** |
+|  [import(args)](./polygonid-js-sdk.inmemoryprivatekeystore.import.md) |  | **_(BETA)_** |

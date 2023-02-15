@@ -8,9 +8,12 @@ hide_title: true
 
 ## CircuitStorage.(constructor)
 
-Constructs a new instance of the `CircuitStorage` class
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
 
-<b>Signature:</b>
+Creates an instance of CircuitStorage.
+
+**Signature:**
 
 ```typescript
 constructor(_dataSource: IDataSource<CircuitData>);
@@ -20,4 +23,4 @@ constructor(_dataSource: IDataSource<CircuitData>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_dataSource | IDataSource&lt;CircuitData&gt; |  |
+|  \_dataSource | IDataSource&lt;CircuitData&gt; | data source to store circuit keys |

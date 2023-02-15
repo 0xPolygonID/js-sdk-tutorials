@@ -8,7 +8,11 @@ hide_title: true
 
 ## KmsKeyType enum
 
-<b>Signature:</b>
+Key type that can be used in the key management system
+
+  {number}
+
+**Signature:**
 
 ```typescript
 export declare enum KmsKeyType 

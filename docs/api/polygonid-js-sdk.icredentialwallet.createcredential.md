@@ -8,7 +8,12 @@ hide_title: true
 
 ## ICredentialWallet.createCredential() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Creates a W3C verifiable Credential object
+
+**Signature:**
 
 ```typescript
 createCredential(hostUrl: string, issuer: DID, request: ClaimRequest, schema: Schema, rhsUrl?: string): W3CCredential;
@@ -18,12 +23,14 @@ createCredential(hostUrl: string, issuer: DID, request: ClaimRequest, schema: Sc
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  hostUrl | string |  |
-|  issuer | DID |  |
-|  request | [ClaimRequest](./polygonid-js-sdk.claimrequest.md) |  |
-|  schema | Schema |  |
-|  rhsUrl | string | <i>(Optional)</i> |
+|  hostUrl | string | URL that will be used as a prefix for credential identifier |
+|  issuer | DID | issuer identity |
+|  request | [ClaimRequest](./polygonid-js-sdk.claimrequest.md) | specification of claim creation parameters |
+|  schema | Schema | JSON schema for W3C Verifiable Credential |
+|  rhsUrl | string | _(Optional)_ URL of reverse hash service, if it's not set - host url is used for 'SparseMerkleTreeProof' credential status type |
 
-<b>Returns:</b>
+**Returns:**
+
+W3CCredential
 
 W3CCredential

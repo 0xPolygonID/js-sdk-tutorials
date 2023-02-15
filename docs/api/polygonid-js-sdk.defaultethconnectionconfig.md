@@ -8,7 +8,7 @@ hide_title: true
 
 ## defaultEthConnectionConfig variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultEthConnectionConfig: EthConnectionConfig

@@ -8,32 +8,36 @@ hide_title: true
 
 ## CredentialStorage class
 
-<b>Signature:</b>
+Implementation of ICredentialStorage with KV Data source
+
+  CredentialStorage  {ICredentialStorage}
+
+**Signature:**
 
 ```typescript
 export declare class CredentialStorage implements ICredentialStorage 
 ```
-<b>Implements:</b> [ICredentialStorage](./polygonid-js-sdk.icredentialstorage.md)
+**Implements:** [ICredentialStorage](./polygonid-js-sdk.icredentialstorage.md)
 
 ## Constructors
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_dataSource)](./polygonid-js-sdk.credentialstorage._constructor_.md) |  | Constructs a new instance of the <code>CredentialStorage</code> class |
+|  [(constructor)(\_dataSource)](./polygonid-js-sdk.credentialstorage._constructor_.md) |  | Creates an instance of CredentialStorage. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [storageKey](./polygonid-js-sdk.credentialstorage.storagekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
+|  [storageKey](./polygonid-js-sdk.credentialstorage.storagekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p>key for storage</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [findCredentialById(id)](./polygonid-js-sdk.credentialstorage.findcredentialbyid.md) |  |  |
-|  [findCredentialsByQuery(query)](./polygonid-js-sdk.credentialstorage.findcredentialsbyquery.md) |  |  |
-|  [listCredentials()](./polygonid-js-sdk.credentialstorage.listcredentials.md) |  |  |
-|  [removeCredential(id)](./polygonid-js-sdk.credentialstorage.removecredential.md) |  |  |
-|  [saveAllCredentials(credentials)](./polygonid-js-sdk.credentialstorage.saveallcredentials.md) |  |  |
+|  [findCredentialById(id)](./polygonid-js-sdk.credentialstorage.findcredentialbyid.md) |  | returns all credentials in the storage |
+|  [findCredentialsByQuery(query)](./polygonid-js-sdk.credentialstorage.findcredentialsbyquery.md) |  | returns all credentials in the storage |
+|  [listCredentials()](./polygonid-js-sdk.credentialstorage.listcredentials.md) |  | returns all credentials in the storage |
+|  [removeCredential(id)](./polygonid-js-sdk.credentialstorage.removecredential.md) |  | returns all credentials in the storage |
+|  [saveAllCredentials(credentials)](./polygonid-js-sdk.credentialstorage.saveallcredentials.md) |  | returns all credentials in the storage |
 |  [saveCredential(credential)](./polygonid-js-sdk.credentialstorage.savecredential.md) |  |  |

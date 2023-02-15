@@ -8,9 +8,12 @@ hide_title: true
 
 ## CredentialWallet.(constructor)
 
-Constructs a new instance of the `CredentialWallet` class
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
 
-<b>Signature:</b>
+Creates an instance of CredentialWallet.
+
+**Signature:**
 
 ```typescript
 constructor(_storage: IDataStorage);
@@ -20,4 +23,4 @@ constructor(_storage: IDataStorage);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_storage | [IDataStorage](./polygonid-js-sdk.idatastorage.md) |  |
+|  \_storage | [IDataStorage](./polygonid-js-sdk.idatastorage.md) | - data storage to access credential / identity / Merkle tree data |

@@ -8,7 +8,10 @@ hide_title: true
 
 ## IStateStorage.getGISTRootInfo() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+**Signature:**
 
 ```typescript
 getGISTRootInfo(root: bigint): Promise<RootInfo>;
@@ -18,8 +21,10 @@ getGISTRootInfo(root: bigint): Promise<RootInfo>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  root | bigint |  |
+|  root | bigint | returns info about global state root |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[RootInfo](./polygonid-js-sdk.rootinfo.md)&gt;
+
+`{Promise<RootInfo>}`

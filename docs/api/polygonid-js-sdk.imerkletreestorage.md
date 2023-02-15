@@ -8,7 +8,15 @@ hide_title: true
 
 ## IMerkleTreeStorage interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Interface to work with a merkle tree storage
+
+
+ IMerkleTreeStorage
+
+**Signature:**
 
 ```typescript
 export interface IMerkleTreeStorage 
@@ -18,7 +26,7 @@ export interface IMerkleTreeStorage
 
 |  Method | Description |
 |  --- | --- |
-|  [addToMerkleTree(identifier, mtType, hindex, hvalue)](./polygonid-js-sdk.imerkletreestorage.addtomerkletree.md) |  |
-|  [bindMerkleTreeToNewIdentifier(oldIdentifier, newIdentifier)](./polygonid-js-sdk.imerkletreestorage.bindmerkletreetonewidentifier.md) |  |
-|  [createIdentityMerkleTrees(identifier)](./polygonid-js-sdk.imerkletreestorage.createidentitymerkletrees.md) |  |
-|  [getMerkleTreeByIdentifierAndType(identifier, mtType)](./polygonid-js-sdk.imerkletreestorage.getmerkletreebyidentifierandtype.md) |  |
+|  [addToMerkleTree(identifier, mtType, hindex, hvalue)](./polygonid-js-sdk.imerkletreestorage.addtomerkletree.md) | **_(BETA)_** adds entry to merkle tree |
+|  [bindMerkleTreeToNewIdentifier(oldIdentifier, newIdentifier)](./polygonid-js-sdk.imerkletreestorage.bindmerkletreetonewidentifier.md) | **_(BETA)_** binding to be able to update identifier that belongs to tree |
+|  [createIdentityMerkleTrees(identifier)](./polygonid-js-sdk.imerkletreestorage.createidentitymerkletrees.md) | **_(BETA)_** creates merkle tree in the storage |
+|  [getMerkleTreeByIdentifierAndType(identifier, mtType)](./polygonid-js-sdk.imerkletreestorage.getmerkletreebyidentifierandtype.md) | **_(BETA)_** gets merkle tree by identifier and type |

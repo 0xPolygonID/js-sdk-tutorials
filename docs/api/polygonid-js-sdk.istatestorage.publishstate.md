@@ -8,7 +8,12 @@ hide_title: true
 
 ## IStateStorage.publishState() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+method to publish state onchain
+
+**Signature:**
 
 ```typescript
 publishState(proof: ZKProof, signer: Signer): Promise<string>;
@@ -18,9 +23,11 @@ publishState(proof: ZKProof, signer: Signer): Promise<string>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  proof | ZKProof |  |
-|  signer | Signer |  |
+|  proof | ZKProof | proof to publish |
+|  signer | Signer | signer of transaction |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;
+
+`Promise<string>` - transaction identifier

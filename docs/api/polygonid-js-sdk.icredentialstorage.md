@@ -8,7 +8,15 @@ hide_title: true
 
 ## ICredentialStorage interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Interface for credential storages
+
+
+ ICredentialStorage
+
+**Signature:**
 
 ```typescript
 export interface ICredentialStorage 
@@ -18,9 +26,9 @@ export interface ICredentialStorage
 
 |  Method | Description |
 |  --- | --- |
-|  [findCredentialById(id)](./polygonid-js-sdk.icredentialstorage.findcredentialbyid.md) |  |
-|  [findCredentialsByQuery(query)](./polygonid-js-sdk.icredentialstorage.findcredentialsbyquery.md) |  |
-|  [listCredentials()](./polygonid-js-sdk.icredentialstorage.listcredentials.md) |  |
-|  [removeCredential(id)](./polygonid-js-sdk.icredentialstorage.removecredential.md) |  |
-|  [saveAllCredentials(credentials)](./polygonid-js-sdk.icredentialstorage.saveallcredentials.md) |  |
-|  [saveCredential(credential)](./polygonid-js-sdk.icredentialstorage.savecredential.md) |  |
+|  [findCredentialById(id)](./polygonid-js-sdk.icredentialstorage.findcredentialbyid.md) | **_(BETA)_** finds credential by identifier |
+|  [findCredentialsByQuery(query)](./polygonid-js-sdk.icredentialstorage.findcredentialsbyquery.md) | **_(BETA)_** finds credential in the storage for given query |
+|  [listCredentials()](./polygonid-js-sdk.icredentialstorage.listcredentials.md) | **_(BETA)_** returns all credentials in the storage |
+|  [removeCredential(id)](./polygonid-js-sdk.icredentialstorage.removecredential.md) | **_(BETA)_** Removes credential from storage |
+|  [saveAllCredentials(credentials)](./polygonid-js-sdk.icredentialstorage.saveallcredentials.md) | **_(BETA)_** save all credential (upsert) to the storage |
+|  [saveCredential(credential)](./polygonid-js-sdk.icredentialstorage.savecredential.md) | **_(BETA)_** save credential to the storage |

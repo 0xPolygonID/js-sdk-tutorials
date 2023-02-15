@@ -8,22 +8,30 @@ hide_title: true
 
 ## LocalStoragePrivateKeyStore class
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Allows storing keys in the local storage of the browser (NOT ENCRYPTED: DO NOT USE IN THE PRODUCTION)
+
+
+ LocalStoragePrivateKeyStore  implements AbstractPrivateKeyStore interface
+
+**Signature:**
 
 ```typescript
 export declare class LocalStoragePrivateKeyStore implements AbstractPrivateKeyStore 
 ```
-<b>Implements:</b> [AbstractPrivateKeyStore](./polygonid-js-sdk.abstractprivatekeystore.md)
+**Implements:** [AbstractPrivateKeyStore](./polygonid-js-sdk.abstractprivatekeystore.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [storageKey](./polygonid-js-sdk.localstorageprivatekeystore.storagekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
+|  [storageKey](./polygonid-js-sdk.localstorageprivatekeystore.storagekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | **_(BETA)_** |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [get(args)](./polygonid-js-sdk.localstorageprivatekeystore.get.md) |  |  |
-|  [import(args)](./polygonid-js-sdk.localstorageprivatekeystore.import.md) |  |  |
+|  [get(args)](./polygonid-js-sdk.localstorageprivatekeystore.get.md) |  | **_(BETA)_** Gets key from the local storage |
+|  [import(args)](./polygonid-js-sdk.localstorageprivatekeystore.import.md) |  | **_(BETA)_** Import key to the local storage |

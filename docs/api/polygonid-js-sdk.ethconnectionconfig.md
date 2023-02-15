@@ -8,7 +8,15 @@ hide_title: true
 
 ## EthConnectionConfig interface
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Configuration of ethereum based blockchain connection
+
+
+ EthConnectionConfig
+
+**Signature:**
 
 ```typescript
 export interface EthConnectionConfig 
@@ -18,14 +26,14 @@ export interface EthConnectionConfig
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [confirmationBlockCount](./polygonid-js-sdk.ethconnectionconfig.confirmationblockcount.md) |  | number |  |
-|  [confirmationTimeout](./polygonid-js-sdk.ethconnectionconfig.confirmationtimeout.md) |  | number |  |
-|  [contractAddress](./polygonid-js-sdk.ethconnectionconfig.contractaddress.md) |  | string |  |
-|  [defaultGasLimit](./polygonid-js-sdk.ethconnectionconfig.defaultgaslimit.md) |  | number |  |
-|  [maxGasPrice?](./polygonid-js-sdk.ethconnectionconfig.maxgasprice.md) |  | string | <i>(Optional)</i> |
-|  [minGasPrice?](./polygonid-js-sdk.ethconnectionconfig.mingasprice.md) |  | string | <i>(Optional)</i> |
-|  [receiptTimeout](./polygonid-js-sdk.ethconnectionconfig.receipttimeout.md) |  | number |  |
-|  [rpcResponseTimeout](./polygonid-js-sdk.ethconnectionconfig.rpcresponsetimeout.md) |  | number |  |
-|  [url](./polygonid-js-sdk.ethconnectionconfig.url.md) |  | string |  |
-|  [waitBlockCycleTime](./polygonid-js-sdk.ethconnectionconfig.waitblockcycletime.md) |  | number |  |
-|  [waitReceiptCycleTime](./polygonid-js-sdk.ethconnectionconfig.waitreceiptcycletime.md) |  | number |  |
+|  [confirmationBlockCount](./polygonid-js-sdk.ethconnectionconfig.confirmationblockcount.md) |  | number | **_(BETA)_** |
+|  [confirmationTimeout](./polygonid-js-sdk.ethconnectionconfig.confirmationtimeout.md) |  | number | **_(BETA)_** |
+|  [contractAddress](./polygonid-js-sdk.ethconnectionconfig.contractaddress.md) |  | string | **_(BETA)_** |
+|  [defaultGasLimit](./polygonid-js-sdk.ethconnectionconfig.defaultgaslimit.md) |  | number | **_(BETA)_** |
+|  [maxGasPrice?](./polygonid-js-sdk.ethconnectionconfig.maxgasprice.md) |  | string | **_(BETA)_** _(Optional)_ |
+|  [minGasPrice?](./polygonid-js-sdk.ethconnectionconfig.mingasprice.md) |  | string | **_(BETA)_** _(Optional)_ |
+|  [receiptTimeout](./polygonid-js-sdk.ethconnectionconfig.receipttimeout.md) |  | number | **_(BETA)_** |
+|  [rpcResponseTimeout](./polygonid-js-sdk.ethconnectionconfig.rpcresponsetimeout.md) |  | number | **_(BETA)_** |
+|  [url](./polygonid-js-sdk.ethconnectionconfig.url.md) |  | string | **_(BETA)_** |
+|  [waitBlockCycleTime](./polygonid-js-sdk.ethconnectionconfig.waitblockcycletime.md) |  | number | **_(BETA)_** |
+|  [waitReceiptCycleTime](./polygonid-js-sdk.ethconnectionconfig.waitreceiptcycletime.md) |  | number | **_(BETA)_** |

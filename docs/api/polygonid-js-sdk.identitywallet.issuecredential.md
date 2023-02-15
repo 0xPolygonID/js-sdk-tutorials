@@ -8,7 +8,9 @@ hide_title: true
 
 ## IdentityWallet.issueCredential() method
 
-<b>Signature:</b>
+Issues new credential from issuer according to the claim request
+
+**Signature:**
 
 ```typescript
 issueCredential(issuerDID: DID, req: ClaimRequest, hostUrl: string, opts?: CredentialIssueOptions): Promise<W3CCredential>;
@@ -18,11 +20,13 @@ issueCredential(issuerDID: DID, req: ClaimRequest, hostUrl: string, opts?: Crede
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  issuerDID | DID |  |
-|  req | [ClaimRequest](./polygonid-js-sdk.claimrequest.md) |  |
-|  hostUrl | string |  |
-|  opts | [CredentialIssueOptions](./polygonid-js-sdk.credentialissueoptions.md) | <i>(Optional)</i> |
+|  issuerDID | DID | issuer identity |
+|  req | [ClaimRequest](./polygonid-js-sdk.claimrequest.md) | claim request |
+|  hostUrl | string | url that will be a part of credential id prefix |
+|  opts | [CredentialIssueOptions](./polygonid-js-sdk.credentialissueoptions.md) | _(Optional)_ with / without RHS |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;W3CCredential&gt;
+
+`Promise<W3CCredential>` - returns created W3CCredential

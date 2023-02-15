@@ -8,7 +8,12 @@ hide_title: true
 
 ## ICredentialStorage.findCredentialById() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+finds credential by identifier
+
+**Signature:**
 
 ```typescript
 findCredentialById(id: string): Promise<W3CCredential | undefined>;
@@ -18,8 +23,10 @@ findCredentialById(id: string): Promise<W3CCredential | undefined>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  id | string |  |
+|  id | string | id of credential |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;W3CCredential \| undefined&gt;
+
+`{(Promise<W3CCredential | undefined>)}`

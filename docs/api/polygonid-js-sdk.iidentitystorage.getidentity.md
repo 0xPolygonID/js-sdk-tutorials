@@ -8,7 +8,12 @@ hide_title: true
 
 ## IIdentityStorage.getIdentity() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+gets identity from the the data source
+
+**Signature:**
 
 ```typescript
 getIdentity(identifier: string): Promise<Identity | undefined>;
@@ -18,8 +23,10 @@ getIdentity(identifier: string): Promise<Identity | undefined>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  identifier | string |  |
+|  identifier | string | id of identity |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Identity](./polygonid-js-sdk.identity.md) \| undefined&gt;
+
+`{(Promise<Identity | undefined>)}`

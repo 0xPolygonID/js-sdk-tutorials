@@ -8,7 +8,12 @@ hide_title: true
 
 ## AuthHandler.handleAuthorizationRequest() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Handles only messages with authorization/v1.0/request type Generates all requested proofs and wraps authorization response message to JWZ token
+
+**Signature:**
 
 ```typescript
 handleAuthorizationRequest(did: DID, request: Uint8Array): Promise<{
@@ -22,9 +27,11 @@ handleAuthorizationRequest(did: DID, request: Uint8Array): Promise<{
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  did | DID |  |
-|  request | Uint8Array |  |
+|  did | DID | an identity that will process the request |
+|  request | Uint8Array | raw request |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;{ token: string; authRequest: AuthorizationRequestMessage; authResponse: AuthorizationResponseMessage; }&gt;
+
+`Promise<{token: string; authRequest: AuthorizationRequestMessage; authResponse: AuthorizationResponseMessage;}>` JWZ token, parsed request and response

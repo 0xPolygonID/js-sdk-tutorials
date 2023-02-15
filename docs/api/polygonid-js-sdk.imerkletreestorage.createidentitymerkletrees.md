@@ -8,7 +8,12 @@ hide_title: true
 
 ## IMerkleTreeStorage.createIdentityMerkleTrees() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+creates merkle tree in the storage
+
+**Signature:**
 
 ```typescript
 createIdentityMerkleTrees(identifier: string): Promise<IdentityMerkleTreeMetaInformation[]>;
@@ -20,6 +25,8 @@ createIdentityMerkleTrees(identifier: string): Promise<IdentityMerkleTreeMetaInf
 |  --- | --- | --- |
 |  identifier | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[IdentityMerkleTreeMetaInformation](./polygonid-js-sdk.identitymerkletreemetainformation.md)\[\]&gt;
+
+`Promise<IdentityMerkleTreeMetaInformation[]>`

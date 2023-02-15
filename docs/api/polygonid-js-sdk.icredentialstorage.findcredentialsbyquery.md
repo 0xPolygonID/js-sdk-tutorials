@@ -8,7 +8,12 @@ hide_title: true
 
 ## ICredentialStorage.findCredentialsByQuery() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+finds credential in the storage for given query
+
+**Signature:**
 
 ```typescript
 findCredentialsByQuery(query: ProofQuery): Promise<W3CCredential[]>;
@@ -18,8 +23,10 @@ findCredentialsByQuery(query: ProofQuery): Promise<W3CCredential[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  query | ProofQuery |  |
+|  query | ProofQuery | query to apply |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;W3CCredential\[\]&gt;
+
+`{Promise<W3CCredential[]>}`

@@ -8,7 +8,12 @@ hide_title: true
 
 ## BjjProvider.sign() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+signs prepared payload of size, with a key id
+
+**Signature:**
 
 ```typescript
 sign(keyId: KmsKeyId, data: Uint8Array): Promise<Uint8Array>;
@@ -18,9 +23,11 @@ sign(keyId: KmsKeyId, data: Uint8Array): Promise<Uint8Array>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  keyId | [KmsKeyId](./polygonid-js-sdk.kmskeyid.md) |  |
-|  data | Uint8Array |  |
+|  keyId | [KmsKeyId](./polygonid-js-sdk.kmskeyid.md) | key identifier |
+|  data | Uint8Array | data to sign (32 bytes) |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Uint8Array&gt;
+
+Uint8Array signature

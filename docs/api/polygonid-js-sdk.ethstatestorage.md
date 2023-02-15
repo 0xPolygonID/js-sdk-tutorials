@@ -8,31 +8,37 @@ hide_title: true
 
 ## EthStateStorage class
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+
+ EthStateStorage  implements IStateStorage interface
+
+**Signature:**
 
 ```typescript
 export declare class EthStateStorage implements IStateStorage 
 ```
-<b>Implements:</b> [IStateStorage](./polygonid-js-sdk.istatestorage.md)
+**Implements:** [IStateStorage](./polygonid-js-sdk.istatestorage.md)
 
 ## Constructors
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(ethConfig)](./polygonid-js-sdk.ethstatestorage._constructor_.md) |  | Constructs a new instance of the <code>EthStateStorage</code> class |
+|  [(constructor)(ethConfig)](./polygonid-js-sdk.ethstatestorage._constructor_.md) |  | **_(BETA)_** Creates an instance of EthStateStorage. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [provider](./polygonid-js-sdk.ethstatestorage.provider.md) | <code>readonly</code> | ethers.providers.JsonRpcProvider |  |
-|  [stateContract](./polygonid-js-sdk.ethstatestorage.statecontract.md) | <code>readonly</code> | ethers.Contract |  |
+|  [provider](./polygonid-js-sdk.ethstatestorage.provider.md) | <code>readonly</code> | ethers.providers.JsonRpcProvider | **_(BETA)_** |
+|  [stateContract](./polygonid-js-sdk.ethstatestorage.statecontract.md) | <code>readonly</code> | ethers.Contract | **_(BETA)_** |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [getGISTProof(id)](./polygonid-js-sdk.ethstatestorage.getgistproof.md) |  |  |
-|  [getGISTRootInfo(id)](./polygonid-js-sdk.ethstatestorage.getgistrootinfo.md) |  |  |
-|  [getLatestStateById(issuerId)](./polygonid-js-sdk.ethstatestorage.getlateststatebyid.md) |  |  |
-|  [publishState(proof, signer)](./polygonid-js-sdk.ethstatestorage.publishstate.md) |  |  |
+|  [getGISTProof(id)](./polygonid-js-sdk.ethstatestorage.getgistproof.md) |  | **_(BETA)_** generates proof of inclusion / non-inclusion to global identity state for given identity |
+|  [getGISTRootInfo(id)](./polygonid-js-sdk.ethstatestorage.getgistrootinfo.md) |  | **_(BETA)_** |
+|  [getLatestStateById(id)](./polygonid-js-sdk.ethstatestorage.getlateststatebyid.md) |  | **_(BETA)_** gets latest state of identity |
+|  [publishState(proof, signer)](./polygonid-js-sdk.ethstatestorage.publishstate.md) |  | **_(BETA)_** method to publish state onchain |

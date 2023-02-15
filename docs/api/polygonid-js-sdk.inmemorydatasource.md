@@ -8,19 +8,27 @@ hide_title: true
 
 ## InMemoryDataSource class
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Generic Memory Data Source
+
+
+ InMemoryDataSource - class  Type
+
+**Signature:**
 
 ```typescript
 export declare class InMemoryDataSource<Type> implements IDataSource<Type> 
 ```
-<b>Implements:</b> IDataSource&lt;Type&gt;
+**Implements:** IDataSource&lt;Type&gt;
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [delete(key, keyName)](./polygonid-js-sdk.inmemorydatasource.delete.md) |  |  |
-|  [get(key, keyName)](./polygonid-js-sdk.inmemorydatasource.get.md) |  |  |
-|  [load()](./polygonid-js-sdk.inmemorydatasource.load.md) |  |  |
-|  [patchData(value)](./polygonid-js-sdk.inmemorydatasource.patchdata.md) |  |  |
-|  [save(key, value, keyName)](./polygonid-js-sdk.inmemorydatasource.save.md) |  |  |
+|  [delete(key, keyName)](./polygonid-js-sdk.inmemorydatasource.delete.md) |  | **_(BETA)_** deletes from value from the memory |
+|  [get(key, keyName)](./polygonid-js-sdk.inmemorydatasource.get.md) |  | **_(BETA)_** gets value from from the memory |
+|  [load()](./polygonid-js-sdk.inmemorydatasource.load.md) |  | **_(BETA)_** loads from value from the memory |
+|  [patchData(value)](./polygonid-js-sdk.inmemorydatasource.patchdata.md) |  | **_(BETA)_** updates in the memory |
+|  [save(key, value, keyName)](./polygonid-js-sdk.inmemorydatasource.save.md) |  | **_(BETA)_** saves in the memory |

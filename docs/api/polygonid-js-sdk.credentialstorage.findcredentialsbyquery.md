@@ -8,7 +8,9 @@ hide_title: true
 
 ## CredentialStorage.findCredentialsByQuery() method
 
-<b>Signature:</b>
+returns all credentials in the storage
+
+**Signature:**
 
 ```typescript
 findCredentialsByQuery(query: ProofQuery): Promise<W3CCredential[]>;
@@ -20,6 +22,8 @@ findCredentialsByQuery(query: ProofQuery): Promise<W3CCredential[]>;
 |  --- | --- | --- |
 |  query | ProofQuery |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;W3CCredential\[\]&gt;
+
+`Promise<W3CCredential[]>`

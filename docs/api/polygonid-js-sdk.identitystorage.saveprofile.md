@@ -8,7 +8,10 @@ hide_title: true
 
 ## IdentityStorage.saveProfile() method
 
-<b>Signature:</b>
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+**Signature:**
 
 ```typescript
 saveProfile(profile: Profile): Promise<void>;
@@ -20,6 +23,6 @@ saveProfile(profile: Profile): Promise<void>;
 |  --- | --- | --- |
 |  profile | [Profile](./polygonid-js-sdk.profile.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;

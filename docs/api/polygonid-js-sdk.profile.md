@@ -8,7 +8,9 @@ hide_title: true
 
 ## Profile type
 
-<b>Signature:</b>
+Profile structure that can be used for profiles storage
+
+**Signature:**
 
 ```typescript
 export type Profile = {

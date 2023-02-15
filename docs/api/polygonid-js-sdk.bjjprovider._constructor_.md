@@ -8,9 +8,12 @@ hide_title: true
 
 ## BjjProvider.(constructor)
 
-Constructs a new instance of the `BjjProvider` class
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
 
-<b>Signature:</b>
+Creates an instance of BjjProvider.
+
+**Signature:**
 
 ```typescript
 constructor(keyType: KmsKeyType, keyStore: AbstractPrivateKeyStore);
@@ -20,5 +23,5 @@ constructor(keyType: KmsKeyType, keyStore: AbstractPrivateKeyStore);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  keyType | [KmsKeyType](./polygonid-js-sdk.kmskeytype.md) |  |
-|  keyStore | [AbstractPrivateKeyStore](./polygonid-js-sdk.abstractprivatekeystore.md) |  |
+|  keyType | [KmsKeyType](./polygonid-js-sdk.kmskeytype.md) | kms key type |
+|  keyStore | [AbstractPrivateKeyStore](./polygonid-js-sdk.abstractprivatekeystore.md) | key store for kms |
