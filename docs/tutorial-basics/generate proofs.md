@@ -11,7 +11,7 @@ Credential is issued to the user with a BJJ signature proof, so we can generate 
 
 ```javascript
 async function generateProofs() {
-  console.log("=============== transit state ===============");
+  console.log("=============== generate proofs ===============");
 
   const dataStorage = initDataStorage();
   const credentialWallet = await initCredentialWallet(dataStorage);
@@ -19,9 +19,15 @@ async function generateProofs() {
     dataStorage,
     credentialWallet
   );
-  const proofService = await initProofService(identityWallet,credentialWallet,dataStorage.states)
+  const circuitStorage = await initCircuitStorage();
+  const proofService = await initProofService(
+    identityWallet,
+    credentialWallet,
+    dataStorage.states,
+    circuitStorage
+  );
 
-  const { did:userDID, credential:authBJJCredentialUser } =
+  const { did: userDID, credential: authBJJCredentialUser } =
     await identityWallet.createIdentity(
       "http://metamask.com/", // this is url that will be a part of auth bjj credential identifier
       "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
@@ -35,7 +41,7 @@ async function generateProofs() {
   console.log("=============== user did ===============");
   console.log(userDID.toString());
 
-  const { did:issuerDID, credential:issuerAuthBJJCredential } =
+  const { did: issuerDID, credential: issuerAuthBJJCredential } =
     await identityWallet.createIdentity(
       "http://metamask.com/", // this is url that will be a part of auth bjj credential identifier
       "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
@@ -66,21 +72,30 @@ async function generateProofs() {
     }
   );
 
+  dataStorage.credential.saveCredential(credential);
 
-  dataStorage.credential.saveCredential(credential)
+  console.log(
+    "================= generate Iden3SparseMerkleTreeProof ======================="
+  );
 
+  const res = await identityWallet.addCredentialsToMerkleTree(
+    [credential],
+    issuerDID
+  );
 
-  console.log("================= generate Iden3SparseMerkleTreeProof =======================")
+  console.log("================= push states to rhs ===================");
 
-  const res = await identityWallet.addCredentialsToMerkleTree([credential], issuerDID);
+  await identityWallet.publishStateToRHS(
+    issuerDID,
+    "https://rhs-staging.polygonid.me"
+  );
 
-  console.log("================= push states to rhs ===================")
+  console.log("================= publish to blockchain ===================");
 
-  await identityWallet.publishStateToRHS(issuerDID, "https://rhs-staging.polygonid.me");
-
-  console.log("================= publish to blockchain ===================")
-
-  const ethSigner = new ethers.Wallet('08562dec34e81fbc26f719048efb075f217bf911521d4e674cf7b7ad51f989eb',(dataStorage.states as EthStateStorage).provider);
+  const ethSigner = new ethers.Wallet(
+    "",
+    (dataStorage.states as EthStateStorage).provider
+  );
   const txId = await proofService.transitState(
     issuerDID,
     res.oldTreeState,
@@ -88,69 +103,90 @@ async function generateProofs() {
     dataStorage.states,
     ethSigner
   );
-  console.log(txId)
+  console.log(txId);
 
-  console.log("================= generate credentialAtomicSigV2 ===================")
+  console.log(
+    "================= generate credentialAtomicSigV2 ==================="
+  );
 
   const proofReqSig: ZeroKnowledgeProofRequest = {
     id: 1,
     circuitId: CircuitId.AtomicQuerySigV2,
     optional: false,
     query: {
-      allowedIssuers: ['*'],
+      allowedIssuers: ["*"],
       type: credentialRequest.type,
       context:
-        'https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json-ld/kyc-v3.json-ld',
-      req: {
+        "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json-ld/kyc-v3.json-ld",
+      credentialSubject: {
         documentType: {
-          $eq: 99
-        }
-      }
-    }
+          $eq: 99,
+        },
+      },
+    },
   };
 
-  const { proof } = await proofService.generateProof(proofReqSig, userDID);
+  let credsToChooseForZKPReq = await credentialWallet.findByQuery(
+    proofReqSig.query
+  );
+
+  const { proof } = await proofService.generateProof(
+    proofReqSig,
+    userDID,
+    credsToChooseForZKPReq[0]
+  );
 
   console.log(JSON.stringify(proof));
-  const sigProofOk = await proofService.verifyProof(proof, CircuitId.AtomicQuerySigV2);
+  const sigProofOk = await proofService.verifyProof(
+    proof,
+    CircuitId.AtomicQuerySigV2
+  );
   console.log("valid: ", sigProofOk);
 
+  console.log(
+    "================= generate credentialAtomicMTPV2 ==================="
+  );
 
-
-
-  console.log("================= generate credentialAtomicMTPV2 ===================")
-
-
-    const credsWithIden3MTPProof = await identityWallet.generateIden3SparseMerkleTreeProof(
+  const credsWithIden3MTPProof =
+    await identityWallet.generateIden3SparseMerkleTreeProof(
       issuerDID,
       res.credentials,
       txId
     );
 
-    console.log(credsWithIden3MTPProof)
-    credentialWallet.saveAll(credsWithIden3MTPProof);
+  console.log(credsWithIden3MTPProof);
+  credentialWallet.saveAll(credsWithIden3MTPProof);
 
-    const proofReqMtp: ZeroKnowledgeProofRequest = {
-      id: 1,
-      circuitId: CircuitId.AtomicQueryMTPV2,
-      optional: false,
-      query: {
-        allowedIssuers: ['*'],
-        type: credentialRequest.type,
-        context:
-          'https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json-ld/kyc-v3.json-ld',
-        req: {
-          documentType: {
-            $eq: 99
-          }
-        }
-      }
-    };
-
-    const { proof:proofMTP } = await proofService.generateProof(proofReqMtp, userDID);
-    console.log(JSON.stringify(proofMTP));
-    const mtpProofOk = await proofService.verifyProof(proof, CircuitId.AtomicQueryMTPV2);
-    console.log("valid: ", mtpProofOk);
+  const proofReqMtp: ZeroKnowledgeProofRequest = {
+    id: 1,
+    circuitId: CircuitId.AtomicQueryMTPV2,
+    optional: false,
+    query: {
+      allowedIssuers: ["*"],
+      type: credentialRequest.type,
+      context:
+        "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json-ld/kyc-v3.json-ld",
+      credentialSubject: {
+        birthday: {
+          $lt: 20020101,
+        },
+      },
+    },
+  };
+  credsToChooseForZKPReq = await credentialWallet.findByQuery(
+    proofReqSig.query
+  );
+  const { proof: proofMTP } = await proofService.generateProof(
+    proofReqMtp,
+    userDID,
+    credsToChooseForZKPReq[0]
+  );
+  console.log(JSON.stringify(proofMTP));
+  const mtpProofOk = await proofService.verifyProof(
+    proof,
+    CircuitId.AtomicQueryMTPV2
+  );
+  console.log("valid: ", mtpProofOk);  
 
 }
 ```
