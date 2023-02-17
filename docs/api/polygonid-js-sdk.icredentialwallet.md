@@ -27,9 +27,11 @@ export interface ICredentialWallet
 |  Method | Description |
 |  --- | --- |
 |  [createCredential(hostUrl, issuer, request, schema, rhsUrl)](./polygonid-js-sdk.icredentialwallet.createcredential.md) | **_(BETA)_** Creates a W3C verifiable Credential object |
+|  [filterByCredentialSubject(credentials, subject)](./polygonid-js-sdk.icredentialwallet.filterbycredentialsubject.md) | **_(BETA)_** Filters given credentials with given credential subject |
 |  [findByContextType(context, type)](./polygonid-js-sdk.icredentialwallet.findbycontexttype.md) | **_(BETA)_** Finds credentials by JSON-LD schema and type |
 |  [findById(id)](./polygonid-js-sdk.icredentialwallet.findbyid.md) | **_(BETA)_** Finds the credential by its id |
 |  [findByQuery(query)](./polygonid-js-sdk.icredentialwallet.findbyquery.md) | **_(BETA)_** Find credential using iden3 query language |
+|  [findNonRevokedCredential(creds)](./polygonid-js-sdk.icredentialwallet.findnonrevokedcredential.md) | **_(BETA)_** Finds non-revoked credential from a given list by resolving their credential status |
 |  [getAuthBJJCredential(did)](./polygonid-js-sdk.icredentialwallet.getauthbjjcredential.md) | **_(BETA)_** Finds Auth BJJ credential for given user |
 |  [getRevocationStatus(credStatus, issuerDID, issuerData)](./polygonid-js-sdk.icredentialwallet.getrevocationstatus.md) | **_(BETA)_** Fetches Revocation status depended on type |
 |  [getRevocationStatusFromCredential(cred)](./polygonid-js-sdk.icredentialwallet.getrevocationstatusfromcredential.md) | **_(BETA)_** Fetches or Builds a revocation status for a given credential Supported types for credentialStatus field: SparseMerkleTreeProof, Iden3ReverseSparseMerkleTreeProof |

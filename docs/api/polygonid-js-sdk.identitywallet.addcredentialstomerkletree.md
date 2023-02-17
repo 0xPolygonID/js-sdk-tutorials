@@ -20,7 +20,7 @@ addCredentialsToMerkleTree(credentials: W3CCredential[], issuerDID: DID): Promis
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  credentials | W3CCredential\[\] | credentials to include in the claims tree |
+|  credentials | [W3CCredential](./polygonid-js-sdk.w3ccredential.md)\[\] | credentials to include in the claims tree |
 |  issuerDID | DID | issuer did |
 
 **Returns:**

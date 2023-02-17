@@ -23,4 +23,4 @@ constructor(_dataSource: IDataSource<CircuitData>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_dataSource | IDataSource&lt;CircuitData&gt; | data source to store circuit keys |
+|  \_dataSource | IDataSource&lt;[CircuitData](./polygonid-js-sdk.circuitdata.md)&gt; | data source to store circuit keys |

@@ -21,7 +21,7 @@ sign(payload: Uint8Array, credential: W3CCredential): Promise<Signature>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  payload | Uint8Array |  |
-|  credential | W3CCredential | Auth BJJ Credential |
+|  credential | [W3CCredential](./polygonid-js-sdk.w3ccredential.md) | Auth BJJ Credential |
 
 **Returns:**
 

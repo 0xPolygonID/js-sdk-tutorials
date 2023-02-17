@@ -19,7 +19,7 @@ revokeCredential(issuerDID: DID, credential: W3CCredential): Promise<number>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  issuerDID | DID | identifier of the issuer |
-|  credential | W3CCredential | credential to revoke |
+|  credential | [W3CCredential](./polygonid-js-sdk.w3ccredential.md) | credential to revoke |
 
 **Returns:**
 

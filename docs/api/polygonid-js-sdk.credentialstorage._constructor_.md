@@ -8,6 +8,9 @@ hide_title: true
 
 ## CredentialStorage.(constructor)
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
 Creates an instance of CredentialStorage.
 
 **Signature:**
@@ -20,4 +23,4 @@ constructor(_dataSource: IDataSource<W3CCredential>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_dataSource | IDataSource&lt;W3CCredential&gt; | W3CCredential credential KV data source |
+|  \_dataSource | IDataSource&lt;[W3CCredential](./polygonid-js-sdk.w3ccredential.md)&gt; | W3CCredential credential KV data source |

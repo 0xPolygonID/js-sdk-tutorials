@@ -26,4 +26,6 @@ export interface IAuthHandler
 
 |  Method | Description |
 |  --- | --- |
-|  [handleAuthorizationRequest(id, request)](./polygonid-js-sdk.iauthhandler.handleauthorizationrequest.md) | **_(BETA)_** |
+|  [generateAuthorizationResponse(userGenesisDID, authProfileNonce, authRequest, zkpRequestsWithCreds)](./polygonid-js-sdk.iauthhandler.generateauthorizationresponse.md) | **_(BETA)_** Generates zero-knowledge proofs for given requests and credentials  |
+|  [handleAuthorizationRequestForGenesisDID(did, request)](./polygonid-js-sdk.iauthhandler.handleauthorizationrequestforgenesisdid.md) | **_(BETA)_** Handle authorization request protocol message |
+|  [parseAuthorizationRequest(request)](./polygonid-js-sdk.iauthhandler.parseauthorizationrequest.md) | **_(BETA)_** unpacks authorization request  |

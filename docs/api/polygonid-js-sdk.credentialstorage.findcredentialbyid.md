@@ -8,6 +8,9 @@ hide_title: true
 
 ## CredentialStorage.findCredentialById() method
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
 returns all credentials in the storage
 
 **Signature:**
@@ -24,6 +27,6 @@ findCredentialById(id: string): Promise<W3CCredential | undefined>;
 
 **Returns:**
 
-Promise&lt;W3CCredential \| undefined&gt;
+Promise&lt;[W3CCredential](./polygonid-js-sdk.w3ccredential.md) \| undefined&gt;
 
 `Promise<W3CCredential[]>`

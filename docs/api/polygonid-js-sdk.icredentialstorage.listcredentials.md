@@ -20,6 +20,6 @@ listCredentials(): Promise<W3CCredential[]>;
 ```
 **Returns:**
 
-Promise&lt;W3CCredential\[\]&gt;
+Promise&lt;[W3CCredential](./polygonid-js-sdk.w3ccredential.md)\[\]&gt;
 
 `Promise<W3CCredential[]>`

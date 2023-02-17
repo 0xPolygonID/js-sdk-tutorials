@@ -16,7 +16,7 @@ Creates a W3C verifiable Credential object
 **Signature:**
 
 ```typescript
-createCredential(hostUrl: string, issuer: DID, request: ClaimRequest, schema: Schema, rhsUrl?: string): W3CCredential;
+createCredential(hostUrl: string, issuer: DID, request: CredentialRequest, schema: JSONSchema, rhsUrl?: string): W3CCredential;
 ```
 
 ## Parameters
@@ -25,12 +25,12 @@ createCredential(hostUrl: string, issuer: DID, request: ClaimRequest, schema: Sc
 |  --- | --- | --- |
 |  hostUrl | string | URL that will be used as a prefix for credential identifier |
 |  issuer | DID | issuer identity |
-|  request | [ClaimRequest](./polygonid-js-sdk.claimrequest.md) | specification of claim creation parameters |
-|  schema | Schema | JSON schema for W3C Verifiable Credential |
+|  request | [CredentialRequest](./polygonid-js-sdk.credentialrequest.md) | specification of claim creation parameters |
+|  schema | [JSONSchema](./polygonid-js-sdk.jsonschema.md) | JSON schema for W3C Verifiable Credential |
 |  rhsUrl | string | _(Optional)_ URL of reverse hash service, if it's not set - host url is used for 'SparseMerkleTreeProof' credential status type |
 
 **Returns:**
 
-W3CCredential
+[W3CCredential](./polygonid-js-sdk.w3ccredential.md)
 
 W3CCredential

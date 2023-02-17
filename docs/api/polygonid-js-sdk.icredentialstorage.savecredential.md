@@ -23,7 +23,7 @@ saveCredential(credential: W3CCredential): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  credential | W3CCredential | credential to save |
+|  credential | [W3CCredential](./polygonid-js-sdk.w3ccredential.md) | credential to save |
 
 **Returns:**
 

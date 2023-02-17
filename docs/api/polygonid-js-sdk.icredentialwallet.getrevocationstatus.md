@@ -23,12 +23,12 @@ getRevocationStatus(credStatus: CredentialStatus | RHSCredentialStatus, issuerDI
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  credStatus | CredentialStatus &#124; RHSCredentialStatus | credentialStatus field of the Verifiable Credential. Supported types for credentialStatus field: SparseMerkleTreeProof, Iden3ReverseSparseMerkleTreeProof |
+|  credStatus | [CredentialStatus](./polygonid-js-sdk.credentialstatus.md) &#124; [RHSCredentialStatus](./polygonid-js-sdk.rhscredentialstatus.md) | credentialStatus field of the Verifiable Credential. Supported types for credentialStatus field: SparseMerkleTreeProof, Iden3ReverseSparseMerkleTreeProof |
 |  issuerDID | DID | credential issuer identity |
-|  issuerData | IssuerData | metadata of the issuer, usually contained in the BjjSignature / Iden3SparseMerkleTreeProof |
+|  issuerData | [IssuerData](./polygonid-js-sdk.issuerdata.md) | metadata of the issuer, usually contained in the BjjSignature / Iden3SparseMerkleTreeProof |
 
 **Returns:**
 
-Promise&lt;RevocationStatus&gt;
+Promise&lt;[RevocationStatus](./polygonid-js-sdk.revocationstatus.md)&gt;
 
 `Promise<RevocationStatus>`

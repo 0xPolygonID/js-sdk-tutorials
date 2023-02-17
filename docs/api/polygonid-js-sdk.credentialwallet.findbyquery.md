@@ -23,10 +23,10 @@ findByQuery(query: ProofQuery): Promise<W3CCredential[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  query | ProofQuery | protocol query to find credential |
+|  query | [ProofQuery](./polygonid-js-sdk.proofquery.md) | protocol query to find credential |
 
 **Returns:**
 
-Promise&lt;W3CCredential\[\]&gt;
+Promise&lt;[W3CCredential](./polygonid-js-sdk.w3ccredential.md)\[\]&gt;
 
 `Promise<W3CCredential[]>`

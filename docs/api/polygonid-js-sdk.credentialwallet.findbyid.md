@@ -27,6 +27,6 @@ findById(id: string): Promise<W3CCredential | undefined>;
 
 **Returns:**
 
-Promise&lt;W3CCredential \| undefined&gt;
+Promise&lt;[W3CCredential](./polygonid-js-sdk.w3ccredential.md) \| undefined&gt;
 
 `Promise<W3CCredential | undefined>`

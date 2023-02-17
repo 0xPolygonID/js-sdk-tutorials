@@ -12,21 +12,53 @@ hide_title: true
 
 |  Class | Description |
 |  --- | --- |
+|  [AtomicQueryMTPV2Inputs](./polygonid-js-sdk.atomicquerymtpv2inputs.md) | <p>**_(BETA)_** AtomicQueryMTPInputs ZK private inputs for credentialAtomicQueryMTP.circom</p><p> AtomicQueryMTPV2Inputs  {BaseConfig}</p> |
+|  [AtomicQueryMTPV2PubSignals](./polygonid-js-sdk.atomicquerymtpv2pubsignals.md) | <p>**_(BETA)_** Public signals</p><p> AtomicQueryMTPV2PubSignals  {BaseConfig}</p> |
+|  [AtomicQuerySigV2Inputs](./polygonid-js-sdk.atomicquerysigv2inputs.md) | <p>**_(BETA)_** AtomicQuerySigV2Inputs representation for credentialAtomicQuerySig.circom Inputs and public signals declaration, marshalling and parsing</p><p> AtomicQuerySigV2Inputs  {BaseConfig}</p> |
+|  [AtomicQuerySigV2PubSignals](./polygonid-js-sdk.atomicquerysigv2pubsignals.md) | <p>**_(BETA)_** public signals </p><p> AtomicQuerySigV2PubSignals  {BaseConfig}</p> |
 |  [AuthHandler](./polygonid-js-sdk.authhandler.md) | <p>**_(BETA)_** Allows to process AuthorizationRequest protocol message and produce JWZ response.</p><p> AuthHandler  implements IAuthHandler interface</p> |
+|  [AuthV2Inputs](./polygonid-js-sdk.authv2inputs.md) | <p>**_(BETA)_** Auth v2 circuit representation Inputs and public signals declaration, marshalling and parsing</p><p> AuthV2Inputs  {BaseConfig}</p> |
+|  [AuthV2PubSignals](./polygonid-js-sdk.authv2pubsignals.md) | <p>**_(BETA)_** public signals</p><p> AuthV2PubSignals</p> |
+|  [BaseConfig](./polygonid-js-sdk.baseconfig.md) | <p>**_(BETA)_** base config for circuit inputs</p><p> BaseConfig</p> |
 |  [BjjProvider](./polygonid-js-sdk.bjjprovider.md) | <p>**_(BETA)_** Provider for Baby Jub Jub keys</p><p> BjjProvider  implements IKeyProvider interface</p> |
+|  [BJJSignatureProof2021](./polygonid-js-sdk.bjjsignatureproof2021.md) | <p>**_(BETA)_** BJJSignatureProof2021 is a signature of core claim by BJJ key </p><p> BJJSignatureProof2021</p> |
 |  [BrowserDataSource](./polygonid-js-sdk.browserdatasource.md) | <p>**_(BETA)_** Storage in the browser, uses local storage</p><p> BrowserDataSource  Type</p> |
+|  [CircuitClaim](./polygonid-js-sdk.circuitclaim.md) | <p>**_(BETA)_** Claim structure for circuit inputs</p><p> CircuitClaim</p> |
 |  [CircuitStorage](./polygonid-js-sdk.circuitstorage.md) | <p>**_(BETA)_** Implementation of ICircuitStorage to store keys data</p><p> CircuitStorage  implements ICircuitStorage interface</p> |
-|  [CredentialStorage](./polygonid-js-sdk.credentialstorage.md) | <p>Implementation of ICredentialStorage with KV Data source</p><p>  CredentialStorage  {ICredentialStorage}</p> |
+|  [CredentialStorage](./polygonid-js-sdk.credentialstorage.md) | <p>**_(BETA)_** Implementation of ICredentialStorage with KV Data source</p><p> CredentialStorage  {ICredentialStorage}</p> |
 |  [CredentialWallet](./polygonid-js-sdk.credentialwallet.md) | <p>**_(BETA)_** Wallet instance is a wrapper of CRUD logic for W3C credentials, also it allows to fetch revocation statuses.</p><p> CredentialWallet  implements ICredentialWallet interface</p> |
+|  [DataPrepareHandlerFunc](./polygonid-js-sdk.datapreparehandlerfunc.md) | <p>**_(BETA)_** Handler to</p><p> DataPrepareHandlerFunc</p> |
 |  [EthStateStorage](./polygonid-js-sdk.ethstatestorage.md) | <p>**_(BETA)_** </p><p> EthStateStorage  implements IStateStorage interface</p> |
+|  [FilterQuery](./polygonid-js-sdk.filterquery.md) | <p>**_(BETA)_** Filter for queries of credentialSubject with a json path e.g birthday.date</p><p> FilterQuery  implements IFilterQuery interface</p> |
+|  [FSKeyLoader](./polygonid-js-sdk.fskeyloader.md) | <p>**_(BETA)_** Loader from file system</p><p> FSKeyLoader  implements IKeyLoader interface</p> |
+|  [HttpSchemaLoader](./polygonid-js-sdk.httpschemaloader.md) | <p>**_(BETA)_** loads schemas from http source</p><p> HttpSchemaLoader  implements ISchemaLoader interface</p> |
+|  [Iden3SparseMerkleTreeProof](./polygonid-js-sdk.iden3sparsemerkletreeproof.md) | <p>**_(BETA)_** Iden3SparseMerkleProof is a iden3 protocol merkle tree proof</p><p> Iden3SparseMerkleTreeProof</p> |
 |  [IdentityStorage](./polygonid-js-sdk.identitystorage.md) | <p>**_(BETA)_** Implementation of the IIdentityStorage with KV data source</p><p> IdentityStorage  implements IIdentityStorage interface</p> |
 |  [IdentityWallet](./polygonid-js-sdk.identitywallet.md) | <p>Wallet instance to manage the digital identity based on iden3 protocol allows to: create identity/profile, sign payloads (bigint / bytes), generate keys, generate Merkle tree proofs of inclusion / non-inclusion to Merkle trees, issue credentials with a BJJSignature and Iden3SparseMerkleTree Proofs, revoke credentials, add credentials to Merkle trees, push states to reverse hash service</p><p> IdentityWallet - class</p><p> implements IIdentityWallet interface</p> |
 |  [InMemoryDataSource](./polygonid-js-sdk.inmemorydatasource.md) | <p>**_(BETA)_** Generic Memory Data Source</p><p> InMemoryDataSource - class  Type</p> |
 |  [InMemoryMerkleTreeStorage](./polygonid-js-sdk.inmemorymerkletreestorage.md) | <p>**_(BETA)_** </p><p> InMemoryMerkleTreeStorage  implements IMerkleTreeStorage interface</p> |
 |  [InMemoryPrivateKeyStore](./polygonid-js-sdk.inmemoryprivatekeystore.md) | <p>**_(BETA)_** Key Store to use in memory</p><p> InMemoryPrivateKeyStore  implements AbstractPrivateKeyStore interface</p> |
+|  [IpfsSchemaLoader](./polygonid-js-sdk.ipfsschemaloader.md) | <p>**_(BETA)_** loads schemas from ipfs source</p><p> IpfsSchemaLoader  implements ISchemaLoader interface</p> |
+|  [IssuerData](./polygonid-js-sdk.issuerdata.md) | <p>**_(BETA)_** IssuerData is the data that is used to create a proof</p><p> IssuerData</p> |
+|  [JsonSchemaValidator](./polygonid-js-sdk.jsonschemavalidator.md) | <p>**_(BETA)_** JSON Schema Validator</p><p> JsonSchemaValidator</p> |
 |  [KMS](./polygonid-js-sdk.kms.md) | <p>**_(BETA)_** Key management system class contains different key providers. allows to register custom provider, create key, get public key and sign</p><p>  KMS - class</p> |
 |  [LocalStoragePrivateKeyStore](./polygonid-js-sdk.localstorageprivatekeystore.md) | <p>**_(BETA)_** Allows storing keys in the local storage of the browser (NOT ENCRYPTED: DO NOT USE IN THE PRODUCTION)</p><p> LocalStoragePrivateKeyStore  implements AbstractPrivateKeyStore interface</p> |
 |  [MerkleTreeLocalStorage](./polygonid-js-sdk.merkletreelocalstorage.md) | <p>**_(BETA)_** Merkle tree storage that uses browser local storage</p><p> MerkleTreeLocalStorage  implements IMerkleTreeStorage interface</p> |
+|  [NativeProver](./polygonid-js-sdk.nativeprover.md) |  |
+|  [PackageManager](./polygonid-js-sdk.packagemanager.md) | <p>**_(BETA)_** Basic package manager for iden3 communication protocol</p><p> PackageManager  implements IPackageManager interface</p> |
+|  [Parser](./polygonid-js-sdk.parser.md) | <p>**_(BETA)_** Parser can parse claim data according to specification</p><p> Parser</p> |
+|  [PlainPacker](./polygonid-js-sdk.plainpacker.md) | <p>**_(BETA)_** Plain packer just serializes bytes to JSON and adds media type</p><p> PlainPacker  implements IPacker interface</p> |
+|  [ProofService](./polygonid-js-sdk.proofservice.md) | <p>**_(BETA)_** Proof service is an implementation of IProofService that works with a native groth16 prover</p><p> ProofService  implements IProofService interface</p> |
+|  [Query](./polygonid-js-sdk.query.md) | <p>**_(BETA)_** Query represents basic request to claim slot verification</p><p> Query</p> |
+|  [Scalar](./polygonid-js-sdk.scalar.md) | <p>**_(BETA)_** Scalar is used to compare two scalar value.</p><p> Scalar  implements IComparer interface</p> |
+|  [StateTransitionInputs](./polygonid-js-sdk.statetransitioninputs.md) | <p>**_(BETA)_** StateTransition circuit representation Inputs and public signals declaration, marshalling and parsing</p><p> StateTransitionInputs  {BaseConfig}</p> |
+|  [StateTransitionPubSignals](./polygonid-js-sdk.statetransitionpubsignals.md) | <p>**_(BETA)_** Public signals of StateTransition circuit</p><p> StateTransitionPubSignals</p> |
+|  [UniversalSchemaLoader](./polygonid-js-sdk.universalschemaloader.md) | <p>**_(BETA)_** loads schemas from ipfs and http sources</p><p> UniversalSchemaLoader  implements ISchemaLoader interface</p> |
+|  [ValueProof](./polygonid-js-sdk.valueproof.md) | <p>**_(BETA)_** ValueProof represents a Merkle Proof for a value stored as MT</p><p> ValueProof</p> |
+|  [Vector](./polygonid-js-sdk.vector.md) | <p>**_(BETA)_** Vector uses for find/not find x scalar type in y vector type.</p><p> Vector  implements IComparer interface</p> |
+|  [VerificationHandlerFunc](./polygonid-js-sdk.verificationhandlerfunc.md) | <p>**_(BETA)_** Handler to verify public signals of authorization circuits</p><p> VerificationHandlerFunc</p> |
+|  [W3CCredential](./polygonid-js-sdk.w3ccredential.md) | <p>**_(BETA)_** W3C Verifiable credential</p><p>https://www.w3.org/2018/credentials/v1 </p><p> W3CCredential</p> |
+|  [ZKPPacker](./polygonid-js-sdk.zkppacker.md) | <p>**_(BETA)_** Packer that can pack message to JWZ token, and unpack and validate JWZ envelope </p><p> ZKPPacker  implements IPacker interface</p> |
 
 ## Abstract Classes
 
@@ -38,13 +70,28 @@ hide_title: true
 
 |  Enumeration | Description |
 |  --- | --- |
+|  [CircuitError](./polygonid-js-sdk.circuiterror.md) | <p>List of errors of circuit inputs processing</p><p>  {number}</p> |
+|  [CircuitId](./polygonid-js-sdk.circuitid.md) | <p>CircuitID is alias for circuit identifier</p><p>  {number}</p> |
+|  [CredentialStatusType](./polygonid-js-sdk.credentialstatustype.md) | <p>CredentialStatusType type for revocation type</p><p>  {number}</p> |
 |  [KmsKeyType](./polygonid-js-sdk.kmskeytype.md) | <p>Key type that can be used in the key management system</p><p>  {number}</p> |
 |  [MerkleTreeType](./polygonid-js-sdk.merkletreetype.md) | <p>Type of MerkleTree</p><p>  {number}</p> |
+|  [MerklizedRootPosition](./polygonid-js-sdk.merklizedrootposition.md) | <p>Merklized Core.Claim root position for vc creation</p><p>  {number}</p> |
+|  [Operators](./polygonid-js-sdk.operators.md) | <p>List of available operators.</p><p>  {number}</p> |
+|  [ProofPurpose](./polygonid-js-sdk.proofpurpose.md) | <p>W3C Proof purpose</p><p>  {number}</p> |
+|  [ProofType](./polygonid-js-sdk.prooftype.md) | <p>Proof type for Verifiable Credential supported by sdk</p><p>  {number}</p> |
+|  [SearchError](./polygonid-js-sdk.searcherror.md) | <p>search errors</p><p>  {number}</p> |
+|  [SubjectPosition](./polygonid-js-sdk.subjectposition.md) | <p>Subject Core.Claim position for vc creation</p><p>  {number}</p> |
 
 ## Functions
 
 |  Function | Description |
 |  --- | --- |
+|  [checkDataInField(data)](./polygonid-js-sdk.checkdatainfield.md) | <p>check if byte data is in Q field</p> |
+|  [dataFillsSlot(slot, newData)](./polygonid-js-sdk.datafillsslot.md) | <p>checks if data fills into slot capacity ()</p> |
+|  [extractProof(proof)](./polygonid-js-sdk.extractproof.md) | <p>extracts core claim from Proof and returns Proof Type</p> |
+|  [fieldToByteArray(field)](./polygonid-js-sdk.fieldtobytearray.md) | <p>FieldToByteArray convert fields to byte representation based on type</p> |
+|  [getLoader(url, ipfsConfigUrl)](./polygonid-js-sdk.getloader.md) | <p>returns loader for schemas based on the URL protocol</p> |
+|  [getProperties(obj)](./polygonid-js-sdk.getproperties.md) | <p>return object properties</p> |
 |  [isGenesisStateId(id, state, type)](./polygonid-js-sdk.isgenesisstateid.md) | <p>Checks if id is created from given state and type is genesis</p> |
 |  [isIssuerGenesis(issuer, state)](./polygonid-js-sdk.isissuergenesis.md) | <p>Checks if issuer did is created from given state is genesis</p> |
 
@@ -52,34 +99,147 @@ hide_title: true
 
 |  Interface | Description |
 |  --- | --- |
-|  [ClaimRequest](./polygonid-js-sdk.claimrequest.md) | <p>**_(BETA)_** Request to core library to create Core Claim from W3C Verifiable Credential</p><p> ClaimRequest</p> |
+|  [BJJSignatureProof](./polygonid-js-sdk.bjjsignatureproof.md) | <p>**_(BETA)_** prepared bjj signature for circuits with auth bjj claim data</p><p> BJJSignatureProof</p> |
+|  [ClaimNonRevStatus](./polygonid-js-sdk.claimnonrevstatus.md) | <p>**_(BETA)_** claim non revocation status for circuit TreeState and Proof of inclusion / non-inclusion</p><p> ClaimNonRevStatus</p> |
+|  [ClaimWithMTPProof](./polygonid-js-sdk.claimwithmtpproof.md) | <p>**_(BETA)_** Claim for circuit with non revocation proof and proof of merkle tree inclusion</p><p> ClaimWithMTPProof</p> |
+|  [ClaimWithSigProof](./polygonid-js-sdk.claimwithsigproof.md) | <p>**_(BETA)_** Claim for circuit with non revocation proof and signature proof </p><p> ClaimWithSigProof</p> |
+|  [CoreClaimOptions](./polygonid-js-sdk.coreclaimoptions.md) | <p>**_(BETA)_** CoreClaimOptions is params for core claim parsing</p><p> CoreClaimOptions</p> |
 |  [CredentialIssueOptions](./polygonid-js-sdk.credentialissueoptions.md) | <p>**_(BETA)_** Credential issue options with publishing to chain and to reverse hash service</p><p> CredentialIssueOptions</p> |
+|  [CredentialRequest](./polygonid-js-sdk.credentialrequest.md) | <p>**_(BETA)_** Request to core library to create Core Claim from W3C Verifiable Credential</p><p> CredentialRequest</p> |
+|  [CredentialSchema](./polygonid-js-sdk.credentialschema.md) | <p>**_(BETA)_** Credential schema vc</p><p> CredentialSchema</p> |
+|  [CredentialStatus](./polygonid-js-sdk.credentialstatus.md) | <p>**_(BETA)_** CredentialStatus contains type and revocation Url </p><p> CredentialStatus</p> |
 |  [EthConnectionConfig](./polygonid-js-sdk.ethconnectionconfig.md) | <p>**_(BETA)_** Configuration of ethereum based blockchain connection</p><p> EthConnectionConfig</p> |
+|  [GISTProof](./polygonid-js-sdk.gistproof.md) | <p>**_(BETA)_** global identity state proof</p><p> GISTProof</p> |
 |  [IAuthHandler](./polygonid-js-sdk.iauthhandler.md) | <p>**_(BETA)_** Interface that allows the processing of the authorization request in the raw format for given identifier</p><p> IAuthHandler</p> |
+|  [IComparer](./polygonid-js-sdk.icomparer.md) |  |
 |  [ICredentialStorage](./polygonid-js-sdk.icredentialstorage.md) | <p>**_(BETA)_** Interface for credential storages</p><p> ICredentialStorage</p> |
 |  [ICredentialWallet](./polygonid-js-sdk.icredentialwallet.md) | <p>**_(BETA)_** Interface to work with credential wallets</p><p> ICredentialWallet</p> |
 |  [IDataStorage](./polygonid-js-sdk.idatastorage.md) | <p>**_(BETA)_** General Data storage interface that union identity, credential, merkletree and states storage.</p><p> IDataStorage</p> |
 |  [Iden3ProofCreationResult](./polygonid-js-sdk.iden3proofcreationresult.md) | <p>**_(BETA)_** Proof creation result</p><p> Iden3ProofCreationResult</p> |
+|  [IdentityCreationOptions](./polygonid-js-sdk.identitycreationoptions.md) | <p>DID creation options</p><p>  IdentityCreationOptions</p> |
 |  [IdentityMerkleTreeMetaInformation](./polygonid-js-sdk.identitymerkletreemetainformation.md) | <p>**_(BETA)_** Interface to store metadata about merkle tree</p><p> IdentityMerkleTreeMetaInformation</p> |
+|  [IFilterQuery](./polygonid-js-sdk.ifilterquery.md) | <p>**_(BETA)_** query filter interface that allows to query Verifiable Credential</p><p> IFilterQuery</p> |
 |  [IIdentityStorage](./polygonid-js-sdk.iidentitystorage.md) | <p>**_(BETA)_** storage for identities and profiles</p><p> IIdentityStorage</p> |
 |  [IIdentityWallet](./polygonid-js-sdk.iidentitywallet.md) | Interface for IdentityWallet |
+|  [IKeyLoader](./polygonid-js-sdk.ikeyloader.md) | <p>**_(BETA)_** Loader interface to load from different sources</p><p> IKeyLoader</p> |
 |  [IKeyProvider](./polygonid-js-sdk.ikeyprovider.md) | <p>**_(BETA)_** KeyProvider is responsible for signing and creation of the keys</p><p> IKeyProvider</p> |
 |  [IMerkleTreeStorage](./polygonid-js-sdk.imerkletreestorage.md) | <p>**_(BETA)_** Interface to work with a merkle tree storage</p><p> IMerkleTreeStorage</p> |
+|  [IPackageManager](./polygonid-js-sdk.ipackagemanager.md) | <p>**_(BETA)_** Interface for defining the registry of packers</p><p> IPackageManager</p> |
+|  [IPacker](./polygonid-js-sdk.ipacker.md) | <p>**_(BETA)_** Defines method that must be implemented by any packer</p><p> IPacker</p> |
+|  [IProofService](./polygonid-js-sdk.iproofservice.md) |  |
+|  [ISchemaLoader](./polygonid-js-sdk.ischemaloader.md) | <p>**_(BETA)_** Loader interface to load schema</p><p> ISchemaLoader</p> |
+|  [Issuer](./polygonid-js-sdk.issuer.md) | <p>**_(BETA)_** Issuer tree information</p><p> Issuer</p> |
 |  [IStateStorage](./polygonid-js-sdk.istatestorage.md) | <p>**_(BETA)_** Interface that defines methods for state storage</p><p> IStateStorage</p> |
+|  [JSONSchema](./polygonid-js-sdk.jsonschema.md) | <p>**_(BETA)_** JSON credential Schema</p><p> Schema</p> |
 |  [KmsKeyId](./polygonid-js-sdk.kmskeyid.md) | <p>**_(BETA)_** ID of the key that describe contain key type</p><p> KmsKeyId</p> |
+|  [MerkleTreeProofWithTreeState](./polygonid-js-sdk.merkletreeproofwithtreestate.md) | <p>**_(BETA)_** Proof with MerkleTree info</p><p> MerkleTreeProofWithTreeState</p> |
+|  [MTProof](./polygonid-js-sdk.mtproof.md) | <p>**_(BETA)_** prepared mtp with a tree state</p><p> MTProof</p> |
+|  [NodeAuxValue](./polygonid-js-sdk.nodeauxvalue.md) | <p>**_(BETA)_** auxiliary node</p><p> NodeAuxValue</p> |
+|  [ParsedSlots](./polygonid-js-sdk.parsedslots.md) | <p>**_(BETA)_** Parsed slots of core.Claim</p><p> ParsedSlots</p> |
+|  [ProofGenerationOptions](./polygonid-js-sdk.proofgenerationoptions.md) |  |
+|  [ProofQuery](./polygonid-js-sdk.proofquery.md) | <p>**_(BETA)_** Query represents structure for query to atomic circuit</p><p> ProofQuery</p> |
+|  [QueryWithFieldName](./polygonid-js-sdk.querywithfieldname.md) |  |
+|  [RevocationStatus](./polygonid-js-sdk.revocationstatus.md) | <p>**_(BETA)_** RevocationStatus status of revocation nonce. Info required to check revocation state of claim in circuits </p><p> RevocationStatus</p> |
+|  [RHSCredentialStatus](./polygonid-js-sdk.rhscredentialstatus.md) | <p>**_(BETA)_** RHSCredentialStatus contains type, url to fetch RHS info, issuer ID and revocation nonce and backup option to fetch credential status</p><p> RHSCredentialStatus</p> |
 |  [RootInfo](./polygonid-js-sdk.rootinfo.md) | <p>**_(BETA)_** global identity state root info from chain</p><p> RootInfo</p> |
+|  [SchemaMetadata](./polygonid-js-sdk.schemametadata.md) | <p>**_(BETA)_** schema metadata in the json credential schema</p><p> SchemaMetadata</p> |
+|  [SerializationSchema](./polygonid-js-sdk.serializationschema.md) | <p>**_(BETA)_** Serialization of data slots for the fields non-merklized claims</p><p> SerializationSchema</p> |
+|  [State](./polygonid-js-sdk.state.md) | <p>**_(BETA)_** Represents the published state of the issuer</p><p> State</p> |
 |  [StateInfo](./polygonid-js-sdk.stateinfo.md) | <p>**_(BETA)_** state information of identity from chain.</p><p> StateInfo</p> |
 |  [StateProof](./polygonid-js-sdk.stateproof.md) | <p>**_(BETA)_** state proof of identity from chain</p><p> StateProof</p> |
+|  [TreeState](./polygonid-js-sdk.treestate.md) | <p>**_(BETA)_** TreeState is model for merkle tree roots</p><p> TreeState</p> |
+|  [ZKPRequestWithCredential](./polygonid-js-sdk.zkprequestwithcredential.md) | <p>ZKP request and credential that satisfies the zkp query conditions</p><p>  ZKPRequestWithCredential</p> |
+
+## Namespaces
+
+|  Namespace | Description |
+|  --- | --- |
+|  [constants](./polygonid-js-sdk.constants.md) |  |
 
 ## Variables
 
 |  Variable | Description |
 |  --- | --- |
+|  [bigIntArrayToStringArray](./polygonid-js-sdk.bigintarraytostringarray.md) | converts each big integer in array to string |
+|  [bJJSignatureFromHexString](./polygonid-js-sdk.bjjsignaturefromhexstring.md) |  |
+|  [buildTreeState](./polygonid-js-sdk.buildtreestate.md) | converts hexes of tree roots to Hashes |
+|  [comparatorOptions](./polygonid-js-sdk.comparatoroptions.md) |  |
+|  [createFilter](./polygonid-js-sdk.createfilter.md) | filter creation factory |
+|  [createSchemaHash](./polygonid-js-sdk.createschemahash.md) | Calculates schema hash |
 |  [defaultEthConnectionConfig](./polygonid-js-sdk.defaultethconnectionconfig.md) |  |
+|  [defaultMTLevels](./polygonid-js-sdk.defaultmtlevels.md) |  |
+|  [defaultMTLevelsClaimsMerklization](./polygonid-js-sdk.defaultmtlevelsclaimsmerklization.md) |  |
+|  [defaultMTLevelsOnChain](./polygonid-js-sdk.defaultmtlevelsonchain.md) |  |
+|  [defaultValueArraySize](./polygonid-js-sdk.defaultvaluearraysize.md) |  |
+|  [DIDDocumentJSONSchema](./polygonid-js-sdk.diddocumentjsonschema.md) | DIDDocumentJSONSchema is a basic schema of did document |
+|  [ErrorEmptyAuthClaimNonRevProof](./polygonid-js-sdk.erroremptyauthclaimnonrevproof.md) |  |
+|  [ErrorEmptyAuthClaimProof](./polygonid-js-sdk.erroremptyauthclaimproof.md) |  |
+|  [ErrorEmptyChallengeSignature](./polygonid-js-sdk.erroremptychallengesignature.md) |  |
+|  [ErrorEmptyClaimNonRevProof](./polygonid-js-sdk.erroremptyclaimnonrevproof.md) |  |
+|  [ErrorEmptyClaimProof](./polygonid-js-sdk.erroremptyclaimproof.md) |  |
+|  [ErrorEmptyClaimSignature](./polygonid-js-sdk.erroremptyclaimsignature.md) |  |
+|  [ErrorEmptyIssuerAuthClaimNonRevProof](./polygonid-js-sdk.erroremptyissuerauthclaimnonrevproof.md) |  |
+|  [ErrorEmptyIssuerAuthClaimProof](./polygonid-js-sdk.erroremptyissuerauthclaimproof.md) |  |
+|  [ErrorUserStateInRelayClaimProof](./polygonid-js-sdk.erroruserstateinrelayclaimproof.md) |  |
+|  [existenceToInt](./polygonid-js-sdk.existencetoint.md) | converts boolean existence param to integer if true - 1, else - 0 |
+|  [factoryComparer](./polygonid-js-sdk.factorycomparer.md) | FactoryComparer depends on input data will return right comparer. |
+|  [fillSlot](./polygonid-js-sdk.fillslot.md) | checks if data can fill the slot |
+|  [getNodeAuxValue](./polygonid-js-sdk.getnodeauxvalue.md) |  |
+|  [prepareCircuitArrayValues](./polygonid-js-sdk.preparecircuitarrayvalues.md) | PrepareCircuitArrayValues padding values to size. Validate array size and throw an exception if array is bigger than size if array is bigger, circuit cannot compile because number of inputs does not match |
+|  [prepareSiblingsStr](./polygonid-js-sdk.preparesiblingsstr.md) | siblings as string array |
+|  [QueryOperators](./polygonid-js-sdk.queryoperators.md) | QueryOperators represents operators for atomic circuits |
+|  [resolvePath](./polygonid-js-sdk.resolvepath.md) | credential search path resolver |
+|  [StandardJSONCredentialsQueryFilter](./polygonid-js-sdk.standardjsoncredentialsqueryfilter.md) | creates filters based on proof query |
+|  [strMTHex](./polygonid-js-sdk.strmthex.md) | converts hex to Hash |
+|  [swapEndianness](./polygonid-js-sdk.swapendianness.md) | SwapEndianness swaps the endianness of the value encoded in buf. If buf is Big-Endian, the result will be Little-Endian and vice-versa. |
+|  [toClaimNonRevStatus](./polygonid-js-sdk.toclaimnonrevstatus.md) | converts verifiable RevocationStatus model to circuits structure |
+|  [toGISTProof](./polygonid-js-sdk.togistproof.md) | converts state info from smart contract to gist proof |
+|  [VerifiableConstants](./polygonid-js-sdk.verifiableconstants.md) | Verifiable constants |
 
 ## Type Aliases
 
 |  Type Alias | Description |
 |  --- | --- |
+|  [AuthDataPrepareFunc](./polygonid-js-sdk.authdatapreparefunc.md) | signature of auth signals function preparer |
+|  [AuthorizationMessageResponseBody](./polygonid-js-sdk.authorizationmessageresponsebody.md) | AuthorizationMessageResponseBody is struct the represents authorization response data |
+|  [AuthorizationRequestMessage](./polygonid-js-sdk.authorizationrequestmessage.md) | AuthorizationRequestMessage is struct the represents iden3message authorization request |
+|  [AuthorizationRequestMessageBody](./polygonid-js-sdk.authorizationrequestmessagebody.md) | AuthorizationRequestMessageBody is body for authorization request |
+|  [AuthorizationResponseMessage](./polygonid-js-sdk.authorizationresponsemessage.md) | AuthorizationResponseMessage is struct the represents iden3message authorization response |
+|  [BasicMessage](./polygonid-js-sdk.basicmessage.md) |  |
+|  [CircuitData](./polygonid-js-sdk.circuitdata.md) | Circuit data that includes id, wasm file, verification key and proving key |
+|  [CredentialFetchRequestMessage](./polygonid-js-sdk.credentialfetchrequestmessage.md) | CredentialFetchRequestMessage represent Iden3message for credential fetch request |
+|  [CredentialFetchRequestMessageBody](./polygonid-js-sdk.credentialfetchrequestmessagebody.md) | CredentialFetchRequestMessageBody is msg body for fetch request |
+|  [CredentialIssuanceMessage](./polygonid-js-sdk.credentialissuancemessage.md) | CredentialIssuanceMessage represent Iden3message for credential issuance |
+|  [CredentialIssuanceRequestMessage](./polygonid-js-sdk.credentialissuancerequestmessage.md) | CredentialIssuanceRequestMessage represent Iden3message for credential request |
+|  [CredentialIssuanceRequestMessageBody](./polygonid-js-sdk.credentialissuancerequestmessagebody.md) | CredentialIssuanceRequestMessageBody represents data for credential issuance request |
+|  [CredentialOffer](./polygonid-js-sdk.credentialoffer.md) | CredentialOffer is structure to fetch credential |
+|  [CredentialsOfferMessage](./polygonid-js-sdk.credentialsoffermessage.md) | CredentialsOfferMessage represent Iden3message for credential offer |
+|  [CredentialsOfferMessageBody](./polygonid-js-sdk.credentialsoffermessagebody.md) | CredentialsOfferMessageBody is struct the represents offer message |
+|  [EnvelopeStub](./polygonid-js-sdk.envelopestub.md) | EnvelopeStub is used to stub the jwt based envelops |
+|  [FilterOperatorFunction](./polygonid-js-sdk.filteroperatorfunction.md) | filter function type |
+|  [FilterOperatorMethod](./polygonid-js-sdk.filteroperatormethod.md) | allowed operators to search |
+|  [HeaderStub](./polygonid-js-sdk.headerstub.md) | HeaderStub is used to stub the jwt based envelops |
 |  [Identity](./polygonid-js-sdk.identity.md) | Identity structure that can be used for identity storage |
+|  [IssuanceMessageBody](./polygonid-js-sdk.issuancemessagebody.md) | IssuanceMessageBody is struct the represents message when credential is issued |
+|  [JSONObject](./polygonid-js-sdk.jsonobject.md) |  |
+|  [MessageFetchRequestMessage](./polygonid-js-sdk.messagefetchrequestmessage.md) | MessageFetchRequestMessage represent Iden3message for message fetch request. |
+|  [MessageFetchRequestMessageBody](./polygonid-js-sdk.messagefetchrequestmessagebody.md) | MessageFetchRequestMessageBody is struct the represents body for message fetch request. |
+|  [PackerParams](./polygonid-js-sdk.packerparams.md) | parameters for any packer |
+|  [PlainPackerParams](./polygonid-js-sdk.plainpackerparams.md) | parameters for plain packer |
 |  [Profile](./polygonid-js-sdk.profile.md) | Profile structure that can be used for profiles storage |
+|  [ProofGenerationRequestMessage](./polygonid-js-sdk.proofgenerationrequestmessage.md) | ProofGenerationRequestMessage is struct the represents body for proof generation request |
+|  [ProofGenerationRequestMessageBody](./polygonid-js-sdk.proofgenerationrequestmessagebody.md) | ProofGenerationRequestMessageBody is struct the represents body for proof generation request |
+|  [ProofGenerationResponseMessage](./polygonid-js-sdk.proofgenerationresponsemessage.md) | ProofGenerationResponseMessage is struct the represents body for proof generation request |
+|  [ProtocolMessage](./polygonid-js-sdk.protocolmessage.md) | Protocol message type |
+|  [ProvingParams](./polygonid-js-sdk.provingparams.md) | Params for generation of proof for auth circuit |
+|  [ResponseMessageBody](./polygonid-js-sdk.responsemessagebody.md) | ResponseMessageBody is struct the represents request for revocation status |
+|  [RevocationStatusRequestMessage](./polygonid-js-sdk.revocationstatusrequestmessage.md) | RevocationStatusRequestMessage is struct the represents body for proof generation request |
+|  [RevocationStatusRequestMessageBody](./polygonid-js-sdk.revocationstatusrequestmessagebody.md) | RevocationStatusRequestMessageBody is struct the represents request for revocation status |
+|  [RevocationStatusResponseMessage](./polygonid-js-sdk.revocationstatusresponsemessage.md) | RevocationStatusResponseMessage is struct the represents body for proof generation request |
+|  [RevocationStatusResponseMessageBody](./polygonid-js-sdk.revocationstatusresponsemessagebody.md) | RevocationStatusResponseMessageBody is struct the represents request for revocation status |
+|  [Schema](./polygonid-js-sdk.schema.md) | Schema represents location and type where it's stored |
+|  [StateVerificationFunc](./polygonid-js-sdk.stateverificationfunc.md) | signature of state function verifier |
+|  [VerificationParams](./polygonid-js-sdk.verificationparams.md) | Params for verification of auth circuit public signals |
+|  [ZeroKnowledgeProofRequest](./polygonid-js-sdk.zeroknowledgeproofrequest.md) | ZeroKnowledgeProofRequest represents structure of zkp request object |
+|  [ZeroKnowledgeProofResponse](./polygonid-js-sdk.zeroknowledgeproofresponse.md) | ZeroKnowledgeProofResponse represents structure of zkp response |
+|  [ZKPPackerParams](./polygonid-js-sdk.zkppackerparams.md) | parameters for zkp packer |

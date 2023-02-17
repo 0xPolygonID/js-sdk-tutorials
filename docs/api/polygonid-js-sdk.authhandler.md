@@ -27,10 +27,12 @@ export declare class AuthHandler implements IAuthHandler
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_packerMgr, \_proofService)](./polygonid-js-sdk.authhandler._constructor_.md) |  | **_(BETA)_** Creates an instance of AuthHandler. |
+|  [(constructor)(\_packerMgr, \_proofService, \_credentialWallet)](./polygonid-js-sdk.authhandler._constructor_.md) |  | **_(BETA)_** Creates an instance of AuthHandler. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [handleAuthorizationRequest(did, request)](./polygonid-js-sdk.authhandler.handleauthorizationrequest.md) |  | **_(BETA)_** Handles only messages with authorization/v1.0/request type Generates all requested proofs and wraps authorization response message to JWZ token |
+|  [generateAuthorizationResponse(userGenesisDID, authProfileNonce, authRequest, zkpRequestsWithCreds)](./polygonid-js-sdk.authhandler.generateauthorizationresponse.md) |  | **_(BETA)_** Generates zero-knowledge proofs for given requests and credentials  |
+|  [handleAuthorizationRequestForGenesisDID(did, request)](./polygonid-js-sdk.authhandler.handleauthorizationrequestforgenesisdid.md) |  | **_(BETA)_** Handles only messages with authorization/v1.0/request type Generates all requested proofs and wraps authorization response message to JWZ token works when profiles are not supported |
+|  [parseAuthorizationRequest(request)](./polygonid-js-sdk.authhandler.parseauthorizationrequest.md) |  | **_(BETA)_** unpacks authorization request  |

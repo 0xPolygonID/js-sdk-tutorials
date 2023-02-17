@@ -21,11 +21,11 @@ generateCredentialMtp(did: DID, credential: W3CCredential, treeState?: TreeState
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  did | DID | issuer did |
-|  credential | W3CCredential | credential to generate mtp |
-|  treeState | TreeState | _(Optional)_ tree state when to generate a proof |
+|  credential | [W3CCredential](./polygonid-js-sdk.w3ccredential.md) | credential to generate mtp |
+|  treeState | [TreeState](./polygonid-js-sdk.treestate.md) | _(Optional)_ tree state when to generate a proof |
 
 **Returns:**
 
-Promise&lt;MerkleTreeProofWithTreeState&gt;
+Promise&lt;[MerkleTreeProofWithTreeState](./polygonid-js-sdk.merkletreeproofwithtreestate.md)&gt;
 
 `Promise<MerkleTreeProofWithTreeState>` - MerkleTreeProof and TreeState on which proof has been generated

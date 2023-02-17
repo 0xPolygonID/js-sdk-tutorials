@@ -8,6 +8,9 @@ hide_title: true
 
 ## CredentialStorage.findCredentialsByQuery() method
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
 returns all credentials in the storage
 
 **Signature:**
@@ -20,10 +23,10 @@ findCredentialsByQuery(query: ProofQuery): Promise<W3CCredential[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  query | ProofQuery |  |
+|  query | [ProofQuery](./polygonid-js-sdk.proofquery.md) |  |
 
 **Returns:**
 
-Promise&lt;W3CCredential\[\]&gt;
+Promise&lt;[W3CCredential](./polygonid-js-sdk.w3ccredential.md)\[\]&gt;
 
 `Promise<W3CCredential[]>`

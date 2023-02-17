@@ -23,8 +23,8 @@ saveCircuitData(circuitId: CircuitId, circuitData: CircuitData): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  circuitId | CircuitId | id of the circuit |
-|  circuitData | CircuitData | circuit keys |
+|  circuitId | [CircuitId](./polygonid-js-sdk.circuitid.md) | id of the circuit |
+|  circuitData | [CircuitData](./polygonid-js-sdk.circuitdata.md) | circuit keys |
 
 **Returns:**
 

@@ -13,7 +13,7 @@ Issues new credential from issuer according to the claim request
 **Signature:**
 
 ```typescript
-issueCredential(issuerDID: DID, req: ClaimRequest, hostUrl: string, opts?: CredentialIssueOptions): Promise<W3CCredential>;
+issueCredential(issuerDID: DID, req: CredentialRequest, hostUrl: string, opts?: CredentialIssueOptions): Promise<W3CCredential>;
 ```
 
 ## Parameters
@@ -21,12 +21,12 @@ issueCredential(issuerDID: DID, req: ClaimRequest, hostUrl: string, opts?: Crede
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  issuerDID | DID | issuer identity |
-|  req | [ClaimRequest](./polygonid-js-sdk.claimrequest.md) | claim request |
+|  req | [CredentialRequest](./polygonid-js-sdk.credentialrequest.md) | claim request |
 |  hostUrl | string | url that will be a part of credential id prefix |
 |  opts | [CredentialIssueOptions](./polygonid-js-sdk.credentialissueoptions.md) | _(Optional)_ with / without RHS |
 
 **Returns:**
 
-Promise&lt;W3CCredential&gt;
+Promise&lt;[W3CCredential](./polygonid-js-sdk.w3ccredential.md)&gt;
 
 `Promise<W3CCredential>` - returns created W3CCredential

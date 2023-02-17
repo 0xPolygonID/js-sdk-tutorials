@@ -26,6 +26,6 @@ export interface Iden3ProofCreationResult
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [credentials](./polygonid-js-sdk.iden3proofcreationresult.credentials.md) |  | W3CCredential\[\] | **_(BETA)_** |
-|  [newTreeState](./polygonid-js-sdk.iden3proofcreationresult.newtreestate.md) |  | TreeState | **_(BETA)_** |
-|  [oldTreeState](./polygonid-js-sdk.iden3proofcreationresult.oldtreestate.md) |  | TreeState | **_(BETA)_** |
+|  [credentials](./polygonid-js-sdk.iden3proofcreationresult.credentials.md) |  | [W3CCredential](./polygonid-js-sdk.w3ccredential.md)\[\] | **_(BETA)_** |
+|  [newTreeState](./polygonid-js-sdk.iden3proofcreationresult.newtreestate.md) |  | [TreeState](./polygonid-js-sdk.treestate.md) | **_(BETA)_** |
+|  [oldTreeState](./polygonid-js-sdk.iden3proofcreationresult.oldtreestate.md) |  | [TreeState](./polygonid-js-sdk.treestate.md) | **_(BETA)_** |

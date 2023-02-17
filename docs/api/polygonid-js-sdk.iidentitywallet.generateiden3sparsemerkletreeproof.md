@@ -21,13 +21,13 @@ generateIden3SparseMerkleTreeProof(issuerDID: DID, credentials: W3CCredential[],
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  issuerDID | DID | issuer did |
-|  credentials | W3CCredential\[\] | list of verifiable credentials to generate a proof |
+|  credentials | [W3CCredential](./polygonid-js-sdk.w3ccredential.md)\[\] | list of verifiable credentials to generate a proof |
 |  txId | string | transaction hash in which state transition has been done |
 |  blockNumber | number | _(Optional)_ block number in which state transition has been done |
 |  blockTimestamp | number | _(Optional)_ block timestamp in which state transition has been done |
 
 **Returns:**
 
-Promise&lt;W3CCredential\[\]&gt;
+Promise&lt;[W3CCredential](./polygonid-js-sdk.w3ccredential.md)\[\]&gt;
 
 `Promise<W3CCredential[]>` credentials with an Iden3SparseMerkleTreeProof

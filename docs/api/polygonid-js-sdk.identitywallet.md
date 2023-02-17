@@ -33,13 +33,14 @@ export declare class IdentityWallet implements IIdentityWallet
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [addCredentialsToMerkleTree(credentials, issuerDID)](./polygonid-js-sdk.identitywallet.addcredentialstomerkletree.md) |  | Adds verifiable credentials to issuer Claims Merkle tree |
-|  [createIdentity(hostUrl, rhsUrl, seed)](./polygonid-js-sdk.identitywallet.createidentity.md) |  | Create Identity creates Auth BJJ credential, Merkle trees for claims, revocations and root of roots, adds auth BJJ credential to claims tree and generates mtp of inclusion based on the resulting state it provides an identifier in DID form. |
+|  [createIdentity(hostUrl, rhsUrl, opts)](./polygonid-js-sdk.identitywallet.createidentity.md) |  | Create Identity creates Auth BJJ credential, Merkle trees for claims, revocations and root of roots, adds auth BJJ credential to claims tree and generates mtp of inclusion based on the resulting state it provides an identifier in DID form. |
 |  [createProfile(did, nonce, verifier)](./polygonid-js-sdk.identitywallet.createprofile.md) |  | Creates profile based on genesis identifier |
 |  [generateCredentialMtp(did, credential, treeState)](./polygonid-js-sdk.identitywallet.generatecredentialmtp.md) |  |  |
 |  [generateIden3SparseMerkleTreeProof(issuerDID, credentials, txId, blockNumber, blockTimestamp)](./polygonid-js-sdk.identitywallet.generateiden3sparsemerkletreeproof.md) |  | Generate Iden3SparseMerkleTree proof of inclusion to issuer state of specific credentials |
 |  [generateKey(keyType)](./polygonid-js-sdk.identitywallet.generatekey.md) |  | Generates a new key |
 |  [generateNonRevocationMtp(did, credential, treeState)](./polygonid-js-sdk.identitywallet.generatenonrevocationmtp.md) |  | Generates proof of credential revocation nonce inclusion / non-inclusion to the given revocation tree and its root or to the current root of the Revocation tree in the given Merkle tree storage. |
-|  [getDIDTreeState(did)](./polygonid-js-sdk.identitywallet.getdidtreestate.md) |  | Gets a tree model for given did that includes claims tree, revocation tree, the root of roots tree and calculated state hash |
+|  [getCoreClaimFromCredential(credential)](./polygonid-js-sdk.identitywallet.getcoreclaimfromcredential.md) |  |  |
+|  [getDIDTreeModel(did)](./polygonid-js-sdk.identitywallet.getdidtreemodel.md) |  | Gets a tree model for given did that includes claims tree, revocation tree, the root of roots tree and calculated state hash |
 |  [issueCredential(issuerDID, req, hostUrl, opts)](./polygonid-js-sdk.identitywallet.issuecredential.md) |  | Issues new credential from issuer according to the claim request |
 |  [publishStateToRHS(issuerDID, rhsURL, revokedNonces)](./polygonid-js-sdk.identitywallet.publishstatetorhs.md) |  |  |
 |  [revokeCredential(issuerDID, credential)](./polygonid-js-sdk.identitywallet.revokecredential.md) |  |  |

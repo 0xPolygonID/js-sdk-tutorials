@@ -23,10 +23,10 @@ getRevocationStatusFromCredential(cred: W3CCredential): Promise<RevocationStatus
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  cred | W3CCredential | credential for which lib should build revocation status |
+|  cred | [W3CCredential](./polygonid-js-sdk.w3ccredential.md) | credential for which lib should build revocation status |
 
 **Returns:**
 
-Promise&lt;RevocationStatus&gt;
+Promise&lt;[RevocationStatus](./polygonid-js-sdk.revocationstatus.md)&gt;
 
 `Promise<RevocationStatus>`

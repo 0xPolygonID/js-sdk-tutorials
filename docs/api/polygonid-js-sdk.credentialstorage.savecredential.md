@@ -8,6 +8,9 @@ hide_title: true
 
 ## CredentialStorage.saveCredential() method
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
 
 **Signature:**
 
@@ -19,7 +22,7 @@ saveCredential(credential: W3CCredential): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  credential | W3CCredential |  |
+|  credential | [W3CCredential](./polygonid-js-sdk.w3ccredential.md) |  |
 
 **Returns:**
 

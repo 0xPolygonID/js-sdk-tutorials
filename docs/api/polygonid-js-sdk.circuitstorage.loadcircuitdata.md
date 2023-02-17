@@ -23,10 +23,10 @@ loadCircuitData(circuitId: CircuitId): Promise<CircuitData>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  circuitId | CircuitId | id of the circuit |
+|  circuitId | [CircuitId](./polygonid-js-sdk.circuitid.md) | id of the circuit |
 
 **Returns:**
 
-Promise&lt;CircuitData&gt;
+Promise&lt;[CircuitData](./polygonid-js-sdk.circuitdata.md)&gt;
 
 `Promise<CircuitData>`

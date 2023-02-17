@@ -16,12 +16,13 @@ Creates an instance of AuthHandler.
 **Signature:**
 
 ```typescript
-constructor(_packerMgr: IPackageManager, _proofService: IProofService);
+constructor(_packerMgr: IPackageManager, _proofService: IProofService, _credentialWallet: ICredentialWallet);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_packerMgr | IPackageManager | package manager to unpack message envelope |
-|  \_proofService | IProofService | proof service to verify zk proofs |
+|  \_packerMgr | [IPackageManager](./polygonid-js-sdk.ipackagemanager.md) | package manager to unpack message envelope |
+|  \_proofService | [IProofService](./polygonid-js-sdk.iproofservice.md) | proof service to verify zk proofs |
+|  \_credentialWallet | [ICredentialWallet](./polygonid-js-sdk.icredentialwallet.md) | wallet to search credentials |

@@ -21,7 +21,7 @@ signChallenge(payload: bigint, credential: W3CCredential): Promise<Signature>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  payload | bigint | big number in Field |
-|  credential | W3CCredential | Auth BJJ credential |
+|  credential | [W3CCredential](./polygonid-js-sdk.w3ccredential.md) | Auth BJJ credential |
 
 **Returns:**
 

@@ -33,15 +33,17 @@ export declare class CredentialWallet implements ICredentialWallet
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [createCredential](./polygonid-js-sdk.credentialwallet.createcredential.md) |  | (hostUrl: string, issuer: DID, request: [ClaimRequest](./polygonid-js-sdk.claimrequest.md), schema: Schema, rhsUrl?: string) =&gt; W3CCredential | **_(BETA)_** Creates a W3C verifiable Credential object |
+|  [createCredential](./polygonid-js-sdk.credentialwallet.createcredential.md) |  | (hostUrl: string, issuer: DID, request: [CredentialRequest](./polygonid-js-sdk.credentialrequest.md), schema: [JSONSchema](./polygonid-js-sdk.jsonschema.md), rhsUrl?: string) =&gt; [W3CCredential](./polygonid-js-sdk.w3ccredential.md) | **_(BETA)_** Creates a W3C verifiable Credential object |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
+|  [filterByCredentialSubject(credentials, subject)](./polygonid-js-sdk.credentialwallet.filterbycredentialsubject.md) |  | **_(BETA)_** Filters given credentials with given credential subject |
 |  [findByContextType(context, type)](./polygonid-js-sdk.credentialwallet.findbycontexttype.md) |  | **_(BETA)_** Finds credentials by JSON-LD schema and type |
 |  [findById(id)](./polygonid-js-sdk.credentialwallet.findbyid.md) |  | **_(BETA)_** Finds the credential by its id |
 |  [findByQuery(query)](./polygonid-js-sdk.credentialwallet.findbyquery.md) |  | **_(BETA)_** Find credential using iden3 query language |
+|  [findNonRevokedCredential(creds)](./polygonid-js-sdk.credentialwallet.findnonrevokedcredential.md) |  | **_(BETA)_** |
 |  [getAuthBJJCredential(did)](./polygonid-js-sdk.credentialwallet.getauthbjjcredential.md) |  | **_(BETA)_** Finds Auth BJJ credential for given user |
 |  [getRevocationStatus(credStatus, issuerDID, issuerData)](./polygonid-js-sdk.credentialwallet.getrevocationstatus.md) |  | **_(BETA)_** Fetches Revocation status depended on type |
 |  [getRevocationStatusFromCredential(cred)](./polygonid-js-sdk.credentialwallet.getrevocationstatusfromcredential.md) |  | **_(BETA)_** Fetches or Builds a revocation status for a given credential Supported types for credentialStatus field: SparseMerkleTreeProof, Iden3ReverseSparseMerkleTreeProof |

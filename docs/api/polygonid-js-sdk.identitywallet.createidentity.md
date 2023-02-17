@@ -13,7 +13,7 @@ Create Identity creates Auth BJJ credential, Merkle trees for claims, revocation
 **Signature:**
 
 ```typescript
-createIdentity(hostUrl: string, rhsUrl: string, seed?: Uint8Array): Promise<{
+createIdentity(hostUrl: string, rhsUrl: string, opts?: IdentityCreationOptions): Promise<{
         did: DID;
         credential: W3CCredential;
     }>;
@@ -25,10 +25,10 @@ createIdentity(hostUrl: string, rhsUrl: string, seed?: Uint8Array): Promise<{
 |  --- | --- | --- |
 |  hostUrl | string | hostUrl is used as a part of the identifier of Auth BJJ credential |
 |  rhsUrl | string | rhsUrl is url to reverse hash service, so revocation status can be fetched for Auth BJJ credential |
-|  seed | Uint8Array | _(Optional)_ if present the BJJ private key will be created from the given seed |
+|  opts | [IdentityCreationOptions](./polygonid-js-sdk.identitycreationoptions.md) | _(Optional)_ default is did:iden3:polygon:mumbai\*\* with generated key. |
 
 **Returns:**
 
-Promise&lt;{ did: DID; credential: W3CCredential; }&gt;
+Promise&lt;{ did: DID; credential: [W3CCredential](./polygonid-js-sdk.w3ccredential.md); }&gt;
 
 `Promise<{ did: DID; credential: W3CCredential }>` - returns did and Auth BJJ credential
