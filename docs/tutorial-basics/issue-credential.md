@@ -24,12 +24,12 @@ async function issueCredential() {
 
   const { did:userDID, credential:authBJJCredentialUser } =
     await identityWallet.createIdentity(
-      "http://metamask.com/", // this is url that will be a part of auth bjj credential identifier
-      "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
+      "http://mytestwallet.com/", // this is url that will be a part of auth bjj credential identifier
       {
         method: core.DidMethod.Iden3,
         blockchain: core.Blockchain.Polygon,
         networkId: core.NetworkId.Mumbai,
+        rhsUrl: "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
       }
     );
 
@@ -38,12 +38,12 @@ async function issueCredential() {
 
   const { did:issuerDID, credential:issuerAuthBJJCredential } =
     await identityWallet.createIdentity(
-      "http://metamask.com/", // this is url that will be a part of auth bjj credential identifier
-      "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
+      "http://mytestwallet.com/", // this is url that will be a part of auth bjj credential identifier
       {
         method: core.DidMethod.Iden3,
         blockchain: core.Blockchain.Polygon,
         networkId: core.NetworkId.Mumbai,
+        rhsUrl: "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
       }
     );
 
@@ -61,7 +61,7 @@ async function issueCredential() {
   const credential = await identityWallet.issueCredential(
     issuerDID,
     credentialRequest,
-    "http://metamask.com/", // host url that will a prefix of credential identifier
+    "http://mytestwallet.com/", // host url that will a prefix of credential identifier
     {
       withRHS: "https://rhs-staging.polygonid.me", // reverse hash service is used to check
     }
@@ -81,7 +81,7 @@ Credential is created with Iden3ReverseMerkleTreeProof credential status or with
 
 ```json
 {
-  "id": "http://metamask.com/f2102347-a0a8-4e99-8ff7-a7b39d992372",
+  "id": "http://mytestwallet.com/f2102347-a0a8-4e99-8ff7-a7b39d992372",
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
     "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json-ld/iden3credential-v2.json-ld",

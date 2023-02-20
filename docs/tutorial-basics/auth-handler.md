@@ -26,12 +26,12 @@ Tutorial shows how to handle authorization request and
 
   const { did:userDID, credential:authBJJCredentialUser } =
     await identityWallet.createIdentity(
-      "http://metamask.com/", // this is url that will be a part of auth bjj credential identifier
-      "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
+      "http://mytestwallet.com/", // this is url that will be a part of auth bjj credential identifier
       {
         method: core.DidMethod.Iden3,
         blockchain: core.Blockchain.Polygon,
         networkId: core.NetworkId.Mumbai,
+        rhsUrl: "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
       }
     );
 
@@ -40,12 +40,12 @@ Tutorial shows how to handle authorization request and
 
   const { did:issuerDID, credential:issuerAuthBJJCredential } =
     await identityWallet.createIdentity(
-      "http://metamask.com/", // this is url that will be a part of auth bjj credential identifier
-      "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
+      "http://mytestwallet.com/", // this is url that will be a part of auth bjj credential identifier
       {
         method: core.DidMethod.Iden3,
         blockchain: core.Blockchain.Polygon,
         networkId: core.NetworkId.Mumbai,
+        rhsUrl: "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
       }
     );
 
@@ -63,7 +63,7 @@ Tutorial shows how to handle authorization request and
   const credential = await identityWallet.issueCredential(
     issuerDID,
     credentialRequest,
-    "http://metamask.com/", // host url that will a prefix of credential identifier
+    "http://mytestwallet.com/", // host url that will a prefix of credential identifier
     {
       withRHS: "https://rhs-staging.polygonid.me", // reverse hash service is used to check
     }
@@ -122,9 +122,9 @@ Tutorial shows how to handle authorization request and
   var authRequest: AuthorizationRequestMessage = {
     id : 'fe6354fe-3db2-48c2-a779-e39c2dda8d90',
     thid:   'fe6354fe-3db2-48c2-a779-e39c2dda8d90',
-    typ: constants.MediaType.PlainMessage,
+    typ: PROTOCOL_CONSTANTS.MediaType.PlainMessage,
     from: issuerDID.toString(),
-    type: constants.PROTOCOL_MESSAGE_TYPE.AUTHORIZATION_REQUEST_MESSAGE_TYPE,
+    type: PROTOCOL_CONSTANTS.PROTOCOL_MESSAGE_TYPE.AUTHORIZATION_REQUEST_MESSAGE_TYPE,
     body: {
       callbackUrl:'http://testcallback.com',
       message:'message to sign',
