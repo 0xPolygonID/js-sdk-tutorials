@@ -81,7 +81,7 @@ const config = {
             label: 'API',
           },
           {
-            href: 'https://github.com/0xPolygonID/js-sdk-tutorials',
+            href: 'https://github.com/0xPolygonID/js-sdk',
             label: 'GitHub',
             position: 'right',
           },
