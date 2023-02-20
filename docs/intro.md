@@ -40,7 +40,7 @@ or add import to your `index.html`
           IdentityWallet,
           CredentialWallet,
           KMS
-      } = IdenPolygonIdSdk;
+      } = PolygonIdSdk;
 </script>
 ```
 
