@@ -9,7 +9,7 @@ const config = {
   title: 'Polygon ID',
   tagline: 'Zero knowledge proof identity wizard',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  baseUrl: '/js-sdk-tutorials/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   // favicon: 'img/favicon.ico',
