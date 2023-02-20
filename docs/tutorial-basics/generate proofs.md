@@ -8,7 +8,6 @@ Credential is issued to the user with a BJJ signature proof, so we can generate 
 
 > codebase can be changed. Still in @beta
 
-
 ```javascript
 async function generateProofs() {
   console.log("=============== transit state ===============");
@@ -80,7 +79,7 @@ async function generateProofs() {
 
   console.log("================= publish to blockchain ===================")
 
-  const ethSigner = new ethers.Wallet('08562dec34e81fbc26f719048efb075f217bf911521d4e674cf7b7ad51f989eb',(dataStorage.states as EthStateStorage).provider);
+  const ethSigner = new ethers.Wallet('',(dataStorage.states as EthStateStorage).provider);
   const txId = await proofService.transitState(
     issuerDID,
     res.oldTreeState,
@@ -109,13 +108,19 @@ async function generateProofs() {
     }
   };
 
-  const { proof } = await proofService.generateProof(proofReqSig, userDID);
+  // find and choose credential to generate proof
+  let credsToChooseForZKPReq = await credentialWallet.findByQuery(
+    proofReqSig.query
+  );
 
-  console.log(JSON.stringify(proof));
+  const { proof } = await proofService.generateProof(
+    proofReqSig,
+    userDID,
+    credsToChooseForZKPReq[0] // e.g. user chose first
+  );
+
   const sigProofOk = await proofService.verifyProof(proof, CircuitId.AtomicQuerySigV2);
   console.log("valid: ", sigProofOk);
-
-
 
 
   console.log("================= generate credentialAtomicMTPV2 ===================")
@@ -147,7 +152,15 @@ async function generateProofs() {
       }
     };
 
-    const { proof:proofMTP } = await proofService.generateProof(proofReqMtp, userDID);
+
+    credsToChooseForZKPReq = await credentialWallet.findByQuery(
+      proofReqMtp.query
+    );
+    const { proof: proofMTP } = await proofService.generateProof(
+      proofReqMtp,
+      userDID,
+      credsToChooseForZKPReq[0]
+    );
     console.log(JSON.stringify(proofMTP));
     const mtpProofOk = await proofService.verifyProof(proof, CircuitId.AtomicQueryMTPV2);
     console.log("valid: ", mtpProofOk);
@@ -203,56 +216,76 @@ async function initProofService(
 ### signature proof request
 
 ```javascript
-console.log(
-  "================= generate credentialAtomicSigV2 ==================="
-);
+  console.log(
+      "================= generate credentialAtomicSigV2 ==================="
+    );
 
-const proofReqSig: ZeroKnowledgeProofRequest = {
-  id: 1,
-  circuitId: CircuitId.AtomicQuerySigV2,
-  optional: false,
-  query: {
-    allowedIssuers: ["*"],
-    type: credentialRequest.type,
-    context:
-      "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json-ld/kyc-v3.json-ld",
-    req: {
-      documentType: {
-        $eq: 99,
+  const proofReqSig: ZeroKnowledgeProofRequest = {
+    id: 1,
+    circuitId: CircuitId.AtomicQuerySigV2,
+    optional: false,
+    query: {
+      allowedIssuers: ["*"],
+      type: credentialRequest.type,
+      context:
+        "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json-ld/kyc-v3.json-ld",
+      req: {
+        documentType: {
+          $eq: 99,
+        },
       },
     },
-  },
-};
+  };
 
-const { proof } = await proofService.generateProof(proofReqSig, userDID);
+  // find and choose credential to generate proof
+  let credsToChooseForZKPReq = await credentialWallet.findByQuery(
+    proofReqSig.query
+  );
+
+  const { proof } = await proofService.generateProof(
+    proofReqSig,
+    userDID,
+    credsToChooseForZKPReq[0] // e.g. user chose first
+  );
 ```
+
 > :bulb: <i>ZeroKnowledgeProofRequest </i> is a protocol proof request, in this case for credential with a BJJ signature proof
 
 ### mtp proof request
 
-```javascript
-console.log(
-  "================= generate credentialAtomicSigV2 ==================="
-);
+    ```javascript
+    console.log(
+      "================= generate credentialAtomicSigV2 ==================="
+    );
 
-const proofReqMtp: ZeroKnowledgeProofRequest = {
-  id: 1,
-  circuitId: CircuitId.AtomicQueryMTPV2,
-  optional: false,
-  query: {
-    allowedIssuers: ["*"],
-    type: credentialRequest.type,
-    context:
-      "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json-ld/kyc-v3.json-ld",
-    req: {
-      documentType: {
-        $eq: 99,
+    const proofReqMtp: ZeroKnowledgeProofRequest = {
+      id: 1,
+      circuitId: CircuitId.AtomicQueryMTPV2,
+      optional: false,
+      query: {
+        allowedIssuers: ["*"],
+        type: credentialRequest.type,
+        context:
+          "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json-ld/kyc-v3.json-ld",
+        req: {
+          documentType: {
+            $eq: 99,
+          },
+        },
       },
-    },
-  },
-};
+    };
 
-const { proof } = await proofService.generateProof(proofReqSig, userDID);
+    credsToChooseForZKPReq = await credentialWallet.findByQuery(
+      proofReqMtp.query
+    );
+    const { proof: proofMTP } = await proofService.generateProof(
+      proofReqMtp,
+      userDID,
+      credsToChooseForZKPReq[0]
+    );
+    console.log(JSON.stringify(proofMTP));
+    const mtpProofOk = await proofService.verifyProof(proof, CircuitId.AtomicQueryMTPV2);
+    console.log("valid: ", mtpProofOk);
 ```
 
 > :bulb: <i>ZeroKnowledgeProofRequest </i> is a protocol proof request, in this case for credential with a Iden3SparseMerkleTreeProof

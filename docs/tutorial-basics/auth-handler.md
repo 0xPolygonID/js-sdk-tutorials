@@ -8,7 +8,7 @@ sidebar_position: 5
 Tutorial shows how to handle authorization request and  
 > codebase can be changed. Still in @beta 
 
-### transit your first state
+### handle authorization request: flow without usage of profiles 
 
 
 
@@ -176,8 +176,8 @@ Tutorial shows how to handle authorization request and
   const authV2Data = await circuitStorage.loadCircuitData(CircuitId.AuthV2);
   let pm = await initPackageManager(authV2Data,proofService.generateAuthV2Inputs.bind(proofService),proofService.verifyState.bind(proofService))
 
-  const authHandler = new AuthHandler(pm,proofService);
-  const authHandlerRequest = await authHandler.handleAuthorizationRequest(userDID,authRawRequest);
+  const authHandler = new AuthHandler(pm,proofService,credentialWallet);
+  const authHandlerRequest = await authHandler.handleAuthorizationRequestForGenesisDID(userDID,authRawRequest);
   console.log(authHandlerRequest);
 
 ```
