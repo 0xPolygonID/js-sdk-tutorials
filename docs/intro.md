@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Tutorial Intro
 
-Let's discover **Polygon JS SDK **.
+Let's discover **Polygon ID JS SDK **.
 
 ## Getting Started
 
@@ -21,7 +21,7 @@ Get started by creating an ** identity wallet **
 
 from npm:
 ```bash
-npm install @iden3/polygon-js-sdk
+npm install @0xpolygonid/js-sdk
 ```
 
 or add import to your `index.html` 
