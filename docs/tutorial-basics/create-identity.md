@@ -24,11 +24,11 @@ async function identityCreation(){
   
     const { did, credential } = await identityWallet.createIdentity(
       "https://mywallet.com", // this is url that will be a part of auth bjj credential identifier
-      "http://rhs.com/node", // url to check revocation status of auth bjj credential, if it's not set hostUrl is used.
       {
         method: core.DidMethod.Iden3,
         blockchain: core.Blockchain.Polygon,
-        networkId: core.NetworkId.Main
+        networkId: core.NetworkId.Main,
+        rhsUrl: "http://rhs.com/node", // url to check revocation status of auth bjj credential, if it's not set hostUrl is used.
       }
     );
   
