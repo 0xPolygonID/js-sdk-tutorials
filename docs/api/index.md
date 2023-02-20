@@ -12,4 +12,4 @@ hide_title: true
 
 |  Package | Description |
 |  --- | --- |
-|  [@0xpolygonid/js-sdk](./polygonid-js-sdk.md) |  |
+|  [@0xpolygonid/js-sdk](./js-sdk.md) |  |
