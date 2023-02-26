@@ -103,16 +103,24 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Web Site',
+                href: 'https://polygon.technology/polygon-id/',
+              },
+              {
+                label: 'Wiki',
+                href: 'https://wiki.polygon.technology/docs/polygonid/overview',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/0xPolygonID/',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/0xPolygon',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/0xPolygonID',
               },
             ],
           }
