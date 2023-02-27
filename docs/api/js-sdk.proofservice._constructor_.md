@@ -25,5 +25,5 @@ constructor(_identityWallet: IIdentityWallet, _credentialWallet: ICredentialWall
 |  --- | --- | --- |
 |  \_identityWallet | [IIdentityWallet](./js-sdk.iidentitywallet.md) | identity wallet |
 |  \_credentialWallet | [ICredentialWallet](./js-sdk.icredentialwallet.md) | credential wallet |
-|  \_circuitStorage | ICircuitStorage | circuit storage to load proving / verification files |
+|  \_circuitStorage | [ICircuitStorage](./js-sdk.icircuitstorage.md) | circuit storage to load proving / verification files |
 |  \_stateStorage | [IStateStorage](./js-sdk.istatestorage.md) | state storage to get GIST proof / publish state |

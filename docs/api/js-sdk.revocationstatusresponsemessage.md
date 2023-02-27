@@ -23,4 +23,4 @@ export type RevocationStatusResponseMessage = {
     to?: string;
 };
 ```
-**References:** [MediaType](./js-sdk.constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [RevocationStatusResponseMessageBody](./js-sdk.revocationstatusresponsemessagebody.md)
+**References:** [MediaType](./js-sdk.protocol_constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [RevocationStatusResponseMessageBody](./js-sdk.revocationstatusresponsemessagebody.md)

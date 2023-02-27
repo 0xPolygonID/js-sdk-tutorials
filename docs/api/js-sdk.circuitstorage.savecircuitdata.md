@@ -11,7 +11,7 @@ hide_title: true
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
-saves circuit data for circuit id
+load circuit keys by id
 
 **Signature:**
 
@@ -23,11 +23,11 @@ saveCircuitData(circuitId: CircuitId, circuitData: CircuitData): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  circuitId | [CircuitId](./js-sdk.circuitid.md) | id of the circuit |
-|  circuitData | [CircuitData](./js-sdk.circuitdata.md) | circuit keys |
+|  circuitId | [CircuitId](./js-sdk.circuitid.md) | circuit id |
+|  circuitData | [CircuitData](./js-sdk.circuitdata.md) |  |
 
 **Returns:**
 
 Promise&lt;void&gt;
 
-`Promise<void>`
+`{Promise<CircuitData>}`

@@ -33,7 +33,7 @@ export declare class IdentityWallet implements IIdentityWallet
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [addCredentialsToMerkleTree(credentials, issuerDID)](./js-sdk.identitywallet.addcredentialstomerkletree.md) |  | Adds verifiable credentials to issuer Claims Merkle tree |
-|  [createIdentity(hostUrl, rhsUrl, opts)](./js-sdk.identitywallet.createidentity.md) |  | Create Identity creates Auth BJJ credential, Merkle trees for claims, revocations and root of roots, adds auth BJJ credential to claims tree and generates mtp of inclusion based on the resulting state it provides an identifier in DID form. |
+|  [createIdentity(hostUrl, opts)](./js-sdk.identitywallet.createidentity.md) |  | Create Identity creates Auth BJJ credential, Merkle trees for claims, revocations and root of roots, adds auth BJJ credential to claims tree and generates mtp of inclusion based on the resulting state it provides an identifier in DID form. |
 |  [createProfile(did, nonce, verifier)](./js-sdk.identitywallet.createprofile.md) |  | Creates profile based on genesis identifier |
 |  [generateCredentialMtp(did, credential, treeState)](./js-sdk.identitywallet.generatecredentialmtp.md) |  |  |
 |  [generateIden3SparseMerkleTreeProof(issuerDID, credentials, txId, blockNumber, blockTimestamp)](./js-sdk.identitywallet.generateiden3sparsemerkletreeproof.md) |  | Generate Iden3SparseMerkleTree proof of inclusion to issuer state of specific credentials |

@@ -23,4 +23,4 @@ export type ProofGenerationRequestMessage = {
     to?: string;
 };
 ```
-**References:** [MediaType](./js-sdk.constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [ProofGenerationRequestMessageBody](./js-sdk.proofgenerationrequestmessagebody.md)
+**References:** [MediaType](./js-sdk.protocol_constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [ProofGenerationRequestMessageBody](./js-sdk.proofgenerationrequestmessagebody.md)

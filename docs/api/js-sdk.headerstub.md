@@ -17,4 +17,4 @@ export type HeaderStub = {
     typ: MediaType;
 };
 ```
-**References:** [MediaType](./js-sdk.constants.mediatype.md)
+**References:** [MediaType](./js-sdk.protocol_constants.mediatype.md)

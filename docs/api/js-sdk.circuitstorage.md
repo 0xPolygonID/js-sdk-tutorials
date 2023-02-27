@@ -21,7 +21,7 @@ Implementation of ICircuitStorage to store keys data
 ```typescript
 export declare class CircuitStorage implements ICircuitStorage 
 ```
-**Implements:** ICircuitStorage
+**Implements:** [ICircuitStorage](./js-sdk.icircuitstorage.md)
 
 ## Constructors
 
@@ -33,5 +33,5 @@ export declare class CircuitStorage implements ICircuitStorage
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [loadCircuitData(circuitId)](./js-sdk.circuitstorage.loadcircuitdata.md) |  | **_(BETA)_** loads circuit data by id |
-|  [saveCircuitData(circuitId, circuitData)](./js-sdk.circuitstorage.savecircuitdata.md) |  | **_(BETA)_** saves circuit data for circuit id |
+|  [loadCircuitData(circuitId)](./js-sdk.circuitstorage.loadcircuitdata.md) |  | **_(BETA)_** load circuit keys by id |
+|  [saveCircuitData(circuitId, circuitData)](./js-sdk.circuitstorage.savecircuitdata.md) |  | **_(BETA)_** load circuit keys by id |

@@ -23,4 +23,4 @@ export type AuthorizationResponseMessage = {
     to?: string;
 };
 ```
-**References:** [MediaType](./js-sdk.constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [AuthorizationMessageResponseBody](./js-sdk.authorizationmessageresponsebody.md)
+**References:** [MediaType](./js-sdk.protocol_constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [AuthorizationMessageResponseBody](./js-sdk.authorizationmessageresponsebody.md)

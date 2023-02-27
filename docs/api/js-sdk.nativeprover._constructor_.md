@@ -20,4 +20,4 @@ constructor(_circuitStorage: ICircuitStorage);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_circuitStorage | ICircuitStorage |  |
+|  \_circuitStorage | [ICircuitStorage](./js-sdk.icircuitstorage.md) |  |

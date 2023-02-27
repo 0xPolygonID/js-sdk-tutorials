@@ -21,7 +21,7 @@ Storage in the browser, uses local storage
 ```typescript
 export declare class BrowserDataSource<Type> implements IDataSource<Type> 
 ```
-**Implements:** IDataSource&lt;Type&gt;
+**Implements:** [IDataSource](./js-sdk.idatasource.md)&lt;Type&gt;
 
 ## Constructors
 

@@ -23,4 +23,4 @@ constructor(_dataSource: IDataSource<W3CCredential>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_dataSource | IDataSource&lt;[W3CCredential](./js-sdk.w3ccredential.md)&gt; | W3CCredential credential KV data source |
+|  \_dataSource | [IDataSource](./js-sdk.idatasource.md)&lt;[W3CCredential](./js-sdk.w3ccredential.md)&gt; | W3CCredential credential KV data source |

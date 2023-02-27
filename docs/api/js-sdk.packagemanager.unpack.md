@@ -30,6 +30,6 @@ unpack(envelope: Uint8Array): Promise<{
 
 **Returns:**
 
-Promise&lt;{ unpackedMessage: [BasicMessage](./js-sdk.basicmessage.md); unpackedMediaType: [MediaType](./js-sdk.constants.mediatype.md); }&gt;
+Promise&lt;{ unpackedMessage: [BasicMessage](./js-sdk.basicmessage.md); unpackedMediaType: [MediaType](./js-sdk.protocol_constants.mediatype.md); }&gt;
 
 `Promise<{ unpackedMessage: BasicMessage; unpackedMediaType: MediaType }`

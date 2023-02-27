@@ -33,7 +33,7 @@ export declare class PackageManager implements IPackageManager
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [packers](./js-sdk.packagemanager.packers.md) |  | Map&lt;[MediaType](./js-sdk.constants.mediatype.md), [IPacker](./js-sdk.ipacker.md)&gt; | **_(BETA)_** |
+|  [packers](./js-sdk.packagemanager.packers.md) |  | Map&lt;[MediaType](./js-sdk.protocol_constants.mediatype.md), [IPacker](./js-sdk.ipacker.md)&gt; | **_(BETA)_** |
 
 ## Methods
 

@@ -18,4 +18,4 @@ mediaType(): MediaType;
 ```
 **Returns:**
 
-[MediaType](./js-sdk.constants.mediatype.md)
+[MediaType](./js-sdk.protocol_constants.mediatype.md)

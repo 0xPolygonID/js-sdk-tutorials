@@ -21,7 +21,7 @@ Generic Memory Data Source
 ```typescript
 export declare class InMemoryDataSource<Type> implements IDataSource<Type> 
 ```
-**Implements:** IDataSource&lt;Type&gt;
+**Implements:** [IDataSource](./js-sdk.idatasource.md)&lt;Type&gt;
 
 ## Methods
 

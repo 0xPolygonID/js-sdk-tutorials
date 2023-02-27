@@ -26,7 +26,7 @@ export interface IPackageManager
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [packers](./js-sdk.ipackagemanager.packers.md) |  | Map&lt;[MediaType](./js-sdk.constants.mediatype.md), [IPacker](./js-sdk.ipacker.md)&gt; | <p>**_(BETA)_** Map of packers key is media type, value is packer implementation</p><p> {Map&lt;MediaType, IPacker&gt;}</p> |
+|  [packers](./js-sdk.ipackagemanager.packers.md) |  | Map&lt;[MediaType](./js-sdk.protocol_constants.mediatype.md), [IPacker](./js-sdk.ipacker.md)&gt; | <p>**_(BETA)_** Map of packers key is media type, value is packer implementation</p><p> {Map&lt;MediaType, IPacker&gt;}</p> |
 
 ## Methods
 

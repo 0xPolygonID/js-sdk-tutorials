@@ -21,7 +21,7 @@ export interface IIdentityWallet
 |  Method | Description |
 |  --- | --- |
 |  [addCredentialsToMerkleTree(credentials, issuerDID)](./js-sdk.iidentitywallet.addcredentialstomerkletree.md) | Adds verifiable credentials to issuer Claims Merkle tree |
-|  [createIdentity(hostUrl, rhsUrl, opts)](./js-sdk.iidentitywallet.createidentity.md) | **_(BETA)_** Create Identity creates Auth BJJ credential, Merkle trees for claims, revocations and root of roots, adds auth BJJ credential to claims tree and generates mtp of inclusion based on the resulting state it provides an identifier in DID form. |
+|  [createIdentity(hostUrl, opts)](./js-sdk.iidentitywallet.createidentity.md) | **_(BETA)_** Create Identity creates Auth BJJ credential, Merkle trees for claims, revocations and root of roots, adds auth BJJ credential to claims tree and generates mtp of inclusion based on the resulting state it provides an identifier in DID form. |
 |  [createProfile(did, nonce, verifier)](./js-sdk.iidentitywallet.createprofile.md) | Creates profile based on genesis identifier |
 |  [generateCredentialMtp(did, credential, treeState)](./js-sdk.iidentitywallet.generatecredentialmtp.md) | Generates proof of credential inclusion / non-inclusion to the given claims tree and its root or to the current root of the Claims tree in the given Merkle tree storage. |
 |  [generateIden3SparseMerkleTreeProof(issuerDID, credentials, txId, blockNumber, blockTimestamp)](./js-sdk.iidentitywallet.generateiden3sparsemerkletreeproof.md) | Generate Iden3SparseMerkleTree proof of inclusion to issuer state of specific credentials |

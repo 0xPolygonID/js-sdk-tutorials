@@ -23,7 +23,7 @@ unpackWithType(mediaType: MediaType, envelope: Uint8Array): Promise<BasicMessage
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  mediaType | [MediaType](./js-sdk.constants.mediatype.md) |  |
+|  mediaType | [MediaType](./js-sdk.protocol_constants.mediatype.md) |  |
 |  envelope | Uint8Array |  |
 
 **Returns:**

@@ -23,4 +23,4 @@ export type MessageFetchRequestMessage = {
     to?: string;
 };
 ```
-**References:** [MediaType](./js-sdk.constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [MessageFetchRequestMessageBody](./js-sdk.messagefetchrequestmessagebody.md)
+**References:** [MediaType](./js-sdk.protocol_constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [MessageFetchRequestMessageBody](./js-sdk.messagefetchrequestmessagebody.md)

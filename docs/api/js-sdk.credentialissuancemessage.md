@@ -23,4 +23,4 @@ export type CredentialIssuanceMessage = {
     to?: string;
 };
 ```
-**References:** [MediaType](./js-sdk.constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [IssuanceMessageBody](./js-sdk.issuancemessagebody.md)
+**References:** [MediaType](./js-sdk.protocol_constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [IssuanceMessageBody](./js-sdk.issuancemessagebody.md)

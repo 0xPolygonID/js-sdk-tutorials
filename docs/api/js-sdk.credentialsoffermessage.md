@@ -23,4 +23,4 @@ export type CredentialsOfferMessage = {
     to?: string;
 };
 ```
-**References:** [MediaType](./js-sdk.constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [CredentialsOfferMessageBody](./js-sdk.credentialsoffermessagebody.md)
+**References:** [MediaType](./js-sdk.protocol_constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [CredentialsOfferMessageBody](./js-sdk.credentialsoffermessagebody.md)

@@ -29,6 +29,7 @@ hide_title: true
 |  [CredentialWallet](./js-sdk.credentialwallet.md) | <p>**_(BETA)_** Wallet instance is a wrapper of CRUD logic for W3C credentials, also it allows to fetch revocation statuses.</p><p> CredentialWallet  implements ICredentialWallet interface</p> |
 |  [DataPrepareHandlerFunc](./js-sdk.datapreparehandlerfunc.md) | <p>**_(BETA)_** Handler to</p><p> DataPrepareHandlerFunc</p> |
 |  [EthStateStorage](./js-sdk.ethstatestorage.md) | <p>**_(BETA)_** </p><p> EthStateStorage  implements IStateStorage interface</p> |
+|  [FetchHandler](./js-sdk.fetchhandler.md) | <p>**_(BETA)_** Allows to handle Credential offer protocol message and return fetched credential</p><p> FetchHandler  implements IFetchHandler interface</p> |
 |  [FilterQuery](./js-sdk.filterquery.md) | <p>**_(BETA)_** Filter for queries of credentialSubject with a json path e.g birthday.date</p><p> FilterQuery  implements IFilterQuery interface</p> |
 |  [FSKeyLoader](./js-sdk.fskeyloader.md) | <p>**_(BETA)_** Loader from file system</p><p> FSKeyLoader  implements IKeyLoader interface</p> |
 |  [HttpSchemaLoader](./js-sdk.httpschemaloader.md) | <p>**_(BETA)_** loads schemas from http source</p><p> HttpSchemaLoader  implements ISchemaLoader interface</p> |
@@ -111,13 +112,16 @@ hide_title: true
 |  [EthConnectionConfig](./js-sdk.ethconnectionconfig.md) | <p>**_(BETA)_** Configuration of ethereum based blockchain connection</p><p> EthConnectionConfig</p> |
 |  [GISTProof](./js-sdk.gistproof.md) | <p>**_(BETA)_** global identity state proof</p><p> GISTProof</p> |
 |  [IAuthHandler](./js-sdk.iauthhandler.md) | <p>**_(BETA)_** Interface that allows the processing of the authorization request in the raw format for given identifier</p><p> IAuthHandler</p> |
+|  [ICircuitStorage](./js-sdk.icircuitstorage.md) | <p>**_(BETA)_** Interface to work with circuit files</p><p> ICircuitStorage</p> |
 |  [IComparer](./js-sdk.icomparer.md) |  |
 |  [ICredentialStorage](./js-sdk.icredentialstorage.md) | <p>**_(BETA)_** Interface for credential storages</p><p> ICredentialStorage</p> |
 |  [ICredentialWallet](./js-sdk.icredentialwallet.md) | <p>**_(BETA)_** Interface to work with credential wallets</p><p> ICredentialWallet</p> |
+|  [IDataSource](./js-sdk.idatasource.md) | <p>**_(BETA)_** Generic Key/Value Data Source for crud operation</p><p> IDataSource  Type - generic type</p> |
 |  [IDataStorage](./js-sdk.idatastorage.md) | <p>**_(BETA)_** General Data storage interface that union identity, credential, merkletree and states storage.</p><p> IDataStorage</p> |
 |  [Iden3ProofCreationResult](./js-sdk.iden3proofcreationresult.md) | <p>**_(BETA)_** Proof creation result</p><p> Iden3ProofCreationResult</p> |
-|  [IdentityCreationOptions](./js-sdk.identitycreationoptions.md) | <p>DID creation options</p><p>  IdentityCreationOptions</p> |
+|  [IdentityCreationOptions](./js-sdk.identitycreationoptions.md) | DID creation options seed - seed to generate BJJ keypair rhsUrl - rhsUrl is url to reverse hash service, so revocation status can be fetched for Auth BJJ credential   IdentityCreationOptions |
 |  [IdentityMerkleTreeMetaInformation](./js-sdk.identitymerkletreemetainformation.md) | <p>**_(BETA)_** Interface to store metadata about merkle tree</p><p> IdentityMerkleTreeMetaInformation</p> |
+|  [IFetchHandler](./js-sdk.ifetchhandler.md) | <p>**_(BETA)_** Interface that allows the processing of the credential offer in the raw format for given identifier</p><p> IFetchHandler</p> |
 |  [IFilterQuery](./js-sdk.ifilterquery.md) | <p>**_(BETA)_** query filter interface that allows to query Verifiable Credential</p><p> IFilterQuery</p> |
 |  [IIdentityStorage](./js-sdk.iidentitystorage.md) | <p>**_(BETA)_** storage for identities and profiles</p><p> IIdentityStorage</p> |
 |  [IIdentityWallet](./js-sdk.iidentitywallet.md) | Interface for IdentityWallet |
@@ -154,7 +158,7 @@ hide_title: true
 
 |  Namespace | Description |
 |  --- | --- |
-|  [constants](./js-sdk.constants.md) |  |
+|  [PROTOCOL\_CONSTANTS](./js-sdk.protocol_constants.md) |  |
 
 ## Variables
 
@@ -171,6 +175,7 @@ hide_title: true
 |  [defaultMTLevelsClaimsMerklization](./js-sdk.defaultmtlevelsclaimsmerklization.md) |  |
 |  [defaultMTLevelsOnChain](./js-sdk.defaultmtlevelsonchain.md) |  |
 |  [defaultValueArraySize](./js-sdk.defaultvaluearraysize.md) |  |
+|  [defineMerklizedRootPosition](./js-sdk.definemerklizedrootposition.md) | Returns merklized root position based on schema serialization metadata and expected position |
 |  [DIDDocumentJSONSchema](./js-sdk.diddocumentjsonschema.md) | DIDDocumentJSONSchema is a basic schema of did document |
 |  [ErrorEmptyAuthClaimNonRevProof](./js-sdk.erroremptyauthclaimnonrevproof.md) |  |
 |  [ErrorEmptyAuthClaimProof](./js-sdk.erroremptyauthclaimproof.md) |  |
@@ -191,6 +196,7 @@ hide_title: true
 |  [resolvePath](./js-sdk.resolvepath.md) | credential search path resolver |
 |  [StandardJSONCredentialsQueryFilter](./js-sdk.standardjsoncredentialsqueryfilter.md) | creates filters based on proof query |
 |  [strMTHex](./js-sdk.strmthex.md) | converts hex to Hash |
+|  [subjectPositionIndex](./js-sdk.subjectpositionindex.md) | Determines subject position |
 |  [swapEndianness](./js-sdk.swapendianness.md) | SwapEndianness swaps the endianness of the value encoded in buf. If buf is Big-Endian, the result will be Little-Endian and vice-versa. |
 |  [toClaimNonRevStatus](./js-sdk.toclaimnonrevstatus.md) | converts verifiable RevocationStatus model to circuits structure |
 |  [toGISTProof](./js-sdk.togistproof.md) | converts state info from smart contract to gist proof |

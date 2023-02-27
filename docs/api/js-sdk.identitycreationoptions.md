@@ -8,9 +8,7 @@ hide_title: true
 
 ## IdentityCreationOptions interface
 
-DID creation options
-
-  IdentityCreationOptions
+DID creation options seed - seed to generate BJJ keypair rhsUrl - rhsUrl is url to reverse hash service, so revocation status can be fetched for Auth BJJ credential   IdentityCreationOptions
 
 **Signature:**
 
@@ -25,4 +23,5 @@ export interface IdentityCreationOptions
 |  [blockchain](./js-sdk.identitycreationoptions.blockchain.md) |  | Blockchain |  |
 |  [method](./js-sdk.identitycreationoptions.method.md) |  | DidMethod |  |
 |  [networkId](./js-sdk.identitycreationoptions.networkid.md) |  | NetworkId |  |
+|  [rhsUrl?](./js-sdk.identitycreationoptions.rhsurl.md) |  | string | _(Optional)_ |
 |  [seed?](./js-sdk.identitycreationoptions.seed.md) |  | Uint8Array | _(Optional)_ |

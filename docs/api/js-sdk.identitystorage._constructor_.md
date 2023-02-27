@@ -23,5 +23,5 @@ constructor(_identityDataSource: IDataSource<Identity>, _profileDataSource: IDat
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_identityDataSource | IDataSource&lt;[Identity](./js-sdk.identity.md)&gt; | data source for identities |
-|  \_profileDataSource | IDataSource&lt;[Profile](./js-sdk.profile.md)&gt; | data source for profiles |
+|  \_identityDataSource | [IDataSource](./js-sdk.idatasource.md)&lt;[Identity](./js-sdk.identity.md)&gt; | data source for identities |
+|  \_profileDataSource | [IDataSource](./js-sdk.idatasource.md)&lt;[Profile](./js-sdk.profile.md)&gt; | data source for profiles |
