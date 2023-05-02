@@ -23,4 +23,5 @@ export declare enum MediaType
 |  Member | Value | Description |
 |  --- | --- | --- |
 |  PlainMessage | <code>&quot;application/iden3comm-plain-json&quot;</code> |  |
+|  SignedMessage | <code>&quot;application/iden3comm-signed-json&quot;</code> |  |
 |  ZKPMessage | <code>&quot;application/iden3-zkp-json&quot;</code> |  |

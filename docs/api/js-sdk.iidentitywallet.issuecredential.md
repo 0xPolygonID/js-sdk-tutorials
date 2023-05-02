@@ -13,7 +13,7 @@ Issues new credential from issuer according to the claim request
 **Signature:**
 
 ```typescript
-issueCredential(issuerDID: DID, req: CredentialRequest, hostUrl: string, opts?: CredentialIssueOptions): Promise<W3CCredential>;
+issueCredential(issuerDID: DID, req: CredentialRequest): Promise<W3CCredential>;
 ```
 
 ## Parameters
@@ -22,8 +22,6 @@ issueCredential(issuerDID: DID, req: CredentialRequest, hostUrl: string, opts?: 
 |  --- | --- | --- |
 |  issuerDID | DID | issuer identity |
 |  req | [CredentialRequest](./js-sdk.credentialrequest.md) | claim request |
-|  hostUrl | string | url that will be a part of credential id prefix |
-|  opts | [CredentialIssueOptions](./js-sdk.credentialissueoptions.md) | _(Optional)_ with / without RHS |
 
 **Returns:**
 

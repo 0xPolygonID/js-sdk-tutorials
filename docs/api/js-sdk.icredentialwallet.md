@@ -26,7 +26,7 @@ export interface ICredentialWallet
 
 |  Method | Description |
 |  --- | --- |
-|  [createCredential(hostUrl, issuer, request, schema, rhsUrl)](./js-sdk.icredentialwallet.createcredential.md) | **_(BETA)_** Creates a W3C verifiable Credential object |
+|  [createCredential(issuer, request, schema)](./js-sdk.icredentialwallet.createcredential.md) | **_(BETA)_** Creates a W3C verifiable Credential object |
 |  [filterByCredentialSubject(credentials, subject)](./js-sdk.icredentialwallet.filterbycredentialsubject.md) | **_(BETA)_** Filters given credentials with given credential subject |
 |  [findByContextType(context, type)](./js-sdk.icredentialwallet.findbycontexttype.md) | **_(BETA)_** Finds credentials by JSON-LD schema and type |
 |  [findById(id)](./js-sdk.icredentialwallet.findbyid.md) | **_(BETA)_** Finds the credential by its id |

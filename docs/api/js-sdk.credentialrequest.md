@@ -30,7 +30,7 @@ export interface CredentialRequest
 |  [credentialSubject](./js-sdk.credentialrequest.credentialsubject.md) |  | { \[key: string\]: string &#124; object &#124; number; } | **_(BETA)_** Credential subject, usually contains claims and identifier |
 |  [expiration?](./js-sdk.credentialrequest.expiration.md) |  | number | **_(BETA)_** _(Optional)_ expiration time |
 |  [merklizedRootPosition?](./js-sdk.credentialrequest.merklizedrootposition.md) |  | [MerklizedRootPosition](./js-sdk.merklizedrootposition.md) | **_(BETA)_** _(Optional)_ merklizedRootPosition (index / value / none) |
-|  [revNonce?](./js-sdk.credentialrequest.revnonce.md) |  | number | **_(BETA)_** _(Optional)_ revocation nonce |
+|  [revocationOpts](./js-sdk.credentialrequest.revocationopts.md) |  | { baseUrl: string; nonce?: number; type: [CredentialStatusType](./js-sdk.credentialstatustype.md); } | <p>**_(BETA)_** Revocation options</p><p> {{ baseUrl: string; nonce?: number; type: CredentialStatusType; }}  CredentialRequest</p> |
 |  [subjectPosition?](./js-sdk.credentialrequest.subjectposition.md) |  | [SubjectPosition](./js-sdk.subjectposition.md) | **_(BETA)_** _(Optional)_ subject position (index / value / none) |
 |  [type](./js-sdk.credentialrequest.type.md) |  | string | **_(BETA)_** Credential type |
 |  [version?](./js-sdk.credentialrequest.version.md) |  | number | **_(BETA)_** _(Optional)_ claim version |

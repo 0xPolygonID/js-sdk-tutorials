@@ -2,16 +2,15 @@
 sidebar_position: 2
 ---
 
-# transit state
+# Transit state
 
 State transition is a process of publishing the new issuer state after the claim is added to the claim tree.
 
-> codebase can be changed. Still in @beta 
+> codebase can be changed. Still in @beta
 
 ### transit your first state
 
-
-```javascript
+```typescript
 async function transitState() {
     console.log("=============== transit state ===============");
   
@@ -24,29 +23,31 @@ async function transitState() {
     const proofService = await initProofService(identityWallet,credentialWallet,dataStorage.states)
   
     const { did:userDID, credential:authBJJCredentialUser } =
-      await identityWallet.createIdentity(
-        "http://mytestwallet.com/", // this is url that will be a part of auth bjj credential identifier
-        {
-          method: core.DidMethod.Iden3,
-          blockchain: core.Blockchain.Polygon,
-          networkId: core.NetworkId.Mumbai,
-          rhsUrl: "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
-        }
-      );
+      await identityWallet.createIdentity({
+      method: DidMethod.Iden3,
+      blockchain: Blockchain.Polygon,
+      networkId: NetworkId.Mumbai,
+      seed: seedPhrase,
+      revocationOpts: {
+        type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
+        baseUrl: "https://rhs-staging.polygonid.me"
+      }
+    });
   
     console.log("=============== user did ===============");
     console.log(userDID.toString());
   
     const { did:issuerDID, credential:issuerAuthBJJCredential } =
-      await identityWallet.createIdentity(
-        "http://mytestwallet.com/", // this is url that will be a part of auth bjj credential identifier
-        {
-          method: core.DidMethod.Iden3,
-          blockchain: core.Blockchain.Polygon,
-          networkId: core.NetworkId.Mumbai,
-          rhsUrl: "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
+      await identityWallet.createIdentity({
+        method: DidMethod.Iden3,
+        blockchain: Blockchain.Polygon,
+        networkId: NetworkId.Mumbai,
+        seed: seedPhrase,
+        revocationOpts: {
+          type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
+          baseUrl: "https://rhs-staging.polygonid.me"
         }
-      );
+      };
   
     const credentialRequest: CredentialRequest = {
       credentialSchema:
@@ -58,18 +59,18 @@ async function transitState() {
         documentType: 99,
       },
       expiration: 12345678888,
+      revocationOpts: {
+        type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
+        baseUrl: "https://rhs-staging.polygonid.me"
+      }
     };
     const credential = await identityWallet.issueCredential(
       issuerDID,
-      credentialRequest,
-      "http://mytestwallet.com/", // host url that will a prefix of credential identifier
-      {
-        withRHS: "https://rhs-staging.polygonid.me", // reverse hash service is used to check
-      }
+      credentialRequest
     );
   
   
-    dataStorage.credential.saveCredential(credential)
+    await dataStorage.credential.saveCredential(credential)
 
 
     console.log("================= generate Iden3SparseMerkleTreeProof =======================")
@@ -104,7 +105,7 @@ async function transitState() {
 
 ### init proof service
 
-```javascript
+```typescript
 async function initProofService(
     identityWallet:IIdentityWallet,
     credentialWallet:ICredentialWallet,

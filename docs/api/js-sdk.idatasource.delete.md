@@ -16,7 +16,7 @@ deletes data value for given key with an optional key name
 **Signature:**
 
 ```typescript
-delete(key: string, keyName?: string): void;
+delete(key: string, keyName?: string): Promise<void>;
 ```
 
 ## Parameters
@@ -28,4 +28,4 @@ delete(key: string, keyName?: string): void;
 
 **Returns:**
 
-void
+Promise&lt;void&gt;

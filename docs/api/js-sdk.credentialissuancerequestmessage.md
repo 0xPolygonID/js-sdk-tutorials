@@ -18,9 +18,9 @@ export type CredentialIssuanceRequestMessage = {
     typ?: MediaType;
     type: ProtocolMessage;
     thid?: string;
-    body?: CredentialIssuanceRequestMessage;
+    body?: CredentialIssuanceRequestMessageBody;
     from?: string;
     to?: string;
 };
 ```
-**References:** [MediaType](./js-sdk.protocol_constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [CredentialIssuanceRequestMessage](./js-sdk.credentialissuancerequestmessage.md)
+**References:** [MediaType](./js-sdk.protocol_constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [CredentialIssuanceRequestMessageBody](./js-sdk.credentialissuancerequestmessagebody.md)

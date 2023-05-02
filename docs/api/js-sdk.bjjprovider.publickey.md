@@ -16,7 +16,7 @@ Gets public key by kmsKeyId
 **Signature:**
 
 ```typescript
-publicKey(keyId: KmsKeyId): Promise<PublicKey>;
+publicKey(keyId: KmsKeyId): Promise<PublicKey | string>;
 ```
 
 ## Parameters
@@ -27,4 +27,4 @@ publicKey(keyId: KmsKeyId): Promise<PublicKey>;
 
 **Returns:**
 
-Promise&lt;PublicKey&gt;
+Promise&lt;PublicKey \| string&gt;

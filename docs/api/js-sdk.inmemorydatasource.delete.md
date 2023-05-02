@@ -16,7 +16,7 @@ deletes from value from the memory
 **Signature:**
 
 ```typescript
-delete(key: string, keyName?: string): void;
+delete(key: string, keyName?: string): Promise<void>;
 ```
 
 ## Parameters
@@ -28,4 +28,4 @@ delete(key: string, keyName?: string): void;
 
 **Returns:**
 
-void
+Promise&lt;void&gt;

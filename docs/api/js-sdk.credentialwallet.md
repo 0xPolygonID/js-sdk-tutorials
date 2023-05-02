@@ -33,7 +33,7 @@ export declare class CredentialWallet implements ICredentialWallet
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [createCredential](./js-sdk.credentialwallet.createcredential.md) |  | (hostUrl: string, issuer: DID, request: [CredentialRequest](./js-sdk.credentialrequest.md), schema: [JSONSchema](./js-sdk.jsonschema.md), rhsUrl?: string) =&gt; [W3CCredential](./js-sdk.w3ccredential.md) | **_(BETA)_** Creates a W3C verifiable Credential object |
+|  [createCredential](./js-sdk.credentialwallet.createcredential.md) |  | (issuer: DID, request: [CredentialRequest](./js-sdk.credentialrequest.md), schema: [JSONSchema](./js-sdk.jsonschema.md)) =&gt; [W3CCredential](./js-sdk.w3ccredential.md) | **_(BETA)_** Creates a W3C verifiable Credential object |
 
 ## Methods
 

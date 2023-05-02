@@ -36,22 +36,28 @@ hide_title: true
 |  [Iden3SparseMerkleTreeProof](./js-sdk.iden3sparsemerkletreeproof.md) | <p>**_(BETA)_** Iden3SparseMerkleProof is a iden3 protocol merkle tree proof</p><p> Iden3SparseMerkleTreeProof</p> |
 |  [IdentityStorage](./js-sdk.identitystorage.md) | <p>**_(BETA)_** Implementation of the IIdentityStorage with KV data source</p><p> IdentityStorage  implements IIdentityStorage interface</p> |
 |  [IdentityWallet](./js-sdk.identitywallet.md) | <p>Wallet instance to manage the digital identity based on iden3 protocol allows to: create identity/profile, sign payloads (bigint / bytes), generate keys, generate Merkle tree proofs of inclusion / non-inclusion to Merkle trees, issue credentials with a BJJSignature and Iden3SparseMerkleTree Proofs, revoke credentials, add credentials to Merkle trees, push states to reverse hash service</p><p> IdentityWallet - class</p><p> implements IIdentityWallet interface</p> |
+|  [IndexedDBDataSource](./js-sdk.indexeddbdatasource.md) | <p>**_(BETA)_** Storage in the browser, uses indexed db storage</p><p> IndexedDBDataSource  Type</p> |
+|  [IndexedDBPrivateKeyStore](./js-sdk.indexeddbprivatekeystore.md) | <p>**_(BETA)_** Allows storing keys in the indexed db storage of the browser (NOT ENCRYPTED: DO NOT USE IN THE PRODUCTION)</p><p> IndexedDBPrivateKeyStore  implements AbstractPrivateKeyStore interface</p> |
 |  [InMemoryDataSource](./js-sdk.inmemorydatasource.md) | <p>**_(BETA)_** Generic Memory Data Source</p><p> InMemoryDataSource - class  Type</p> |
 |  [InMemoryMerkleTreeStorage](./js-sdk.inmemorymerkletreestorage.md) | <p>**_(BETA)_** </p><p> InMemoryMerkleTreeStorage  implements IMerkleTreeStorage interface</p> |
 |  [InMemoryPrivateKeyStore](./js-sdk.inmemoryprivatekeystore.md) | <p>**_(BETA)_** Key Store to use in memory</p><p> InMemoryPrivateKeyStore  implements AbstractPrivateKeyStore interface</p> |
 |  [IpfsSchemaLoader](./js-sdk.ipfsschemaloader.md) | <p>**_(BETA)_** loads schemas from ipfs source</p><p> IpfsSchemaLoader  implements ISchemaLoader interface</p> |
 |  [IssuerData](./js-sdk.issuerdata.md) | <p>**_(BETA)_** IssuerData is the data that is used to create a proof</p><p> IssuerData</p> |
 |  [JsonSchemaValidator](./js-sdk.jsonschemavalidator.md) | <p>**_(BETA)_** JSON Schema Validator</p><p> JsonSchemaValidator</p> |
+|  [JWSPacker](./js-sdk.jwspacker.md) | <p>**_(BETA)_** Packer that can pack message to JWZ token, and unpack and validate JWZ envelope </p><p> ZKPPacker  implements IPacker interface</p> |
 |  [KMS](./js-sdk.kms.md) | <p>**_(BETA)_** Key management system class contains different key providers. allows to register custom provider, create key, get public key and sign</p><p>  KMS - class</p> |
+|  [LDParser](./js-sdk.ldparser.md) | <p>**_(BETA)_** LDParser can parse JSONLD schema according to specification</p><p> LDParser</p> |
 |  [LocalStoragePrivateKeyStore](./js-sdk.localstorageprivatekeystore.md) | <p>**_(BETA)_** Allows storing keys in the local storage of the browser (NOT ENCRYPTED: DO NOT USE IN THE PRODUCTION)</p><p> LocalStoragePrivateKeyStore  implements AbstractPrivateKeyStore interface</p> |
+|  [MerkleTreeIndexedDBStorage](./js-sdk.merkletreeindexeddbstorage.md) | <p>**_(BETA)_** Merkle tree storage that uses browser indexed db storage</p><p> MerkleTreeIndexedDBStorage  implements IMerkleTreeStorage interface</p> |
 |  [MerkleTreeLocalStorage](./js-sdk.merkletreelocalstorage.md) | <p>**_(BETA)_** Merkle tree storage that uses browser local storage</p><p> MerkleTreeLocalStorage  implements IMerkleTreeStorage interface</p> |
 |  [NativeProver](./js-sdk.nativeprover.md) |  |
 |  [PackageManager](./js-sdk.packagemanager.md) | <p>**_(BETA)_** Basic package manager for iden3 communication protocol</p><p> PackageManager  implements IPackageManager interface</p> |
-|  [Parser](./js-sdk.parser.md) | <p>**_(BETA)_** Parser can parse claim data according to specification</p><p> Parser</p> |
+|  [Parser](./js-sdk.parser.md) | <p>**_(BETA)_** Parser can parse claim and schema data according to specification</p><p> Parser</p> |
 |  [PlainPacker](./js-sdk.plainpacker.md) | <p>**_(BETA)_** Plain packer just serializes bytes to JSON and adds media type</p><p> PlainPacker  implements IPacker interface</p> |
 |  [ProofService](./js-sdk.proofservice.md) | <p>**_(BETA)_** Proof service is an implementation of IProofService that works with a native groth16 prover</p><p> ProofService  implements IProofService interface</p> |
 |  [Query](./js-sdk.query.md) | <p>**_(BETA)_** Query represents basic request to claim slot verification</p><p> Query</p> |
 |  [Scalar](./js-sdk.scalar.md) | <p>**_(BETA)_** Scalar is used to compare two scalar value.</p><p> Scalar  implements IComparer interface</p> |
+|  [Sec256k1Provider](./js-sdk.sec256k1provider.md) | <p>**_(BETA)_** Provider for Sec256p1 keys256p1</p><p> Sec256p1Provider  implements IKeyProvider interface</p> |
 |  [StateTransitionInputs](./js-sdk.statetransitioninputs.md) | <p>**_(BETA)_** StateTransition circuit representation Inputs and public signals declaration, marshalling and parsing</p><p> StateTransitionInputs  {BaseConfig}</p> |
 |  [StateTransitionPubSignals](./js-sdk.statetransitionpubsignals.md) | <p>**_(BETA)_** Public signals of StateTransition circuit</p><p> StateTransitionPubSignals</p> |
 |  [UniversalSchemaLoader](./js-sdk.universalschemaloader.md) | <p>**_(BETA)_** loads schemas from ipfs and http sources</p><p> UniversalSchemaLoader  implements ISchemaLoader interface</p> |
@@ -87,14 +93,25 @@ hide_title: true
 
 |  Function | Description |
 |  --- | --- |
+|  [base58ToBytes(s)](./js-sdk.base58tobytes.md) |  |
+|  [base64ToBytes(s)](./js-sdk.base64tobytes.md) |  |
+|  [bytesToBase58(b)](./js-sdk.bytestobase58.md) |  |
+|  [bytesToBase64(b)](./js-sdk.bytestobase64.md) |  |
+|  [bytesToBase64url(b)](./js-sdk.bytestobase64url.md) |  |
+|  [bytesToHex(b)](./js-sdk.bytestohex.md) |  |
 |  [checkDataInField(data)](./js-sdk.checkdatainfield.md) | <p>check if byte data is in Q field</p> |
 |  [dataFillsSlot(slot, newData)](./js-sdk.datafillsslot.md) | <p>checks if data fills into slot capacity ()</p> |
+|  [decodeBase64url(s)](./js-sdk.decodebase64url.md) |  |
+|  [encodeBase64url(s)](./js-sdk.encodebase64url.md) |  |
 |  [extractProof(proof)](./js-sdk.extractproof.md) | <p>extracts core claim from Proof and returns Proof Type</p> |
 |  [fieldToByteArray(field)](./js-sdk.fieldtobytearray.md) | <p>FieldToByteArray convert fields to byte representation based on type</p> |
 |  [getLoader(url, ipfsConfigUrl)](./js-sdk.getloader.md) | <p>returns loader for schemas based on the URL protocol</p> |
 |  [getProperties(obj)](./js-sdk.getproperties.md) | <p>return object properties</p> |
+|  [getRandomBytes(n)](./js-sdk.getrandombytes.md) | <p>generates Uint8Array with random bytes of size n</p> |
+|  [hexToBytes(s)](./js-sdk.hextobytes.md) |  |
 |  [isGenesisStateId(id, state, type)](./js-sdk.isgenesisstateid.md) | <p>Checks if id is created from given state and type is genesis</p> |
 |  [isIssuerGenesis(issuer, state)](./js-sdk.isissuergenesis.md) | <p>Checks if issuer did is created from given state is genesis</p> |
+|  [keyPath(keyType, keyID)](./js-sdk.keypath.md) | <p>builds key path</p> |
 
 ## Interfaces
 
@@ -105,7 +122,6 @@ hide_title: true
 |  [ClaimWithMTPProof](./js-sdk.claimwithmtpproof.md) | <p>**_(BETA)_** Claim for circuit with non revocation proof and proof of merkle tree inclusion</p><p> ClaimWithMTPProof</p> |
 |  [ClaimWithSigProof](./js-sdk.claimwithsigproof.md) | <p>**_(BETA)_** Claim for circuit with non revocation proof and signature proof </p><p> ClaimWithSigProof</p> |
 |  [CoreClaimOptions](./js-sdk.coreclaimoptions.md) | <p>**_(BETA)_** CoreClaimOptions is params for core claim parsing</p><p> CoreClaimOptions</p> |
-|  [CredentialIssueOptions](./js-sdk.credentialissueoptions.md) | <p>**_(BETA)_** Credential issue options with publishing to chain and to reverse hash service</p><p> CredentialIssueOptions</p> |
 |  [CredentialRequest](./js-sdk.credentialrequest.md) | <p>**_(BETA)_** Request to core library to create Core Claim from W3C Verifiable Credential</p><p> CredentialRequest</p> |
 |  [CredentialSchema](./js-sdk.credentialschema.md) | <p>**_(BETA)_** Credential schema vc</p><p> CredentialSchema</p> |
 |  [CredentialStatus](./js-sdk.credentialstatus.md) | <p>**_(BETA)_** CredentialStatus contains type and revocation Url </p><p> CredentialStatus</p> |
@@ -166,10 +182,14 @@ hide_title: true
 |  --- | --- |
 |  [bigIntArrayToStringArray](./js-sdk.bigintarraytostringarray.md) | converts each big integer in array to string |
 |  [bJJSignatureFromHexString](./js-sdk.bjjsignaturefromhexstring.md) |  |
+|  [buildQueryPath](./js-sdk.buildquerypath.md) |  |
 |  [buildTreeState](./js-sdk.buildtreestate.md) | converts hexes of tree roots to Hashes |
+|  [byteDecoder](./js-sdk.bytedecoder.md) |  |
+|  [byteEncoder](./js-sdk.byteencoder.md) |  |
 |  [comparatorOptions](./js-sdk.comparatoroptions.md) |  |
 |  [createFilter](./js-sdk.createfilter.md) | filter creation factory |
 |  [createSchemaHash](./js-sdk.createschemahash.md) | Calculates schema hash |
+|  [createVerifiablePresentation](./js-sdk.createverifiablepresentation.md) |  |
 |  [defaultEthConnectionConfig](./js-sdk.defaultethconnectionconfig.md) |  |
 |  [defaultMTLevels](./js-sdk.defaultmtlevels.md) |  |
 |  [defaultMTLevelsClaimsMerklization](./js-sdk.defaultmtlevelsclaimsmerklization.md) |  |
@@ -187,20 +207,25 @@ hide_title: true
 |  [ErrorEmptyIssuerAuthClaimProof](./js-sdk.erroremptyissuerauthclaimproof.md) |  |
 |  [ErrorUserStateInRelayClaimProof](./js-sdk.erroruserstateinrelayclaimproof.md) |  |
 |  [existenceToInt](./js-sdk.existencetoint.md) | converts boolean existence param to integer if true - 1, else - 0 |
+|  [extractPublicKeyBytes](./js-sdk.extractpublickeybytes.md) |  |
 |  [factoryComparer](./js-sdk.factorycomparer.md) | FactoryComparer depends on input data will return right comparer. |
 |  [fillSlot](./js-sdk.fillslot.md) | checks if data can fill the slot |
+|  [getDIDComponentById](./js-sdk.getdidcomponentbyid.md) |  |
 |  [getNodeAuxValue](./js-sdk.getnodeauxvalue.md) |  |
 |  [prepareCircuitArrayValues](./js-sdk.preparecircuitarrayvalues.md) | PrepareCircuitArrayValues padding values to size. Validate array size and throw an exception if array is bigger than size if array is bigger, circuit cannot compile because number of inputs does not match |
 |  [prepareSiblingsStr](./js-sdk.preparesiblingsstr.md) | siblings as string array |
 |  [QueryOperators](./js-sdk.queryoperators.md) | QueryOperators represents operators for atomic circuits |
+|  [resolveDIDDocument](./js-sdk.resolvediddocument.md) |  |
 |  [resolvePath](./js-sdk.resolvepath.md) | credential search path resolver |
 |  [StandardJSONCredentialsQueryFilter](./js-sdk.standardjsoncredentialsqueryfilter.md) | creates filters based on proof query |
+|  [stringByPath](./js-sdk.stringbypath.md) |  |
 |  [strMTHex](./js-sdk.strmthex.md) | converts hex to Hash |
 |  [subjectPositionIndex](./js-sdk.subjectpositionindex.md) | Determines subject position |
 |  [swapEndianness](./js-sdk.swapendianness.md) | SwapEndianness swaps the endianness of the value encoded in buf. If buf is Big-Endian, the result will be Little-Endian and vice-versa. |
 |  [toClaimNonRevStatus](./js-sdk.toclaimnonrevstatus.md) | converts verifiable RevocationStatus model to circuits structure |
 |  [toGISTProof](./js-sdk.togistproof.md) | converts state info from smart contract to gist proof |
 |  [VerifiableConstants](./js-sdk.verifiableconstants.md) | Verifiable constants |
+|  [verifiablePresentationFromCred](./js-sdk.verifiablepresentationfromcred.md) |  |
 
 ## Type Aliases
 
@@ -227,7 +252,7 @@ hide_title: true
 |  [HeaderStub](./js-sdk.headerstub.md) | HeaderStub is used to stub the jwt based envelops |
 |  [Identity](./js-sdk.identity.md) | Identity structure that can be used for identity storage |
 |  [IssuanceMessageBody](./js-sdk.issuancemessagebody.md) | IssuanceMessageBody is struct the represents message when credential is issued |
-|  [JSONObject](./js-sdk.jsonobject.md) |  |
+|  [JSONObject](./js-sdk.jsonobject.md) | JSON object |
 |  [MessageFetchRequestMessage](./js-sdk.messagefetchrequestmessage.md) | MessageFetchRequestMessage represent Iden3message for message fetch request. |
 |  [MessageFetchRequestMessageBody](./js-sdk.messagefetchrequestmessagebody.md) | MessageFetchRequestMessageBody is struct the represents body for message fetch request. |
 |  [PackerParams](./js-sdk.packerparams.md) | parameters for any packer |
@@ -244,6 +269,7 @@ hide_title: true
 |  [RevocationStatusResponseMessage](./js-sdk.revocationstatusresponsemessage.md) | RevocationStatusResponseMessage is struct the represents body for proof generation request |
 |  [RevocationStatusResponseMessageBody](./js-sdk.revocationstatusresponsemessagebody.md) | RevocationStatusResponseMessageBody is struct the represents request for revocation status |
 |  [Schema](./js-sdk.schema.md) | Schema represents location and type where it's stored |
+|  [SignerFn](./js-sdk.signerfn.md) |  |
 |  [StateVerificationFunc](./js-sdk.stateverificationfunc.md) | signature of state function verifier |
 |  [VerificationParams](./js-sdk.verificationparams.md) | Params for verification of auth circuit public signals |
 |  [ZeroKnowledgeProofRequest](./js-sdk.zeroknowledgeproofrequest.md) | ZeroKnowledgeProofRequest represents structure of zkp request object |

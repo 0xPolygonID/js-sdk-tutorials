@@ -29,6 +29,12 @@ export declare class CircuitStorage implements ICircuitStorage
 |  --- | --- | --- |
 |  [(constructor)(\_dataSource)](./js-sdk.circuitstorage._constructor_.md) |  | **_(BETA)_** Creates an instance of CircuitStorage. |
 
+## Properties
+
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [storageKey](./js-sdk.circuitstorage.storagekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | **_(BETA)_** storage key for circuits |
+
 ## Methods
 
 |  Method | Modifiers | Description |

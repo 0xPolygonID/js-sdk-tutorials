@@ -34,4 +34,4 @@ export interface IKeyProvider
 |  --- | --- |
 |  [newPrivateKeyFromSeed(seed)](./js-sdk.ikeyprovider.newprivatekeyfromseed.md) | **_(BETA)_** creates new key pair from given seed |
 |  [publicKey(keyID)](./js-sdk.ikeyprovider.publickey.md) | **_(BETA)_** gets public key by key id |
-|  [sign(keyId, data)](./js-sdk.ikeyprovider.sign.md) | **_(BETA)_** sign data with kms key |
+|  [sign(keyId, data, opts)](./js-sdk.ikeyprovider.sign.md) | **_(BETA)_** sign data with kms key |

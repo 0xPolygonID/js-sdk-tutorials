@@ -36,5 +36,4 @@ export declare class BrowserDataSource<Type> implements IDataSource<Type>
 |  [delete(key, keyName)](./js-sdk.browserdatasource.delete.md) |  | **_(BETA)_** deletes item from the local storage |
 |  [get(key, keyName)](./js-sdk.browserdatasource.get.md) |  | **_(BETA)_** gets value from the local storage by given key |
 |  [load()](./js-sdk.browserdatasource.load.md) |  | **_(BETA)_** loads all from the local storage |
-|  [patchData(value)](./js-sdk.browserdatasource.patchdata.md) |  | **_(BETA)_** updates data with a total reset |
 |  [save(key, value, keyName)](./js-sdk.browserdatasource.save.md) |  | **_(BETA)_** saves value to the local storage |

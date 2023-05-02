@@ -16,7 +16,7 @@ Save value under the key with optional key name
 **Signature:**
 
 ```typescript
-save(key: string, value: Type, keyName?: string): void;
+save(key: string, value: Type, keyName?: string): Promise<void>;
 ```
 
 ## Parameters
@@ -29,4 +29,4 @@ save(key: string, value: Type, keyName?: string): void;
 
 **Returns:**
 
-void
+Promise&lt;void&gt;

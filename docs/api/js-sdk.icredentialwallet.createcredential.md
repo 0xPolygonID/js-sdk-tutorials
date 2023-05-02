@@ -16,18 +16,16 @@ Creates a W3C verifiable Credential object
 **Signature:**
 
 ```typescript
-createCredential(hostUrl: string, issuer: DID, request: CredentialRequest, schema: JSONSchema, rhsUrl?: string): W3CCredential;
+createCredential(issuer: DID, request: CredentialRequest, schema: JSONSchema): W3CCredential;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  hostUrl | string | URL that will be used as a prefix for credential identifier |
 |  issuer | DID | issuer identity |
 |  request | [CredentialRequest](./js-sdk.credentialrequest.md) | specification of claim creation parameters |
 |  schema | [JSONSchema](./js-sdk.jsonschema.md) | JSON schema for W3C Verifiable Credential |
-|  rhsUrl | string | _(Optional)_ URL of reverse hash service, if it's not set - host url is used for 'SparseMerkleTreeProof' credential status type |
 
 **Returns:**
 

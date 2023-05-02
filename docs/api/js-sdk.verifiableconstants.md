@@ -20,8 +20,10 @@ VerifiableConstants: Readonly<{
         IDENTITY_DOES_NOT_EXIST: string;
     };
     CREDENTIAL_TYPE: {
-        W3C_VERIFIABLE: string;
+        W3C_VERIFIABLE_CREDENTIAL: string;
+        W3C_VERIFIABLE_PRESENTATION: string;
     };
+    CREDENTIAL_SUBJECT_PATH: "https://www.w3.org/2018/credentials#credentialSubject";
     JSONLD_SCHEMA: {
         IDEN3_CREDENTIAL: string;
         W3C_CREDENTIAL_2018: string;

@@ -2,15 +2,15 @@
 sidebar_position: 1
 ---
 
-# create identity
+# Create identity
 
 Identity creation contains of two main parts: creation of identifier and Auth BJJ Credential
 
-> codebase can be changed. Still in @beta 
+> codebase can be changed. Still in @beta
 
 ### Create your first identity
 
-```javascript
+```typescript
 async function identityCreation(){
     
     console.log("=============== key creation ===============")
@@ -22,30 +22,31 @@ async function identityCreation(){
       credentialWallet
     );
   
-    const { did, credential } = await identityWallet.createIdentity(
-      "https://mywallet.com", // this is url that will be a part of auth bjj credential identifier
-      {
-        method: core.DidMethod.Iden3,
-        blockchain: core.Blockchain.Polygon,
-        networkId: core.NetworkId.Main,
-        rhsUrl: "http://rhs.com/node", // url to check revocation status of auth bjj credential, if it's not set hostUrl is used.
+    const { did, credential } = await await wallet.createIdentity({
+      method: DidMethod.Iden3,
+      blockchain: Blockchain.Polygon,
+      networkId: NetworkId.Main,
+      seed: seedPhraseIssuer,
+      revocationOpts: {
+        type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
+        baseUrl: 'http://rhs.com/node'
       }
-    );
+    });
   
     console.log("=============== did ===============")
     console.log(did.toString());
     console.log("=============== Auth BJJ credential ===============")
     console.log(JSON.stringify(credential));
 }
+```
 
- ```   
 > :bulb: <i>identityWallet </i> is an entry point to work with your identities. Create ones, generate profiles, issue credential and many more!!!
 
 ### let's see the details
 
 #### data source
 
-```javascript
+```typescript
 function initDataStorage(): IDataStorage {
 
    let conf :EthConnectionConfig= defaultEthConnectionConfig;
@@ -71,7 +72,7 @@ function initDataStorage(): IDataStorage {
 
 #### credential wallet
 
-```javascript
+```typescript
 async function initCredentialWallet(
   dataStorage: IDataStorage
 ): Promise<CredentialWallet> {
@@ -84,8 +85,7 @@ async function initCredentialWallet(
 
 #### identity wallet
 
-
-```javascript
+```typescript
 async function initIdentityWallet(
   dataStorage: IDataStorage,
   credentialWallet: ICredentialWallet
@@ -98,7 +98,6 @@ async function initIdentityWallet(
   return new IdentityWallet(kms, dataStorage, credentialWallet);
 }
 ```
-
 
 > :bulb: <i>identityWallet </i> requires kms (key management system) :key: which is initialized with different key providers. It's required to have a BJJ key provider implementation to use work with Polygon identity.
 

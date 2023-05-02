@@ -33,7 +33,6 @@ export declare class MerkleTreeLocalStorage implements IMerkleTreeStorage
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [storageKey](./js-sdk.merkletreelocalstorage.storagekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p>**_(BETA)_** key for the local storage</p> |
 |  [storageKeyMeta](./js-sdk.merkletreelocalstorage.storagekeymeta.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p>**_(BETA)_** key for the storage key metadata</p> |
 
 ## Methods
