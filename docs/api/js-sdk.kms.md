@@ -28,4 +28,4 @@ export declare class KMS
 |  [createKeyFromSeed(keyType, bytes)](./js-sdk.kms.createkeyfromseed.md) |  | **_(BETA)_** generates a new key and returns it kms key id |
 |  [publicKey(keyId)](./js-sdk.kms.publickey.md) |  | **_(BETA)_** gets public key for key id |
 |  [registerKeyProvider(keyType, keyProvider)](./js-sdk.kms.registerkeyprovider.md) |  | **_(BETA)_** register key provider in the KMS |
-|  [sign(keyId, data)](./js-sdk.kms.sign.md) |  | **_(BETA)_** sign Uint8Array with giv KmsKeyIden |
+|  [sign(keyId, data, opts)](./js-sdk.kms.sign.md) |  | **_(BETA)_** sign Uint8Array with giv KmsKeyIden |

@@ -2,13 +2,13 @@
 sidebar_position: 4
 ---
 
-# generate sig / mtp proofs
+# Generate sig / mtp proofs
 
 Credential is issued to the user with a BJJ signature proof, so we can generate a zkp that we have such credentials!!
 
 > codebase can be changed. Still in @beta
 
-```javascript
+```typescript
 async function generateProofs() {
   console.log("=============== transit state ===============");
 
@@ -21,29 +21,31 @@ async function generateProofs() {
   const proofService = await initProofService(identityWallet,credentialWallet,dataStorage.states)
 
   const { did:userDID, credential:authBJJCredentialUser } =
-    await identityWallet.createIdentity(
-      "http://mytestwallet.com/", // this is url that will be a part of auth bjj credential identifier
-      {
-        method: core.DidMethod.Iden3,
-        blockchain: core.Blockchain.Polygon,
-        networkId: core.NetworkId.Mumbai,
-        rhsUrl: "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
+    await wallet.createIdentity({
+      method: DidMethod.Iden3,
+      blockchain: Blockchain.Polygon,
+      networkId: NetworkId.Mumbai,
+      seed: seedPhraseIssuer,
+      revocationOpts: {
+        type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
+        baseUrl: "https://rhs-staging.polygonid.me"
       }
-    );
+    });
 
   console.log("=============== user did ===============");
   console.log(userDID.toString());
 
   const { did:issuerDID, credential:issuerAuthBJJCredential } =
-    await identityWallet.createIdentity(
-      "http://mytestwallet.com/", // this is url that will be a part of auth bjj credential identifier
-      {
-        method: core.DidMethod.Iden3,
-        blockchain: core.Blockchain.Polygon,
-        networkId: core.NetworkId.Mumbai,
-        rhsUrl: "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
+    await wallet.createIdentity({
+      method: DidMethod.Iden3,
+      blockchain: Blockchain.Polygon,
+      networkId: NetworkId.Mumbai,
+      seed: seedPhraseIssuer,
+      revocationOpts: {
+        type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
+        baseUrl: "https://rhs-staging.polygonid.me"
       }
-    );
+    });
 
   const credentialRequest: CredentialRequest = {
     credentialSchema:
@@ -55,19 +57,15 @@ async function generateProofs() {
       documentType: 99,
     },
     expiration: 12345678888,
-  };
-  const credential = await identityWallet.issueCredential(
-    issuerDID,
-    credentialRequest,
-    "http://mytestwallet.com/", // host url that will a prefix of credential identifier
-    {
-      withRHS: "https://rhs-staging.polygonid.me", // reverse hash service is used to check
+    revocationOpts: {
+        type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
+        baseUrl: "https://rhs-staging.polygonid.me"
     }
-  );
+  };
 
+  const credential = await identityWallet.issueCredential(issuerDID, credentialRequest);
 
-  dataStorage.credential.saveCredential(credential)
-
+  await dataStorage.credential.saveCredential(credential)
 
   console.log("================= generate Iden3SparseMerkleTreeProof =======================")
 
@@ -156,13 +154,13 @@ async function generateProofs() {
     credsToChooseForZKPReq = await credentialWallet.findByQuery(
       proofReqMtp.query
     );
-    const { proof: proofMTP } = await proofService.generateProof(
+    const { proof, pub_signals } = await proofService.generateProof(
       proofReqMtp,
       userDID,
       credsToChooseForZKPReq[0]
     );
     console.log(JSON.stringify(proofMTP));
-    const mtpProofOk = await proofService.verifyProof(proof, CircuitId.AtomicQueryMTPV2);
+    const mtpProofOk = await proofService.verifyProof({ proof, pub_signals }, CircuitId.AtomicQueryMTPV2);
     console.log("valid: ", mtpProofOk);
 
 }
@@ -215,7 +213,7 @@ async function initProofService(
 
 ### signature proof request
 
-```javascript
+```typescript
   console.log(
       "================= generate credentialAtomicSigV2 ==================="
     );
@@ -253,7 +251,7 @@ async function initProofService(
 
 ### mtp proof request
 
-    ```javascript
+```typescript
     console.log(
       "================= generate credentialAtomicSigV2 ==================="
     );
@@ -278,14 +276,15 @@ async function initProofService(
     credsToChooseForZKPReq = await credentialWallet.findByQuery(
       proofReqMtp.query
     );
-    const { proof: proofMTP } = await proofService.generateProof(
+    const { proof, pub_signals } = await proofService.generateProof(
       proofReqMtp,
       userDID,
       credsToChooseForZKPReq[0]
     );
-    console.log(JSON.stringify(proofMTP));
-    const mtpProofOk = await proofService.verifyProof(proof, CircuitId.AtomicQueryMTPV2);
+    console.log(JSON.stringify(proof));
+    const mtpProofOk = await proofService.verifyProof({ proof, pub_signals }, CircuitId.AtomicQueryMTPV2);
     console.log("valid: ", mtpProofOk);
+
 ```
 
 > :bulb: <i>ZeroKnowledgeProofRequest </i> is a protocol proof request, in this case for credential with a Iden3SparseMerkleTreeProof

@@ -11,5 +11,5 @@ hide_title: true
 **Signature:**
 
 ```typescript
-method: DidMethod;
+method?: DidMethod;
 ```

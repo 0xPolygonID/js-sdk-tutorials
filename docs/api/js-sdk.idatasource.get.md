@@ -16,7 +16,7 @@ returns data value for key value and optional key name
 **Signature:**
 
 ```typescript
-get(key: string, keyName?: string): Type | undefined;
+get(key: string, keyName?: string): Promise<Type | undefined>;
 ```
 
 ## Parameters
@@ -28,6 +28,6 @@ get(key: string, keyName?: string): Type | undefined;
 
 **Returns:**
 
-Type \| undefined
+Promise&lt;Type \| undefined&gt;
 
 ` {(Type | undefined)}`

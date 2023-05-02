@@ -16,8 +16,8 @@ loads all from the local storage
 **Signature:**
 
 ```typescript
-load(): Type[];
+load(): Promise<Type[]>;
 ```
 **Returns:**
 
-Type\[\]
+Promise&lt;Type\[\]&gt;

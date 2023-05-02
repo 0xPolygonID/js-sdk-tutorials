@@ -8,6 +8,8 @@ hide_title: true
 
 ## JSONObject type
 
+JSON object
+
 **Signature:**
 
 ```typescript

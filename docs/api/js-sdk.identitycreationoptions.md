@@ -20,8 +20,8 @@ export interface IdentityCreationOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [blockchain](./js-sdk.identitycreationoptions.blockchain.md) |  | Blockchain |  |
-|  [method](./js-sdk.identitycreationoptions.method.md) |  | DidMethod |  |
-|  [networkId](./js-sdk.identitycreationoptions.networkid.md) |  | NetworkId |  |
-|  [rhsUrl?](./js-sdk.identitycreationoptions.rhsurl.md) |  | string | _(Optional)_ |
+|  [blockchain?](./js-sdk.identitycreationoptions.blockchain.md) |  | Blockchain | _(Optional)_ |
+|  [method?](./js-sdk.identitycreationoptions.method.md) |  | DidMethod | _(Optional)_ |
+|  [networkId?](./js-sdk.identitycreationoptions.networkid.md) |  | NetworkId | _(Optional)_ |
+|  [revocationOpts](./js-sdk.identitycreationoptions.revocationopts.md) |  | { baseUrl: string; type: [CredentialStatusType](./js-sdk.credentialstatustype.md); nonce?: number; } |  |
 |  [seed?](./js-sdk.identitycreationoptions.seed.md) |  | Uint8Array | _(Optional)_ |

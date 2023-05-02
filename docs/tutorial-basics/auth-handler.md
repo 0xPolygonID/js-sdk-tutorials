@@ -6,13 +6,11 @@ sidebar_position: 5
 # Handle authorization request
 
 Tutorial shows how to handle authorization request and  
-> codebase can be changed. Still in @beta 
+> codebase can be changed. Still in @beta
 
-### handle authorization request: flow without usage of profiles 
+### handle authorization request: flow without usage of profiles
 
-
-
-```js 
+```typescript
   console.log("=============== handle auth request ===============");
   
   const dataStorage = initDataStorage();
@@ -25,52 +23,52 @@ Tutorial shows how to handle authorization request and
   const proofService = await initProofService(identityWallet,credentialWallet,dataStorage.states,circuitStorage)
 
   const { did:userDID, credential:authBJJCredentialUser } =
-    await identityWallet.createIdentity(
-      "http://mytestwallet.com/", // this is url that will be a part of auth bjj credential identifier
-      {
-        method: core.DidMethod.Iden3,
-        blockchain: core.Blockchain.Polygon,
-        networkId: core.NetworkId.Mumbai,
-        rhsUrl: "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
+     await wallet.createIdentity({
+      method: DidMethod.Iden3,
+      blockchain: Blockchain.Polygon,
+      networkId: NetworkId.Mumbai,
+      seed: seedPhrase,
+      revocationOpts: {
+        type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
+        baseUrl: "https://rhs-staging.polygonid.me"
       }
-    );
+    });
 
   console.log("=============== user did ===============");
   console.log(userDID.toString());
 
   const { did:issuerDID, credential:issuerAuthBJJCredential } =
-    await identityWallet.createIdentity(
-      "http://mytestwallet.com/", // this is url that will be a part of auth bjj credential identifier
-      {
-        method: core.DidMethod.Iden3,
-        blockchain: core.Blockchain.Polygon,
-        networkId: core.NetworkId.Mumbai,
-        rhsUrl: "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
+    await wallet.createIdentity({
+      method: DidMethod.Iden3,
+      blockchain: Blockchain.Polygon,
+      networkId: NetworkId.Mumbai,
+      seed: seedPhrase,
+      revocationOpts: {
+        type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
+        baseUrl: "https://rhs-staging.polygonid.me"
       }
-    );
+    });
 
   const credentialRequest: CredentialRequest = {
-    credentialSchema:
-      "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json/KYCAgeCredential-v3.json",
-    type: "KYCAgeCredential",
-    credentialSubject: {
-      id: userDID.toString(),
-      birthday: 19960424,
-      documentType: 99,
-    },
-    expiration: 12345678888,
-  };
-  const credential = await identityWallet.issueCredential(
-    issuerDID,
-    credentialRequest,
-    "http://mytestwallet.com/", // host url that will a prefix of credential identifier
-    {
-      withRHS: "https://rhs-staging.polygonid.me", // reverse hash service is used to check
-    }
-  );
+      credentialSchema:
+        "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json/KYCAgeCredential-v3.json",
+      type: "KYCAgeCredential",
+      credentialSubject: {
+        id: userDID.toString(),
+        birthday: 19960424,
+        documentType: 99,
+      },
+      expiration: 12345678888,
+      revocationOpts: {
+        type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
+        baseUrl: "https://rhs-staging.polygonid.me"
+      }
+    };
+
+  const credential = await identityWallet.issueCredential(issuerDID, credentialRequest);
 
 
-  dataStorage.credential.saveCredential(credential)
+  await dataStorage.credential.saveCredential(credential)
 
 
   console.log("================= generate Iden3SparseMerkleTreeProof =======================")

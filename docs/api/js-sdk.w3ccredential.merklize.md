@@ -16,10 +16,10 @@ merklization of the verifiable credential
 **Signature:**
 
 ```typescript
-merklize(): Promise<Merkelizer>;
+merklize(): Promise<Merklizer>;
 ```
 **Returns:**
 
-Promise&lt;Merkelizer&gt;
+Promise&lt;Merklizer&gt;
 
-`Promise<Merkelizer>`
+`Promise<Merklizer>`

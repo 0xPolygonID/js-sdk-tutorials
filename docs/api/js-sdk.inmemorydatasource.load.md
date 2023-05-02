@@ -16,8 +16,8 @@ loads from value from the memory
 **Signature:**
 
 ```typescript
-load(): Type[];
+load(): Promise<Type[]>;
 ```
 **Returns:**
 
-Type\[\]
+Promise&lt;Type\[\]&gt;

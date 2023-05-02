@@ -16,7 +16,7 @@ gets value from from the memory
 **Signature:**
 
 ```typescript
-get(key: string, keyName?: string): Type | undefined;
+get(key: string, keyName?: string): Promise<Type | undefined>;
 ```
 
 ## Parameters
@@ -28,4 +28,4 @@ get(key: string, keyName?: string): Type | undefined;
 
 **Returns:**
 
-Type \| undefined
+Promise&lt;Type \| undefined&gt;

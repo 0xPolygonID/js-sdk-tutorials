@@ -16,7 +16,9 @@ sign data with kms key
 **Signature:**
 
 ```typescript
-sign(keyId: KmsKeyId, data: Uint8Array): Promise<Uint8Array>;
+sign(keyId: KmsKeyId, data: Uint8Array, opts?: {
+        [key: string]: unknown;
+    }): Promise<Uint8Array>;
 ```
 
 ## Parameters
@@ -25,6 +27,7 @@ sign(keyId: KmsKeyId, data: Uint8Array): Promise<Uint8Array>;
 |  --- | --- | --- |
 |  keyId | [KmsKeyId](./js-sdk.kmskeyid.md) | key identifier |
 |  data | Uint8Array | bytes payload |
+|  opts | { \[key: string\]: unknown; } | _(Optional)_ additional options for signing |
 
 **Returns:**
 

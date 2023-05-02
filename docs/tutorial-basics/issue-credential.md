@@ -6,12 +6,11 @@ sidebar_position: 2
 
 Credential is issued to the user with a BJJ signature proof
 
-> codebase can be changed. Still in @beta 
+> codebase can be changed. Still in @beta
 
 ### Create your first credential
 
-
-```javascript
+```typescript
 async function issueCredential() {
   console.log("=============== issue credential ===============");
 
@@ -23,29 +22,31 @@ async function issueCredential() {
   );
 
   const { did:userDID, credential:authBJJCredentialUser } =
-    await identityWallet.createIdentity(
-      "http://mytestwallet.com/", // this is url that will be a part of auth bjj credential identifier
-      {
-        method: core.DidMethod.Iden3,
-        blockchain: core.Blockchain.Polygon,
-        networkId: core.NetworkId.Mumbai,
-        rhsUrl: "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
+    await identityWallet.createIdentity({
+      method: DidMethod.Iden3,
+      blockchain: Blockchain.Polygon,
+      networkId: NetworkId.Mumbai,
+      seed: seedPhrase,
+      revocationOpts: {
+        type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
+        baseUrl: "https://rhs-staging.polygonid.me"
       }
-    );
+    });
 
   console.log("=============== user did ===============");
   console.log(userDID.toString());
 
   const { did:issuerDID, credential:issuerAuthBJJCredential } =
-    await identityWallet.createIdentity(
-      "http://mytestwallet.com/", // this is url that will be a part of auth bjj credential identifier
-      {
-        method: core.DidMethod.Iden3,
-        blockchain: core.Blockchain.Polygon,
-        networkId: core.NetworkId.Mumbai,
-        rhsUrl: "https://rhs-staging.polygonid.me", // url to check revocation status of auth bjj credential
+    await identityWallet.createIdentity({
+      method: DidMethod.Iden3,
+      blockchain: Blockchain.Polygon,
+      networkId: NetworkId.Mumbai,
+      seed: seedPhrase,
+      revocationOpts: {
+        type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
+        baseUrl: "https://rhs-staging.polygonid.me"
       }
-    );
+    });
 
   const credentialRequest: CredentialRequest = {
     credentialSchema:
@@ -57,14 +58,14 @@ async function issueCredential() {
       documentType: 99,
     },
     expiration: 12345678888,
+    revocationOpts: {
+        type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
+        baseUrl: "https://rhs-staging.polygonid.me"
+    }
   };
   const credential = await identityWallet.issueCredential(
     issuerDID,
-    credentialRequest,
-    "http://mytestwallet.com/", // host url that will a prefix of credential identifier
-    {
-      withRHS: "https://rhs-staging.polygonid.me", // reverse hash service is used to check
-    }
+    credentialRequest
   );
 
   console.log("===============  credential ===============")

@@ -19,3 +19,5 @@ hide_title: true
 |  Variable | Description |
 |  --- | --- |
 |  [PROTOCOL\_MESSAGE\_TYPE](./js-sdk.protocol_constants.protocol_message_type.md) | Constants for Iden3 protocol |
+|  [SUPPORTED\_PUBLIC\_KEY\_TYPES](./js-sdk.protocol_constants.supported_public_key_types.md) |  |
+|  [UNIVERSAL\_RESOLVER\_URL](./js-sdk.protocol_constants.universal_resolver_url.md) | Universal resolver url |

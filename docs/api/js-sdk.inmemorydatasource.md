@@ -30,5 +30,4 @@ export declare class InMemoryDataSource<Type> implements IDataSource<Type>
 |  [delete(key, keyName)](./js-sdk.inmemorydatasource.delete.md) |  | **_(BETA)_** deletes from value from the memory |
 |  [get(key, keyName)](./js-sdk.inmemorydatasource.get.md) |  | **_(BETA)_** gets value from from the memory |
 |  [load()](./js-sdk.inmemorydatasource.load.md) |  | **_(BETA)_** loads from value from the memory |
-|  [patchData(value)](./js-sdk.inmemorydatasource.patchdata.md) |  | **_(BETA)_** updates in the memory |
 |  [save(key, value, keyName)](./js-sdk.inmemorydatasource.save.md) |  | **_(BETA)_** saves in the memory |

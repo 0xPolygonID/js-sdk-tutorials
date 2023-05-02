@@ -16,7 +16,7 @@ saves value to the local storage
 **Signature:**
 
 ```typescript
-save(key: string, value: Type, keyName?: string): void;
+save(key: string, value: Type, keyName?: string): Promise<void>;
 ```
 
 ## Parameters
@@ -29,4 +29,4 @@ save(key: string, value: Type, keyName?: string): void;
 
 **Returns:**
 
-void
+Promise&lt;void&gt;

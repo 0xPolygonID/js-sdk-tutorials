@@ -16,10 +16,10 @@ load all object with Type from data source
 **Signature:**
 
 ```typescript
-load(): Type[];
+load(): Promise<Type[]>;
 ```
 **Returns:**
 
-Type\[\]
+Promise&lt;Type\[\]&gt;
 
 `{Type[]}`

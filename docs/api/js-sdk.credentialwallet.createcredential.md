@@ -16,5 +16,5 @@ Creates a W3C verifiable Credential object
 **Signature:**
 
 ```typescript
-createCredential: (hostUrl: string, issuer: DID, request: CredentialRequest, schema: JSONSchema, rhsUrl?: string) => W3CCredential;
+createCredential: (issuer: DID, request: CredentialRequest, schema: JSONSchema) => W3CCredential;
 ```

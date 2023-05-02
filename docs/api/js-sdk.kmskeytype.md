@@ -23,4 +23,4 @@ export declare enum KmsKeyType
 |  Member | Value | Description |
 |  --- | --- | --- |
 |  BabyJubJub | <code>&quot;BJJ&quot;</code> |  |
-|  Ethereum | <code>&quot;ETH&quot;</code> |  |
+|  Secp256k1 | <code>&quot;Secp256k1&quot;</code> |  |
