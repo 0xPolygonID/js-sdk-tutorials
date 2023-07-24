@@ -10,7 +10,6 @@ hide_title: true
 
 return object properties
 
-
 **Signature:**
 
 ```typescript

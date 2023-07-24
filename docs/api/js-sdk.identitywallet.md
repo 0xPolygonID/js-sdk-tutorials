@@ -35,13 +35,17 @@ export declare class IdentityWallet implements IIdentityWallet
 |  [addCredentialsToMerkleTree(credentials, issuerDID)](./js-sdk.identitywallet.addcredentialstomerkletree.md) |  | Adds verifiable credentials to issuer Claims Merkle tree |
 |  [createIdentity(opts)](./js-sdk.identitywallet.createidentity.md) |  | Create Identity creates Auth BJJ credential, Merkle trees for claims, revocations and root of roots, adds auth BJJ credential to claims tree and generates mtp of inclusion based on the resulting state it provides an identifier in DID form. |
 |  [createProfile(did, nonce, verifier)](./js-sdk.identitywallet.createprofile.md) |  | Creates profile based on genesis identifier |
+|  [findOwnedCredentialsByDID(did, query)](./js-sdk.identitywallet.findownedcredentialsbydid.md) |  |  |
 |  [generateCredentialMtp(did, credential, treeState)](./js-sdk.identitywallet.generatecredentialmtp.md) |  |  |
 |  [generateIden3SparseMerkleTreeProof(issuerDID, credentials, txId, blockNumber, blockTimestamp)](./js-sdk.identitywallet.generateiden3sparsemerkletreeproof.md) |  | Generate Iden3SparseMerkleTree proof of inclusion to issuer state of specific credentials |
 |  [generateKey(keyType)](./js-sdk.identitywallet.generatekey.md) |  | Generates a new key |
 |  [generateNonRevocationMtp(did, credential, treeState)](./js-sdk.identitywallet.generatenonrevocationmtp.md) |  | Generates proof of credential revocation nonce inclusion / non-inclusion to the given revocation tree and its root or to the current root of the Revocation tree in the given Merkle tree storage. |
 |  [getCoreClaimFromCredential(credential)](./js-sdk.identitywallet.getcoreclaimfromcredential.md) |  |  |
 |  [getDIDTreeModel(did)](./js-sdk.identitywallet.getdidtreemodel.md) |  | Gets a tree model for given did that includes claims tree, revocation tree, the root of roots tree and calculated state hash |
-|  [issueCredential(issuerDID, req)](./js-sdk.identitywallet.issuecredential.md) |  | Issues new credential from issuer according to the claim request |
+|  [getGenesisDIDMetadata(did)](./js-sdk.identitywallet.getgenesisdidmetadata.md) |  | gets profile nonce by it's id. if profile is genesis identifier - 0 is returned |
+|  [getProfileByVerifier(verifier)](./js-sdk.identitywallet.getprofilebyverifier.md) |  |  |
+|  [getProfilesByDID(did)](./js-sdk.identitywallet.getprofilesbydid.md) |  | gets profile identity by genesis identifiers |
+|  [issueCredential(issuerDID, req, opts)](./js-sdk.identitywallet.issuecredential.md) |  | Issues new credential from issuer according to the claim request |
 |  [publishStateToRHS(issuerDID, rhsURL, revokedNonces)](./js-sdk.identitywallet.publishstatetorhs.md) |  |  |
 |  [revokeCredential(issuerDID, credential)](./js-sdk.identitywallet.revokecredential.md) |  |  |
 |  [sign(message, credential)](./js-sdk.identitywallet.sign.md) |  | Signs a payload of arbitrary size with an Auth BJJ Credential that identifies a key for signing. |

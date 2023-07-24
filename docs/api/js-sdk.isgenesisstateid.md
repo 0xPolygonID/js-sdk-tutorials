@@ -10,7 +10,6 @@ hide_title: true
 
 Checks if id is created from given state and type is genesis
 
-
 **Signature:**
 
 ```typescript

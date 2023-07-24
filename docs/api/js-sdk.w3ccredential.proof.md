@@ -14,5 +14,5 @@ hide_title: true
 **Signature:**
 
 ```typescript
-proof?: object;
+proof?: object | unknown[];
 ```

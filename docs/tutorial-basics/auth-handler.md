@@ -6,7 +6,6 @@ sidebar_position: 5
 # Handle authorization request
 
 Tutorial shows how to handle authorization request and  
-> codebase can be changed. Still in @beta
 
 ### handle authorization request: flow without usage of profiles
 
@@ -30,12 +29,12 @@ Tutorial shows how to handle authorization request and
       seed: seedPhrase,
       revocationOpts: {
         type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
-        baseUrl: "https://rhs-staging.polygonid.me"
+        id: "https://rhs-staging.polygonid.me"
       }
     });
 
   console.log("=============== user did ===============");
-  console.log(userDID.toString());
+  console.log(userDID.string());
 
   const { did:issuerDID, credential:issuerAuthBJJCredential } =
     await wallet.createIdentity({
@@ -45,7 +44,7 @@ Tutorial shows how to handle authorization request and
       seed: seedPhrase,
       revocationOpts: {
         type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
-        baseUrl: "https://rhs-staging.polygonid.me"
+        id: "https://rhs-staging.polygonid.me"
       }
     });
 
@@ -54,14 +53,14 @@ Tutorial shows how to handle authorization request and
         "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json/KYCAgeCredential-v3.json",
       type: "KYCAgeCredential",
       credentialSubject: {
-        id: userDID.toString(),
+        id: userDID.string(),
         birthday: 19960424,
         documentType: 99,
       },
       expiration: 12345678888,
       revocationOpts: {
         type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
-        baseUrl: "https://rhs-staging.polygonid.me"
+        id: "https://rhs-staging.polygonid.me"
       }
     };
 
@@ -121,7 +120,7 @@ Tutorial shows how to handle authorization request and
     id : 'fe6354fe-3db2-48c2-a779-e39c2dda8d90',
     thid:   'fe6354fe-3db2-48c2-a779-e39c2dda8d90',
     typ: PROTOCOL_CONSTANTS.MediaType.PlainMessage,
-    from: issuerDID.toString(),
+    from: issuerDID.string(),
     type: PROTOCOL_CONSTANTS.PROTOCOL_MESSAGE_TYPE.AUTHORIZATION_REQUEST_MESSAGE_TYPE,
     body: {
       callbackUrl:'http://testcallback.com',
@@ -175,7 +174,46 @@ Tutorial shows how to handle authorization request and
   let pm = await initPackageManager(authV2Data,proofService.generateAuthV2Inputs.bind(proofService),proofService.verifyState.bind(proofService))
 
   const authHandler = new AuthHandler(pm,proofService,credentialWallet);
-  const authHandlerRequest = await authHandler.handleAuthorizationRequestForGenesisDID(userDID,authRawRequest);
+  const authHandlerRequest = await authHandler.handleAuthorizationRequest(userDID,authRawRequest);
   console.log(authHandlerRequest);
 
+```
+
+> :bulb: <i>package manager </i> is needed to pack / unpack envelops with zkp or jws. 
+
+```typescript
+export async function initPackageManager(
+  circuitData: CircuitData,
+  prepareFn: AuthDataPrepareFunc,
+  stateVerificationFn: StateVerificationFunc
+): Promise<IPackageManager> {
+  const authInputsHandler = new DataPrepareHandlerFunc(prepareFn);
+
+  const verificationFn = new VerificationHandlerFunc(stateVerificationFn);
+  const mapKey =
+    proving.provingMethodGroth16AuthV2Instance.methodAlg.toString();
+  const verificationParamMap: Map<string, VerificationParams> = new Map([
+    [
+      mapKey,
+      {
+        key: circuitData.verificationKey,
+        verificationFn,
+      },
+    ],
+  ]);
+
+  const provingParamMap: Map<string, ProvingParams> = new Map();
+  provingParamMap.set(mapKey, {
+    dataPreparer: authInputsHandler,
+    provingKey: circuitData.provingKey,
+    wasm: circuitData.wasm,
+  });
+
+  const mgr: IPackageManager = new PackageManager();
+  const packer = new ZKPPacker(provingParamMap, verificationParamMap);
+  const plainPacker = new PlainPacker();
+  mgr.registerPackers([packer, plainPacker]);
+
+  return mgr;
+}
 ```

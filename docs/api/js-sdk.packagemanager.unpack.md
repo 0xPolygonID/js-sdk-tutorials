@@ -8,9 +8,6 @@ hide_title: true
 
 ## PackageManager.unpack() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 unpacks packed envelope to basic protocol message and returns media type of the envelope
 
 **Signature:**

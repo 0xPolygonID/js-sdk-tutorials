@@ -8,11 +8,7 @@ hide_title: true
 
 ## TreeState interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 TreeState is model for merkle tree roots
-
 
  TreeState
 
@@ -26,7 +22,7 @@ export interface TreeState
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [claimsRoot](./js-sdk.treestate.claimsroot.md) |  | Hash | **_(BETA)_** |
-|  [revocationRoot](./js-sdk.treestate.revocationroot.md) |  | Hash | **_(BETA)_** |
-|  [rootOfRoots](./js-sdk.treestate.rootofroots.md) |  | Hash | **_(BETA)_** |
-|  [state](./js-sdk.treestate.state.md) |  | Hash | **_(BETA)_** |
+|  [claimsRoot](./js-sdk.treestate.claimsroot.md) |  | Hash |  |
+|  [revocationRoot](./js-sdk.treestate.revocationroot.md) |  | Hash |  |
+|  [rootOfRoots](./js-sdk.treestate.rootofroots.md) |  | Hash |  |
+|  [state](./js-sdk.treestate.state.md) |  | Hash |  |

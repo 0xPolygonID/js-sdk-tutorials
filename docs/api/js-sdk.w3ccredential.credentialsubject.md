@@ -15,6 +15,6 @@ hide_title: true
 
 ```typescript
 credentialSubject: {
-        [key: string]: object | string | number;
+        [key: string]: object | string | number | boolean;
     };
 ```

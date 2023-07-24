@@ -10,7 +10,7 @@ hide_title: true
 
 W3C Proof purpose
 
-  {number}
+ {number}
 
 **Signature:**
 

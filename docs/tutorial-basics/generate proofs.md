@@ -6,7 +6,6 @@ sidebar_position: 4
 
 Credential is issued to the user with a BJJ signature proof, so we can generate a zkp that we have such credentials!!
 
-> codebase can be changed. Still in @beta
 
 ```typescript
 async function generateProofs() {
@@ -33,7 +32,7 @@ async function generateProofs() {
     });
 
   console.log("=============== user did ===============");
-  console.log(userDID.toString());
+  console.log(userDID.string());
 
   const { did:issuerDID, credential:issuerAuthBJJCredential } =
     await wallet.createIdentity({
@@ -52,7 +51,7 @@ async function generateProofs() {
       "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json/KYCAgeCredential-v3.json",
     type: "KYCAgeCredential",
     credentialSubject: {
-      id: userDID.toString(),
+      id: userDID.string(),
       birthday: 19960424,
       documentType: 99,
     },

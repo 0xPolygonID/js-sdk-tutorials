@@ -21,3 +21,4 @@ export interface QueryWithFieldName
 |  [fieldName](./js-sdk.querywithfieldname.fieldname.md) |  | string |  |
 |  [isSelectiveDisclosure?](./js-sdk.querywithfieldname.isselectivedisclosure.md) |  | boolean | _(Optional)_ |
 |  [query](./js-sdk.querywithfieldname.query.md) |  | [Query](./js-sdk.query.md) |  |
+|  [rawValue?](./js-sdk.querywithfieldname.rawvalue.md) |  | unknown | _(Optional)_ |

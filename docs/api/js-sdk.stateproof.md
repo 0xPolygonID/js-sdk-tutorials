@@ -8,11 +8,7 @@ hide_title: true
 
 ## StateProof interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 state proof of identity from chain
-
 
  StateProof
 
@@ -26,11 +22,11 @@ export interface StateProof
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [auxExistence](./js-sdk.stateproof.auxexistence.md) |  | boolean | **_(BETA)_** |
-|  [auxIndex](./js-sdk.stateproof.auxindex.md) |  | bigint | **_(BETA)_** |
-|  [auxValue](./js-sdk.stateproof.auxvalue.md) |  | bigint | **_(BETA)_** |
-|  [existence](./js-sdk.stateproof.existence.md) |  | boolean | **_(BETA)_** |
-|  [index](./js-sdk.stateproof.index.md) |  | bigint | **_(BETA)_** |
-|  [root](./js-sdk.stateproof.root.md) |  | bigint | **_(BETA)_** |
-|  [siblings](./js-sdk.stateproof.siblings.md) |  | bigint\[\] | **_(BETA)_** |
-|  [value](./js-sdk.stateproof.value.md) |  | bigint | **_(BETA)_** |
+|  [auxExistence](./js-sdk.stateproof.auxexistence.md) |  | boolean |  |
+|  [auxIndex](./js-sdk.stateproof.auxindex.md) |  | bigint |  |
+|  [auxValue](./js-sdk.stateproof.auxvalue.md) |  | bigint |  |
+|  [existence](./js-sdk.stateproof.existence.md) |  | boolean |  |
+|  [index](./js-sdk.stateproof.index.md) |  | bigint |  |
+|  [root](./js-sdk.stateproof.root.md) |  | bigint |  |
+|  [siblings](./js-sdk.stateproof.siblings.md) |  | bigint\[\] |  |
+|  [value](./js-sdk.stateproof.value.md) |  | bigint |  |

@@ -26,5 +26,5 @@ export interface MerkleTreeProofWithTreeState
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [proof](./js-sdk.merkletreeproofwithtreestate.proof.md) |  | Proof | **_(BETA)_** |
-|  [treeState](./js-sdk.merkletreeproofwithtreestate.treestate.md) |  | [TreeState](./js-sdk.treestate.md) | **_(BETA)_** |
+|  [proof](./js-sdk.merkletreeproofwithtreestate.proof.md) |  | Proof |  |
+|  [treeState](./js-sdk.merkletreeproofwithtreestate.treestate.md) |  | [TreeState](./js-sdk.treestate.md) |  |

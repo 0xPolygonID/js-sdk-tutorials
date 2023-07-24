@@ -8,15 +8,12 @@ hide_title: true
 
 ## AuthHandler.(constructor)
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Creates an instance of AuthHandler.
 
 **Signature:**
 
 ```typescript
-constructor(_packerMgr: IPackageManager, _proofService: IProofService, _credentialWallet: ICredentialWallet);
+constructor(_packerMgr: IPackageManager, _proofService: IProofService);
 ```
 
 ## Parameters
@@ -25,4 +22,3 @@ constructor(_packerMgr: IPackageManager, _proofService: IProofService, _credenti
 |  --- | --- | --- |
 |  \_packerMgr | [IPackageManager](./js-sdk.ipackagemanager.md) | package manager to unpack message envelope |
 |  \_proofService | [IProofService](./js-sdk.iproofservice.md) | proof service to verify zk proofs |
-|  \_credentialWallet | [ICredentialWallet](./js-sdk.icredentialwallet.md) | wallet to search credentials |

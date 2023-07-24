@@ -8,11 +8,7 @@ hide_title: true
 
 ## IKeyProvider interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 KeyProvider is responsible for signing and creation of the keys
-
 
  IKeyProvider
 
@@ -26,12 +22,12 @@ export interface IKeyProvider
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [keyType](./js-sdk.ikeyprovider.keytype.md) |  | [KmsKeyType](./js-sdk.kmskeytype.md) | <p>**_(BETA)_** property to store key type</p><p> {KmsKeyType}</p> |
+|  [keyType](./js-sdk.ikeyprovider.keytype.md) |  | [KmsKeyType](./js-sdk.kmskeytype.md) | <p>property to store key type</p><p> {KmsKeyType}</p> |
 
 ## Methods
 
 |  Method | Description |
 |  --- | --- |
-|  [newPrivateKeyFromSeed(seed)](./js-sdk.ikeyprovider.newprivatekeyfromseed.md) | **_(BETA)_** creates new key pair from given seed |
-|  [publicKey(keyID)](./js-sdk.ikeyprovider.publickey.md) | **_(BETA)_** gets public key by key id |
-|  [sign(keyId, data, opts)](./js-sdk.ikeyprovider.sign.md) | **_(BETA)_** sign data with kms key |
+|  [newPrivateKeyFromSeed(seed)](./js-sdk.ikeyprovider.newprivatekeyfromseed.md) | creates new key pair from given seed |
+|  [publicKey(keyID)](./js-sdk.ikeyprovider.publickey.md) | gets public key by key id |
+|  [sign(keyId, data, opts)](./js-sdk.ikeyprovider.sign.md) | sign data with kms key |

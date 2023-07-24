@@ -27,22 +27,22 @@ export declare class W3CCredential
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  ["@context"](./js-sdk.w3ccredential.__context_.md) |  | string\[\] | **_(BETA)_** |
-|  [credentialSchema](./js-sdk.w3ccredential.credentialschema.md) |  | [CredentialSchema](./js-sdk.credentialschema.md) | **_(BETA)_** |
-|  [credentialStatus](./js-sdk.w3ccredential.credentialstatus.md) |  | [CredentialStatus](./js-sdk.credentialstatus.md) &#124; [RHSCredentialStatus](./js-sdk.rhscredentialstatus.md) | **_(BETA)_** |
-|  [credentialSubject](./js-sdk.w3ccredential.credentialsubject.md) |  | { \[key: string\]: object &#124; string &#124; number; } | **_(BETA)_** |
-|  [expirationDate?](./js-sdk.w3ccredential.expirationdate.md) |  | string | **_(BETA)_** _(Optional)_ |
-|  [id](./js-sdk.w3ccredential.id.md) |  | string | **_(BETA)_** |
-|  [issuanceDate?](./js-sdk.w3ccredential.issuancedate.md) |  | string | **_(BETA)_** _(Optional)_ |
-|  [issuer](./js-sdk.w3ccredential.issuer.md) |  | string | **_(BETA)_** |
-|  [proof?](./js-sdk.w3ccredential.proof.md) |  | object | **_(BETA)_** _(Optional)_ |
-|  [type](./js-sdk.w3ccredential.type.md) |  | string\[\] | **_(BETA)_** |
+|  ["@context"](./js-sdk.w3ccredential.__context_.md) |  | string\[\] |  |
+|  [credentialSchema](./js-sdk.w3ccredential.credentialschema.md) |  | [CredentialSchema](./js-sdk.credentialschema.md) |  |
+|  [credentialStatus](./js-sdk.w3ccredential.credentialstatus.md) |  | [CredentialStatus](./js-sdk.credentialstatus.md) |  |
+|  [credentialSubject](./js-sdk.w3ccredential.credentialsubject.md) |  | { \[key: string\]: object &#124; string &#124; number &#124; boolean; } |  |
+|  [expirationDate?](./js-sdk.w3ccredential.expirationdate.md) |  | string |  _(Optional)_ |
+|  [id](./js-sdk.w3ccredential.id.md) |  | string |  |
+|  [issuanceDate?](./js-sdk.w3ccredential.issuancedate.md) |  | string |  _(Optional)_ |
+|  [issuer](./js-sdk.w3ccredential.issuer.md) |  | string |  |
+|  [proof?](./js-sdk.w3ccredential.proof.md) |  | object &#124; unknown\[\] |  _(Optional)_ |
+|  [type](./js-sdk.w3ccredential.type.md) |  | string\[\] |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [getBJJSignature2021Proof()](./js-sdk.w3ccredential.getbjjsignature2021proof.md) |  | **_(BETA)_** checks BJJSignatureProof2021 in W3C VC |
-|  [getCoreClaimFromProof(proofType)](./js-sdk.w3ccredential.getcoreclaimfromproof.md) |  | **_(BETA)_** gets core claim representation from credential proof |
-|  [getIden3SparseMerkleTreeProof()](./js-sdk.w3ccredential.getiden3sparsemerkletreeproof.md) |  | **_(BETA)_** checks Iden3SparseMerkleTreeProof in W3C VC |
-|  [merklize()](./js-sdk.w3ccredential.merklize.md) |  | **_(BETA)_** merklization of the verifiable credential |
+|  [getBJJSignature2021Proof()](./js-sdk.w3ccredential.getbjjsignature2021proof.md) |  |  checks BJJSignatureProof2021 in W3C VC |
+|  [getCoreClaimFromProof(proofType)](./js-sdk.w3ccredential.getcoreclaimfromproof.md) |  |  gets core claim representation from credential proof |
+|  [getIden3SparseMerkleTreeProof()](./js-sdk.w3ccredential.getiden3sparsemerkletreeproof.md) |  |  checks Iden3SparseMerkleTreeProof in W3C VC |
+|  [merklize(opts)](./js-sdk.w3ccredential.merklize.md) |  |  merklization of the verifiable credential |

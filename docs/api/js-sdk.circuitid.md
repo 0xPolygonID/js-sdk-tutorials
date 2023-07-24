@@ -10,7 +10,7 @@ hide_title: true
 
 CircuitID is alias for circuit identifier
 
-  {number}
+ {number}
 
 **Signature:**
 
@@ -23,6 +23,8 @@ export declare enum CircuitId
 |  Member | Value | Description |
 |  --- | --- | --- |
 |  AtomicQueryMTPV2 | <code>&quot;credentialAtomicQueryMTPV2&quot;</code> |  |
+|  AtomicQueryMTPV2OnChain | <code>&quot;credentialAtomicQueryMTPV2OnChain&quot;</code> |  |
 |  AtomicQuerySigV2 | <code>&quot;credentialAtomicQuerySigV2&quot;</code> |  |
+|  AtomicQuerySigV2OnChain | <code>&quot;credentialAtomicQuerySigV2OnChain&quot;</code> |  |
 |  AuthV2 | <code>&quot;authV2&quot;</code> |  |
 |  StateTransition | <code>&quot;stateTransition&quot;</code> |  |

@@ -8,11 +8,7 @@ hide_title: true
 
 ## KmsKeyId interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 ID of the key that describe contain key type
-
 
  KmsKeyId
 
@@ -26,5 +22,5 @@ export interface KmsKeyId
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [id](./js-sdk.kmskeyid.id.md) |  | string | **_(BETA)_** |
-|  [type](./js-sdk.kmskeyid.type.md) |  | [KmsKeyType](./js-sdk.kmskeytype.md) | **_(BETA)_** |
+|  [id](./js-sdk.kmskeyid.id.md) |  | string |  |
+|  [type](./js-sdk.kmskeyid.type.md) |  | [KmsKeyType](./js-sdk.kmskeytype.md) |  |

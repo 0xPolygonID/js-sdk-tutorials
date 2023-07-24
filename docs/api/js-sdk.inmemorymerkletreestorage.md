@@ -25,21 +25,21 @@ export declare class InMemoryMerkleTreeStorage implements IMerkleTreeStorage
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_mtDepth)](./js-sdk.inmemorymerkletreestorage._constructor_.md) |  | **_(BETA)_** Creates an instance of InMemoryMerkleTreeStorage. |
+|  [(constructor)(\_mtDepth)](./js-sdk.inmemorymerkletreestorage._constructor_.md) |  |  Creates an instance of InMemoryMerkleTreeStorage. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_data](./js-sdk.inmemorymerkletreestorage._data.md) |  | { \[v in string\]: TreeWithMetaInfo\[\]; } | <p>**_(BETA)_** key value storage for trees where key is identifier</p><p> {{ \[v in string\]: TreeWithMetaInfo\[\]; }}</p> |
-|  [mtDepth](./js-sdk.inmemorymerkletreestorage.mtdepth.md) |  | number | <p>**_(BETA)_** tree depth</p><p> {number}</p> |
+|  [\_data](./js-sdk.inmemorymerkletreestorage._data.md) |  | { \[v in string\]: TreeWithMetaInfo\[\]; } | <p> key value storage for trees where key is identifier</p><p> {{ \[v in string\]: TreeWithMetaInfo\[\]; }}</p> |
+|  [mtDepth](./js-sdk.inmemorymerkletreestorage.mtdepth.md) |  | number | <p> tree depth</p><p> {number}</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [addToMerkleTree(identifier, mtType, hindex, hvalue)](./js-sdk.inmemorymerkletreestorage.addtomerkletree.md) |  | **_(BETA)_** adds entry to merkle tree in the memory |
-|  [bindMerkleTreeToNewIdentifier(oldIdentifier, newIdentifier)](./js-sdk.inmemorymerkletreestorage.bindmerkletreetonewidentifier.md) |  | **_(BETA)_** bind merkle tree identifier in memory |
-|  [createIdentityMerkleTrees(identifier)](./js-sdk.inmemorymerkletreestorage.createidentitymerkletrees.md) |  | **_(BETA)_** create trees in the memory |
-|  [getIdentityMerkleTreesInfo(identifier)](./js-sdk.inmemorymerkletreestorage.getidentitymerkletreesinfo.md) |  | **_(BETA)_** get trees meta info from the memory |
-|  [getMerkleTreeByIdentifierAndType(identifier, mtType)](./js-sdk.inmemorymerkletreestorage.getmerkletreebyidentifierandtype.md) |  | **_(BETA)_** get merkle tree by identifier and type from memory |
+|  [addToMerkleTree(identifier, mtType, hindex, hvalue)](./js-sdk.inmemorymerkletreestorage.addtomerkletree.md) |  |  adds entry to merkle tree in the memory |
+|  [bindMerkleTreeToNewIdentifier(oldIdentifier, newIdentifier)](./js-sdk.inmemorymerkletreestorage.bindmerkletreetonewidentifier.md) |  |  bind merkle tree identifier in memory |
+|  [createIdentityMerkleTrees(identifier)](./js-sdk.inmemorymerkletreestorage.createidentitymerkletrees.md) |  |  create trees in the memory |
+|  [getIdentityMerkleTreesInfo(identifier)](./js-sdk.inmemorymerkletreestorage.getidentitymerkletreesinfo.md) |  |  get trees meta info from the memory |
+|  [getMerkleTreeByIdentifierAndType(identifier, mtType)](./js-sdk.inmemorymerkletreestorage.getmerkletreebyidentifierandtype.md) |  |  get merkle tree by identifier and type from memory |

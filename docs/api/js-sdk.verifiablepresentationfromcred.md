@@ -11,7 +11,7 @@ hide_title: true
 **Signature:**
 
 ```typescript
-verifiablePresentationFromCred: (w3cCred: W3CCredential, requestObj: ProofQuery, field: string) => Promise<{
+verifiablePresentationFromCred: (w3cCred: W3CCredential, requestObj: ProofQuery, field: string, opts?: Options) => Promise<{
     vp: object;
     mzValue: MtValue;
     dataType: string;

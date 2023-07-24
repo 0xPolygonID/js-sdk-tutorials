@@ -8,12 +8,9 @@ hide_title: true
 
 ## KMS class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Key management system class contains different key providers. allows to register custom provider, create key, get public key and sign
 
-  KMS - class
+ KMS - class
 
 **Signature:**
 
@@ -25,7 +22,7 @@ export declare class KMS
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [createKeyFromSeed(keyType, bytes)](./js-sdk.kms.createkeyfromseed.md) |  | **_(BETA)_** generates a new key and returns it kms key id |
-|  [publicKey(keyId)](./js-sdk.kms.publickey.md) |  | **_(BETA)_** gets public key for key id |
-|  [registerKeyProvider(keyType, keyProvider)](./js-sdk.kms.registerkeyprovider.md) |  | **_(BETA)_** register key provider in the KMS |
-|  [sign(keyId, data, opts)](./js-sdk.kms.sign.md) |  | **_(BETA)_** sign Uint8Array with giv KmsKeyIden |
+|  [createKeyFromSeed(keyType, bytes)](./js-sdk.kms.createkeyfromseed.md) |  | generates a new key and returns it kms key id |
+|  [publicKey(keyId)](./js-sdk.kms.publickey.md) |  | gets public key for key id |
+|  [registerKeyProvider(keyType, keyProvider)](./js-sdk.kms.registerkeyprovider.md) |  | register key provider in the KMS |
+|  [sign(keyId, data, opts)](./js-sdk.kms.sign.md) |  | sign Uint8Array with giv KmsKeyIden |

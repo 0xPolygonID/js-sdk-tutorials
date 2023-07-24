@@ -8,11 +8,7 @@ hide_title: true
 
 ## IndexedDBDataSource class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Storage in the browser, uses indexed db storage
-
 
  IndexedDBDataSource  Type
 
@@ -27,13 +23,13 @@ export declare class IndexedDBDataSource<Type> implements IDataSource<Type>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_storageKey)](./js-sdk.indexeddbdatasource._constructor_.md) |  | **_(BETA)_** Constructs a new instance of the <code>IndexedDBDataSource</code> class |
+|  [(constructor)(\_storageKey)](./js-sdk.indexeddbdatasource._constructor_.md) |  | Constructs a new instance of the <code>IndexedDBDataSource</code> class |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [delete(key, keyName)](./js-sdk.indexeddbdatasource.delete.md) |  | **_(BETA)_** deletes item from the indexed db storage |
-|  [get(key, keyName)](./js-sdk.indexeddbdatasource.get.md) |  | **_(BETA)_** Gets value from the indexed db storage by given key |
-|  [load()](./js-sdk.indexeddbdatasource.load.md) |  | **_(BETA)_** loads all from the indexed db storage |
-|  [save(key, value, keyName)](./js-sdk.indexeddbdatasource.save.md) |  | **_(BETA)_** Saves value to the indexed db storage |
+|  [delete(key, keyName)](./js-sdk.indexeddbdatasource.delete.md) |  | deletes item from the indexed db storage |
+|  [get(key, keyName)](./js-sdk.indexeddbdatasource.get.md) |  | Gets value from the indexed db storage by given key |
+|  [load()](./js-sdk.indexeddbdatasource.load.md) |  | loads all from the indexed db storage |
+|  [save(key, value, keyName)](./js-sdk.indexeddbdatasource.save.md) |  | Saves value to the indexed db storage |

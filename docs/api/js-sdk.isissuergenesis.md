@@ -10,7 +10,6 @@ hide_title: true
 
 Checks if issuer did is created from given state is genesis
 
-
 **Signature:**
 
 ```typescript

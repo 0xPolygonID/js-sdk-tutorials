@@ -21,14 +21,18 @@ export interface IIdentityWallet
 |  Method | Description |
 |  --- | --- |
 |  [addCredentialsToMerkleTree(credentials, issuerDID)](./js-sdk.iidentitywallet.addcredentialstomerkletree.md) | Adds verifiable credentials to issuer Claims Merkle tree |
-|  [createIdentity(opts)](./js-sdk.iidentitywallet.createidentity.md) | **_(BETA)_** Create Identity creates Auth BJJ credential, Merkle trees for claims, revocations and root of roots, adds auth BJJ credential to claims tree and generates mtp of inclusion based on the resulting state it provides an identifier in DID form. |
+|  [createIdentity(opts)](./js-sdk.iidentitywallet.createidentity.md) |  Create Identity creates Auth BJJ credential, Merkle trees for claims, revocations and root of roots, adds auth BJJ credential to claims tree and generates mtp of inclusion based on the resulting state it provides an identifier in DID form. |
 |  [createProfile(did, nonce, verifier)](./js-sdk.iidentitywallet.createprofile.md) | Creates profile based on genesis identifier |
+|  [findOwnedCredentialsByDID(did, query)](./js-sdk.iidentitywallet.findownedcredentialsbydid.md) | find all credentials that belong to any profile or genesis identity for the given did |
 |  [generateCredentialMtp(did, credential, treeState)](./js-sdk.iidentitywallet.generatecredentialmtp.md) | Generates proof of credential inclusion / non-inclusion to the given claims tree and its root or to the current root of the Claims tree in the given Merkle tree storage. |
 |  [generateIden3SparseMerkleTreeProof(issuerDID, credentials, txId, blockNumber, blockTimestamp)](./js-sdk.iidentitywallet.generateiden3sparsemerkletreeproof.md) | Generate Iden3SparseMerkleTree proof of inclusion to issuer state of specific credentials |
 |  [generateKey(keyType)](./js-sdk.iidentitywallet.generatekey.md) | Generates a new key |
 |  [generateNonRevocationMtp(did, credential, treeState)](./js-sdk.iidentitywallet.generatenonrevocationmtp.md) | Generates proof of credential revocation nonce inclusion / non-inclusion to the given revocation tree and its root or to the current root of the Revocation tree in the given Merkle tree storage. |
-|  [getCoreClaimFromCredential(credential)](./js-sdk.iidentitywallet.getcoreclaimfromcredential.md) | <p>**_(BETA)_** Extracts core claim from signature or merkle tree proof. If both proof persists core claim must be the same</p> |
+|  [getCoreClaimFromCredential(credential)](./js-sdk.iidentitywallet.getcoreclaimfromcredential.md) | <p> Extracts core claim from signature or merkle tree proof. If both proof persists core claim must be the same</p> |
 |  [getDIDTreeModel(did)](./js-sdk.iidentitywallet.getdidtreemodel.md) | Gets a tree model for given did that includes claims tree, revocation tree, the root of roots tree and calculated state hash |
+|  [getGenesisDIDMetadata(did)](./js-sdk.iidentitywallet.getgenesisdidmetadata.md) | gets profile nonce by it's id. if profile is genesis identifier - 0 is returned |
+|  [getProfileByVerifier(verifier)](./js-sdk.iidentitywallet.getprofilebyverifier.md) | gets profile identity by verifier |
+|  [getProfilesByDID(did)](./js-sdk.iidentitywallet.getprofilesbydid.md) | gets profile identity by genesis identifiers |
 |  [issueCredential(issuerDID, req)](./js-sdk.iidentitywallet.issuecredential.md) | Issues new credential from issuer according to the claim request |
 |  [publishStateToRHS(issuerDID, rhsURL, revokedNonces)](./js-sdk.iidentitywallet.publishstatetorhs.md) |  |
 |  [revokeCredential(issuerDID, credential)](./js-sdk.iidentitywallet.revokecredential.md) |  |

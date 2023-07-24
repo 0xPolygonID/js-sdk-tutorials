@@ -26,7 +26,7 @@ export interface IDataStorage
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [credential](./js-sdk.idatastorage.credential.md) |  | [ICredentialStorage](./js-sdk.icredentialstorage.md) | **_(BETA)_** |
-|  [identity](./js-sdk.idatastorage.identity.md) |  | [IIdentityStorage](./js-sdk.iidentitystorage.md) | **_(BETA)_** |
-|  [mt](./js-sdk.idatastorage.mt.md) |  | [IMerkleTreeStorage](./js-sdk.imerkletreestorage.md) | **_(BETA)_** |
-|  [states](./js-sdk.idatastorage.states.md) |  | [IStateStorage](./js-sdk.istatestorage.md) | **_(BETA)_** |
+|  [credential](./js-sdk.idatastorage.credential.md) |  | [ICredentialStorage](./js-sdk.icredentialstorage.md) |  |
+|  [identity](./js-sdk.idatastorage.identity.md) |  | [IIdentityStorage](./js-sdk.iidentitystorage.md) |  |
+|  [mt](./js-sdk.idatastorage.mt.md) |  | [IMerkleTreeStorage](./js-sdk.imerkletreestorage.md) |  |
+|  [states](./js-sdk.idatastorage.states.md) |  | [IStateStorage](./js-sdk.istatestorage.md) |  |

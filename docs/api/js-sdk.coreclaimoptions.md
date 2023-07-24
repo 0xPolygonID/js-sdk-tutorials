@@ -26,8 +26,9 @@ export interface CoreClaimOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [merklizedRootPosition](./js-sdk.coreclaimoptions.merklizedrootposition.md) |  | string | **_(BETA)_** |
-|  [revNonce](./js-sdk.coreclaimoptions.revnonce.md) |  | number | **_(BETA)_** |
-|  [subjectPosition](./js-sdk.coreclaimoptions.subjectposition.md) |  | string | **_(BETA)_** |
-|  [updatable](./js-sdk.coreclaimoptions.updatable.md) |  | boolean | **_(BETA)_** |
-|  [version](./js-sdk.coreclaimoptions.version.md) |  | number | **_(BETA)_** |
+|  [merklizedRootPosition](./js-sdk.coreclaimoptions.merklizedrootposition.md) |  | string |  |
+|  [merklizeOpts?](./js-sdk.coreclaimoptions.merklizeopts.md) |  | Options |  _(Optional)_ |
+|  [revNonce](./js-sdk.coreclaimoptions.revnonce.md) |  | number |  |
+|  [subjectPosition](./js-sdk.coreclaimoptions.subjectposition.md) |  | string |  |
+|  [updatable](./js-sdk.coreclaimoptions.updatable.md) |  | boolean |  |
+|  [version](./js-sdk.coreclaimoptions.version.md) |  | number |  |

@@ -13,5 +13,5 @@ credential search path resolver
 **Signature:**
 
 ```typescript
-resolvePath: (object: object, path: string, defaultValue?: any) => any
+resolvePath: (object: object, path: string, defaultValue?: null) => object | null
 ```

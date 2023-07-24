@@ -26,10 +26,11 @@ export interface ProofQuery
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [allowedIssuers?](./js-sdk.proofquery.allowedissuers.md) |  | string\[\] | **_(BETA)_** _(Optional)_ |
-|  [claimId?](./js-sdk.proofquery.claimid.md) |  | string | **_(BETA)_** _(Optional)_ |
-|  [context?](./js-sdk.proofquery.context.md) |  | string | **_(BETA)_** _(Optional)_ |
-|  [credentialSubject?](./js-sdk.proofquery.credentialsubject.md) |  | { \[key: string\]: unknown; } | **_(BETA)_** _(Optional)_ |
-|  [credentialSubjectId?](./js-sdk.proofquery.credentialsubjectid.md) |  | string | **_(BETA)_** _(Optional)_ |
-|  [schema?](./js-sdk.proofquery.schema.md) |  | string | **_(BETA)_** _(Optional)_ |
-|  [type?](./js-sdk.proofquery.type.md) |  | string | **_(BETA)_** _(Optional)_ |
+|  [allowedIssuers?](./js-sdk.proofquery.allowedissuers.md) |  | string\[\] |  _(Optional)_ |
+|  [claimId?](./js-sdk.proofquery.claimid.md) |  | string |  _(Optional)_ |
+|  [context?](./js-sdk.proofquery.context.md) |  | string |  _(Optional)_ |
+|  [credentialSubject?](./js-sdk.proofquery.credentialsubject.md) |  | { \[key: string\]: unknown; } |  _(Optional)_ |
+|  [credentialSubjectId?](./js-sdk.proofquery.credentialsubjectid.md) |  | string |  _(Optional)_ |
+|  [schema?](./js-sdk.proofquery.schema.md) |  | string |  _(Optional)_ |
+|  [skipClaimRevocationCheck?](./js-sdk.proofquery.skipclaimrevocationcheck.md) |  | boolean |  _(Optional)_ |
+|  [type?](./js-sdk.proofquery.type.md) |  | string |  _(Optional)_ |

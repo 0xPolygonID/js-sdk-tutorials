@@ -10,7 +10,7 @@ hide_title: true
 
 Type of MerkleTree
 
-  {number}
+ {number}
 
 **Signature:**
 

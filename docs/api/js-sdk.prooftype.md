@@ -10,7 +10,7 @@ hide_title: true
 
 Proof type for Verifiable Credential supported by sdk
 
-  {number}
+ {number}
 
 **Signature:**
 

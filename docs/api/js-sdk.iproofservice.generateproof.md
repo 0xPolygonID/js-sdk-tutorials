@@ -13,7 +13,7 @@ Generate proof from given identity and credential for protocol proof request
 **Signature:**
 
 ```typescript
-generateProof(proofReq: ZeroKnowledgeProofRequest, identifier: DID, credential: W3CCredential, opts?: ProofGenerationOptions): Promise<ZeroKnowledgeProofResponse>;
+generateProof(proofReq: ZeroKnowledgeProofRequest, identifier: DID, opts?: ProofGenerationOptions): Promise<ZeroKnowledgeProofResponse>;
 ```
 
 ## Parameters
@@ -22,7 +22,6 @@ generateProof(proofReq: ZeroKnowledgeProofRequest, identifier: DID, credential: 
 |  --- | --- | --- |
 |  proofReq | [ZeroKnowledgeProofRequest](./js-sdk.zeroknowledgeproofrequest.md) | protocol zkp request |
 |  identifier | DID | did that will generate proof |
-|  credential | [W3CCredential](./js-sdk.w3ccredential.md) | credential that will be used for proof generation |
 |  opts | [ProofGenerationOptions](./js-sdk.proofgenerationoptions.md) | _(Optional)_ options that will be used for proof generation |
 
 **Returns:**

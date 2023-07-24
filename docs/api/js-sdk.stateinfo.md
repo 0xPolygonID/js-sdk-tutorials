@@ -8,11 +8,7 @@ hide_title: true
 
 ## StateInfo interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 state information of identity from chain.
-
 
  StateInfo
 
@@ -26,10 +22,10 @@ export interface StateInfo
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [createdAtBlock?](./js-sdk.stateinfo.createdatblock.md) |  | bigint | **_(BETA)_** _(Optional)_ |
-|  [createdAtTimestamp?](./js-sdk.stateinfo.createdattimestamp.md) |  | bigint | **_(BETA)_** _(Optional)_ |
-|  [id?](./js-sdk.stateinfo.id.md) |  | bigint | **_(BETA)_** _(Optional)_ |
-|  [replacedAtBlock?](./js-sdk.stateinfo.replacedatblock.md) |  | bigint | **_(BETA)_** _(Optional)_ |
-|  [replacedAtTimestamp?](./js-sdk.stateinfo.replacedattimestamp.md) |  | bigint | **_(BETA)_** _(Optional)_ |
-|  [replacedByState?](./js-sdk.stateinfo.replacedbystate.md) |  | bigint | **_(BETA)_** _(Optional)_ |
-|  [state?](./js-sdk.stateinfo.state.md) |  | bigint | **_(BETA)_** _(Optional)_ |
+|  [createdAtBlock?](./js-sdk.stateinfo.createdatblock.md) |  | bigint | _(Optional)_ |
+|  [createdAtTimestamp?](./js-sdk.stateinfo.createdattimestamp.md) |  | bigint | _(Optional)_ |
+|  [id?](./js-sdk.stateinfo.id.md) |  | bigint | _(Optional)_ |
+|  [replacedAtBlock?](./js-sdk.stateinfo.replacedatblock.md) |  | bigint | _(Optional)_ |
+|  [replacedAtTimestamp?](./js-sdk.stateinfo.replacedattimestamp.md) |  | bigint | _(Optional)_ |
+|  [replacedByState?](./js-sdk.stateinfo.replacedbystate.md) |  | bigint | _(Optional)_ |
+|  [state?](./js-sdk.stateinfo.state.md) |  | bigint | _(Optional)_ |

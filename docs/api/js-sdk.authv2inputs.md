@@ -8,11 +8,7 @@ hide_title: true
 
 ## AuthV2Inputs class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Auth v2 circuit representation Inputs and public signals declaration, marshalling and parsing
-
 
  AuthV2Inputs  {BaseConfig}
 
@@ -27,19 +23,19 @@ export declare class AuthV2Inputs extends BaseConfig
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [authClaim?](./js-sdk.authv2inputs.authclaim.md) |  | Claim | **_(BETA)_** _(Optional)_ |
-|  [authClaimIncMtp](./js-sdk.authv2inputs.authclaimincmtp.md) |  | Proof | **_(BETA)_** |
-|  [authClaimNonRevMtp](./js-sdk.authv2inputs.authclaimnonrevmtp.md) |  | Proof | **_(BETA)_** |
-|  [challenge?](./js-sdk.authv2inputs.challenge.md) |  | bigint | **_(BETA)_** _(Optional)_ |
-|  [genesisID?](./js-sdk.authv2inputs.genesisid.md) |  | Id | **_(BETA)_** _(Optional)_ |
-|  [gistProof](./js-sdk.authv2inputs.gistproof.md) |  | [GISTProof](./js-sdk.gistproof.md) | **_(BETA)_** |
-|  [profileNonce?](./js-sdk.authv2inputs.profilenonce.md) |  | bigint | **_(BETA)_** _(Optional)_ |
-|  [signature?](./js-sdk.authv2inputs.signature.md) |  | Signature | **_(BETA)_** _(Optional)_ |
-|  [treeState](./js-sdk.authv2inputs.treestate.md) |  | [TreeState](./js-sdk.treestate.md) | **_(BETA)_** |
+|  [authClaim](./js-sdk.authv2inputs.authclaim.md) |  | Claim |  |
+|  [authClaimIncMtp](./js-sdk.authv2inputs.authclaimincmtp.md) |  | Proof |  |
+|  [authClaimNonRevMtp](./js-sdk.authv2inputs.authclaimnonrevmtp.md) |  | Proof |  |
+|  [challenge](./js-sdk.authv2inputs.challenge.md) |  | bigint |  |
+|  [genesisID](./js-sdk.authv2inputs.genesisid.md) |  | Id |  |
+|  [gistProof](./js-sdk.authv2inputs.gistproof.md) |  | [GISTProof](./js-sdk.gistproof.md) |  |
+|  [profileNonce](./js-sdk.authv2inputs.profilenonce.md) |  | bigint |  |
+|  [signature](./js-sdk.authv2inputs.signature.md) |  | Signature |  |
+|  [treeState](./js-sdk.authv2inputs.treestate.md) |  | [TreeState](./js-sdk.treestate.md) |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [inputsMarshal()](./js-sdk.authv2inputs.inputsmarshal.md) |  | **_(BETA)_** |
-|  [validate()](./js-sdk.authv2inputs.validate.md) |  | **_(BETA)_** |
+|  [inputsMarshal()](./js-sdk.authv2inputs.inputsmarshal.md) |  |  |
+|  [validate()](./js-sdk.authv2inputs.validate.md) |  |  |

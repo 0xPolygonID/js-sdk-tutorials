@@ -10,7 +10,6 @@ hide_title: true
 
 check if byte data is in Q field
 
-
 **Signature:**
 
 ```typescript

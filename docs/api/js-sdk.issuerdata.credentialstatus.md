@@ -14,5 +14,5 @@ hide_title: true
 **Signature:**
 
 ```typescript
-credentialStatus?: object;
+credentialStatus?: CredentialStatus;
 ```

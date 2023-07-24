@@ -8,9 +8,6 @@ hide_title: true
 
 ## IndexedDBDataSource.get() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Gets value from the indexed db storage by given key
 
 **Signature:**

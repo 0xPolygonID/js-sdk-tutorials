@@ -8,11 +8,7 @@ hide_title: true
 
 ## BrowserDataSource class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Storage in the browser, uses local storage
-
 
  BrowserDataSource  Type
 
@@ -27,13 +23,13 @@ export declare class BrowserDataSource<Type> implements IDataSource<Type>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_localStorageKey)](./js-sdk.browserdatasource._constructor_.md) |  | **_(BETA)_** Creates an instance of BrowserDataSource. |
+|  [(constructor)(\_localStorageKey)](./js-sdk.browserdatasource._constructor_.md) |  | Creates an instance of BrowserDataSource. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [delete(key, keyName)](./js-sdk.browserdatasource.delete.md) |  | **_(BETA)_** deletes item from the local storage |
-|  [get(key, keyName)](./js-sdk.browserdatasource.get.md) |  | **_(BETA)_** gets value from the local storage by given key |
-|  [load()](./js-sdk.browserdatasource.load.md) |  | **_(BETA)_** loads all from the local storage |
-|  [save(key, value, keyName)](./js-sdk.browserdatasource.save.md) |  | **_(BETA)_** saves value to the local storage |
+|  [delete(key, keyName)](./js-sdk.browserdatasource.delete.md) |  | deletes item from the local storage |
+|  [get(key, keyName)](./js-sdk.browserdatasource.get.md) |  | gets value from the local storage by given key |
+|  [load()](./js-sdk.browserdatasource.load.md) |  | loads all from the local storage |
+|  [save(key, value, keyName)](./js-sdk.browserdatasource.save.md) |  | saves value to the local storage |

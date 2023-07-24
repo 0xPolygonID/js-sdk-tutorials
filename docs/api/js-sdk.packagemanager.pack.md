@@ -8,9 +8,6 @@ hide_title: true
 
 ## PackageManager.pack() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 packs payload with a packer that is assigned to media type forwards packer params to implementation
 
 **Signature:**

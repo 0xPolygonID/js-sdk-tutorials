@@ -12,7 +12,7 @@ hide_title: true
 
 ```typescript
 extractPublicKeyBytes: (vm: VerificationMethod) => {
-    publicKeyBytes: Uint8Array;
+    publicKeyBytes: Uint8Array | null;
     kmsKeyType?: KmsKeyType;
 }
 ```

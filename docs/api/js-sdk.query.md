@@ -8,11 +8,7 @@ hide_title: true
 
 ## Query class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Query represents basic request to claim slot verification
-
 
  Query
 
@@ -26,13 +22,13 @@ export declare class Query
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [operator](./js-sdk.query.operator.md) |  | number | **_(BETA)_** |
-|  [slotIndex](./js-sdk.query.slotindex.md) |  | number | **_(BETA)_** |
-|  [valueProof?](./js-sdk.query.valueproof.md) |  | [ValueProof](./js-sdk.valueproof.md) | **_(BETA)_** _(Optional)_ |
-|  [values](./js-sdk.query.values.md) |  | bigint\[\] | **_(BETA)_** |
+|  [operator](./js-sdk.query.operator.md) |  | number |  |
+|  [slotIndex](./js-sdk.query.slotindex.md) |  | number |  |
+|  [valueProof](./js-sdk.query.valueproof.md) |  | [ValueProof](./js-sdk.valueproof.md) |  |
+|  [values](./js-sdk.query.values.md) |  | bigint\[\] |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [validate()](./js-sdk.query.validate.md) |  | **_(BETA)_** Validates Query instance |
+|  [validate()](./js-sdk.query.validate.md) |  | Validates Query instance |

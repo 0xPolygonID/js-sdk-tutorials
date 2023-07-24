@@ -26,7 +26,7 @@ export interface IMerkleTreeStorage
 
 |  Method | Description |
 |  --- | --- |
-|  [addToMerkleTree(identifier, mtType, hindex, hvalue)](./js-sdk.imerkletreestorage.addtomerkletree.md) | **_(BETA)_** adds entry to merkle tree |
-|  [bindMerkleTreeToNewIdentifier(oldIdentifier, newIdentifier)](./js-sdk.imerkletreestorage.bindmerkletreetonewidentifier.md) | **_(BETA)_** binding to be able to update identifier that belongs to tree |
-|  [createIdentityMerkleTrees(identifier)](./js-sdk.imerkletreestorage.createidentitymerkletrees.md) | **_(BETA)_** creates merkle tree in the storage |
-|  [getMerkleTreeByIdentifierAndType(identifier, mtType)](./js-sdk.imerkletreestorage.getmerkletreebyidentifierandtype.md) | **_(BETA)_** gets merkle tree by identifier and type |
+|  [addToMerkleTree(identifier, mtType, hindex, hvalue)](./js-sdk.imerkletreestorage.addtomerkletree.md) |  adds entry to merkle tree |
+|  [bindMerkleTreeToNewIdentifier(oldIdentifier, newIdentifier)](./js-sdk.imerkletreestorage.bindmerkletreetonewidentifier.md) |  binding to be able to update identifier that belongs to tree |
+|  [createIdentityMerkleTrees(identifier)](./js-sdk.imerkletreestorage.createidentitymerkletrees.md) |  creates merkle tree in the storage |
+|  [getMerkleTreeByIdentifierAndType(identifier, mtType)](./js-sdk.imerkletreestorage.getmerkletreebyidentifierandtype.md) |  gets merkle tree by identifier and type |

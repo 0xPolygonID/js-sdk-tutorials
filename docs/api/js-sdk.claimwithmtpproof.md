@@ -8,11 +8,7 @@ hide_title: true
 
 ## ClaimWithMTPProof interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Claim for circuit with non revocation proof and proof of merkle tree inclusion
-
 
  ClaimWithMTPProof
 
@@ -26,7 +22,7 @@ export interface ClaimWithMTPProof
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [claim](./js-sdk.claimwithmtpproof.claim.md) |  | Claim | **_(BETA)_** |
-|  [incProof](./js-sdk.claimwithmtpproof.incproof.md) |  | [MTProof](./js-sdk.mtproof.md) | **_(BETA)_** |
-|  [issuerID?](./js-sdk.claimwithmtpproof.issuerid.md) |  | Id | **_(BETA)_** _(Optional)_ |
-|  [nonRevProof](./js-sdk.claimwithmtpproof.nonrevproof.md) |  | [MTProof](./js-sdk.mtproof.md) | **_(BETA)_** |
+|  [claim?](./js-sdk.claimwithmtpproof.claim.md) |  | Claim | _(Optional)_ |
+|  [incProof?](./js-sdk.claimwithmtpproof.incproof.md) |  | [MTProof](./js-sdk.mtproof.md) | _(Optional)_ |
+|  [issuerID?](./js-sdk.claimwithmtpproof.issuerid.md) |  | Id | _(Optional)_ |
+|  [nonRevProof?](./js-sdk.claimwithmtpproof.nonrevproof.md) |  | [MTProof](./js-sdk.mtproof.md) | _(Optional)_ |

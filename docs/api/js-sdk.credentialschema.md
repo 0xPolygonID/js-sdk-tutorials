@@ -26,5 +26,5 @@ export interface CredentialSchema
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [id](./js-sdk.credentialschema.id.md) |  | string | **_(BETA)_** |
-|  [type](./js-sdk.credentialschema.type.md) |  | string | **_(BETA)_** |
+|  [id](./js-sdk.credentialschema.id.md) |  | string |  |
+|  [type](./js-sdk.credentialschema.type.md) |  | string |  |

@@ -14,7 +14,7 @@ hide_title: true
 **Signature:**
 
 ```typescript
-getProfileByVerifier(verifier: string): Promise<Profile>;
+getProfileByVerifier(verifier: string): Promise<Profile | undefined>;
 ```
 
 ## Parameters
@@ -25,4 +25,4 @@ getProfileByVerifier(verifier: string): Promise<Profile>;
 
 **Returns:**
 
-Promise&lt;[Profile](./js-sdk.profile.md)&gt;
+Promise&lt;[Profile](./js-sdk.profile.md) \| undefined&gt;

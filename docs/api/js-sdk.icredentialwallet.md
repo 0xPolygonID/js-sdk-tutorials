@@ -8,11 +8,7 @@ hide_title: true
 
 ## ICredentialWallet interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Interface to work with credential wallets
-
 
  ICredentialWallet
 
@@ -26,16 +22,16 @@ export interface ICredentialWallet
 
 |  Method | Description |
 |  --- | --- |
-|  [createCredential(issuer, request, schema)](./js-sdk.icredentialwallet.createcredential.md) | **_(BETA)_** Creates a W3C verifiable Credential object |
-|  [filterByCredentialSubject(credentials, subject)](./js-sdk.icredentialwallet.filterbycredentialsubject.md) | **_(BETA)_** Filters given credentials with given credential subject |
-|  [findByContextType(context, type)](./js-sdk.icredentialwallet.findbycontexttype.md) | **_(BETA)_** Finds credentials by JSON-LD schema and type |
-|  [findById(id)](./js-sdk.icredentialwallet.findbyid.md) | **_(BETA)_** Finds the credential by its id |
-|  [findByQuery(query)](./js-sdk.icredentialwallet.findbyquery.md) | **_(BETA)_** Find credential using iden3 query language |
-|  [findNonRevokedCredential(creds)](./js-sdk.icredentialwallet.findnonrevokedcredential.md) | **_(BETA)_** Finds non-revoked credential from a given list by resolving their credential status |
-|  [getAuthBJJCredential(did)](./js-sdk.icredentialwallet.getauthbjjcredential.md) | **_(BETA)_** Finds Auth BJJ credential for given user |
-|  [getRevocationStatus(credStatus, issuerDID, issuerData)](./js-sdk.icredentialwallet.getrevocationstatus.md) | **_(BETA)_** Fetches Revocation status depended on type |
-|  [getRevocationStatusFromCredential(cred)](./js-sdk.icredentialwallet.getrevocationstatusfromcredential.md) | **_(BETA)_** Fetches or Builds a revocation status for a given credential Supported types for credentialStatus field: SparseMerkleTreeProof, Iden3ReverseSparseMerkleTreeProof |
-|  [list()](./js-sdk.icredentialwallet.list.md) | **_(BETA)_** List of W3C Credential |
-|  [remove(id)](./js-sdk.icredentialwallet.remove.md) | **_(BETA)_** removes W3C credentials from data storage |
-|  [save(credential)](./js-sdk.icredentialwallet.save.md) | **_(BETA)_** saves W3C credential (upsert) |
-|  [saveAll(credentials)](./js-sdk.icredentialwallet.saveall.md) | **_(BETA)_** saves the batch of W3C credentials (upsert) |
+|  [createCredential(issuer, request, schema)](./js-sdk.icredentialwallet.createcredential.md) | Creates a W3C verifiable Credential object |
+|  [filterByCredentialSubject(credentials, subject)](./js-sdk.icredentialwallet.filterbycredentialsubject.md) | Filters given credentials with given credential subject |
+|  [findByContextType(context, type)](./js-sdk.icredentialwallet.findbycontexttype.md) | Finds credentials by JSON-LD schema and type |
+|  [findById(id)](./js-sdk.icredentialwallet.findbyid.md) | Finds the credential by its id |
+|  [findByQuery(query)](./js-sdk.icredentialwallet.findbyquery.md) | Find credential using iden3 query language |
+|  [findNonRevokedCredential(creds)](./js-sdk.icredentialwallet.findnonrevokedcredential.md) | Finds non-revoked credential from a given list by resolving their credential status |
+|  [getAuthBJJCredential(did)](./js-sdk.icredentialwallet.getauthbjjcredential.md) | Finds Auth BJJ credential for given user |
+|  [getRevocationStatus(credStatus, credentialStatusResolveOptions)](./js-sdk.icredentialwallet.getrevocationstatus.md) | Fetches Revocation status depended on type |
+|  [getRevocationStatusFromCredential(cred)](./js-sdk.icredentialwallet.getrevocationstatusfromcredential.md) | Fetches or Builds a revocation status for a given credential Supported types for credentialStatus field: SparseMerkleTreeProof, Iden3ReverseSparseMerkleTreeProof |
+|  [list()](./js-sdk.icredentialwallet.list.md) | List of W3C Credential |
+|  [remove(id)](./js-sdk.icredentialwallet.remove.md) | removes W3C credentials from data storage |
+|  [save(credential)](./js-sdk.icredentialwallet.save.md) | saves W3C credential (upsert) |
+|  [saveAll(credentials)](./js-sdk.icredentialwallet.saveall.md) | saves the batch of W3C credentials (upsert) |

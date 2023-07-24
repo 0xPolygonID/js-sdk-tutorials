@@ -10,7 +10,7 @@ hide_title: true
 
 Subject Core.Claim position for vc creation
 
-  {number}
+ {number}
 
 **Signature:**
 

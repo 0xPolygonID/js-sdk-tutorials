@@ -16,7 +16,7 @@ gets profile by identifier
 **Signature:**
 
 ```typescript
-getProfileById(identifier: string): Promise<Profile>;
+getProfileById(identifier: string): Promise<Profile | undefined>;
 ```
 
 ## Parameters
@@ -27,6 +27,6 @@ getProfileById(identifier: string): Promise<Profile>;
 
 **Returns:**
 
-Promise&lt;[Profile](./js-sdk.profile.md)&gt;
+Promise&lt;[Profile](./js-sdk.profile.md) \| undefined&gt;
 
 `{Promise<Profile>}`

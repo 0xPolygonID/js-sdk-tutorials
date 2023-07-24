@@ -10,7 +10,6 @@ hide_title: true
 
 generates Uint8Array with random bytes of size n
 
-
 **Signature:**
 
 ```typescript

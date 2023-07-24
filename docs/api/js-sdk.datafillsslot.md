@@ -10,7 +10,6 @@ hide_title: true
 
 checks if data fills into slot capacity ()
 
-
 **Signature:**
 
 ```typescript

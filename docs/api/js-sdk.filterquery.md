@@ -27,19 +27,19 @@ export declare class FilterQuery implements IFilterQuery
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(path, operatorFunc, value, isReverseParams)](./js-sdk.filterquery._constructor_.md) |  | **_(BETA)_** Creates an instance of FilterQuery. |
+|  [(constructor)(path, operatorFunc, value, isReverseParams)](./js-sdk.filterquery._constructor_.md) |  |  Creates an instance of FilterQuery. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [isReverseParams](./js-sdk.filterquery.isreverseparams.md) |  | boolean | **_(BETA)_** |
-|  [operatorFunc](./js-sdk.filterquery.operatorfunc.md) |  | [FilterOperatorFunction](./js-sdk.filteroperatorfunction.md) | **_(BETA)_** |
-|  [path](./js-sdk.filterquery.path.md) |  | string | **_(BETA)_** |
-|  [value](./js-sdk.filterquery.value.md) |  | any | **_(BETA)_** |
+|  [isReverseParams](./js-sdk.filterquery.isreverseparams.md) |  | boolean |  |
+|  [operatorFunc](./js-sdk.filterquery.operatorfunc.md) |  | [FilterOperatorFunction](./js-sdk.filteroperatorfunction.md) |  |
+|  [path](./js-sdk.filterquery.path.md) |  | string |  |
+|  [value](./js-sdk.filterquery.value.md) |  | any |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [execute(credential)](./js-sdk.filterquery.execute.md) |  | <p>**_(BETA)_** query filter interface that allows to query Verifiable Credential</p><p> IFilterQuery</p> |
+|  [execute(credential)](./js-sdk.filterquery.execute.md) |  | <p> query filter interface that allows to query Verifiable Credential</p><p> IFilterQuery</p> |

@@ -10,7 +10,7 @@ hide_title: true
 
 List of errors of circuit inputs processing
 
-  {number}
+ {number}
 
 **Signature:**
 
@@ -30,7 +30,7 @@ export declare enum CircuitError
 |  EmptyClaimNonRevProof | <code>&quot;empty claim non-revocation mtp proof&quot;</code> |  |
 |  EmptyClaimProof | <code>&quot;empty claim mtp proof&quot;</code> |  |
 |  EmptyClaimSignature | <code>&quot;empty claim signature&quot;</code> |  |
-|  EmptyGlobalProof | <code>&quot;empty global identity mtp proof&quot;</code> |  |
+|  EmptyGISTProof | <code>&quot;empty GIST merkle tree proof&quot;</code> |  |
 |  EmptyId | <code>&quot;empty Id&quot;</code> |  |
 |  EmptyIssuerAuthClaimNonRevProof | <code>&quot;empty issuer auth claim non-revocation mtp proof&quot;</code> |  |
 |  EmptyIssuerAuthClaimProof | <code>&quot;empty issuer auth claim mtp proof&quot;</code> |  |

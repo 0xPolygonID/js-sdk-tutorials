@@ -8,11 +8,7 @@ hide_title: true
 
 ## PackageManager class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Basic package manager for iden3 communication protocol
-
 
  PackageManager  implements IPackageManager interface
 
@@ -27,20 +23,20 @@ export declare class PackageManager implements IPackageManager
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)()](./js-sdk.packagemanager._constructor_.md) |  | **_(BETA)_** Creates an instance of PackageManager. |
+|  [(constructor)()](./js-sdk.packagemanager._constructor_.md) |  | Creates an instance of PackageManager. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [packers](./js-sdk.packagemanager.packers.md) |  | Map&lt;[MediaType](./js-sdk.protocol_constants.mediatype.md), [IPacker](./js-sdk.ipacker.md)&gt; | **_(BETA)_** |
+|  [packers](./js-sdk.packagemanager.packers.md) |  | Map&lt;[MediaType](./js-sdk.protocol_constants.mediatype.md), [IPacker](./js-sdk.ipacker.md)&gt; |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [getMediaType(envelope)](./js-sdk.packagemanager.getmediatype.md) |  | **_(BETA)_** gets media type from an envelope |
-|  [pack(mediaType, payload, params)](./js-sdk.packagemanager.pack.md) |  | **_(BETA)_** packs payload with a packer that is assigned to media type forwards packer params to implementation |
-|  [registerPackers(packers)](./js-sdk.packagemanager.registerpackers.md) |  | **_(BETA)_** registers new packer in the manager |
-|  [unpack(envelope)](./js-sdk.packagemanager.unpack.md) |  | **_(BETA)_** unpacks packed envelope to basic protocol message and returns media type of the envelope |
-|  [unpackWithType(mediaType, envelope)](./js-sdk.packagemanager.unpackwithtype.md) |  | **_(BETA)_** unpacks an envelope with a known media type |
+|  [getMediaType(envelope)](./js-sdk.packagemanager.getmediatype.md) |  | gets media type from an envelope |
+|  [pack(mediaType, payload, params)](./js-sdk.packagemanager.pack.md) |  | packs payload with a packer that is assigned to media type forwards packer params to implementation |
+|  [registerPackers(packers)](./js-sdk.packagemanager.registerpackers.md) |  | registers new packer in the manager |
+|  [unpack(envelope)](./js-sdk.packagemanager.unpack.md) |  | unpacks packed envelope to basic protocol message and returns media type of the envelope |
+|  [unpackWithType(mediaType, envelope)](./js-sdk.packagemanager.unpackwithtype.md) |  | unpacks an envelope with a known media type |

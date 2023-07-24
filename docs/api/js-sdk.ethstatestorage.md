@@ -8,10 +8,6 @@ hide_title: true
 
 ## EthStateStorage class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
-
  EthStateStorage  implements IStateStorage interface
 
 **Signature:**
@@ -25,20 +21,20 @@ export declare class EthStateStorage implements IStateStorage
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(ethConfig)](./js-sdk.ethstatestorage._constructor_.md) |  | **_(BETA)_** Creates an instance of EthStateStorage. |
+|  [(constructor)(ethConfig)](./js-sdk.ethstatestorage._constructor_.md) |  | Creates an instance of EthStateStorage. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [provider](./js-sdk.ethstatestorage.provider.md) | <code>readonly</code> | ethers.providers.JsonRpcProvider | **_(BETA)_** |
-|  [stateContract](./js-sdk.ethstatestorage.statecontract.md) | <code>readonly</code> | ethers.Contract | **_(BETA)_** |
+|  [provider](./js-sdk.ethstatestorage.provider.md) | <code>readonly</code> | ethers.providers.JsonRpcProvider |  |
+|  [stateContract](./js-sdk.ethstatestorage.statecontract.md) | <code>readonly</code> | ethers.Contract |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [getGISTProof(id)](./js-sdk.ethstatestorage.getgistproof.md) |  | **_(BETA)_** generates proof of inclusion / non-inclusion to global identity state for given identity |
-|  [getGISTRootInfo(id)](./js-sdk.ethstatestorage.getgistrootinfo.md) |  | **_(BETA)_** |
-|  [getLatestStateById(id)](./js-sdk.ethstatestorage.getlateststatebyid.md) |  | **_(BETA)_** gets latest state of identity |
-|  [publishState(proof, signer)](./js-sdk.ethstatestorage.publishstate.md) |  | **_(BETA)_** method to publish state onchain |
+|  [getGISTProof(id)](./js-sdk.ethstatestorage.getgistproof.md) |  | generates proof of inclusion / non-inclusion to global identity state for given identity |
+|  [getGISTRootInfo(id)](./js-sdk.ethstatestorage.getgistrootinfo.md) |  |  |
+|  [getLatestStateById(id)](./js-sdk.ethstatestorage.getlateststatebyid.md) |  | gets latest state of identity |
+|  [publishState(proof, signer)](./js-sdk.ethstatestorage.publishstate.md) |  | method to publish state onchain |

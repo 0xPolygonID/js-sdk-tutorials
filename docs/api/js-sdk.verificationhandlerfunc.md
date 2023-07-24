@@ -8,11 +8,7 @@ hide_title: true
 
 ## VerificationHandlerFunc class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Handler to verify public signals of authorization circuits
-
 
  VerificationHandlerFunc
 
@@ -26,16 +22,16 @@ export declare class VerificationHandlerFunc
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(stateVerificationFunc)](./js-sdk.verificationhandlerfunc._constructor_.md) |  | **_(BETA)_** Creates an instance of VerificationHandlerFunc. |
+|  [(constructor)(stateVerificationFunc)](./js-sdk.verificationhandlerfunc._constructor_.md) |  | Creates an instance of VerificationHandlerFunc. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [stateVerificationFunc](./js-sdk.verificationhandlerfunc.stateverificationfunc.md) | <code>readonly</code> | [StateVerificationFunc](./js-sdk.stateverificationfunc.md) | **_(BETA)_** |
+|  [stateVerificationFunc](./js-sdk.verificationhandlerfunc.stateverificationfunc.md) | <code>readonly</code> | [StateVerificationFunc](./js-sdk.stateverificationfunc.md) |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [verify(id, pubSignals)](./js-sdk.verificationhandlerfunc.verify.md) |  | **_(BETA)_** |
+|  [verify(id, pubSignals)](./js-sdk.verificationhandlerfunc.verify.md) |  |  |

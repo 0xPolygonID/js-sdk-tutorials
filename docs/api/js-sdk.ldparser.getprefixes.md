@@ -8,9 +8,6 @@ hide_title: true
 
 ## LDParser.getPrefixes() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 GetPrefixesreturns a map of potential RDF prefixes based on the JSON-LD Term Definitions in this context. No guarantees of the prefixes are given, beyond that it will not contain ":".
 
 onlyCommonPrefixes: If true, the result will not include "not so useful" prefixes, such as "term1": "http://example.com/term1", e.g. all IRIs will end with "/" or "\#". If false, all potential prefixes are returned.

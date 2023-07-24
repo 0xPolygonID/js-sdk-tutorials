@@ -14,5 +14,5 @@ hide_title: true
 **Signature:**
 
 ```typescript
-credentialStatus: CredentialStatus | RHSCredentialStatus;
+credentialStatus: CredentialStatus;
 ```

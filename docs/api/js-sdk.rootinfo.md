@@ -8,11 +8,7 @@ hide_title: true
 
 ## RootInfo interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 global identity state root info from chain
-
 
  RootInfo
 
@@ -26,9 +22,9 @@ export interface RootInfo
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [createdAtBlock](./js-sdk.rootinfo.createdatblock.md) |  | bigint | **_(BETA)_** |
-|  [createdAtTimestamp](./js-sdk.rootinfo.createdattimestamp.md) |  | bigint | **_(BETA)_** |
-|  [replacedAtBlock](./js-sdk.rootinfo.replacedatblock.md) |  | bigint | **_(BETA)_** |
-|  [replacedAtTimestamp](./js-sdk.rootinfo.replacedattimestamp.md) |  | bigint | **_(BETA)_** |
-|  [replacedByRoot](./js-sdk.rootinfo.replacedbyroot.md) |  | bigint | **_(BETA)_** |
-|  [root](./js-sdk.rootinfo.root.md) |  | bigint | **_(BETA)_** |
+|  [createdAtBlock](./js-sdk.rootinfo.createdatblock.md) |  | bigint |  |
+|  [createdAtTimestamp](./js-sdk.rootinfo.createdattimestamp.md) |  | bigint |  |
+|  [replacedAtBlock](./js-sdk.rootinfo.replacedatblock.md) |  | bigint |  |
+|  [replacedAtTimestamp](./js-sdk.rootinfo.replacedattimestamp.md) |  | bigint |  |
+|  [replacedByRoot](./js-sdk.rootinfo.replacedbyroot.md) |  | bigint |  |
+|  [root](./js-sdk.rootinfo.root.md) |  | bigint |  |

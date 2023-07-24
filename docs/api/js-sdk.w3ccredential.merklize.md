@@ -16,8 +16,15 @@ merklization of the verifiable credential
 **Signature:**
 
 ```typescript
-merklize(): Promise<Merklizer>;
+merklize(opts?: Options): Promise<Merklizer>;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  opts | Options | _(Optional)_ |
+
 **Returns:**
 
 Promise&lt;Merklizer&gt;

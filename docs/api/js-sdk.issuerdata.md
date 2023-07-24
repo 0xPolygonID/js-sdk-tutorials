@@ -26,20 +26,20 @@ export declare class IssuerData
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(obj)](./js-sdk.issuerdata._constructor_.md) |  | **_(BETA)_** Creates an instance ofIssuerData . |
+|  [(constructor)(obj)](./js-sdk.issuerdata._constructor_.md) |  |  Creates an instance ofIssuerData . |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [authCoreClaim?](./js-sdk.issuerdata.authcoreclaim.md) |  | string | **_(BETA)_** _(Optional)_ |
-|  [credentialStatus?](./js-sdk.issuerdata.credentialstatus.md) |  | object | **_(BETA)_** _(Optional)_ |
-|  [id](./js-sdk.issuerdata.id.md) |  | string | **_(BETA)_** |
-|  [mtp?](./js-sdk.issuerdata.mtp.md) |  | Proof | **_(BETA)_** _(Optional)_ |
-|  [state](./js-sdk.issuerdata.state.md) |  | [State](./js-sdk.state.md) | **_(BETA)_** |
+|  [authCoreClaim?](./js-sdk.issuerdata.authcoreclaim.md) |  | string |  _(Optional)_ |
+|  [credentialStatus?](./js-sdk.issuerdata.credentialstatus.md) |  | [CredentialStatus](./js-sdk.credentialstatus.md) |  _(Optional)_ |
+|  [id](./js-sdk.issuerdata.id.md) |  | string |  |
+|  [mtp?](./js-sdk.issuerdata.mtp.md) |  | Proof |  _(Optional)_ |
+|  [state](./js-sdk.issuerdata.state.md) |  | [State](./js-sdk.state.md) |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [toJSON()](./js-sdk.issuerdata.tojson.md) |  | **_(BETA)_** |
+|  [toJSON()](./js-sdk.issuerdata.tojson.md) |  |  |

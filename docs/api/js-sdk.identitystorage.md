@@ -27,23 +27,23 @@ export declare class IdentityStorage implements IIdentityStorage
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_identityDataSource, \_profileDataSource)](./js-sdk.identitystorage._constructor_.md) |  | **_(BETA)_** Creates an instance of IdentityStorage. |
+|  [(constructor)(\_identityDataSource, \_profileDataSource)](./js-sdk.identitystorage._constructor_.md) |  |  Creates an instance of IdentityStorage. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [identitiesStorageKey](./js-sdk.identitystorage.identitiesstoragekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p>**_(BETA)_** storage key for identities</p> |
-|  [profilesStorageKey](./js-sdk.identitystorage.profilesstoragekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p>**_(BETA)_** storage key for profiles</p> |
+|  [identitiesStorageKey](./js-sdk.identitystorage.identitiesstoragekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p> storage key for identities</p> |
+|  [profilesStorageKey](./js-sdk.identitystorage.profilesstoragekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p> storage key for profiles</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [getAllIdentities()](./js-sdk.identitystorage.getallidentities.md) |  | **_(BETA)_** |
-|  [getIdentity(identifier)](./js-sdk.identitystorage.getidentity.md) |  | **_(BETA)_** |
-|  [getProfileById(profileId)](./js-sdk.identitystorage.getprofilebyid.md) |  | **_(BETA)_** |
-|  [getProfileByVerifier(verifier)](./js-sdk.identitystorage.getprofilebyverifier.md) |  | **_(BETA)_** |
-|  [getProfilesByGenesisIdentifier(genesisIdentifier)](./js-sdk.identitystorage.getprofilesbygenesisidentifier.md) |  | **_(BETA)_** |
-|  [saveIdentity(identity)](./js-sdk.identitystorage.saveidentity.md) |  | **_(BETA)_** |
-|  [saveProfile(profile)](./js-sdk.identitystorage.saveprofile.md) |  | **_(BETA)_** |
+|  [getAllIdentities()](./js-sdk.identitystorage.getallidentities.md) |  |  |
+|  [getIdentity(identifier)](./js-sdk.identitystorage.getidentity.md) |  |  |
+|  [getProfileById(profileId)](./js-sdk.identitystorage.getprofilebyid.md) |  |  |
+|  [getProfileByVerifier(verifier)](./js-sdk.identitystorage.getprofilebyverifier.md) |  |  |
+|  [getProfilesByGenesisIdentifier(genesisIdentifier)](./js-sdk.identitystorage.getprofilesbygenesisidentifier.md) |  |  |
+|  [saveIdentity(identity)](./js-sdk.identitystorage.saveidentity.md) |  |  |
+|  [saveProfile(profile)](./js-sdk.identitystorage.saveprofile.md) |  |  |

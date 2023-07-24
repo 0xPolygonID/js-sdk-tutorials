@@ -8,19 +8,17 @@ hide_title: true
 
 ## CredentialWallet.(constructor)
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Creates an instance of CredentialWallet.
 
 **Signature:**
 
 ```typescript
-constructor(_storage: IDataStorage);
+constructor(_storage: IDataStorage, _credentialStatusResolverRegistry?: CredentialStatusResolverRegistry | undefined);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_storage | [IDataStorage](./js-sdk.idatastorage.md) | - data storage to access credential / identity / Merkle tree data |
+|  \_storage | [IDataStorage](./js-sdk.idatastorage.md) | data storage to access credential / identity / Merkle tree data |
+|  \_credentialStatusResolverRegistry | [CredentialStatusResolverRegistry](./js-sdk.credentialstatusresolverregistry.md) &#124; undefined | _(Optional)_ list of credential status resolvers if \_credentialStatusResolverRegistry is not provided, default resolvers will be used |

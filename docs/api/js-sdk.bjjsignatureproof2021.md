@@ -21,11 +21,17 @@ BJJSignatureProof2021 is a signature of core claim by BJJ key
 export declare class BJJSignatureProof2021 
 ```
 
+## Constructors
+
+|  Constructor | Modifiers | Description |
+|  --- | --- | --- |
+|  [(constructor)(obj)](./js-sdk.bjjsignatureproof2021._constructor_.md) |  |  Constructs a new instance of the <code>BJJSignatureProof2021</code> class |
+
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [coreClaim](./js-sdk.bjjsignatureproof2021.coreclaim.md) |  | string | **_(BETA)_** |
-|  [issuerData](./js-sdk.bjjsignatureproof2021.issuerdata.md) |  | [IssuerData](./js-sdk.issuerdata.md) | **_(BETA)_** |
-|  [signature](./js-sdk.bjjsignatureproof2021.signature.md) |  | string | **_(BETA)_** |
-|  [type](./js-sdk.bjjsignatureproof2021.type.md) |  | [ProofType](./js-sdk.prooftype.md) | **_(BETA)_** |
+|  [coreClaim](./js-sdk.bjjsignatureproof2021.coreclaim.md) |  | string |  |
+|  [issuerData](./js-sdk.bjjsignatureproof2021.issuerdata.md) |  | [IssuerData](./js-sdk.issuerdata.md) |  |
+|  [signature](./js-sdk.bjjsignatureproof2021.signature.md) |  | string |  |
+|  [type](./js-sdk.bjjsignatureproof2021.type.md) |  | [ProofType](./js-sdk.prooftype.md) |  |

@@ -8,11 +8,7 @@ hide_title: true
 
 ## IStateStorage interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Interface that defines methods for state storage
-
 
  IStateStorage
 
@@ -26,7 +22,7 @@ export interface IStateStorage
 
 |  Method | Description |
 |  --- | --- |
-|  [getGISTProof(id)](./js-sdk.istatestorage.getgistproof.md) | **_(BETA)_** generates proof of inclusion / non-inclusion to global identity state for given identity |
-|  [getGISTRootInfo(root)](./js-sdk.istatestorage.getgistrootinfo.md) | **_(BETA)_** |
-|  [getLatestStateById(id)](./js-sdk.istatestorage.getlateststatebyid.md) | **_(BETA)_** gets latest state of identity |
-|  [publishState(proof, signer)](./js-sdk.istatestorage.publishstate.md) | **_(BETA)_** method to publish state onchain |
+|  [getGISTProof(id)](./js-sdk.istatestorage.getgistproof.md) | generates proof of inclusion / non-inclusion to global identity state for given identity |
+|  [getGISTRootInfo(root)](./js-sdk.istatestorage.getgistrootinfo.md) |  |
+|  [getLatestStateById(id)](./js-sdk.istatestorage.getlateststatebyid.md) | gets latest state of identity |
+|  [publishState(proof, signer)](./js-sdk.istatestorage.publishstate.md) | method to publish state onchain |

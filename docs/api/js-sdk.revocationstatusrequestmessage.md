@@ -16,10 +16,11 @@ RevocationStatusRequestMessage is struct the represents body for proof generatio
 export type RevocationStatusRequestMessage = {
     id: string;
     typ?: MediaType;
-    type: RTCIceProtocol;
+    type: ProtocolMessage;
+    thid?: string;
     body?: RevocationStatusRequestMessageBody;
     from?: string;
     to?: string;
 };
 ```
-**References:** [MediaType](./js-sdk.protocol_constants.mediatype.md), [RevocationStatusRequestMessageBody](./js-sdk.revocationstatusrequestmessagebody.md)
+**References:** [MediaType](./js-sdk.protocol_constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [RevocationStatusRequestMessageBody](./js-sdk.revocationstatusrequestmessagebody.md)

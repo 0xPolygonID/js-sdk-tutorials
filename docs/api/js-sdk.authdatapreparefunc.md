@@ -13,6 +13,6 @@ signature of auth signals function preparer
 **Signature:**
 
 ```typescript
-export type AuthDataPrepareFunc = (hash: Uint8Array, did: DID, profileNonce: number, circuitId: CircuitId) => Promise<Uint8Array>;
+export type AuthDataPrepareFunc = (hash: Uint8Array, did: DID, circuitId: CircuitId) => Promise<Uint8Array>;
 ```
 **References:** [CircuitId](./js-sdk.circuitid.md)

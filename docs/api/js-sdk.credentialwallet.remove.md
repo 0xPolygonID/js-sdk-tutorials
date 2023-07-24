@@ -8,9 +8,6 @@ hide_title: true
 
 ## CredentialWallet.remove() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 removes W3C credentials from data storage
 
 **Signature:**

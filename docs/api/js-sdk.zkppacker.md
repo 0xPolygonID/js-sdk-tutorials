@@ -8,10 +8,7 @@ hide_title: true
 
 ## ZKPPacker class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
-Packer that can pack message to JWZ token, and unpack and validate JWZ envelope 
+Packer that can pack message to JWZ token, and unpack and validate JWZ envelope
 
  ZKPPacker  implements IPacker interface
 
@@ -26,19 +23,19 @@ export declare class ZKPPacker implements IPacker
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(provingParamsMap, verificationParamsMap)](./js-sdk.zkppacker._constructor_.md) |  | **_(BETA)_** Creates an instance of ZKPPacker. |
+|  [(constructor)(provingParamsMap, verificationParamsMap)](./js-sdk.zkppacker._constructor_.md) |  | Creates an instance of ZKPPacker. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [provingParamsMap](./js-sdk.zkppacker.provingparamsmap.md) |  | Map&lt;string, [ProvingParams](./js-sdk.provingparams.md)&gt; | **_(BETA)_** |
-|  [verificationParamsMap](./js-sdk.zkppacker.verificationparamsmap.md) |  | Map&lt;string, [VerificationParams](./js-sdk.verificationparams.md)&gt; | **_(BETA)_** |
+|  [provingParamsMap](./js-sdk.zkppacker.provingparamsmap.md) |  | Map&lt;string, [ProvingParams](./js-sdk.provingparams.md)&gt; |  |
+|  [verificationParamsMap](./js-sdk.zkppacker.verificationparamsmap.md) |  | Map&lt;string, [VerificationParams](./js-sdk.verificationparams.md)&gt; |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [mediaType()](./js-sdk.zkppacker.mediatype.md) |  | **_(BETA)_** |
-|  [pack(payload, params)](./js-sdk.zkppacker.pack.md) |  | **_(BETA)_** creates JSON Web Zeroknowledge token |
-|  [unpack(envelope)](./js-sdk.zkppacker.unpack.md) |  | **_(BETA)_** validate envelope which is jwz token |
+|  [mediaType()](./js-sdk.zkppacker.mediatype.md) |  |  |
+|  [pack(payload, params)](./js-sdk.zkppacker.pack.md) |  | creates JSON Web Zeroknowledge token |
+|  [unpack(envelope)](./js-sdk.zkppacker.unpack.md) |  | validate envelope which is jwz token |

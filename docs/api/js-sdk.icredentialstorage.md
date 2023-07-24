@@ -8,11 +8,7 @@ hide_title: true
 
 ## ICredentialStorage interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Interface for credential storages
-
 
  ICredentialStorage
 
@@ -26,9 +22,9 @@ export interface ICredentialStorage
 
 |  Method | Description |
 |  --- | --- |
-|  [findCredentialById(id)](./js-sdk.icredentialstorage.findcredentialbyid.md) | **_(BETA)_** finds credential by identifier |
-|  [findCredentialsByQuery(query)](./js-sdk.icredentialstorage.findcredentialsbyquery.md) | **_(BETA)_** finds credential in the storage for given query |
-|  [listCredentials()](./js-sdk.icredentialstorage.listcredentials.md) | **_(BETA)_** returns all credentials in the storage |
-|  [removeCredential(id)](./js-sdk.icredentialstorage.removecredential.md) | **_(BETA)_** Removes credential from storage |
-|  [saveAllCredentials(credentials)](./js-sdk.icredentialstorage.saveallcredentials.md) | **_(BETA)_** save all credential (upsert) to the storage |
-|  [saveCredential(credential)](./js-sdk.icredentialstorage.savecredential.md) | **_(BETA)_** save credential to the storage |
+|  [findCredentialById(id)](./js-sdk.icredentialstorage.findcredentialbyid.md) | finds credential by identifier |
+|  [findCredentialsByQuery(query)](./js-sdk.icredentialstorage.findcredentialsbyquery.md) | finds credential in the storage for given query |
+|  [listCredentials()](./js-sdk.icredentialstorage.listcredentials.md) | returns all credentials in the storage |
+|  [removeCredential(id)](./js-sdk.icredentialstorage.removecredential.md) | Removes credential from storage |
+|  [saveAllCredentials(credentials)](./js-sdk.icredentialstorage.saveallcredentials.md) | save all credential (upsert) to the storage |
+|  [saveCredential(credential)](./js-sdk.icredentialstorage.savecredential.md) | save credential to the storage |

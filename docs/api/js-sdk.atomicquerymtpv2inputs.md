@@ -8,11 +8,7 @@ hide_title: true
 
 ## AtomicQueryMTPV2Inputs class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 AtomicQueryMTPInputs ZK private inputs for credentialAtomicQueryMTP.circom
-
 
  AtomicQueryMTPV2Inputs  {BaseConfig}
 
@@ -27,18 +23,18 @@ export declare class AtomicQueryMTPV2Inputs extends BaseConfig
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [claim](./js-sdk.atomicquerymtpv2inputs.claim.md) |  | [ClaimWithMTPProof](./js-sdk.claimwithmtpproof.md) | **_(BETA)_** |
-|  [claimSubjectProfileNonce](./js-sdk.atomicquerymtpv2inputs.claimsubjectprofilenonce.md) |  | bigint | **_(BETA)_** |
-|  [currentTimeStamp](./js-sdk.atomicquerymtpv2inputs.currenttimestamp.md) |  | number | **_(BETA)_** |
-|  [id](./js-sdk.atomicquerymtpv2inputs.id.md) |  | Id | **_(BETA)_** |
-|  [profileNonce](./js-sdk.atomicquerymtpv2inputs.profilenonce.md) |  | bigint | **_(BETA)_** |
-|  [query](./js-sdk.atomicquerymtpv2inputs.query.md) |  | [Query](./js-sdk.query.md) | **_(BETA)_** |
-|  [requestID](./js-sdk.atomicquerymtpv2inputs.requestid.md) |  | bigint | **_(BETA)_** |
-|  [skipClaimRevocationCheck](./js-sdk.atomicquerymtpv2inputs.skipclaimrevocationcheck.md) |  | boolean | **_(BETA)_** |
+|  [claim](./js-sdk.atomicquerymtpv2inputs.claim.md) |  | [ClaimWithMTPProof](./js-sdk.claimwithmtpproof.md) |  |
+|  [claimSubjectProfileNonce](./js-sdk.atomicquerymtpv2inputs.claimsubjectprofilenonce.md) |  | bigint |  |
+|  [currentTimeStamp](./js-sdk.atomicquerymtpv2inputs.currenttimestamp.md) |  | number |  |
+|  [id](./js-sdk.atomicquerymtpv2inputs.id.md) |  | Id |  |
+|  [profileNonce](./js-sdk.atomicquerymtpv2inputs.profilenonce.md) |  | bigint |  |
+|  [query](./js-sdk.atomicquerymtpv2inputs.query.md) |  | [Query](./js-sdk.query.md) |  |
+|  [requestID](./js-sdk.atomicquerymtpv2inputs.requestid.md) |  | bigint |  |
+|  [skipClaimRevocationCheck](./js-sdk.atomicquerymtpv2inputs.skipclaimrevocationcheck.md) |  | boolean |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [inputsMarshal()](./js-sdk.atomicquerymtpv2inputs.inputsmarshal.md) |  | **_(BETA)_** Inputs marshalling |
-|  [validate()](./js-sdk.atomicquerymtpv2inputs.validate.md) |  | **_(BETA)_** Validate AtomicQueryMTPV2 inputs |
+|  [inputsMarshal()](./js-sdk.atomicquerymtpv2inputs.inputsmarshal.md) |  | Inputs marshalling |
+|  [validate()](./js-sdk.atomicquerymtpv2inputs.validate.md) |  | Validate AtomicQueryMTPV2 inputs |

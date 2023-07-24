@@ -8,15 +8,12 @@ hide_title: true
 
 ## IKeyProvider.publicKey() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 gets public key by key id
 
 **Signature:**
 
 ```typescript
-publicKey(keyID: KmsKeyId): Promise<PublicKey | string>;
+publicKey(keyID: KmsKeyId): Promise<string>;
 ```
 
 ## Parameters
@@ -27,6 +24,6 @@ publicKey(keyID: KmsKeyId): Promise<PublicKey | string>;
 
 **Returns:**
 
-Promise&lt;PublicKey \| string&gt;
+Promise&lt;string&gt;
 
 `Promise<PublicKey>`

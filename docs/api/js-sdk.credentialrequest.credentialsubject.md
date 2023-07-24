@@ -8,15 +8,12 @@ hide_title: true
 
 ## CredentialRequest.credentialSubject property
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Credential subject, usually contains claims and identifier
 
 **Signature:**
 
 ```typescript
 credentialSubject: {
-        [key: string]: string | object | number;
+        [key: string]: string | object | number | boolean;
     };
 ```

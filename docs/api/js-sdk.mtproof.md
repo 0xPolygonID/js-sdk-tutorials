@@ -8,11 +8,7 @@ hide_title: true
 
 ## MTProof interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 prepared mtp with a tree state
-
 
  MTProof
 
@@ -26,5 +22,5 @@ export interface MTProof
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [proof](./js-sdk.mtproof.proof.md) |  | Proof | **_(BETA)_** |
-|  [treeState?](./js-sdk.mtproof.treestate.md) |  | [TreeState](./js-sdk.treestate.md) | **_(BETA)_** _(Optional)_ |
+|  [proof?](./js-sdk.mtproof.proof.md) |  | Proof | _(Optional)_ |
+|  [treeState?](./js-sdk.mtproof.treestate.md) |  | [TreeState](./js-sdk.treestate.md) | _(Optional)_ |

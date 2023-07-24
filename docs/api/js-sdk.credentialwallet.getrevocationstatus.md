@@ -8,24 +8,20 @@ hide_title: true
 
 ## CredentialWallet.getRevocationStatus() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Fetches Revocation status depended on type
 
 **Signature:**
 
 ```typescript
-getRevocationStatus(credStatus: CredentialStatus | RHSCredentialStatus, issuerDID: DID, issuerData: IssuerData): Promise<RevocationStatus>;
+getRevocationStatus(credStatus: CredentialStatus, credentialStatusResolveOptions?: CredentialStatusResolveOptions): Promise<RevocationStatus>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  credStatus | [CredentialStatus](./js-sdk.credentialstatus.md) &#124; [RHSCredentialStatus](./js-sdk.rhscredentialstatus.md) | credentialStatus field of the Verifiable Credential. Supported types for credentialStatus field: SparseMerkleTreeProof, Iden3ReverseSparseMerkleTreeProof |
-|  issuerDID | DID | credential issuer identity |
-|  issuerData | [IssuerData](./js-sdk.issuerdata.md) | metadata of the issuer, usually contained in the BjjSignature / Iden3SparseMerkleTreeProof |
+|  credStatus | [CredentialStatus](./js-sdk.credentialstatus.md) | credentialStatus field of the Verifiable Credential. Supported types for credentialStatus field: SparseMerkleTreeProof, Iden3ReverseSparseMerkleTreeProof |
+|  credentialStatusResolveOptions | [CredentialStatusResolveOptions](./js-sdk.credentialstatusresolveoptions.md) | _(Optional)_ options to resolve credential status |
 
 **Returns:**
 

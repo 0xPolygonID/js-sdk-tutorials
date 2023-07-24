@@ -18,8 +18,8 @@ export interface IProofService
 
 |  Method | Description |
 |  --- | --- |
-|  [generateAuthV2Inputs(hash, did, profileNonce, circuitId)](./js-sdk.iproofservice.generateauthv2inputs.md) | generates auth inputs |
-|  [generateProof(proofReq, identifier, credential, opts)](./js-sdk.iproofservice.generateproof.md) | Generate proof from given identity and credential for protocol proof request |
+|  [generateAuthV2Inputs(hash, did, circuitId)](./js-sdk.iproofservice.generateauthv2inputs.md) | generates auth inputs |
+|  [generateProof(proofReq, identifier, opts)](./js-sdk.iproofservice.generateproof.md) | Generate proof from given identity and credential for protocol proof request |
 |  [transitState(did, oldTreeState, isOldStateGenesis, stateStorage, ethSigner)](./js-sdk.iproofservice.transitstate.md) | <p>transitState is done always to the latest state</p><p>Generates a state transition proof and publishes state to the blockchain</p> |
 |  [verifyProof(zkp, circuitName)](./js-sdk.iproofservice.verifyproof.md) | Verification of zkp proof for given circuit id |
 |  [verifyState(circuitId, pubSignals)](./js-sdk.iproofservice.verifystate.md) | state verification function |

@@ -8,9 +8,6 @@ hide_title: true
 
 ## IDataSource.load() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 load all object with Type from data source
 
 **Signature:**

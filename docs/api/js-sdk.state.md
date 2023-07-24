@@ -26,11 +26,11 @@ export interface State
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [blockNumber?](./js-sdk.state.blocknumber.md) |  | number | **_(BETA)_** _(Optional)_ |
-|  [blockTimestamp?](./js-sdk.state.blocktimestamp.md) |  | number | **_(BETA)_** _(Optional)_ |
-|  [claimsTreeRoot](./js-sdk.state.claimstreeroot.md) |  | string | **_(BETA)_** |
-|  [revocationTreeRoot](./js-sdk.state.revocationtreeroot.md) |  | string | **_(BETA)_** |
-|  [rootOfRoots](./js-sdk.state.rootofroots.md) |  | string | **_(BETA)_** |
-|  [status?](./js-sdk.state.status.md) |  | string | **_(BETA)_** _(Optional)_ |
-|  [txId?](./js-sdk.state.txid.md) |  | string | **_(BETA)_** _(Optional)_ |
-|  [value](./js-sdk.state.value.md) |  | string | **_(BETA)_** |
+|  [blockNumber?](./js-sdk.state.blocknumber.md) |  | number |  _(Optional)_ |
+|  [blockTimestamp?](./js-sdk.state.blocktimestamp.md) |  | number |  _(Optional)_ |
+|  [claimsTreeRoot](./js-sdk.state.claimstreeroot.md) |  | string |  |
+|  [revocationTreeRoot](./js-sdk.state.revocationtreeroot.md) |  | string |  |
+|  [rootOfRoots](./js-sdk.state.rootofroots.md) |  | string |  |
+|  [status?](./js-sdk.state.status.md) |  | string |  _(Optional)_ |
+|  [txId?](./js-sdk.state.txid.md) |  | string |  _(Optional)_ |
+|  [value](./js-sdk.state.value.md) |  | string |  |

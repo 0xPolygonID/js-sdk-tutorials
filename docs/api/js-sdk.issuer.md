@@ -26,7 +26,7 @@ export interface Issuer
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [claimsTreeRoot?](./js-sdk.issuer.claimstreeroot.md) |  | string | **_(BETA)_** _(Optional)_ |
-|  [revocationTreeRoot?](./js-sdk.issuer.revocationtreeroot.md) |  | string | **_(BETA)_** _(Optional)_ |
-|  [rootOfRoots?](./js-sdk.issuer.rootofroots.md) |  | string | **_(BETA)_** _(Optional)_ |
-|  [state?](./js-sdk.issuer.state.md) |  | string | **_(BETA)_** _(Optional)_ |
+|  [claimsTreeRoot?](./js-sdk.issuer.claimstreeroot.md) |  | string |  _(Optional)_ |
+|  [revocationTreeRoot?](./js-sdk.issuer.revocationtreeroot.md) |  | string |  _(Optional)_ |
+|  [rootOfRoots?](./js-sdk.issuer.rootofroots.md) |  | string |  _(Optional)_ |
+|  [state?](./js-sdk.issuer.state.md) |  | string |  _(Optional)_ |

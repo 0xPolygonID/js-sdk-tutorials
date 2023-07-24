@@ -8,23 +8,20 @@ hide_title: true
 
 ## JsonSchemaValidator.validate() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Validate data according to the given schema
 
 **Signature:**
 
 ```typescript
-validate(dataB: Uint8Array, schemaB: Uint8Array): Promise<boolean>;
+validate(dataBytes: Uint8Array, schemaBytes: Uint8Array): Promise<boolean>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataB | Uint8Array | payload to validate |
-|  schemaB | Uint8Array | schema to process |
+|  dataBytes | Uint8Array | payload to validate |
+|  schemaBytes | Uint8Array | schema to process |
 
 **Returns:**
 

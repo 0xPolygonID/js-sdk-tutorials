@@ -18,6 +18,6 @@ export interface ProofGenerationOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [authProfileNonce](./js-sdk.proofgenerationoptions.authprofilenonce.md) |  | number |  |
-|  [credentialSubjectProfileNonce](./js-sdk.proofgenerationoptions.credentialsubjectprofilenonce.md) |  | number |  |
+|  [challenge?](./js-sdk.proofgenerationoptions.challenge.md) |  | bigint | _(Optional)_ |
+|  [credential?](./js-sdk.proofgenerationoptions.credential.md) |  | [W3CCredential](./js-sdk.w3ccredential.md) | _(Optional)_ |
 |  [skipRevocation](./js-sdk.proofgenerationoptions.skiprevocation.md) |  | boolean |  |

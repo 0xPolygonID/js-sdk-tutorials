@@ -8,11 +8,7 @@ hide_title: true
 
 ## StateTransitionInputs class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 StateTransition circuit representation Inputs and public signals declaration, marshalling and parsing
-
 
  StateTransitionInputs  {BaseConfig}
 
@@ -27,16 +23,16 @@ export declare class StateTransitionInputs extends BaseConfig
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [authClaim](./js-sdk.statetransitioninputs.authclaim.md) |  | [ClaimWithMTPProof](./js-sdk.claimwithmtpproof.md) | **_(BETA)_** |
-|  [authClaimNewStateIncProof](./js-sdk.statetransitioninputs.authclaimnewstateincproof.md) |  | Proof | **_(BETA)_** |
-|  [id](./js-sdk.statetransitioninputs.id.md) |  | Id | **_(BETA)_** |
-|  [isOldStateGenesis](./js-sdk.statetransitioninputs.isoldstategenesis.md) |  | boolean | **_(BETA)_** |
-|  [newTreeState](./js-sdk.statetransitioninputs.newtreestate.md) |  | [TreeState](./js-sdk.treestate.md) | **_(BETA)_** |
-|  [oldTreeState](./js-sdk.statetransitioninputs.oldtreestate.md) |  | [TreeState](./js-sdk.treestate.md) | **_(BETA)_** |
-|  [signature](./js-sdk.statetransitioninputs.signature.md) |  | Signature | **_(BETA)_** |
+|  [authClaim](./js-sdk.statetransitioninputs.authclaim.md) |  | [ClaimWithMTPProof](./js-sdk.claimwithmtpproof.md) |  |
+|  [authClaimNewStateIncProof](./js-sdk.statetransitioninputs.authclaimnewstateincproof.md) |  | Proof |  |
+|  [id](./js-sdk.statetransitioninputs.id.md) |  | Id |  |
+|  [isOldStateGenesis](./js-sdk.statetransitioninputs.isoldstategenesis.md) |  | boolean |  |
+|  [newTreeState](./js-sdk.statetransitioninputs.newtreestate.md) |  | [TreeState](./js-sdk.treestate.md) |  |
+|  [oldTreeState](./js-sdk.statetransitioninputs.oldtreestate.md) |  | [TreeState](./js-sdk.treestate.md) |  |
+|  [signature](./js-sdk.statetransitioninputs.signature.md) |  | Signature |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [inputsMarshal()](./js-sdk.statetransitioninputs.inputsmarshal.md) |  | **_(BETA)_** CircuitInputMarshal returns Circom private inputs for stateTransition.circom |
+|  [inputsMarshal()](./js-sdk.statetransitioninputs.inputsmarshal.md) |  | CircuitInputMarshal returns Circom private inputs for stateTransition.circom |

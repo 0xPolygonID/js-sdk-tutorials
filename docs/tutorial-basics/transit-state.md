@@ -6,7 +6,6 @@ sidebar_position: 2
 
 State transition is a process of publishing the new issuer state after the claim is added to the claim tree.
 
-> codebase can be changed. Still in @beta
 
 ### transit your first state
 
@@ -30,12 +29,12 @@ async function transitState() {
       seed: seedPhrase,
       revocationOpts: {
         type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
-        baseUrl: "https://rhs-staging.polygonid.me"
+        id: "https://rhs-staging.polygonid.me"
       }
     });
   
     console.log("=============== user did ===============");
-    console.log(userDID.toString());
+    console.log(userDID.string());
   
     const { did:issuerDID, credential:issuerAuthBJJCredential } =
       await identityWallet.createIdentity({
@@ -45,7 +44,7 @@ async function transitState() {
         seed: seedPhrase,
         revocationOpts: {
           type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
-          baseUrl: "https://rhs-staging.polygonid.me"
+          id: "https://rhs-staging.polygonid.me"
         }
       };
   
@@ -54,14 +53,14 @@ async function transitState() {
         "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json/KYCAgeCredential-v3.json",
       type: "KYCAgeCredential",
       credentialSubject: {
-        id: userDID.toString(),
+        id: userDID.string(),
         birthday: 19960424,
         documentType: 99,
       },
       expiration: 12345678888,
       revocationOpts: {
         type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
-        baseUrl: "https://rhs-staging.polygonid.me"
+        id: "https://rhs-staging.polygonid.me"
       }
     };
     const credential = await identityWallet.issueCredential(

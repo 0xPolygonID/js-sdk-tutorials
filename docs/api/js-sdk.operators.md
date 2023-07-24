@@ -10,7 +10,7 @@ hide_title: true
 
 List of available operators.
 
-  {number}
+ {number}
 
 **Signature:**
 

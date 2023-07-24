@@ -26,19 +26,19 @@ export declare class Iden3SparseMerkleTreeProof
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(obj)](./js-sdk.iden3sparsemerkletreeproof._constructor_.md) |  | **_(BETA)_** Creates an instance of Iden3SparseMerkleTreeProof. |
+|  [(constructor)(obj)](./js-sdk.iden3sparsemerkletreeproof._constructor_.md) |  |  Creates an instance of Iden3SparseMerkleTreeProof. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [coreClaim](./js-sdk.iden3sparsemerkletreeproof.coreclaim.md) |  | string | **_(BETA)_** |
-|  [issuerData](./js-sdk.iden3sparsemerkletreeproof.issuerdata.md) |  | [IssuerData](./js-sdk.issuerdata.md) | **_(BETA)_** |
-|  [mtp](./js-sdk.iden3sparsemerkletreeproof.mtp.md) |  | Proof | **_(BETA)_** |
-|  [type](./js-sdk.iden3sparsemerkletreeproof.type.md) |  | [ProofType](./js-sdk.prooftype.md) | **_(BETA)_** |
+|  [coreClaim](./js-sdk.iden3sparsemerkletreeproof.coreclaim.md) |  | string |  |
+|  [issuerData](./js-sdk.iden3sparsemerkletreeproof.issuerdata.md) |  | [IssuerData](./js-sdk.issuerdata.md) |  |
+|  [mtp](./js-sdk.iden3sparsemerkletreeproof.mtp.md) |  | Proof |  |
+|  [type](./js-sdk.iden3sparsemerkletreeproof.type.md) |  | [ProofType](./js-sdk.prooftype.md) |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [toJSON()](./js-sdk.iden3sparsemerkletreeproof.tojson.md) |  | **_(BETA)_** |
+|  [toJSON()](./js-sdk.iden3sparsemerkletreeproof.tojson.md) |  |  |

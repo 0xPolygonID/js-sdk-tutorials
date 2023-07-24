@@ -8,11 +8,7 @@ hide_title: true
 
 ## EthConnectionConfig interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Configuration of ethereum based blockchain connection
-
 
  EthConnectionConfig
 
@@ -26,14 +22,15 @@ export interface EthConnectionConfig
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [confirmationBlockCount](./js-sdk.ethconnectionconfig.confirmationblockcount.md) |  | number | **_(BETA)_** |
-|  [confirmationTimeout](./js-sdk.ethconnectionconfig.confirmationtimeout.md) |  | number | **_(BETA)_** |
-|  [contractAddress](./js-sdk.ethconnectionconfig.contractaddress.md) |  | string | **_(BETA)_** |
-|  [defaultGasLimit](./js-sdk.ethconnectionconfig.defaultgaslimit.md) |  | number | **_(BETA)_** |
-|  [maxGasPrice?](./js-sdk.ethconnectionconfig.maxgasprice.md) |  | string | **_(BETA)_** _(Optional)_ |
-|  [minGasPrice?](./js-sdk.ethconnectionconfig.mingasprice.md) |  | string | **_(BETA)_** _(Optional)_ |
-|  [receiptTimeout](./js-sdk.ethconnectionconfig.receipttimeout.md) |  | number | **_(BETA)_** |
-|  [rpcResponseTimeout](./js-sdk.ethconnectionconfig.rpcresponsetimeout.md) |  | number | **_(BETA)_** |
-|  [url](./js-sdk.ethconnectionconfig.url.md) |  | string | **_(BETA)_** |
-|  [waitBlockCycleTime](./js-sdk.ethconnectionconfig.waitblockcycletime.md) |  | number | **_(BETA)_** |
-|  [waitReceiptCycleTime](./js-sdk.ethconnectionconfig.waitreceiptcycletime.md) |  | number | **_(BETA)_** |
+|  [chainId](./js-sdk.ethconnectionconfig.chainid.md) |  | number &#124; null |  |
+|  [confirmationBlockCount](./js-sdk.ethconnectionconfig.confirmationblockcount.md) |  | number |  |
+|  [confirmationTimeout](./js-sdk.ethconnectionconfig.confirmationtimeout.md) |  | number |  |
+|  [contractAddress](./js-sdk.ethconnectionconfig.contractaddress.md) |  | string |  |
+|  [defaultGasLimit](./js-sdk.ethconnectionconfig.defaultgaslimit.md) |  | number |  |
+|  [maxGasPrice?](./js-sdk.ethconnectionconfig.maxgasprice.md) |  | string | _(Optional)_ |
+|  [minGasPrice?](./js-sdk.ethconnectionconfig.mingasprice.md) |  | string | _(Optional)_ |
+|  [receiptTimeout](./js-sdk.ethconnectionconfig.receipttimeout.md) |  | number |  |
+|  [rpcResponseTimeout](./js-sdk.ethconnectionconfig.rpcresponsetimeout.md) |  | number |  |
+|  [url](./js-sdk.ethconnectionconfig.url.md) |  | string |  |
+|  [waitBlockCycleTime](./js-sdk.ethconnectionconfig.waitblockcycletime.md) |  | number |  |
+|  [waitReceiptCycleTime](./js-sdk.ethconnectionconfig.waitreceiptcycletime.md) |  | number |  |
