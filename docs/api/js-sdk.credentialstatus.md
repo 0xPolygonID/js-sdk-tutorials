@@ -25,6 +25,7 @@ export interface CredentialStatus
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [id](./js-sdk.credentialstatus.id.md) |  | string | **_(BETA)_** |
-|  [revocationNonce?](./js-sdk.credentialstatus.revocationnonce.md) |  | number | **_(BETA)_** _(Optional)_ |
-|  [type](./js-sdk.credentialstatus.type.md) |  | [CredentialStatusType](./js-sdk.credentialstatustype.md) | **_(BETA)_** |
+|  [id](./js-sdk.credentialstatus.id.md) |  | string |  |
+|  [revocationNonce?](./js-sdk.credentialstatus.revocationnonce.md) |  | number |  _(Optional)_ |
+|  [statusIssuer?](./js-sdk.credentialstatus.statusissuer.md) |  | [CredentialStatus](./js-sdk.credentialstatus.md) |  _(Optional)_ |
+|  [type](./js-sdk.credentialstatus.type.md) |  | [CredentialStatusType](./js-sdk.credentialstatustype.md) |  |

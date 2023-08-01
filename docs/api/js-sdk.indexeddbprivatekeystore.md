@@ -8,11 +8,7 @@ hide_title: true
 
 ## IndexedDBPrivateKeyStore class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Allows storing keys in the indexed db storage of the browser (NOT ENCRYPTED: DO NOT USE IN THE PRODUCTION)
-
 
  IndexedDBPrivateKeyStore  implements AbstractPrivateKeyStore interface
 
@@ -27,17 +23,17 @@ export declare class IndexedDBPrivateKeyStore implements AbstractPrivateKeyStore
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)()](./js-sdk.indexeddbprivatekeystore._constructor_.md) |  | **_(BETA)_** Constructs a new instance of the <code>IndexedDBPrivateKeyStore</code> class |
+|  [(constructor)()](./js-sdk.indexeddbprivatekeystore._constructor_.md) |  | Constructs a new instance of the <code>IndexedDBPrivateKeyStore</code> class |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [storageKey](./js-sdk.indexeddbprivatekeystore.storagekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | **_(BETA)_** |
+|  [storageKey](./js-sdk.indexeddbprivatekeystore.storagekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [get(args)](./js-sdk.indexeddbprivatekeystore.get.md) |  | **_(BETA)_** Gets key from the indexed db storage |
-|  [import(args)](./js-sdk.indexeddbprivatekeystore.import.md) |  | **_(BETA)_** Import key to the indexed db storage |
+|  [get(args)](./js-sdk.indexeddbprivatekeystore.get.md) |  | Gets key from the indexed db storage |
+|  [importKey(args)](./js-sdk.indexeddbprivatekeystore.importkey.md) |  | Import key to the indexed db storage |

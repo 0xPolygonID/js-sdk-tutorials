@@ -8,11 +8,7 @@ hide_title: true
 
 ## BaseConfig class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 base config for circuit inputs
-
 
  BaseConfig
 
@@ -26,16 +22,16 @@ export declare class BaseConfig
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [mtLevel](./js-sdk.baseconfig.mtlevel.md) |  | number | **_(BETA)_** |
-|  [mtLevelClaimsMerklization](./js-sdk.baseconfig.mtlevelclaimsmerklization.md) |  | number | **_(BETA)_** |
-|  [mtLevelOnChain](./js-sdk.baseconfig.mtlevelonchain.md) |  | number | **_(BETA)_** |
-|  [valueArraySize](./js-sdk.baseconfig.valuearraysize.md) |  | number | **_(BETA)_** |
+|  [mtLevel](./js-sdk.baseconfig.mtlevel.md) |  | number |  |
+|  [mtLevelClaimsMerklization](./js-sdk.baseconfig.mtlevelclaimsmerklization.md) |  | number |  |
+|  [mtLevelOnChain](./js-sdk.baseconfig.mtlevelonchain.md) |  | number |  |
+|  [valueArraySize](./js-sdk.baseconfig.valuearraysize.md) |  | number |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [getMTLevel()](./js-sdk.baseconfig.getmtlevel.md) |  | **_(BETA)_** getMTLevel max circuit MT levels |
-|  [getMTLevelOnChain()](./js-sdk.baseconfig.getmtlevelonchain.md) |  | **_(BETA)_** getMTLevelOnChain return level on chain for given circuit |
-|  [getMTLevelsClaimMerklization()](./js-sdk.baseconfig.getmtlevelsclaimmerklization.md) |  | **_(BETA)_** getMTLevel max circuit MT levels |
-|  [getValueArrSize()](./js-sdk.baseconfig.getvaluearrsize.md) |  | **_(BETA)_** GetValueArrSize return size of circuits value array size |
+|  [getMTLevel()](./js-sdk.baseconfig.getmtlevel.md) |  | getMTLevel max circuit MT levels |
+|  [getMTLevelOnChain()](./js-sdk.baseconfig.getmtlevelonchain.md) |  | getMTLevelOnChain return level on chain for given circuit |
+|  [getMTLevelsClaimMerklization()](./js-sdk.baseconfig.getmtlevelsclaimmerklization.md) |  | getMTLevel max circuit MT levels |
+|  [getValueArrSize()](./js-sdk.baseconfig.getvaluearrsize.md) |  | GetValueArrSize return size of circuits value array size |

@@ -26,4 +26,4 @@ export interface IFilterQuery
 
 |  Method | Description |
 |  --- | --- |
-|  [execute(credential)](./js-sdk.ifilterquery.execute.md) | **_(BETA)_** applies filter to verifiable credential |
+|  [execute(credential)](./js-sdk.ifilterquery.execute.md) |  applies filter to verifiable credential |

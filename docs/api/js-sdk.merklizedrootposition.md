@@ -10,7 +10,7 @@ hide_title: true
 
 Merklized Core.Claim root position for vc creation
 
-  {number}
+ {number}
 
 **Signature:**
 

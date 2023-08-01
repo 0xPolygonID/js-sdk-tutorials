@@ -16,7 +16,7 @@ Creates an instance of ProofService.
 **Signature:**
 
 ```typescript
-constructor(_identityWallet: IIdentityWallet, _credentialWallet: ICredentialWallet, _circuitStorage: ICircuitStorage, _stateStorage: IStateStorage);
+constructor(_identityWallet: IIdentityWallet, _credentialWallet: ICredentialWallet, _circuitStorage: ICircuitStorage, _stateStorage: IStateStorage, opts?: Options);
 ```
 
 ## Parameters
@@ -27,3 +27,4 @@ constructor(_identityWallet: IIdentityWallet, _credentialWallet: ICredentialWall
 |  \_credentialWallet | [ICredentialWallet](./js-sdk.icredentialwallet.md) | credential wallet |
 |  \_circuitStorage | [ICircuitStorage](./js-sdk.icircuitstorage.md) | circuit storage to load proving / verification files |
 |  \_stateStorage | [IStateStorage](./js-sdk.istatestorage.md) | state storage to get GIST proof / publish state |
+|  opts | Options | _(Optional)_ |

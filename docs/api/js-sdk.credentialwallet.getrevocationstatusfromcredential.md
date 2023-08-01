@@ -8,9 +8,6 @@ hide_title: true
 
 ## CredentialWallet.getRevocationStatusFromCredential() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Fetches or Builds a revocation status for a given credential Supported types for credentialStatus field: SparseMerkleTreeProof, Iden3ReverseSparseMerkleTreeProof
 
 **Signature:**

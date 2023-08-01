@@ -26,5 +26,5 @@ export interface ICircuitStorage
 
 |  Method | Description |
 |  --- | --- |
-|  [loadCircuitData(circuitId)](./js-sdk.icircuitstorage.loadcircuitdata.md) | **_(BETA)_** load circuit keys by id |
-|  [saveCircuitData(circuitId, circuitData)](./js-sdk.icircuitstorage.savecircuitdata.md) | **_(BETA)_** saves circuit files by circuit id |
+|  [loadCircuitData(circuitId)](./js-sdk.icircuitstorage.loadcircuitdata.md) |  load circuit keys by id |
+|  [saveCircuitData(circuitId, circuitData)](./js-sdk.icircuitstorage.savecircuitdata.md) |  saves circuit files by circuit id |

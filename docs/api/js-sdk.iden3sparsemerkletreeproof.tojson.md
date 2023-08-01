@@ -18,12 +18,12 @@ toJSON(): this & {
         mtp: {
             existence: boolean;
             siblings: import("@iden3/js-merkletree").Siblings;
-            nodeAux: import("@iden3/js-merkletree").NodeAux;
+            nodeAux: import("@iden3/js-merkletree").NodeAux | undefined;
         };
     };
 ```
 **Returns:**
 
-this &amp; { mtp: { existence: boolean; siblings: import("@iden3/js-merkletree").Siblings; nodeAux: import("@iden3/js-merkletree").NodeAux; }; }
+this &amp; { mtp: { existence: boolean; siblings: import("@iden3/js-merkletree").Siblings; nodeAux: import("@iden3/js-merkletree").NodeAux \| undefined; }; }
 
 `string`

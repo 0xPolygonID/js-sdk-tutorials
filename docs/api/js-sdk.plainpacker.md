@@ -27,6 +27,6 @@ export declare class PlainPacker implements IPacker
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [mediaType()](./js-sdk.plainpacker.mediatype.md) |  | **_(BETA)_** returns media type for plain message |
-|  [pack(payload, \_params)](./js-sdk.plainpacker.pack.md) |  | **_(BETA)_** Pack returns packed message to transport envelope |
-|  [unpack(envelope)](./js-sdk.plainpacker.unpack.md) |  | **_(BETA)_** Unpack returns unpacked message from transport envelope |
+|  [mediaType()](./js-sdk.plainpacker.mediatype.md) |  |  returns media type for plain message |
+|  [pack(payload, \_params)](./js-sdk.plainpacker.pack.md) |  |  Pack returns packed message to transport envelope |
+|  [unpack(envelope)](./js-sdk.plainpacker.unpack.md) |  |  Unpack returns unpacked message from transport envelope |

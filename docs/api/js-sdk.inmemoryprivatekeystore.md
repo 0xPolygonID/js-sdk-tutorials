@@ -8,11 +8,7 @@ hide_title: true
 
 ## InMemoryPrivateKeyStore class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Key Store to use in memory
-
 
  InMemoryPrivateKeyStore  implements AbstractPrivateKeyStore interface
 
@@ -27,11 +23,11 @@ export declare class InMemoryPrivateKeyStore implements AbstractPrivateKeyStore
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)()](./js-sdk.inmemoryprivatekeystore._constructor_.md) |  | **_(BETA)_** Constructs a new instance of the <code>InMemoryPrivateKeyStore</code> class |
+|  [(constructor)()](./js-sdk.inmemoryprivatekeystore._constructor_.md) |  | Constructs a new instance of the <code>InMemoryPrivateKeyStore</code> class |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [get(args)](./js-sdk.inmemoryprivatekeystore.get.md) |  | **_(BETA)_** |
-|  [import(args)](./js-sdk.inmemoryprivatekeystore.import.md) |  | **_(BETA)_** |
+|  [get(args)](./js-sdk.inmemoryprivatekeystore.get.md) |  |  |
+|  [importKey(args)](./js-sdk.inmemoryprivatekeystore.importkey.md) |  |  |

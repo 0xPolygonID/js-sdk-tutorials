@@ -8,12 +8,8 @@ hide_title: true
 
 ## AbstractPrivateKeyStore class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 KeyStore that allows to import and get keys by alias.
 
- 
 
  AbstractPrivateKeyStore
 
@@ -27,5 +23,5 @@ export declare abstract class AbstractPrivateKeyStore
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [get(args)](./js-sdk.abstractprivatekeystore.get.md) | <code>abstract</code> | <p>**_(BETA)_** get key by alias</p> |
-|  [import(args)](./js-sdk.abstractprivatekeystore.import.md) | <code>abstract</code> | <p>**_(BETA)_** imports key by alias</p> |
+|  [get(args)](./js-sdk.abstractprivatekeystore.get.md) | <code>abstract</code> | <p>get key by alias</p> |
+|  [importKey(args)](./js-sdk.abstractprivatekeystore.importkey.md) | <code>abstract</code> | <p>imports key by alias</p> |

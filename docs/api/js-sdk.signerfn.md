@@ -8,6 +8,8 @@ hide_title: true
 
 ## SignerFn type
 
+SignerFn Is function to sign data with a verification method
+
 **Signature:**
 
 ```typescript

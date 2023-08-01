@@ -15,12 +15,12 @@ CredentialsOfferMessage represent Iden3message for credential offer
 ```typescript
 export type CredentialsOfferMessage = {
     id: string;
-    typ?: MediaType;
+    typ: MediaType;
     type: ProtocolMessage;
     thid?: string;
-    body?: CredentialsOfferMessageBody;
-    from?: string;
-    to?: string;
+    body: CredentialsOfferMessageBody;
+    from: string;
+    to: string;
 };
 ```
 **References:** [MediaType](./js-sdk.protocol_constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [CredentialsOfferMessageBody](./js-sdk.credentialsoffermessagebody.md)

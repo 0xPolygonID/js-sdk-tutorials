@@ -8,20 +8,12 @@ hide_title: true
 
 ## JWSPacker.pack() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 creates JSON Web Signature token
 
 **Signature:**
 
 ```typescript
-pack(payload: Uint8Array, params: PackerParams & {
-        alg: string;
-        did: string;
-        kid?: string;
-        signer?: SignerFn;
-    }): Promise<Uint8Array>;
+pack(payload: Uint8Array, params: JWSPackerParams): Promise<Uint8Array>;
 ```
 
 ## Parameters
@@ -29,7 +21,7 @@ pack(payload: Uint8Array, params: PackerParams & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  payload | Uint8Array | serialized message |
-|  params | [PackerParams](./js-sdk.packerparams.md) &amp; { alg: string; did: string; kid?: string; signer?: [SignerFn](./js-sdk.signerfn.md); } | sender id and proving alg are required |
+|  params | [JWSPackerParams](./js-sdk.jwspackerparams.md) | sender id and proving alg are required |
 
 **Returns:**
 

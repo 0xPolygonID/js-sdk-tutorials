@@ -8,11 +8,7 @@ hide_title: true
 
 ## StateTransitionPubSignals class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Public signals of StateTransition circuit
-
 
  StateTransitionPubSignals
 
@@ -26,13 +22,13 @@ export declare class StateTransitionPubSignals
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [isOldStateGenesis](./js-sdk.statetransitionpubsignals.isoldstategenesis.md) |  | boolean | **_(BETA)_** |
-|  [newUserState](./js-sdk.statetransitionpubsignals.newuserstate.md) |  | Hash | **_(BETA)_** |
-|  [oldUserState](./js-sdk.statetransitionpubsignals.olduserstate.md) |  | Hash | **_(BETA)_** |
-|  [userId](./js-sdk.statetransitionpubsignals.userid.md) |  | Id | **_(BETA)_** |
+|  [isOldStateGenesis](./js-sdk.statetransitionpubsignals.isoldstategenesis.md) |  | boolean |  |
+|  [newUserState](./js-sdk.statetransitionpubsignals.newuserstate.md) |  | Hash |  |
+|  [oldUserState](./js-sdk.statetransitionpubsignals.olduserstate.md) |  | Hash |  |
+|  [userId](./js-sdk.statetransitionpubsignals.userid.md) |  | Id |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [pubSignalsUnmarshal(data)](./js-sdk.statetransitionpubsignals.pubsignalsunmarshal.md) |  | **_(BETA)_** PubSignalsUnmarshal unmarshal stateTransition.circom public signal |
+|  [pubSignalsUnmarshal(data)](./js-sdk.statetransitionpubsignals.pubsignalsunmarshal.md) |  | PubSignalsUnmarshal unmarshal stateTransition.circom public signal |

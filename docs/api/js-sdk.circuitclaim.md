@@ -8,11 +8,7 @@ hide_title: true
 
 ## CircuitClaim class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Claim structure for circuit inputs
-
 
  CircuitClaim
 
@@ -26,9 +22,9 @@ export declare class CircuitClaim
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [claim](./js-sdk.circuitclaim.claim.md) |  | CoreClaim | **_(BETA)_** |
-|  [issuerId](./js-sdk.circuitclaim.issuerid.md) |  | Id | **_(BETA)_** |
-|  [nonRevProof](./js-sdk.circuitclaim.nonrevproof.md) |  | [ClaimNonRevStatus](./js-sdk.claimnonrevstatus.md) | **_(BETA)_** |
-|  [proof](./js-sdk.circuitclaim.proof.md) |  | Proof | **_(BETA)_** |
-|  [signatureProof](./js-sdk.circuitclaim.signatureproof.md) |  | [BJJSignatureProof](./js-sdk.bjjsignatureproof.md) | **_(BETA)_** |
-|  [treeState](./js-sdk.circuitclaim.treestate.md) |  | [TreeState](./js-sdk.treestate.md) | **_(BETA)_** |
+|  [claim](./js-sdk.circuitclaim.claim.md) |  | CoreClaim |  |
+|  [issuerId](./js-sdk.circuitclaim.issuerid.md) |  | Id |  |
+|  [nonRevProof](./js-sdk.circuitclaim.nonrevproof.md) |  | [ClaimNonRevStatus](./js-sdk.claimnonrevstatus.md) |  |
+|  [proof](./js-sdk.circuitclaim.proof.md) |  | Proof |  |
+|  [signatureProof](./js-sdk.circuitclaim.signatureproof.md) |  | [BJJSignatureProof](./js-sdk.bjjsignatureproof.md) |  |
+|  [treeState](./js-sdk.circuitclaim.treestate.md) |  | [TreeState](./js-sdk.treestate.md) |  |

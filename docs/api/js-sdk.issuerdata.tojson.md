@@ -16,14 +16,14 @@ hide_title: true
 ```typescript
 toJSON(): this & {
         mtp: {
-            existence: boolean;
-            siblings: import("@iden3/js-merkletree").Siblings;
-            nodeAux: import("@iden3/js-merkletree").NodeAux;
+            existence: boolean | undefined;
+            siblings: import("@iden3/js-merkletree").Siblings | undefined;
+            nodeAux: import("@iden3/js-merkletree").NodeAux | undefined;
         };
     };
 ```
 **Returns:**
 
-this &amp; { mtp: { existence: boolean; siblings: import("@iden3/js-merkletree").Siblings; nodeAux: import("@iden3/js-merkletree").NodeAux; }; }
+this &amp; { mtp: { existence: boolean \| undefined; siblings: import("@iden3/js-merkletree").Siblings \| undefined; nodeAux: import("@iden3/js-merkletree").NodeAux \| undefined; }; }
 
 `string`

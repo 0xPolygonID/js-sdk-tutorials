@@ -6,7 +6,6 @@ sidebar_position: 1
 
 Identity creation contains of two main parts: creation of identifier and Auth BJJ Credential
 
-> codebase can be changed. Still in @beta
 
 ### Create your first identity
 
@@ -29,12 +28,12 @@ async function identityCreation(){
       seed: seedPhraseIssuer,
       revocationOpts: {
         type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
-        baseUrl: 'http://rhs.com/node'
+        id: "https://rhs-staging.polygonid.me"
       }
     });
   
     console.log("=============== did ===============")
-    console.log(did.toString());
+    console.log(did.string());
     console.log("=============== Auth BJJ credential ===============")
     console.log(JSON.stringify(credential));
 }
@@ -73,10 +72,28 @@ function initDataStorage(): IDataStorage {
 #### credential wallet
 
 ```typescript
-async function initCredentialWallet(
+export async function initCredentialWallet(
   dataStorage: IDataStorage
 ): Promise<CredentialWallet> {
-  return new CredentialWallet(dataStorage);
+  const resolvers = new CredentialStatusResolverRegistry();
+  resolvers.register(
+    CredentialStatusType.SparseMerkleTreeProof,
+    new IssuerResolver()
+  );
+  resolvers.register(
+    CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
+    new RHSResolver(dataStorage.states)
+  );
+  resolvers.register(
+    CredentialStatusType.Iden3OnchainSparseMerkleTreeProof2023,
+    new OnChainResolver([defaultEthConnectionConfig])
+  );
+  resolvers.register(
+    CredentialStatusType.Iden3commRevocationStatusV1,
+    new AgentResolver()
+  );
+
+  return new CredentialWallet(dataStorage, resolvers);
 }
 
 ```

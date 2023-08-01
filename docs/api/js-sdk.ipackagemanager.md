@@ -26,14 +26,14 @@ export interface IPackageManager
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [packers](./js-sdk.ipackagemanager.packers.md) |  | Map&lt;[MediaType](./js-sdk.protocol_constants.mediatype.md), [IPacker](./js-sdk.ipacker.md)&gt; | <p>**_(BETA)_** Map of packers key is media type, value is packer implementation</p><p> {Map&lt;MediaType, IPacker&gt;}</p> |
+|  [packers](./js-sdk.ipackagemanager.packers.md) |  | Map&lt;[MediaType](./js-sdk.protocol_constants.mediatype.md), [IPacker](./js-sdk.ipacker.md)&gt; | <p> Map of packers key is media type, value is packer implementation</p><p> {Map&lt;MediaType, IPacker&gt;}</p> |
 
 ## Methods
 
 |  Method | Description |
 |  --- | --- |
-|  [getMediaType(envelope)](./js-sdk.ipackagemanager.getmediatype.md) | **_(BETA)_** gets media type from an envelope |
-|  [pack(mediaType, payload, params)](./js-sdk.ipackagemanager.pack.md) | **_(BETA)_** packs payload with a packer that is assigned to media type forwards packer params to implementation |
-|  [registerPackers(packers)](./js-sdk.ipackagemanager.registerpackers.md) | **_(BETA)_** registers new packer in the manager |
-|  [unpack(envelope)](./js-sdk.ipackagemanager.unpack.md) | **_(BETA)_** unpacks packed envelope to basic protocol message and returns media type of the envelope |
-|  [unpackWithType(mediaType, envelope)](./js-sdk.ipackagemanager.unpackwithtype.md) | **_(BETA)_** unpacks an envelope with a known media type |
+|  [getMediaType(envelope)](./js-sdk.ipackagemanager.getmediatype.md) |  gets media type from an envelope |
+|  [pack(mediaType, payload, params)](./js-sdk.ipackagemanager.pack.md) |  packs payload with a packer that is assigned to media type forwards packer params to implementation |
+|  [registerPackers(packers)](./js-sdk.ipackagemanager.registerpackers.md) |  registers new packer in the manager |
+|  [unpack(envelope)](./js-sdk.ipackagemanager.unpack.md) |  unpacks packed envelope to basic protocol message and returns media type of the envelope |
+|  [unpackWithType(mediaType, envelope)](./js-sdk.ipackagemanager.unpackwithtype.md) |  unpacks an envelope with a known media type |

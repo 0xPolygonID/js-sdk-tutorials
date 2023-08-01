@@ -25,5 +25,5 @@ export interface RevocationStatus
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [issuer](./js-sdk.revocationstatus.issuer.md) |  | [Issuer](./js-sdk.issuer.md) | **_(BETA)_** |
-|  [mtp](./js-sdk.revocationstatus.mtp.md) |  | Proof | **_(BETA)_** |
+|  [issuer](./js-sdk.revocationstatus.issuer.md) |  | [Issuer](./js-sdk.issuer.md) |  |
+|  [mtp](./js-sdk.revocationstatus.mtp.md) |  | Proof |  |

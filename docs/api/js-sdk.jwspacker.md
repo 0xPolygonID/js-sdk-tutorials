@@ -8,10 +8,7 @@ hide_title: true
 
 ## JWSPacker class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
-Packer that can pack message to JWZ token, and unpack and validate JWZ envelope 
+Packer that can pack message to JWZ token, and unpack and validate JWZ envelope
 
  ZKPPacker  implements IPacker interface
 
@@ -26,12 +23,12 @@ export declare class JWSPacker implements IPacker
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_kms, \_documentResolver)](./js-sdk.jwspacker._constructor_.md) |  | **_(BETA)_** Creates an instance of JWSPacker. |
+|  [(constructor)(\_kms, \_documentResolver)](./js-sdk.jwspacker._constructor_.md) |  | Creates an instance of JWSPacker. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [mediaType()](./js-sdk.jwspacker.mediatype.md) |  | **_(BETA)_** |
-|  [pack(payload, params)](./js-sdk.jwspacker.pack.md) |  | **_(BETA)_** creates JSON Web Signature token |
-|  [unpack(envelope)](./js-sdk.jwspacker.unpack.md) |  | **_(BETA)_** validate envelope which is jwz token |
+|  [mediaType()](./js-sdk.jwspacker.mediatype.md) |  |  |
+|  [pack(payload, params)](./js-sdk.jwspacker.pack.md) |  | creates JSON Web Signature token |
+|  [unpack(envelope)](./js-sdk.jwspacker.unpack.md) |  | validate envelope which is jwz token |

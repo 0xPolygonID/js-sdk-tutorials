@@ -8,13 +8,10 @@ hide_title: true
 
 ## DataPrepareHandlerFunc.prepare() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 **Signature:**
 
 ```typescript
-prepare(hash: Uint8Array, did: DID, profileNonce: number, circuitId: CircuitId): Promise<Uint8Array>;
+prepare(hash: Uint8Array, did: DID, circuitId: CircuitId): Promise<Uint8Array>;
 ```
 
 ## Parameters
@@ -23,7 +20,6 @@ prepare(hash: Uint8Array, did: DID, profileNonce: number, circuitId: CircuitId):
 |  --- | --- | --- |
 |  hash | Uint8Array | challenge that will be signed |
 |  did | DID | did of identity that will prepare inputs |
-|  profileNonce | number | nonce for profile (genesis id must be 0) |
 |  circuitId | [CircuitId](./js-sdk.circuitid.md) | circuit id |
 
 **Returns:**

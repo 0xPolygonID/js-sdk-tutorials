@@ -28,7 +28,7 @@ VerifiableConstants: Readonly<{
         IDEN3_CREDENTIAL: string;
         W3C_CREDENTIAL_2018: string;
     };
-    JSON_SCHEMA_VALIDATOR: "JsonSchemaValidator2018";
+    JSON_SCHEMA_VALIDATOR: "JsonSchema2023";
     SERVICE_TYPE: {
         IDEN3_COMM: string;
         PUSH_NOTIFICATION: string;

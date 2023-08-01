@@ -11,5 +11,5 @@ hide_title: true
 **Signature:**
 
 ```typescript
-buildQueryPath: (contextURL: string, contextType: string, field: string) => Promise<Path>
+buildQueryPath: (contextURL: string, contextType: string, field: string, opts?: Options) => Promise<Path>
 ```

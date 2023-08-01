@@ -26,4 +26,4 @@ export interface IFetchHandler
 
 |  Method | Description |
 |  --- | --- |
-|  [handleCredentialOffer(did, offer, profileNonce)](./js-sdk.ifetchhandler.handlecredentialoffer.md) | **_(BETA)_** Handle credential offer request protocol message |
+|  [handleCredentialOffer(offer, opts)](./js-sdk.ifetchhandler.handlecredentialoffer.md) |  unpacks authorization request  |

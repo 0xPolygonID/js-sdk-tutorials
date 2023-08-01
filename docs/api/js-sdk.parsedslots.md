@@ -26,7 +26,7 @@ export interface ParsedSlots
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [indexA](./js-sdk.parsedslots.indexa.md) |  | Uint8Array | **_(BETA)_** |
-|  [indexB](./js-sdk.parsedslots.indexb.md) |  | Uint8Array | **_(BETA)_** |
-|  [valueA](./js-sdk.parsedslots.valuea.md) |  | Uint8Array | **_(BETA)_** |
-|  [valueB](./js-sdk.parsedslots.valueb.md) |  | Uint8Array | **_(BETA)_** |
+|  [indexA](./js-sdk.parsedslots.indexa.md) |  | Uint8Array |  |
+|  [indexB](./js-sdk.parsedslots.indexb.md) |  | Uint8Array |  |
+|  [valueA](./js-sdk.parsedslots.valuea.md) |  | Uint8Array |  |
+|  [valueB](./js-sdk.parsedslots.valueb.md) |  | Uint8Array |  |

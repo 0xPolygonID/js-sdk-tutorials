@@ -8,11 +8,7 @@ hide_title: true
 
 ## IPacker interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Defines method that must be implemented by any packer
-
 
  IPacker
 
@@ -26,6 +22,6 @@ export interface IPacker
 
 |  Method | Description |
 |  --- | --- |
-|  [mediaType()](./js-sdk.ipacker.mediatype.md) | **_(BETA)_** |
-|  [pack(payload, param)](./js-sdk.ipacker.pack.md) | **_(BETA)_** |
-|  [unpack(envelope)](./js-sdk.ipacker.unpack.md) | **_(BETA)_** |
+|  [mediaType()](./js-sdk.ipacker.mediatype.md) |  |
+|  [pack(payload, param)](./js-sdk.ipacker.pack.md) |  |
+|  [unpack(envelope)](./js-sdk.ipacker.unpack.md) |  |

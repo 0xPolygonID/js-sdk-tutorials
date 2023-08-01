@@ -27,14 +27,15 @@ export declare class ProofService implements IProofService
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_identityWallet, \_credentialWallet, \_circuitStorage, \_stateStorage)](./js-sdk.proofservice._constructor_.md) |  | **_(BETA)_** Creates an instance of ProofService. |
+|  [(constructor)(\_identityWallet, \_credentialWallet, \_circuitStorage, \_stateStorage, opts)](./js-sdk.proofservice._constructor_.md) |  |  Creates an instance of ProofService. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [generateAuthV2Inputs(hash, did, profileNonce, circuitId)](./js-sdk.proofservice.generateauthv2inputs.md) |  | **_(BETA)_** generates auth inputs |
-|  [generateProof(proofReq, identifier, credential, opts)](./js-sdk.proofservice.generateproof.md) |  | **_(BETA)_** Generate proof from given identity and credential for protocol proof request |
-|  [transitState(did, oldTreeState, isOldStateGenesis, stateStorage, ethSigner)](./js-sdk.proofservice.transitstate.md) |  | <p>**_(BETA)_** transitState is done always to the latest state</p><p>Generates a state transition proof and publishes state to the blockchain</p> |
-|  [verifyProof(zkp, circuitId)](./js-sdk.proofservice.verifyproof.md) |  | **_(BETA)_** Verification of zkp proof for given circuit id |
-|  [verifyState(circuitId, pubSignals)](./js-sdk.proofservice.verifystate.md) |  | **_(BETA)_** |
+|  [generateAuthV2Inputs(hash, did, circuitId)](./js-sdk.proofservice.generateauthv2inputs.md) |  |  generates auth inputs |
+|  [generateProof(proofReq, identifier, opts)](./js-sdk.proofservice.generateproof.md) |  |  Generate proof from given identity and credential for protocol proof request |
+|  [transformQueryValueToBigInts(value, ldType)](./js-sdk.proofservice.transformqueryvaluetobigints.md) |  |  |
+|  [transitState(did, oldTreeState, isOldStateGenesis, stateStorage, ethSigner)](./js-sdk.proofservice.transitstate.md) |  | <p> transitState is done always to the latest state</p><p>Generates a state transition proof and publishes state to the blockchain</p> |
+|  [verifyProof(zkp, circuitId)](./js-sdk.proofservice.verifyproof.md) |  |  Verification of zkp proof for given circuit id |
+|  [verifyState(circuitId, pubSignals)](./js-sdk.proofservice.verifystate.md) |  |  |

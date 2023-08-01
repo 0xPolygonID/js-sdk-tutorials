@@ -27,20 +27,21 @@ export declare class MerkleTreeIndexedDBStorage implements IMerkleTreeStorage
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_mtDepth)](./js-sdk.merkletreeindexeddbstorage._constructor_.md) |  | **_(BETA)_** Creates an instance of MerkleTreeIndexedDBStorage. |
+|  [(constructor)(\_mtDepth)](./js-sdk.merkletreeindexeddbstorage._constructor_.md) |  |  Creates an instance of MerkleTreeIndexedDBStorage. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [storageKeyMeta](./js-sdk.merkletreeindexeddbstorage.storagekeymeta.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p>**_(BETA)_** key for the storage key metadata</p> |
+|  [storageBindingKeyMeta](./js-sdk.merkletreeindexeddbstorage.storagebindingkeymeta.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
+|  [storageKeyMeta](./js-sdk.merkletreeindexeddbstorage.storagekeymeta.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p> key for the storage key metadata</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [addToMerkleTree(identifier, mtType, hindex, hvalue)](./js-sdk.merkletreeindexeddbstorage.addtomerkletree.md) |  | **_(BETA)_** adds to merkle tree in the indexed db storage |
-|  [bindMerkleTreeToNewIdentifier(oldIdentifier, newIdentifier)](./js-sdk.merkletreeindexeddbstorage.bindmerkletreetonewidentifier.md) |  | **_(BETA)_** binds merkle tree in the indexed db storage to the new identifiers |
-|  [createIdentityMerkleTrees(identifier)](./js-sdk.merkletreeindexeddbstorage.createidentitymerkletrees.md) |  | **_(BETA)_** creates a tree in the indexed db storage |
-|  [getIdentityMerkleTreesInfo(identifier)](./js-sdk.merkletreeindexeddbstorage.getidentitymerkletreesinfo.md) |  | **_(BETA)_** getIdentityMerkleTreesInfo from the indexed db storage |
-|  [getMerkleTreeByIdentifierAndType(identifier, mtType)](./js-sdk.merkletreeindexeddbstorage.getmerkletreebyidentifierandtype.md) |  | **_(BETA)_** get merkle tree from the indexed db storage |
+|  [addToMerkleTree(identifier, mtType, hindex, hvalue)](./js-sdk.merkletreeindexeddbstorage.addtomerkletree.md) |  |  adds to merkle tree in the indexed db storage |
+|  [bindMerkleTreeToNewIdentifier(oldIdentifier, newIdentifier)](./js-sdk.merkletreeindexeddbstorage.bindmerkletreetonewidentifier.md) |  |  binds merkle tree in the indexed db storage to the new identifiers |
+|  [createIdentityMerkleTrees(identifier)](./js-sdk.merkletreeindexeddbstorage.createidentitymerkletrees.md) |  |  creates a tree in the indexed db storage |
+|  [getIdentityMerkleTreesInfo(identifier)](./js-sdk.merkletreeindexeddbstorage.getidentitymerkletreesinfo.md) |  |  getIdentityMerkleTreesInfo from the indexed db storage |
+|  [getMerkleTreeByIdentifierAndType(identifier, mtType)](./js-sdk.merkletreeindexeddbstorage.getmerkletreebyidentifierandtype.md) |  |  get merkle tree from the indexed db storage |

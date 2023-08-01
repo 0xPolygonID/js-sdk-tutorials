@@ -11,24 +11,23 @@ hide_title: true
 > This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
-Handle credential offer request protocol message
+unpacks authorization request 
 
 **Signature:**
 
 ```typescript
-handleCredentialOffer(did: DID, offer: Uint8Array, profileNonce?: number): Promise<W3CCredential[]>;
+handleCredentialOffer(offer: Uint8Array, opts?: FetchHandlerOptions): Promise<W3CCredential[]>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  did | DID |  |
-|  offer | Uint8Array | raw offer message |
-|  profileNonce | number | _(Optional)_ nonce of the did to which credential has been offered |
+|  offer | Uint8Array | raw byte message |
+|  opts | [FetchHandlerOptions](./js-sdk.fetchhandleroptions.md) | _(Optional)_ FetchHandlerOptions |
 
 **Returns:**
 
 Promise&lt;[W3CCredential](./js-sdk.w3ccredential.md)\[\]&gt;
 
-`Promise<W3CCredential>`
+`Promise<{ token: string; authRequest: AuthorizationRequestMessage; authResponse: AuthorizationResponseMessage; }>`

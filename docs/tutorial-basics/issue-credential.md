@@ -6,7 +6,6 @@ sidebar_position: 2
 
 Credential is issued to the user with a BJJ signature proof
 
-> codebase can be changed. Still in @beta
 
 ### Create your first credential
 
@@ -29,12 +28,12 @@ async function issueCredential() {
       seed: seedPhrase,
       revocationOpts: {
         type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
-        baseUrl: "https://rhs-staging.polygonid.me"
+        id: "https://rhs-staging.polygonid.me"
       }
     });
 
   console.log("=============== user did ===============");
-  console.log(userDID.toString());
+  console.log(userDID.string());
 
   const { did:issuerDID, credential:issuerAuthBJJCredential } =
     await identityWallet.createIdentity({
@@ -44,7 +43,7 @@ async function issueCredential() {
       seed: seedPhrase,
       revocationOpts: {
         type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
-        baseUrl: "https://rhs-staging.polygonid.me"
+        id: "https://rhs-staging.polygonid.me"
       }
     });
 
@@ -53,14 +52,14 @@ async function issueCredential() {
       "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json/KYCAgeCredential-v3.json",
     type: "KYCAgeCredential",
     credentialSubject: {
-      id: userDID.toString(),
+      id: userDID.string(),
       birthday: 19960424,
       documentType: 99,
     },
     expiration: 12345678888,
     revocationOpts: {
         type: CredentialStatusType.Iden3ReverseSparseMerkleTreeProof,
-        baseUrl: "https://rhs-staging.polygonid.me"
+        id: "https://rhs-staging.polygonid.me"
     }
   };
   const credential = await identityWallet.issueCredential(

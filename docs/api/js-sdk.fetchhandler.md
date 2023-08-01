@@ -27,10 +27,10 @@ export declare class FetchHandler implements IFetchHandler
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_packerMgr)](./js-sdk.fetchhandler._constructor_.md) |  | **_(BETA)_** Creates an instance of AuthHandler. |
+|  [(constructor)(\_packerMgr)](./js-sdk.fetchhandler._constructor_.md) |  |  Creates an instance of AuthHandler. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [handleCredentialOffer(did, offer, profileNonce)](./js-sdk.fetchhandler.handlecredentialoffer.md) |  | **_(BETA)_** Handles only messages with credentials/1.0/offer type |
+|  [handleCredentialOffer(offer, opts)](./js-sdk.fetchhandler.handlecredentialoffer.md) |  |  Handles only messages with credentials/1.0/offer type |

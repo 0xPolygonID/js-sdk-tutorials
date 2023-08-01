@@ -8,15 +8,12 @@ hide_title: true
 
 ## Sec256k1Provider.publicKey() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Gets public key by kmsKeyId
 
 **Signature:**
 
 ```typescript
-publicKey(keyId: KmsKeyId): Promise<PublicKey>;
+publicKey(keyId: KmsKeyId): Promise<string>;
 ```
 
 ## Parameters
@@ -27,4 +24,4 @@ publicKey(keyId: KmsKeyId): Promise<PublicKey>;
 
 **Returns:**
 
-Promise&lt;PublicKey&gt;
+Promise&lt;string&gt;

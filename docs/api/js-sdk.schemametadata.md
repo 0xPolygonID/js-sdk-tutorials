@@ -26,5 +26,5 @@ export interface SchemaMetadata
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [serialization?](./js-sdk.schemametadata.serialization.md) |  | [SerializationSchema](./js-sdk.serializationschema.md) | **_(BETA)_** _(Optional)_ |
-|  [uris](./js-sdk.schemametadata.uris.md) |  | { \[key: string\]: string; } | **_(BETA)_** |
+|  [serialization?](./js-sdk.schemametadata.serialization.md) |  | [SerializationSchema](./js-sdk.serializationschema.md) |  _(Optional)_ |
+|  [uris](./js-sdk.schemametadata.uris.md) |  | { \[key: string\]: string; } |  |

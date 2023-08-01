@@ -8,15 +8,12 @@ hide_title: true
 
 ## JWSPacker.(constructor)
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Creates an instance of JWSPacker.
 
 **Signature:**
 
 ```typescript
-constructor(_kms: KMS, _documentResolver?: Resolvable);
+constructor(_kms: KMS, _documentResolver: Resolvable);
 ```
 
 ## Parameters
@@ -24,4 +21,4 @@ constructor(_kms: KMS, _documentResolver?: Resolvable);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  \_kms | [KMS](./js-sdk.kms.md) |  |
-|  \_documentResolver | Resolvable | _(Optional)_  JWSPacker |
+|  \_documentResolver | Resolvable |  JWSPacker |

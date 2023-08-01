@@ -8,11 +8,7 @@ hide_title: true
 
 ## LDParser class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 LDParser can parse JSONLD schema according to specification
-
 
  LDParser
 
@@ -26,5 +22,5 @@ export declare class LDParser
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [extractTerms(context)](./js-sdk.ldparser.extractterms.md) | <code>static</code> | **_(BETA)_** ExtractTerms returns the terms definitions from the JSON-LD context |
-|  [getPrefixes(context, onlyCommonPrefixes, properties)](./js-sdk.ldparser.getprefixes.md) | <code>static</code> | <p>**_(BETA)_** GetPrefixesreturns a map of potential RDF prefixes based on the JSON-LD Term Definitions in this context. No guarantees of the prefixes are given, beyond that it will not contain ":".</p><p>onlyCommonPrefixes: If true, the result will not include "not so useful" prefixes, such as "term1": "http://example.com/term1", e.g. all IRIs will end with "/" or "\#". If false, all potential prefixes are returned.</p> |
+|  [extractTerms(context)](./js-sdk.ldparser.extractterms.md) | <code>static</code> | ExtractTerms returns the terms definitions from the JSON-LD context |
+|  [getPrefixes(context, onlyCommonPrefixes, properties)](./js-sdk.ldparser.getprefixes.md) | <code>static</code> | <p>GetPrefixesreturns a map of potential RDF prefixes based on the JSON-LD Term Definitions in this context. No guarantees of the prefixes are given, beyond that it will not contain ":".</p><p>onlyCommonPrefixes: If true, the result will not include "not so useful" prefixes, such as "term1": "http://example.com/term1", e.g. all IRIs will end with "/" or "\#". If false, all potential prefixes are returned.</p> |

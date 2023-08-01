@@ -8,11 +8,7 @@ hide_title: true
 
 ## BjjProvider class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Provider for Baby Jub Jub keys
-
 
  BjjProvider  implements IKeyProvider interface
 
@@ -27,18 +23,18 @@ export declare class BjjProvider implements IKeyProvider
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(keyType, keyStore)](./js-sdk.bjjprovider._constructor_.md) |  | **_(BETA)_** Creates an instance of BjjProvider. |
+|  [(constructor)(keyType, keyStore)](./js-sdk.bjjprovider._constructor_.md) |  | Creates an instance of BjjProvider. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [keyType](./js-sdk.bjjprovider.keytype.md) |  | [KmsKeyType](./js-sdk.kmskeytype.md) | **_(BETA)_** key type that is handled by BJJ Provider  {KmsKeyType} |
+|  [keyType](./js-sdk.bjjprovider.keytype.md) |  | [KmsKeyType](./js-sdk.kmskeytype.md) | key type that is handled by BJJ Provider  {KmsKeyType} |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [newPrivateKeyFromSeed(seed)](./js-sdk.bjjprovider.newprivatekeyfromseed.md) |  | **_(BETA)_** generates a baby jub jub key from a seed phrase |
-|  [publicKey(keyId)](./js-sdk.bjjprovider.publickey.md) |  | **_(BETA)_** Gets public key by kmsKeyId |
-|  [sign(keyId, data)](./js-sdk.bjjprovider.sign.md) |  | **_(BETA)_** signs prepared payload of size, with a key id |
+|  [newPrivateKeyFromSeed(seed)](./js-sdk.bjjprovider.newprivatekeyfromseed.md) |  | generates a baby jub jub key from a seed phrase |
+|  [publicKey(keyId)](./js-sdk.bjjprovider.publickey.md) |  | Gets public key by kmsKeyId |
+|  [sign(keyId, data)](./js-sdk.bjjprovider.sign.md) |  | signs prepared payload of size, with a key id |

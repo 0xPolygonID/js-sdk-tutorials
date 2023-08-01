@@ -11,5 +11,7 @@ hide_title: true
 **Signature:**
 
 ```typescript
-stringByPath: (obj: object, path: string) => string
+stringByPath: (obj: {
+    [key: string]: unknown;
+}, path: string) => string
 ```

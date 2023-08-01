@@ -8,11 +8,7 @@ hide_title: true
 
 ## NodeAuxValue interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 auxiliary node
-
 
  NodeAuxValue
 
@@ -26,6 +22,6 @@ export interface NodeAuxValue
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [key](./js-sdk.nodeauxvalue.key.md) |  | Hash | **_(BETA)_** |
-|  [noAux](./js-sdk.nodeauxvalue.noaux.md) |  | string | **_(BETA)_** |
-|  [value](./js-sdk.nodeauxvalue.value.md) |  | Hash | **_(BETA)_** |
+|  [key](./js-sdk.nodeauxvalue.key.md) |  | Hash |  |
+|  [noAux](./js-sdk.nodeauxvalue.noaux.md) |  | string |  |
+|  [value](./js-sdk.nodeauxvalue.value.md) |  | Hash |  |

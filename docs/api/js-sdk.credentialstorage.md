@@ -27,21 +27,21 @@ export declare class CredentialStorage implements ICredentialStorage
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_dataSource)](./js-sdk.credentialstorage._constructor_.md) |  | **_(BETA)_** Creates an instance of CredentialStorage. |
+|  [(constructor)(\_dataSource)](./js-sdk.credentialstorage._constructor_.md) |  |  Creates an instance of CredentialStorage. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [storageKey](./js-sdk.credentialstorage.storagekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p>**_(BETA)_** key for storage</p> |
+|  [storageKey](./js-sdk.credentialstorage.storagekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p> key for storage</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [findCredentialById(id)](./js-sdk.credentialstorage.findcredentialbyid.md) |  | **_(BETA)_** returns all credentials in the storage |
-|  [findCredentialsByQuery(query)](./js-sdk.credentialstorage.findcredentialsbyquery.md) |  | **_(BETA)_** returns all credentials in the storage |
-|  [listCredentials()](./js-sdk.credentialstorage.listcredentials.md) |  | **_(BETA)_** returns all credentials in the storage |
-|  [removeCredential(id)](./js-sdk.credentialstorage.removecredential.md) |  | **_(BETA)_** returns all credentials in the storage |
-|  [saveAllCredentials(credentials)](./js-sdk.credentialstorage.saveallcredentials.md) |  | **_(BETA)_** returns all credentials in the storage |
-|  [saveCredential(credential)](./js-sdk.credentialstorage.savecredential.md) |  | **_(BETA)_**  |
+|  [findCredentialById(id)](./js-sdk.credentialstorage.findcredentialbyid.md) |  |  returns all credentials in the storage |
+|  [findCredentialsByQuery(query)](./js-sdk.credentialstorage.findcredentialsbyquery.md) |  |  returns all credentials in the storage |
+|  [listCredentials()](./js-sdk.credentialstorage.listcredentials.md) |  |  returns all credentials in the storage |
+|  [removeCredential(id)](./js-sdk.credentialstorage.removecredential.md) |  |  returns all credentials in the storage |
+|  [saveAllCredentials(credentials)](./js-sdk.credentialstorage.saveallcredentials.md) |  |  returns all credentials in the storage |
+|  [saveCredential(credential)](./js-sdk.credentialstorage.savecredential.md) |  |   |

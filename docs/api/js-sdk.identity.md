@@ -14,9 +14,9 @@ Identity structure that can be used for identity storage
 
 ```typescript
 export type Identity = {
-    identifier: string;
-    state: Hash;
-    published: boolean;
-    genesis: boolean;
+    did: string;
+    state?: Hash;
+    isStatePublished?: boolean;
+    isStateGenesis?: boolean;
 };
 ```

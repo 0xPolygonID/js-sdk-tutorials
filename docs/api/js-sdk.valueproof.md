@@ -8,11 +8,7 @@ hide_title: true
 
 ## ValueProof class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 ValueProof represents a Merkle Proof for a value stored as MT
-
 
  ValueProof
 
@@ -26,18 +22,18 @@ export declare class ValueProof
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)()](./js-sdk.valueproof._constructor_.md) |  | **_(BETA)_** Creates an instance of ValueProof. |
+|  [(constructor)()](./js-sdk.valueproof._constructor_.md) |  | Creates an instance of ValueProof. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [mtp](./js-sdk.valueproof.mtp.md) |  | Proof | **_(BETA)_** |
-|  [path](./js-sdk.valueproof.path.md) |  | bigint | **_(BETA)_** |
-|  [value](./js-sdk.valueproof.value.md) |  | bigint | **_(BETA)_** |
+|  [mtp](./js-sdk.valueproof.mtp.md) |  | Proof |  |
+|  [path](./js-sdk.valueproof.path.md) |  | bigint |  |
+|  [value](./js-sdk.valueproof.value.md) |  | bigint |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [validate()](./js-sdk.valueproof.validate.md) |  | **_(BETA)_** validates instance of ValueProof |
+|  [validate()](./js-sdk.valueproof.validate.md) |  | validates instance of ValueProof |

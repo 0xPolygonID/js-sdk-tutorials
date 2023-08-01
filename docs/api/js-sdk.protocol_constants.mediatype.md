@@ -10,7 +10,7 @@ hide_title: true
 
 Media types for iden3 comm communication protocol
 
-  {number}
+ {number}
 
 **Signature:**
 

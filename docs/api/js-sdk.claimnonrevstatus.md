@@ -8,11 +8,7 @@ hide_title: true
 
 ## ClaimNonRevStatus interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 claim non revocation status for circuit TreeState and Proof of inclusion / non-inclusion
-
 
  ClaimNonRevStatus
 
@@ -26,5 +22,5 @@ export interface ClaimNonRevStatus
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [proof](./js-sdk.claimnonrevstatus.proof.md) |  | Proof | **_(BETA)_** |
-|  [treeState](./js-sdk.claimnonrevstatus.treestate.md) |  | [TreeState](./js-sdk.treestate.md) | **_(BETA)_** |
+|  [proof](./js-sdk.claimnonrevstatus.proof.md) |  | Proof |  |
+|  [treeState](./js-sdk.claimnonrevstatus.treestate.md) |  | [TreeState](./js-sdk.treestate.md) |  |

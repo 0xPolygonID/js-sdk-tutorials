@@ -8,9 +8,6 @@ hide_title: true
 
 ## BjjProvider.newPrivateKeyFromSeed() method
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 generates a baby jub jub key from a seed phrase
 
 **Signature:**

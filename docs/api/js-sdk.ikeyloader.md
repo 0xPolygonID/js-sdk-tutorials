@@ -8,11 +8,7 @@ hide_title: true
 
 ## IKeyLoader interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Loader interface to load from different sources
-
 
  IKeyLoader
 
@@ -26,4 +22,4 @@ export interface IKeyLoader
 
 |  Method | Description |
 |  --- | --- |
-|  [load(path)](./js-sdk.ikeyloader.load.md) | **_(BETA)_** loads file as a byte array |
+|  [load(path)](./js-sdk.ikeyloader.load.md) | loads file as a byte array |

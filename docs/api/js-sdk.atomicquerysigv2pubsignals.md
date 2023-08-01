@@ -8,10 +8,7 @@ hide_title: true
 
 ## AtomicQuerySigV2PubSignals class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
-public signals 
+public signals
 
  AtomicQuerySigV2PubSignals  {BaseConfig}
 
@@ -26,23 +23,23 @@ export declare class AtomicQuerySigV2PubSignals extends BaseConfig
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [claimPathKey?](./js-sdk.atomicquerysigv2pubsignals.claimpathkey.md) |  | bigint | **_(BETA)_** _(Optional)_ |
-|  [claimPathNotExists](./js-sdk.atomicquerysigv2pubsignals.claimpathnotexists.md) |  | number | **_(BETA)_** |
-|  [claimSchema](./js-sdk.atomicquerysigv2pubsignals.claimschema.md) |  | SchemaHash | **_(BETA)_** |
-|  [isRevocationChecked](./js-sdk.atomicquerysigv2pubsignals.isrevocationchecked.md) |  | number | **_(BETA)_** |
-|  [issuerAuthState?](./js-sdk.atomicquerysigv2pubsignals.issuerauthstate.md) |  | Hash | **_(BETA)_** _(Optional)_ |
-|  [issuerClaimNonRevState?](./js-sdk.atomicquerysigv2pubsignals.issuerclaimnonrevstate.md) |  | Hash | **_(BETA)_** _(Optional)_ |
-|  [issuerID?](./js-sdk.atomicquerysigv2pubsignals.issuerid.md) |  | Id | **_(BETA)_** _(Optional)_ |
-|  [merklized](./js-sdk.atomicquerysigv2pubsignals.merklized.md) |  | number | **_(BETA)_** |
-|  [operator](./js-sdk.atomicquerysigv2pubsignals.operator.md) |  | number | **_(BETA)_** |
-|  [requestID?](./js-sdk.atomicquerysigv2pubsignals.requestid.md) |  | bigint | **_(BETA)_** _(Optional)_ |
-|  [slotIndex](./js-sdk.atomicquerysigv2pubsignals.slotindex.md) |  | number | **_(BETA)_** |
-|  [timestamp](./js-sdk.atomicquerysigv2pubsignals.timestamp.md) |  | number | **_(BETA)_** |
-|  [userID?](./js-sdk.atomicquerysigv2pubsignals.userid.md) |  | Id | **_(BETA)_** _(Optional)_ |
-|  [value](./js-sdk.atomicquerysigv2pubsignals.value.md) |  | bigint\[\] | **_(BETA)_** |
+|  [claimPathKey](./js-sdk.atomicquerysigv2pubsignals.claimpathkey.md) |  | bigint |  |
+|  [claimPathNotExists](./js-sdk.atomicquerysigv2pubsignals.claimpathnotexists.md) |  | number |  |
+|  [claimSchema](./js-sdk.atomicquerysigv2pubsignals.claimschema.md) |  | SchemaHash |  |
+|  [isRevocationChecked](./js-sdk.atomicquerysigv2pubsignals.isrevocationchecked.md) |  | number |  |
+|  [issuerAuthState](./js-sdk.atomicquerysigv2pubsignals.issuerauthstate.md) |  | Hash |  |
+|  [issuerClaimNonRevState](./js-sdk.atomicquerysigv2pubsignals.issuerclaimnonrevstate.md) |  | Hash |  |
+|  [issuerID](./js-sdk.atomicquerysigv2pubsignals.issuerid.md) |  | Id |  |
+|  [merklized](./js-sdk.atomicquerysigv2pubsignals.merklized.md) |  | number |  |
+|  [operator](./js-sdk.atomicquerysigv2pubsignals.operator.md) |  | number |  |
+|  [requestID](./js-sdk.atomicquerysigv2pubsignals.requestid.md) |  | bigint |  |
+|  [slotIndex](./js-sdk.atomicquerysigv2pubsignals.slotindex.md) |  | number |  |
+|  [timestamp](./js-sdk.atomicquerysigv2pubsignals.timestamp.md) |  | number |  |
+|  [userID](./js-sdk.atomicquerysigv2pubsignals.userid.md) |  | Id |  |
+|  [value](./js-sdk.atomicquerysigv2pubsignals.value.md) |  | bigint\[\] |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [pubSignalsUnmarshal(data)](./js-sdk.atomicquerysigv2pubsignals.pubsignalsunmarshal.md) |  | **_(BETA)_** PubSignalsUnmarshal unmarshal credentialAtomicQuerySig.circom public signals array to AtomicQuerySugPubSignals |
+|  [pubSignalsUnmarshal(data)](./js-sdk.atomicquerysigv2pubsignals.pubsignalsunmarshal.md) |  | PubSignalsUnmarshal unmarshal credentialAtomicQuerySig.circom public signals array to AtomicQuerySugPubSignals |

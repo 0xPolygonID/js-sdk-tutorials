@@ -13,7 +13,7 @@ generates auth inputs
 **Signature:**
 
 ```typescript
-generateAuthV2Inputs(hash: Uint8Array, did: DID, profileNonce: number, circuitId: CircuitId): Promise<Uint8Array>;
+generateAuthV2Inputs(hash: Uint8Array, did: DID, circuitId: CircuitId): Promise<Uint8Array>;
 ```
 
 ## Parameters
@@ -22,7 +22,6 @@ generateAuthV2Inputs(hash: Uint8Array, did: DID, profileNonce: number, circuitId
 |  --- | --- | --- |
 |  hash | Uint8Array | challenge that will be signed |
 |  did | DID | identity that will generate a proof |
-|  profileNonce | number | identity that will generate a proof |
 |  circuitId | [CircuitId](./js-sdk.circuitid.md) | circuit id for authentication |
 
 **Returns:**

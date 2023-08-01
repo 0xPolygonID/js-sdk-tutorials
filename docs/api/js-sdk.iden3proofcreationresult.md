@@ -26,6 +26,6 @@ export interface Iden3ProofCreationResult
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [credentials](./js-sdk.iden3proofcreationresult.credentials.md) |  | [W3CCredential](./js-sdk.w3ccredential.md)\[\] | **_(BETA)_** |
-|  [newTreeState](./js-sdk.iden3proofcreationresult.newtreestate.md) |  | [TreeState](./js-sdk.treestate.md) | **_(BETA)_** |
-|  [oldTreeState](./js-sdk.iden3proofcreationresult.oldtreestate.md) |  | [TreeState](./js-sdk.treestate.md) | **_(BETA)_** |
+|  [credentials](./js-sdk.iden3proofcreationresult.credentials.md) |  | [W3CCredential](./js-sdk.w3ccredential.md)\[\] |  |
+|  [newTreeState](./js-sdk.iden3proofcreationresult.newtreestate.md) |  | [TreeState](./js-sdk.treestate.md) |  |
+|  [oldTreeState](./js-sdk.iden3proofcreationresult.oldtreestate.md) |  | [TreeState](./js-sdk.treestate.md) |  |

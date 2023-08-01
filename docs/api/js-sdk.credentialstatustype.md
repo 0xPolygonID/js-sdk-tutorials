@@ -10,7 +10,7 @@ hide_title: true
 
 CredentialStatusType type for revocation type
 
-  {number}
+ {number}
 
 **Signature:**
 
@@ -22,5 +22,7 @@ export declare enum CredentialStatusType
 
 |  Member | Value | Description |
 |  --- | --- | --- |
+|  Iden3commRevocationStatusV1 | <code>&quot;Iden3commRevocationStatusV1.0&quot;</code> |  |
+|  Iden3OnchainSparseMerkleTreeProof2023 | <code>&quot;Iden3OnchainSparseMerkleTreeProof2023&quot;</code> |  |
 |  Iden3ReverseSparseMerkleTreeProof | <code>&quot;Iden3ReverseSparseMerkleTreeProof&quot;</code> |  |
 |  SparseMerkleTreeProof | <code>&quot;SparseMerkleTreeProof&quot;</code> |  |

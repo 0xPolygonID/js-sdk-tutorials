@@ -16,19 +16,18 @@ Handles only messages with credentials/1.0/offer type
 **Signature:**
 
 ```typescript
-handleCredentialOffer(did: DID, offer: Uint8Array, profileNonce?: number): Promise<W3CCredential[]>;
+handleCredentialOffer(offer: Uint8Array, opts?: FetchHandlerOptions): Promise<W3CCredential[]>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  did | DID | an identity that will process the request |
-|  offer | Uint8Array | raw offer message |
-|  profileNonce | number | _(Optional)_ nonce of the did to which credential has been offered |
+|  offer | Uint8Array |  |
+|  opts | [FetchHandlerOptions](./js-sdk.fetchhandleroptions.md) | _(Optional)_ |
 
 **Returns:**
 
 Promise&lt;[W3CCredential](./js-sdk.w3ccredential.md)\[\]&gt;
 
-`Promise<W3CCredential[]`
+`Promise<W3CCredential>`

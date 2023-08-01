@@ -8,11 +8,7 @@ hide_title: true
 
 ## LocalStoragePrivateKeyStore class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Allows storing keys in the local storage of the browser (NOT ENCRYPTED: DO NOT USE IN THE PRODUCTION)
-
 
  LocalStoragePrivateKeyStore  implements AbstractPrivateKeyStore interface
 
@@ -27,11 +23,11 @@ export declare class LocalStoragePrivateKeyStore implements AbstractPrivateKeySt
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [storageKey](./js-sdk.localstorageprivatekeystore.storagekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | **_(BETA)_** |
+|  [storageKey](./js-sdk.localstorageprivatekeystore.storagekey.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [get(args)](./js-sdk.localstorageprivatekeystore.get.md) |  | **_(BETA)_** Gets key from the local storage |
-|  [import(args)](./js-sdk.localstorageprivatekeystore.import.md) |  | **_(BETA)_** Import key to the local storage |
+|  [get(args)](./js-sdk.localstorageprivatekeystore.get.md) |  | Gets key from the local storage |
+|  [importKey(args)](./js-sdk.localstorageprivatekeystore.importkey.md) |  | Import key to the local storage |

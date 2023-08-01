@@ -14,7 +14,7 @@ hide_title: true
 **Signature:**
 
 ```typescript
-getProfileById(profileId: string): Promise<Profile>;
+getProfileById(profileId: string): Promise<Profile | undefined>;
 ```
 
 ## Parameters
@@ -25,4 +25,4 @@ getProfileById(profileId: string): Promise<Profile>;
 
 **Returns:**
 
-Promise&lt;[Profile](./js-sdk.profile.md)&gt;
+Promise&lt;[Profile](./js-sdk.profile.md) \| undefined&gt;

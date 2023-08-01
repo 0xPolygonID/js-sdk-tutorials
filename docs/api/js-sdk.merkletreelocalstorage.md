@@ -27,20 +27,20 @@ export declare class MerkleTreeLocalStorage implements IMerkleTreeStorage
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_mtDepth)](./js-sdk.merkletreelocalstorage._constructor_.md) |  | **_(BETA)_** Creates an instance of MerkleTreeLocalStorage. |
+|  [(constructor)(\_mtDepth)](./js-sdk.merkletreelocalstorage._constructor_.md) |  |  Creates an instance of MerkleTreeLocalStorage. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [storageKeyMeta](./js-sdk.merkletreelocalstorage.storagekeymeta.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p>**_(BETA)_** key for the storage key metadata</p> |
+|  [storageKeyMeta](./js-sdk.merkletreelocalstorage.storagekeymeta.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) | <p> key for the storage key metadata</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [addToMerkleTree(identifier, mtType, hindex, hvalue)](./js-sdk.merkletreelocalstorage.addtomerkletree.md) |  | **_(BETA)_** adds to merkle tree in the local storage |
-|  [bindMerkleTreeToNewIdentifier(oldIdentifier, newIdentifier)](./js-sdk.merkletreelocalstorage.bindmerkletreetonewidentifier.md) |  | **_(BETA)_** binds merkle tree in the local storage to the new identifiers |
-|  [createIdentityMerkleTrees(identifier)](./js-sdk.merkletreelocalstorage.createidentitymerkletrees.md) |  | **_(BETA)_** creates a tree in the local storage |
-|  [getIdentityMerkleTreesInfo(identifier)](./js-sdk.merkletreelocalstorage.getidentitymerkletreesinfo.md) |  | **_(BETA)_** getIdentityMerkleTreesInfo from the local storage |
-|  [getMerkleTreeByIdentifierAndType(identifier, mtType)](./js-sdk.merkletreelocalstorage.getmerkletreebyidentifierandtype.md) |  | **_(BETA)_** get merkle tree from the local storage |
+|  [addToMerkleTree(identifier, mtType, hindex, hvalue)](./js-sdk.merkletreelocalstorage.addtomerkletree.md) |  |  adds to merkle tree in the local storage |
+|  [bindMerkleTreeToNewIdentifier(oldIdentifier, newIdentifier)](./js-sdk.merkletreelocalstorage.bindmerkletreetonewidentifier.md) |  |  binds merkle tree in the local storage to the new identifiers |
+|  [createIdentityMerkleTrees(identifier)](./js-sdk.merkletreelocalstorage.createidentitymerkletrees.md) |  |  creates a tree in the local storage |
+|  [getIdentityMerkleTreesInfo(identifier)](./js-sdk.merkletreelocalstorage.getidentitymerkletreesinfo.md) |  |  getIdentityMerkleTreesInfo from the local storage |
+|  [getMerkleTreeByIdentifierAndType(identifier, mtType)](./js-sdk.merkletreelocalstorage.getmerkletreebyidentifierandtype.md) |  |  get merkle tree from the local storage |

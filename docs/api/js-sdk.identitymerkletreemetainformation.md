@@ -8,11 +8,7 @@ hide_title: true
 
 ## IdentityMerkleTreeMetaInformation interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Interface to store metadata about merkle tree
-
 
  IdentityMerkleTreeMetaInformation
 
@@ -26,6 +22,6 @@ export interface IdentityMerkleTreeMetaInformation
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [identifier](./js-sdk.identitymerkletreemetainformation.identifier.md) |  | string | **_(BETA)_** |
-|  [treeId](./js-sdk.identitymerkletreemetainformation.treeid.md) |  | string | **_(BETA)_** |
-|  [type](./js-sdk.identitymerkletreemetainformation.type.md) |  | [MerkleTreeType](./js-sdk.merkletreetype.md) | **_(BETA)_** |
+|  [identifier](./js-sdk.identitymerkletreemetainformation.identifier.md) |  | string |  |
+|  [treeId](./js-sdk.identitymerkletreemetainformation.treeid.md) |  | string |  |
+|  [type](./js-sdk.identitymerkletreemetainformation.type.md) |  | [MerkleTreeType](./js-sdk.merkletreetype.md) |  |

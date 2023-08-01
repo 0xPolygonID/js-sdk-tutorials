@@ -13,5 +13,7 @@ checks if data can fill the slot
 **Signature:**
 
 ```typescript
-fillSlot: (data: any, fieldName: string) => Uint8Array
+fillSlot: (data: {
+    [key: string]: unknown;
+}, fieldName: string) => Uint8Array
 ```

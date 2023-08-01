@@ -26,9 +26,9 @@ export declare class Parser
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [extractCredentialSubjectProperties(schema)](./js-sdk.parser.extractcredentialsubjectproperties.md) | <code>static</code> | **_(BETA)_** ExtractCredentialSubjectProperties return credential subject types from JSON schema |
-|  [extractMetadata(schema)](./js-sdk.parser.extractmetadata.md) | <code>static</code> | **_(BETA)_** ExtractMetadata return metadata from JSON schema |
-|  [getFieldSlotIndex(field, schemaBytes)](./js-sdk.parser.getfieldslotindex.md) |  | **_(BETA)_** GetFieldSlotIndex return index of slot from 0 to 7 (each claim has by default 8 slots) for non-merklized claims |
-|  [getLdPrefixesByJSONSchema(schema)](./js-sdk.parser.getldprefixesbyjsonschema.md) | <code>static</code> | **_(BETA)_** GetLdPrefixesByJSONSchema return possible credential types for JSON schema |
-|  [parseClaim(credential, credentialType, jsonSchemaBytes, opts)](./js-sdk.parser.parseclaim.md) |  | **_(BETA)_** ParseClaim creates core.Claim object from W3CCredential |
-|  [parseSlots(credential, schemaBytes)](./js-sdk.parser.parseslots.md) |  | **_(BETA)_** ParseSlots converts payload to claim slots using provided schema |
+|  [extractCredentialSubjectProperties(schema)](./js-sdk.parser.extractcredentialsubjectproperties.md) | <code>static</code> |  ExtractCredentialSubjectProperties return credential subject types from JSON schema |
+|  [extractMetadata(schema)](./js-sdk.parser.extractmetadata.md) | <code>static</code> |  ExtractMetadata return metadata from JSON schema |
+|  [getFieldSlotIndex(field, schemaBytes)](./js-sdk.parser.getfieldslotindex.md) |  |  GetFieldSlotIndex return index of slot from 0 to 7 (each claim has by default 8 slots) for non-merklized claims |
+|  [getLdPrefixesByJSONSchema(schema)](./js-sdk.parser.getldprefixesbyjsonschema.md) | <code>static</code> |  GetLdPrefixesByJSONSchema return possible credential types for JSON schema |
+|  [parseClaim(credential, credentialType, jsonSchemaBytes, opts)](./js-sdk.parser.parseclaim.md) |  |  ParseClaim creates core.Claim object from W3CCredential |
+|  [parseSlots(credential, schemaBytes)](./js-sdk.parser.parseslots.md) |  |  ParseSlots converts payload to claim slots using provided schema |

@@ -26,7 +26,7 @@ export interface SerializationSchema
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [indexDataSlotA](./js-sdk.serializationschema.indexdataslota.md) |  | string | **_(BETA)_** |
-|  [indexDataSlotB](./js-sdk.serializationschema.indexdataslotb.md) |  | string | **_(BETA)_** |
-|  [valueDataSlotA](./js-sdk.serializationschema.valuedataslota.md) |  | string | **_(BETA)_** |
-|  [valueDataSlotB](./js-sdk.serializationschema.valuedataslotb.md) |  | string | **_(BETA)_** |
+|  [indexDataSlotA](./js-sdk.serializationschema.indexdataslota.md) |  | string |  |
+|  [indexDataSlotB](./js-sdk.serializationschema.indexdataslotb.md) |  | string |  |
+|  [valueDataSlotA](./js-sdk.serializationschema.valuedataslota.md) |  | string |  |
+|  [valueDataSlotB](./js-sdk.serializationschema.valuedataslotb.md) |  | string |  |

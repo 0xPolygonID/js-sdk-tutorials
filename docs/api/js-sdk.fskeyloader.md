@@ -8,11 +8,7 @@ hide_title: true
 
 ## FSKeyLoader class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Loader from file system
-
 
  FSKeyLoader  implements IKeyLoader interface
 
@@ -27,16 +23,16 @@ export declare class FSKeyLoader implements IKeyLoader
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(dir)](./js-sdk.fskeyloader._constructor_.md) |  | **_(BETA)_** Constructs a new instance of the <code>FSKeyLoader</code> class |
+|  [(constructor)(dir)](./js-sdk.fskeyloader._constructor_.md) |  | Constructs a new instance of the <code>FSKeyLoader</code> class |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [dir](./js-sdk.fskeyloader.dir.md) | <code>readonly</code> | string | **_(BETA)_** |
+|  [dir](./js-sdk.fskeyloader.dir.md) | <code>readonly</code> | string |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [load(path)](./js-sdk.fskeyloader.load.md) |  | **_(BETA)_** |
+|  [load(path)](./js-sdk.fskeyloader.load.md) |  |  |

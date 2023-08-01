@@ -8,11 +8,7 @@ hide_title: true
 
 ## BJJSignatureProof interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 prepared bjj signature for circuits with auth bjj claim data
-
 
  BJJSignatureProof
 
@@ -26,7 +22,7 @@ export interface BJJSignatureProof
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [issuerAuthClaim?](./js-sdk.bjjsignatureproof.issuerauthclaim.md) |  | Claim | **_(BETA)_** _(Optional)_ |
-|  [issuerAuthIncProof](./js-sdk.bjjsignatureproof.issuerauthincproof.md) |  | [MTProof](./js-sdk.mtproof.md) | **_(BETA)_** |
-|  [issuerAuthNonRevProof](./js-sdk.bjjsignatureproof.issuerauthnonrevproof.md) |  | [MTProof](./js-sdk.mtproof.md) | **_(BETA)_** |
-|  [signature](./js-sdk.bjjsignatureproof.signature.md) |  | Signature | **_(BETA)_** |
+|  [issuerAuthClaim?](./js-sdk.bjjsignatureproof.issuerauthclaim.md) |  | Claim | _(Optional)_ |
+|  [issuerAuthIncProof](./js-sdk.bjjsignatureproof.issuerauthincproof.md) |  | [MTProof](./js-sdk.mtproof.md) |  |
+|  [issuerAuthNonRevProof](./js-sdk.bjjsignatureproof.issuerauthnonrevproof.md) |  | [MTProof](./js-sdk.mtproof.md) |  |
+|  [signature](./js-sdk.bjjsignatureproof.signature.md) |  | Signature |  |

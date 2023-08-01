@@ -14,7 +14,7 @@ hide_title: true
 **Signature:**
 
 ```typescript
-getIdentity(identifier: string): Promise<Identity>;
+getIdentity(identifier: string): Promise<Identity | undefined>;
 ```
 
 ## Parameters
@@ -25,4 +25,4 @@ getIdentity(identifier: string): Promise<Identity>;
 
 **Returns:**
 
-Promise&lt;[Identity](./js-sdk.identity.md)&gt;
+Promise&lt;[Identity](./js-sdk.identity.md) \| undefined&gt;

@@ -15,12 +15,12 @@ CredentialIssuanceRequestMessage represent Iden3message for credential request
 ```typescript
 export type CredentialIssuanceRequestMessage = {
     id: string;
-    typ?: MediaType;
+    typ: MediaType;
     type: ProtocolMessage;
     thid?: string;
-    body?: CredentialIssuanceRequestMessageBody;
-    from?: string;
-    to?: string;
+    body: CredentialIssuanceRequestMessageBody;
+    from: string;
+    to: string;
 };
 ```
 **References:** [MediaType](./js-sdk.protocol_constants.mediatype.md), [ProtocolMessage](./js-sdk.protocolmessage.md), [CredentialIssuanceRequestMessageBody](./js-sdk.credentialissuancerequestmessagebody.md)

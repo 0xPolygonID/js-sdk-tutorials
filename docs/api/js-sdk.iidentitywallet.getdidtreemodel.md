@@ -24,6 +24,6 @@ getDIDTreeModel(did: DID): Promise<TreesModel>;
 
 **Returns:**
 
-Promise&lt;TreesModel&gt;
+Promise&lt;[TreesModel](./js-sdk.treesmodel.md)&gt;
 
 `Promise<TreesModel>`

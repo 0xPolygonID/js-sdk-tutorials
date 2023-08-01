@@ -12,7 +12,7 @@ hide_title: true
 
 ```typescript
 revocationOpts: {
-        baseUrl: string;
+        id: string;
         type: CredentialStatusType;
         nonce?: number;
     };

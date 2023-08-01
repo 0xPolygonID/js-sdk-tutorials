@@ -8,11 +8,7 @@ hide_title: true
 
 ## Vector class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Vector uses for find/not find x scalar type in y vector type.
-
 
  Vector  implements IComparer interface
 
@@ -27,10 +23,10 @@ export declare class Vector implements IComparer
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(x, y)](./js-sdk.vector._constructor_.md) |  | **_(BETA)_** Creates an instance of Vector. |
+|  [(constructor)(x, y)](./js-sdk.vector._constructor_.md) |  | Creates an instance of Vector. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [compare(operator)](./js-sdk.vector.compare.md) |  | **_(BETA)_** |
+|  [compare(operator)](./js-sdk.vector.compare.md) |  |  |

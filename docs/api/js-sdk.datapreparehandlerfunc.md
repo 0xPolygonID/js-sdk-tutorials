@@ -8,11 +8,7 @@ hide_title: true
 
 ## DataPrepareHandlerFunc class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Handler to
-
 
  DataPrepareHandlerFunc
 
@@ -26,16 +22,16 @@ export declare class DataPrepareHandlerFunc
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(dataPrepareFunc)](./js-sdk.datapreparehandlerfunc._constructor_.md) |  | **_(BETA)_** Creates an instance of DataPrepareHandlerFunc. |
+|  [(constructor)(dataPrepareFunc)](./js-sdk.datapreparehandlerfunc._constructor_.md) |  | Creates an instance of DataPrepareHandlerFunc. |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [dataPrepareFunc](./js-sdk.datapreparehandlerfunc.datapreparefunc.md) | <code>readonly</code> | [AuthDataPrepareFunc](./js-sdk.authdatapreparefunc.md) | **_(BETA)_** |
+|  [dataPrepareFunc](./js-sdk.datapreparehandlerfunc.datapreparefunc.md) | <code>readonly</code> | [AuthDataPrepareFunc](./js-sdk.authdatapreparefunc.md) |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [prepare(hash, did, profileNonce, circuitId)](./js-sdk.datapreparehandlerfunc.prepare.md) |  | **_(BETA)_** |
+|  [prepare(hash, did, circuitId)](./js-sdk.datapreparehandlerfunc.prepare.md) |  |  |

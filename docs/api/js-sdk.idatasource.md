@@ -8,11 +8,7 @@ hide_title: true
 
 ## IDataSource interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Generic Key/Value Data Source for crud operation
-
 
  IDataSource  Type - generic type
 
@@ -26,7 +22,7 @@ export interface IDataSource<Type>
 
 |  Method | Description |
 |  --- | --- |
-|  [delete(key, keyName)](./js-sdk.idatasource.delete.md) | **_(BETA)_** deletes data value for given key with an optional key name |
-|  [get(key, keyName)](./js-sdk.idatasource.get.md) | **_(BETA)_** returns data value for key value and optional key name |
-|  [load()](./js-sdk.idatasource.load.md) | **_(BETA)_** load all object with Type from data source |
-|  [save(key, value, keyName)](./js-sdk.idatasource.save.md) | **_(BETA)_** Save value under the key with optional key name |
+|  [delete(key, keyName)](./js-sdk.idatasource.delete.md) | deletes data value for given key with an optional key name |
+|  [get(key, keyName)](./js-sdk.idatasource.get.md) | returns data value for key value and optional key name |
+|  [load()](./js-sdk.idatasource.load.md) | load all object with Type from data source |
+|  [save(key, value, keyName)](./js-sdk.idatasource.save.md) | Save value under the key with optional key name |

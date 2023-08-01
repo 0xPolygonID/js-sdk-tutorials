@@ -26,10 +26,10 @@ export interface IIdentityStorage
 
 |  Method | Description |
 |  --- | --- |
-|  [getAllIdentities()](./js-sdk.iidentitystorage.getallidentities.md) | **_(BETA)_** gets all identity from the data source |
-|  [getIdentity(identifier)](./js-sdk.iidentitystorage.getidentity.md) | **_(BETA)_** gets identity from the the data source |
-|  [getProfileById(identifier)](./js-sdk.iidentitystorage.getprofilebyid.md) | **_(BETA)_** gets profile by identifier |
-|  [getProfileByVerifier(verifier)](./js-sdk.iidentitystorage.getprofilebyverifier.md) | **_(BETA)_** gets profile by verifier |
-|  [getProfilesByGenesisIdentifier(genesisIdentifier)](./js-sdk.iidentitystorage.getprofilesbygenesisidentifier.md) | **_(BETA)_** gets profile identity by genesis identifiers |
-|  [saveIdentity(identity)](./js-sdk.iidentitystorage.saveidentity.md) | **_(BETA)_** saves identity to the data source |
-|  [saveProfile(profile)](./js-sdk.iidentitystorage.saveprofile.md) | **_(BETA)_** saves profile identity to data |
+|  [getAllIdentities()](./js-sdk.iidentitystorage.getallidentities.md) |  gets all identity from the data source |
+|  [getIdentity(identifier)](./js-sdk.iidentitystorage.getidentity.md) |  gets identity from the the data source |
+|  [getProfileById(identifier)](./js-sdk.iidentitystorage.getprofilebyid.md) |  gets profile by identifier |
+|  [getProfileByVerifier(verifier)](./js-sdk.iidentitystorage.getprofilebyverifier.md) |  gets profile by verifier |
+|  [getProfilesByGenesisIdentifier(genesisIdentifier)](./js-sdk.iidentitystorage.getprofilesbygenesisidentifier.md) |  gets profile identity by genesis identifiers |
+|  [saveIdentity(identity)](./js-sdk.iidentitystorage.saveidentity.md) |  saves identity to the data source |
+|  [saveProfile(profile)](./js-sdk.iidentitystorage.saveprofile.md) |  saves profile identity to data |

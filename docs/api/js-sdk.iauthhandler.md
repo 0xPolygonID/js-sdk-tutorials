@@ -8,11 +8,7 @@ hide_title: true
 
 ## IAuthHandler interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Interface that allows the processing of the authorization request in the raw format for given identifier
-
 
  IAuthHandler
 
@@ -26,6 +22,5 @@ export interface IAuthHandler
 
 |  Method | Description |
 |  --- | --- |
-|  [generateAuthorizationResponse(userGenesisDID, authProfileNonce, authRequest, zkpRequestsWithCreds)](./js-sdk.iauthhandler.generateauthorizationresponse.md) | **_(BETA)_** Generates zero-knowledge proofs for given requests and credentials  |
-|  [handleAuthorizationRequestForGenesisDID(did, request)](./js-sdk.iauthhandler.handleauthorizationrequestforgenesisdid.md) | **_(BETA)_** Handle authorization request protocol message |
-|  [parseAuthorizationRequest(request)](./js-sdk.iauthhandler.parseauthorizationrequest.md) | **_(BETA)_** unpacks authorization request  |
+|  [handleAuthorizationRequest(did, request, opts)](./js-sdk.iauthhandler.handleauthorizationrequest.md) | unpacks authorization request |
+|  [parseAuthorizationRequest(request)](./js-sdk.iauthhandler.parseauthorizationrequest.md) | unpacks authorization request |

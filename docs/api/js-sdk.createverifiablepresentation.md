@@ -11,5 +11,5 @@ hide_title: true
 **Signature:**
 
 ```typescript
-createVerifiablePresentation: (context: string, tp: string, field: string, value: unknown) => object
+createVerifiablePresentation: (context: string, tp: string, path: string, value: unknown) => object
 ```

@@ -10,7 +10,6 @@ hide_title: true
 
 FieldToByteArray convert fields to byte representation based on type
 
-
 **Signature:**
 
 ```typescript

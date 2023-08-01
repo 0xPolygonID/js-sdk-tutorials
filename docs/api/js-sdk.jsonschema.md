@@ -26,6 +26,6 @@ export interface JSONSchema
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [$metadata](./js-sdk.jsonschema._metadata.md) |  | [SchemaMetadata](./js-sdk.schemametadata.md) | **_(BETA)_** |
-|  [$schema](./js-sdk.jsonschema._schema.md) |  | string | **_(BETA)_** |
-|  [type](./js-sdk.jsonschema.type.md) |  | string | **_(BETA)_** |
+|  [$metadata](./js-sdk.jsonschema._metadata.md) |  | [SchemaMetadata](./js-sdk.schemametadata.md) |  |
+|  [$schema](./js-sdk.jsonschema._schema.md) |  | string |  |
+|  [type](./js-sdk.jsonschema.type.md) |  | string |  |

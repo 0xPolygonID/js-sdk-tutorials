@@ -8,11 +8,7 @@ hide_title: true
 
 ## JsonSchemaValidator class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 JSON Schema Validator
-
 
  JsonSchemaValidator
 
@@ -22,14 +18,8 @@ JSON Schema Validator
 export declare class JsonSchemaValidator 
 ```
 
-## Constructors
-
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)()](./js-sdk.jsonschemavalidator._constructor_.md) |  | **_(BETA)_** Creates an instance of JsonSchemaValidator. |
-
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [validate(dataB, schemaB)](./js-sdk.jsonschemavalidator.validate.md) |  | **_(BETA)_** Validate data according to the given schema |
+|  [validate(dataBytes, schemaBytes)](./js-sdk.jsonschemavalidator.validate.md) |  | Validate data according to the given schema |

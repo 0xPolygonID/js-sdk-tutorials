@@ -10,7 +10,7 @@ hide_title: true
 
 Key type that can be used in the key management system
 
-  {number}
+ {number}
 
 **Signature:**
 

@@ -8,11 +8,7 @@ hide_title: true
 
 ## Scalar class
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Scalar is used to compare two scalar value.
-
 
  Scalar  implements IComparer interface
 
@@ -27,10 +23,10 @@ export declare class Scalar implements IComparer
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(x, y)](./js-sdk.scalar._constructor_.md) |  | **_(BETA)_** Creates an instance of Scalar. |
+|  [(constructor)(x, y)](./js-sdk.scalar._constructor_.md) |  | Creates an instance of Scalar. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [compare(operator)](./js-sdk.scalar.compare.md) |  | **_(BETA)_** compares two scalar values |
+|  [compare(operator)](./js-sdk.scalar.compare.md) |  | compares two scalar values |

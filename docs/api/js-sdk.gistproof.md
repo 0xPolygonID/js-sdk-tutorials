@@ -8,11 +8,7 @@ hide_title: true
 
 ## GISTProof interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 global identity state proof
-
 
  GISTProof
 
@@ -26,5 +22,5 @@ export interface GISTProof
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [proof](./js-sdk.gistproof.proof.md) |  | Proof | **_(BETA)_** |
-|  [root](./js-sdk.gistproof.root.md) |  | Hash | **_(BETA)_** |
+|  [proof](./js-sdk.gistproof.proof.md) |  | Proof |  |
+|  [root](./js-sdk.gistproof.root.md) |  | Hash |  |

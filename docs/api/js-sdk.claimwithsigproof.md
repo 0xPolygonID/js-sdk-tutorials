@@ -8,10 +8,7 @@ hide_title: true
 
 ## ClaimWithSigProof interface
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
-Claim for circuit with non revocation proof and signature proof 
+Claim for circuit with non revocation proof and signature proof
 
  ClaimWithSigProof
 
@@ -25,7 +22,7 @@ export interface ClaimWithSigProof
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [claim](./js-sdk.claimwithsigproof.claim.md) |  | Claim | **_(BETA)_** |
-|  [issuerID](./js-sdk.claimwithsigproof.issuerid.md) |  | Id | **_(BETA)_** |
-|  [nonRevProof](./js-sdk.claimwithsigproof.nonrevproof.md) |  | [MTProof](./js-sdk.mtproof.md) | **_(BETA)_** |
-|  [signatureProof](./js-sdk.claimwithsigproof.signatureproof.md) |  | [BJJSignatureProof](./js-sdk.bjjsignatureproof.md) | **_(BETA)_** |
+|  [claim?](./js-sdk.claimwithsigproof.claim.md) |  | Claim | _(Optional)_ |
+|  [issuerID?](./js-sdk.claimwithsigproof.issuerid.md) |  | Id | _(Optional)_ |
+|  [nonRevProof?](./js-sdk.claimwithsigproof.nonrevproof.md) |  | [MTProof](./js-sdk.mtproof.md) | _(Optional)_ |
+|  [signatureProof?](./js-sdk.claimwithsigproof.signatureproof.md) |  | [BJJSignatureProof](./js-sdk.bjjsignatureproof.md) | _(Optional)_ |
